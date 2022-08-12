@@ -1,0 +1,109 @@
+{
+	"slug": "owa5x",
+	"version": 1,
+	"name": "owa5x",
+	"arch": "aarch64",
+	"state": "RELEASED",
+	"stateInstructions": {
+		"postProvisioning": [
+			"The device is performing a shutdown. Please wait until all LEDs are off.",
+			"Remove the balenaOS installation media.",
+			"Remove and re-connect power to the board."
+		]
+	},
+	"instructions": [
+		"Write the OS file you downloaded to your USB key. We recommend using <a href=\"http://www.etcher.io/\">Etcher</a>.",
+		"Insert the freshly burnt USB key into the owa5x.",
+		"<strong role=\"alert\">Warning!</strong> This will also completely erase internal storage media, so please make a backup first.",
+		"Insert USB STICK. Device will automatically boot from USB",
+		"The device is performing a shutdown. Please wait until all LEDs are off.",
+		"Remove the balenaOS installation media.",
+		"Remove and re-connect power to the board."
+	],
+	"gettingStartedLink": {
+		"windows": "http://docs.balena.io/owa5x/nodejs/getting-started/#adding-your-first-device",
+		"osx": "http://docs.balena.io/owa5x/getting-started/#adding-your-first-device",
+		"linux": "http://docs.balena.io/owa5x/getting-started/#adding-your-first-device"
+	},
+	"supportsBlink": false,
+	"yocto": {
+		"machine": "owa5x",
+		"image": "balena-image",
+		"fstype": "balenaos-img",
+		"version": "yocto-honister",
+		"deployArtifact": "owa5x.balenaos.img",
+		"compressed": true
+	},
+	"options": [
+		{
+			"isGroup": true,
+			"name": "network",
+			"message": "Network",
+			"options": [
+				{
+					"message": "Network Connection",
+					"name": "network",
+					"type": "list",
+					"choices": [
+						"ethernet",
+						"wifi"
+					]
+				},
+				{
+					"message": "Wifi SSID",
+					"name": "wifiSsid",
+					"type": "text",
+					"when": {
+						"network": "wifi"
+					}
+				},
+				{
+					"message": "Wifi Passphrase",
+					"name": "wifiKey",
+					"type": "password",
+					"when": {
+						"network": "wifi"
+					}
+				}
+			]
+		},
+		{
+			"isGroup": true,
+			"isCollapsible": true,
+			"collapsed": true,
+			"name": "advanced",
+			"message": "Advanced",
+			"options": [
+				{
+					"message": "Check for updates every X minutes",
+					"name": "appUpdatePollInterval",
+					"type": "number",
+					"min": 10,
+					"default": 10
+				}
+			]
+		}
+	],
+	"configuration": {
+		"config": {
+			"partition": {
+				"primary": 1
+			},
+			"path": "/config.json"
+		}
+	},
+	"initialization": {
+		"options": [
+			{
+				"message": "Select a drive",
+				"type": "drive",
+				"name": "drive"
+			}
+		],
+		"operations": [
+			{
+				"command": "burn"
+			}
+		]
+	}
+}
