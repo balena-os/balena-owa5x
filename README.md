@@ -1,4 +1,4 @@
-#  balena-iot-gate-imx8 repository
+#  balena-owa5x repository
 
 ## Clone/Initialize the repository
 
