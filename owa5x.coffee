@@ -37,7 +37,7 @@ module.exports =
                 machine: 'owa5x'
                 image: 'balena-image'
                 fstype: 'balenaos-img'
-                version: 'yocto-honister'
+                version: 'yocto-dunfell'
                 deployArtifact: 'owa5x.balenaos.img'
                 compressed: true
 
