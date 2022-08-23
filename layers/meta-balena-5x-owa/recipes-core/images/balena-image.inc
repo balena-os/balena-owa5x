@@ -14,9 +14,8 @@ IMAGE_CMD_balenaos-img_append () {
     dd if=${DEPLOY_DIR_IMAGE}/${MACHINE}-flash.bin of=${BALENA_RAW_IMG} conv=notrunc seek=32 bs=1K
 }
 
-IMAGE_INSTALL_append = " pmsrvsystemd pmsrv u-boot-owasys imx-boot-owasys alsa-lib owasys-libs kernel-modules \
-                         owaturnoff start-can start-bt-wifi test-owa5x turn-gsm-off linux-firmware-owasys wpa-supplicant "
+IMAGE_INSTALL_append += " pmsrvsystemd pmsrv u-boot-owasys imx-boot-owasys alsa-lib owasys-libs kernel-modules udev \
+                          owaturnoff start-can start-bt-wifi test-owa5x turn-gsm-off linux-firmware-owasys wpa-supplicant \
+                          imx-kobs "
 
 deltask do_packagedata
-
-                    
