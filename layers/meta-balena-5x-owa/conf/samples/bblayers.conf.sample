@@ -11,6 +11,7 @@ BBLAYERS ?= " \
     ${TOPDIR}/../layers/meta-openembedded/meta-oe \
     ${TOPDIR}/../layers/meta-openembedded/meta-python \
     ${TOPDIR}/../layers/meta-rust \
+    ${TOPDIR}/../layers/meta-imx \
     ${TOPDIR}/../layers/meta-freescale \
     ${TOPDIR}/../layers/meta-freescale-3rdparty \
     ${TOPDIR}/../layers/meta-freescale-distro \
