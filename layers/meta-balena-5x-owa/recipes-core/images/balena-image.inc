@@ -15,7 +15,7 @@ IMAGE_CMD_balenaos-img_append () {
 }
 
 IMAGE_INSTALL_append += " pmsrvsystemd pmsrv u-boot-owasys imx-boot-owasys alsa-lib owasys-libs kernel-modules udev         \
-                          owaturnoff start-can start-bt-wifi test-owa5x turn-gsm-off linux-firmware linux-firmware-owasys   \ 
+                          owaturnoff start-can start-bt-wifi test-owa5x turn-gsm-off linux-firmware-owasys   \ 
                           wpa-supplicant imx-kobs \
 "
 
