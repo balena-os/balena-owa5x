@@ -7,10 +7,8 @@
 
  -------------------------------------------- 
 
-Available images:
-	balena-image                                  : An image that will boot and run from an inserted SD card.
-  balena-image-flasher                          : An image that will boot from an SD card and then flash the internal memory with an image.
+Resin specific images available:
+	balena-image
 
-Owasys owa5x                                    : $ MACHINE=owa5x bitbake balena-image
-Owasys owa5x                                    : $ MACHINE=owa5x bitbake balena-image-flasher
+owa5x                                    : $ MACHINE=owa5x bitbake balena-image
 
