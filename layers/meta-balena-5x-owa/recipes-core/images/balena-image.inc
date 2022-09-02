@@ -16,7 +16,7 @@ IMAGE_CMD_balenaos-img_append () {
 
 IMAGE_INSTALL_append += " pmsrvsystemd pmsrv u-boot-owasys imx-boot-owasys alsa-lib owasys-libs kernel-modules udev         \
                           owaturnoff start-can start-bt-wifi test-owa5x turn-gsm-off linux-firmware-owasys   \ 
-                          wpa-supplicant imx-kobs \
+                          wpa-supplicant imx-kobs net-tools inetutils iw iproute2 can-utils u-boot-fw-utils \
 "
 
 deltask do_packagedata
