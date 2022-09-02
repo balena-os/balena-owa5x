@@ -31,7 +31,7 @@ module.exports =
                 osx: 'http://docs.balena.io/owa5x/getting-started/#adding-your-first-device'
                 linux: 'http://docs.balena.io/owa5x/getting-started/#adding-your-first-device'
 
-        supportsBlink: false
+        supportsBlink: true
 
         yocto:
                 machine: 'owa5x'
