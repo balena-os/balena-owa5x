@@ -2,7 +2,7 @@
 
 #
 # Script used by hostapps updater to flash bootloader onto internal media
-# Owa5x internañ memory architecture is composed by a NAND and eMMC. HW connections enforces us to boot from the NAND as eMMC
+# Owa5x internal memory architecture is composed by a NAND and eMMC. HW connections enforces us to boot from the NAND as eMMC
 # is located at the secondary SDHC interface of the imx8, which is not bootable. 
 # The tool to update the flash.bin in a NAND device is a program called kobs, which is used like this: 
 # $kobs-ng init -v --chip_0_device_path=/dev/mtd0 /tmp/flash.bin
