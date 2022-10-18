@@ -6,4 +6,8 @@
 
 set -o errexit
 
+<<<<<<< HEAD
 kobs-ng init -v --chip_0_device_path=/dev/mtd0 /usr/bin/nand-flash.bin
+=======
+kobs-ng init -v --chip_0_device_path=/dev/mtd0 /usr/bin/nand-flash.bin
+>>>>>>> ac6defce54752cc3aa44cf3531f1cc411c997f5a
