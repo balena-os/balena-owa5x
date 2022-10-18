@@ -1,1 +1,1 @@
-LED_FILE_owa5x = "/sys/devices/platform/leds/leds/ledsw0\:orange/brightness"
+LED_FILE_owa5x = "/sys/devices/platform/leds/leds/ledsw0:yellow/brightness"
