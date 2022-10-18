@@ -1,5 +1,1 @@
-<<<<<<< HEAD
 LED_FILE_owa5x = "/sys/devices/platform/leds/leds/ledsw0:yellow/brightness"
-=======
-LED_FILE_owa5x = "/sys/devices/platform/leds/leds/ledsw0:yellow/brightness"
->>>>>>> ac6defce54752cc3aa44cf3531f1cc411c997f5a

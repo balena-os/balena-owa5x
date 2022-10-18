@@ -1,0 +1,27 @@
+From ed4d1cac4d83ba0422fc5ceb182ce1f14543be5e Mon Sep 17 00:00:00 2001
+From: Alvaro Guzman <alvaro.guzman@owasys.com>
+Date: Wed, 14 Sep 2022 09:32:39 +0200
+Subject: [PATCH 3/4] balena uboot env is in eMMC/SD
+
+---
+ configs/imx8mp_owa5x_defconfig | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+diff --git a/configs/imx8mp_owa5x_defconfig b/configs/imx8mp_owa5x_defconfig
+index 53535312..424811c2 100644
+--- a/configs/imx8mp_owa5x_defconfig
++++ b/configs/imx8mp_owa5x_defconfig
+@@ -65,8 +65,8 @@ CONFIG_OF_CONTROL=y
+ CONFIG_DEFAULT_DEVICE_TREE="imx8mp-owa5x"
+ CONFIG_ENV_IS_IN_MMC=y
+ CONFIG_ENV_IS_IN_SPI_FLASH=n
+-CONFIG_ENV_IS_IN_NAND=y
+-CONFIG_ENV_IS_NOWHERE=y
++CONFIG_ENV_IS_IN_NAND=n
++CONFIG_ENV_IS_NOWHERE=n
+ CONFIG_ENV_SIZE=0x80000
+ CONFIG_ENV_OFFSET=0x200000
+ CONFIG_ENV_SECT_SIZE=0x40000
+-- 
+2.25.1
+

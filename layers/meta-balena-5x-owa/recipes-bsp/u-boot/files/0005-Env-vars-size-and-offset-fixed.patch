@@ -1,0 +1,38 @@
+From a978179d7d814bced522517678efde22dd23bfa1 Mon Sep 17 00:00:00 2001
+From: Alvaro Guzman <alvaro.guzman@owasys.com>
+Date: Mon, 17 Oct 2022 16:13:42 +0200
+Subject: [PATCH 5/5] Env vars size and offset fixed
+
+---
+ configs/imx8mp_owa5x_defconfig | 10 +++++-----
+ 1 file changed, 5 insertions(+), 5 deletions(-)
+
+diff --git a/configs/imx8mp_owa5x_defconfig b/configs/imx8mp_owa5x_defconfig
+index 424811c2..11b85404 100644
+--- a/configs/imx8mp_owa5x_defconfig
++++ b/configs/imx8mp_owa5x_defconfig
+@@ -65,16 +65,16 @@ CONFIG_OF_CONTROL=y
+ CONFIG_DEFAULT_DEVICE_TREE="imx8mp-owa5x"
+ CONFIG_ENV_IS_IN_MMC=y
+ CONFIG_ENV_IS_IN_SPI_FLASH=n
+-CONFIG_ENV_IS_IN_NAND=n
++CONFIG_ENV_IS_IN_NAND=y
+ CONFIG_ENV_IS_NOWHERE=n
+-CONFIG_ENV_SIZE=0x80000
+-CONFIG_ENV_OFFSET=0x200000
++CONFIG_ENV_SIZE=0x100000
++CONFIG_ENV_OFFSET=0x01000000
+ CONFIG_ENV_SECT_SIZE=0x40000
+ CONFIG_SYS_ENV_SECT_SIZE=0x40000
+ CONFIG_SYS_REDUNDAND_ENVIRONMENT=y
+ #CONFIG_ENV_ADDR_REDUND=0x01100000
+-CONFIG_ENV_OFFSET_REDUND=0x300000
+-CONFIG_ENV_SIZE_REDUND=0x80000
++CONFIG_ENV_OFFSET_REDUND=0x01100000
++CONFIG_ENV_SIZE_REDUND=0x100000
+ CONFIG_SYS_RELOC_GD_ENV_ADDR=y
+ #CONFIG_ENV_VARS_UBOOT_RUNTIME=y
+ CONFIG_CLK_COMPOSITE_CCF=y
+-- 
+2.25.1
+

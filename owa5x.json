@@ -8,16 +8,18 @@
 		"postProvisioning": [
 			"The device is performing a shutdown. Please wait until all LEDs are off.",
 			"Remove the balenaOS installation media.",
+			"Insert SD CARD. Power up the device",
 			"Remove and re-connect power to the board."
 		]
 	},
 	"instructions": [
-		"Write the OS file you downloaded to your USB key. We recommend using <a href=\"http://www.etcher.io/\">Etcher</a>.",
-		"Insert the freshly burnt USB key into the owa5x.",
+		"Write the OS file you downloaded to your SD card. We recommend using <a href=\"http://www.etcher.io/\">Etcher</a>.",
+		"Insert the freshly burnt SD card into the owa5x.",
 		"<strong role=\"alert\">Warning!</strong> This will also completely erase internal storage media, so please make a backup first.",
-		"Insert USB STICK. Device will automatically boot from USB",
+		"Insert SD CARD. Power up the device",
 		"The device is performing a shutdown. Please wait until all LEDs are off.",
 		"Remove the balenaOS installation media.",
+		"Insert SD CARD. Power up the device",
 		"Remove and re-connect power to the board."
 	],
 	"gettingStartedLink": {
@@ -28,10 +30,10 @@
 	"supportsBlink": true,
 	"yocto": {
 		"machine": "owa5x",
-		"image": "balena-image",
+		"image": "balena-image-flasher",
 		"fstype": "balenaos-img",
 		"version": "yocto-dunfell",
-		"deployArtifact": "owa5x.balenaos.img",
+		"deployArtifact": "balena-image-flasher-owa5x.balenaos-img",
 		"compressed": true
 	},
 	"options": [
