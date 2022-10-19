@@ -11,7 +11,7 @@ SRC_URI_remove = " file://resin-specific-env-integration-kconfig.patch"
 SRC_URI_append_owa5x = "    file://u-boot_owasys_to_balena.patch \
                             file://0003-balena-uboot-env-is-in-eMMC-SD.patch \
                             file://0004-Changed-Balena-boot-command-to-boot-from-internal-me.patch \
-                            file://0005-Env-vars-size-and-offset-fixed.patch \
+                            file://0005-Env-vars-hardcoded-to-be-stored-in-eMMC.patch \
 "
 
 do_configure[nostamp] = "1"

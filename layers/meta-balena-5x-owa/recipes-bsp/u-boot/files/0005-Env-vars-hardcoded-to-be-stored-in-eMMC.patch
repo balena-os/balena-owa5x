@@ -1,0 +1,49 @@
+From e076031fd21daa5a0e3714472c5ad9d3b35e0c55 Mon Sep 17 00:00:00 2001
+From: Alvaro Guzman <alvaro.guzman@owasys.com>
+Date: Wed, 19 Oct 2022 15:40:28 +0200
+Subject: [PATCH 5/5] Env vars hardcoded to be stored in eMMC
+
+---
+ arch/arm/mach-imx/imx8m/soc.c  | 3 +++
+ configs/imx8mp_owa5x_defconfig | 4 ++--
+ 2 files changed, 5 insertions(+), 2 deletions(-)
+
+diff --git a/arch/arm/mach-imx/imx8m/soc.c b/arch/arm/mach-imx/imx8m/soc.c
+index 840c5463..5412bc24 100644
+--- a/arch/arm/mach-imx/imx8m/soc.c
++++ b/arch/arm/mach-imx/imx8m/soc.c
+@@ -1348,6 +1348,9 @@ enum env_location env_get_location(enum env_operation op, int prio)
+ 	enum boot_device dev = get_boot_device();
+ 	enum env_location env_loc = ENVL_UNKNOWN;
+ 
++	/*PATCH: Balena Uboot needs to be forced to store env vars in eMMC*/
++	dev = MMC2_BOOT; 
++
+ 	if (prio)
+ 		return env_loc;
+ 
+diff --git a/configs/imx8mp_owa5x_defconfig b/configs/imx8mp_owa5x_defconfig
+index 424811c2..762f5343 100644
+--- a/configs/imx8mp_owa5x_defconfig
++++ b/configs/imx8mp_owa5x_defconfig
+@@ -35,7 +35,7 @@ CONFIG_SPL_I2C_SUPPORT=y
+ CONFIG_SPL_POWER_SUPPORT=y
+ CONFIG_NR_DRAM_BANKS=3
+ CONFIG_HUSH_PARSER=y
+-CONFIG_SYS_PROMPT="owa5x=>"
++CONFIG_SYS_PROMPT="owa5x_balena=>"
+ CONFIG_BOOTDELAY=0
+ CONFIG_CMD_EXPORTENV=y
+ CONFIG_CMD_IMPORTENV=y
+@@ -165,7 +165,7 @@ CONFIG_VIDEO_LCD_RAYDIUM_RM67191=y
+ CONFIG_VIDEO_ADV7535=y
+ CONFIG_SYS_WHITE_ON_BLACK=y
+ 
+-CONFIG_LOCALVERSION="-owa5x-Balena-1.0"
++CONFIG_LOCALVERSION="-owa5x-Balena-1.1"
+ # CONFIG_LOCALVERSION_AUTO is not set
+ #NAND CONFIGURATION
+ CONFIG_NAND_BOOT=y
+-- 
+2.25.1
+
