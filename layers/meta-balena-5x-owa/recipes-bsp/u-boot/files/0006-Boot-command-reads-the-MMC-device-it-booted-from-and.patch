@@ -1,0 +1,26 @@
+From 540dc46b61ab6efba6f48677d18ae27207d4a7ba Mon Sep 17 00:00:00 2001
+From: Alvaro Guzman <alvaro.guzman@owasys.com>
+Date: Wed, 26 Oct 2022 15:30:19 +0200
+Subject: [PATCH 2/2] Boot command reads the MMC device it booted from and
+ selects it
+
+---
+ include/configs/imx8mp_owa5x.h | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/include/configs/imx8mp_owa5x.h b/include/configs/imx8mp_owa5x.h
+index cdf35d8e93..8050ae8efc 100644
+--- a/include/configs/imx8mp_owa5x.h
++++ b/include/configs/imx8mp_owa5x.h
+@@ -200,7 +200,7 @@
+ 	"mmcautodetect=yes\0" \
+ 	"zip_addr=0x70480000\0" \
+ 	"mmcargs=setenv bootargs console=${console} root=${mmcroot} rootfstype=ext4\0" \
+-	"BOOT_CMD_BALENA=run mmcargs; fatload mmc 2:1 ${zip_addr} ${image}; fatload mmc 2:1 ${fdt_addr} ${fdt_file}; unzip ${zip_addr} ${loadaddr}; "\
++	"BOOT_CMD_BALENA=run mmcargs; fatload mmc ${mmcdev}:1 ${zip_addr} ${image}; fatload mmc ${mmcdev}:1 ${fdt_addr} ${fdt_file}; unzip ${zip_addr} ${loadaddr}; "\
+ 	"booti ${loadaddr} - ${fdt_addr};\0" \
+ 	"startmmcboot=echo Booting from mmc ...; " \
+ 		"run mmcargs; " \
+-- 
+2.25.1
+

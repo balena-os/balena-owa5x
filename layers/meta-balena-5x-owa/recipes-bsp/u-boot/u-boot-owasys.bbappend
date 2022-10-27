@@ -12,6 +12,7 @@ SRC_URI_append_owa5x = "    file://u-boot_owasys_to_balena.patch \
                             file://0003-balena-uboot-env-is-in-eMMC-SD.patch \
                             file://0004-Changed-Balena-boot-command-to-boot-from-internal-me.patch \
                             file://0005-Env-vars-hardcoded-to-be-stored-in-eMMC.patch \
+                            file://0006-Boot-command-reads-the-MMC-device-it-booted-from-and.patch \
 "
 
 do_configure[nostamp] = "1"
