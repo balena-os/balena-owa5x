@@ -44,7 +44,6 @@ IMAGE_INSTALL_append = " \
                         st32-firmware \
                         chatscripts \
                         issue-owa \
-                        fw-env-config \
 "
 
 deltask do_packagedata

@@ -14,6 +14,12 @@ SRC_URI_append_owa5x = "    file://u-boot_owasys_to_balena.patch \
                             file://0005-Env-vars-hardcoded-to-be-stored-in-eMMC.patch \
                             file://0006-Boot-command-reads-the-MMC-device-it-booted-from-and.patch \
 "
+SRC_URI += "file://fw_env.config"
 
 do_configure[nostamp] = "1"
 do_compile[nostamp] = "1"
+
+do_install_append () {
+  install -d ${D}${sysconfdir}
+  install -m 0644 ${WORKDIR}/fw_env.config ${D}${sysconfdir}/fw_env.config
+}
