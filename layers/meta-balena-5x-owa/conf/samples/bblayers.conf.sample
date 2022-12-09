@@ -10,14 +10,13 @@ BBLAYERS ?= " \
     ${TOPDIR}/../layers/poky/meta-poky \
     ${TOPDIR}/../layers/meta-openembedded/meta-oe \
     ${TOPDIR}/../layers/meta-openembedded/meta-python \
-    ${TOPDIR}/../layers/meta-rust \
     ${TOPDIR}/../layers/meta-freescale \
     ${TOPDIR}/../layers/meta-freescale-3rdparty \
     ${TOPDIR}/../layers/meta-freescale-distro \
     ${TOPDIR}/../layers/meta-openembedded/meta-networking \
     ${TOPDIR}/../layers/meta-openembedded/meta-filesystems \
     ${TOPDIR}/../layers/meta-balena/meta-balena-common \
-    ${TOPDIR}/../layers/meta-balena/meta-balena-dunfell \
+    ${TOPDIR}/../layers/meta-balena/meta-balena-kirkstone \
     ${TOPDIR}/../layers/meta-owasys \
     ${TOPDIR}/../layers/meta-balena-5x-owa \
     "

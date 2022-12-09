@@ -1,0 +1,52 @@
+From a3cf9ba08b61cd218427fa35d1367954ad592106 Mon Sep 17 00:00:00 2001
+From: Alvaro Guzman <alvaro.guzman@owasys.com>
+Date: Tue, 29 Nov 2022 16:01:19 +0100
+Subject: [PATCH 3/3] Added little changes in defconfig
+
+---
+ configs/imx8mp_owa5x_defconfig | 14 ++++++++------
+ 1 file changed, 8 insertions(+), 6 deletions(-)
+
+diff --git a/configs/imx8mp_owa5x_defconfig b/configs/imx8mp_owa5x_defconfig
+index 30043d2009..3ee3e5f9f6 100644
+--- a/configs/imx8mp_owa5x_defconfig
++++ b/configs/imx8mp_owa5x_defconfig
+@@ -35,10 +35,12 @@ CONFIG_SPL_I2C_SUPPORT=y
+ CONFIG_SPL_POWER_SUPPORT=y
+ CONFIG_NR_DRAM_BANKS=3
+ CONFIG_HUSH_PARSER=y
+-CONFIG_SYS_PROMPT="owa5x_balena=> "
++CONFIG_SYS_PROMPT="owa5x_balena=>"
+ CONFIG_BOOTDELAY=0
+-# CONFIG_CMD_EXPORTENV is not set
+-# CONFIG_CMD_IMPORTENV is not set
++CONFIG_CMD_EXPORTENV=y
++CONFIG_CMD_IMPORTENV=y
++CONFIG_CMD_PART=y
++CONFIG_CMD_FS_UUID=y
+ CONFIG_CMD_ERASEENV=y
+ CONFIG_CMD_CRC32 is not set
+ # CONFIG_BOOTM_NETBSD is not set
+@@ -63,8 +65,8 @@ CONFIG_OF_CONTROL=y
+ CONFIG_DEFAULT_DEVICE_TREE="imx8mp-owa5x"
+ CONFIG_ENV_IS_IN_MMC=y
+ CONFIG_ENV_IS_IN_SPI_FLASH=n
+-CONFIG_ENV_IS_IN_NAND=y
+-CONFIG_ENV_IS_NOWHERE=y
++CONFIG_ENV_IS_IN_NAND=n
++CONFIG_ENV_IS_NOWHERE=n
+ CONFIG_ENV_SIZE=0x80000
+ CONFIG_ENV_OFFSET=0x200000
+ CONFIG_ENV_SECT_SIZE=0x40000
+@@ -163,7 +165,7 @@ CONFIG_VIDEO_LCD_RAYDIUM_RM67191=y
+ CONFIG_VIDEO_ADV7535=y
+ CONFIG_SYS_WHITE_ON_BLACK=y
+ 
+-CONFIG_LOCALVERSION="owa5x-Balena-2.0"
++CONFIG_LOCALVERSION="-owa5x-Balena-2.0"
+ # CONFIG_LOCALVERSION_AUTO is not set
+ #NAND CONFIGURATION
+ CONFIG_NAND_BOOT=y
+-- 
+2.25.1
+

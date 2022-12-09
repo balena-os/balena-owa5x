@@ -66,6 +66,3 @@ HOSTTOOLS_remove = "cc"
 HOSTTOOLS += "docker iptables"
 
 ACCEPT_FSL_EULA = "1"
-
-#DL_DIR ?= "/home/owzagj/Documents/UTILIDADES/YOCTO_imx/download"
-#SSTATE_DIR ?= "/home/owzagj/Documents/UTILIDADES/YOCTO_imx/sstate-cache"

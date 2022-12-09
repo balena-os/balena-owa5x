@@ -1,0 +1,24 @@
+From 00d0788c54e9059f3885c1351c78aee5dc2ea486 Mon Sep 17 00:00:00 2001
+From: Alvaro Guzman <alvaro.guzman@owasys.com>
+Date: Wed, 30 Nov 2022 13:47:56 +0100
+Subject: [PATCH 6/6] Fixed defconfig
+
+---
+ configs/imx8mp_owa5x_defconfig | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/configs/imx8mp_owa5x_defconfig b/configs/imx8mp_owa5x_defconfig
+index c32123e115..a497716126 100644
+--- a/configs/imx8mp_owa5x_defconfig
++++ b/configs/imx8mp_owa5x_defconfig
+@@ -209,6 +209,6 @@ CONFIG_BLOBLIST_SIZE=0x400
+ CONFIG_BLOBLIST_ADDR=0x40000000
+ # CONFIG_HANDOFF is not set
+ 
+-CONFIG_SYS_MMC_ENV_DEV=2
++CONFIG_SYS_MMC_ENV_DEV=1
+ CONFIG_SYS_MEMTEST_START=0x60000000
+ CONFIG_SYS_MEMTEST_END=0xA0000000
+-- 
+2.25.1
+

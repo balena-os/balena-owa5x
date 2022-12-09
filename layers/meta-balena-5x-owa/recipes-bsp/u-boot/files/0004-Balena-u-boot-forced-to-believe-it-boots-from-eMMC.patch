@@ -1,0 +1,27 @@
+From 898a355cf71d3fb70a9183d77f57c804419c74d0 Mon Sep 17 00:00:00 2001
+From: Alvaro Guzman <alvaro.guzman@owasys.com>
+Date: Wed, 30 Nov 2022 10:25:59 +0100
+Subject: [PATCH 4/4] Balena u-boot forced to believe it boots from eMMC
+
+---
+ arch/arm/mach-imx/imx8m/soc.c | 4 ++++
+ 1 file changed, 4 insertions(+)
+
+diff --git a/arch/arm/mach-imx/imx8m/soc.c b/arch/arm/mach-imx/imx8m/soc.c
+index d87db279b9..91b8100f65 100644
+--- a/arch/arm/mach-imx/imx8m/soc.c
++++ b/arch/arm/mach-imx/imx8m/soc.c
+@@ -1624,6 +1624,10 @@ enum env_location env_get_location(enum env_operation op, int prio)
+ 	enum boot_device dev = get_boot_device();
+ 	enum env_location env_loc = ENVL_UNKNOWN;
+ 
++	/*PATCH: Balena Uboot needs to be forced to store env vars in eMMC*/
++	dev = MMC2_BOOT; 
++
++
+ 	if (prio)
+ 		return env_loc;
+ 
+-- 
+2.25.1
+

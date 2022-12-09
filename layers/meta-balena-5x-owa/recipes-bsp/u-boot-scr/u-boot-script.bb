@@ -3,13 +3,12 @@ LIC_FILES_CHKSUM = "file://${WORKDIR}/README;md5=2456088a0455a82ac9e16b007de97c0
 
 DEPENDS = "u-boot-mkimage-native imx-boot-owasys"
 
-FILESEXTRAPATHS_prepend := "${THISDIR}/${PN}:"
+FILESEXTRAPATHS:prepend := "${THISDIR}/${PN}:"
 SRC_URI = "file://boot.script \
-    file://README \
 "
 
 
-ALLOW_EMPTY_${PN} = "1"
+ALLOW_EMPTY:${PN} = "1"
 
 do_compile() {
 	BOOTLOADER=$(basename $(ls ${WORKDIR}/recipe-sysroot/boot/imx-boot-* | head -1))
@@ -27,6 +26,6 @@ do_deploy() {
 
 addtask do_deploy after do_compile before do_build
 
-RPROVIDES_${PN} += "u-boot-script"
+RPROVIDES:${PN} += "u-boot-script"
 
 PACKAGE_ARCH = "${MACHINE_ARCH}"

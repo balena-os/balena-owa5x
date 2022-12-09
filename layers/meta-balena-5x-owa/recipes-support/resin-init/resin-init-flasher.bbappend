@@ -1,5 +1,2 @@
-INTERNAL_DEVICE_KERNEL_owa5x = "mmcblk2"
-BOOTLOADER_FLASH_DEVICE_owa5x = "/dev/mtd0"
-BOOTLOADER_IMAGE = "${MACHINE}-flash.bin"
-BOOTLOADER_BLOCK_SIZE_OFFSET = "1024"
-BOOTLOADER_SKIP_OUTPUT_BLOCKS = "0"
+# Flash to internal eMMC - kernel enumerates this, when SD card is in, as mmcblk1
+INTERNAL_DEVICE_KERNEL:owa5x = "mmcblk2"

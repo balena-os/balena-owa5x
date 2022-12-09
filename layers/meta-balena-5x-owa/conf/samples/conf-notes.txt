@@ -8,7 +8,7 @@
  -------------------------------------------- 
 
 Resin specific images available:
-	balena-image
+	balena-image-flasher
 
-owa5x                                    : $ MACHINE=owa5x bitbake balena-image
+owa5x                                    : $ MACHINE=owa5x bitbake balena-image-flasher
 

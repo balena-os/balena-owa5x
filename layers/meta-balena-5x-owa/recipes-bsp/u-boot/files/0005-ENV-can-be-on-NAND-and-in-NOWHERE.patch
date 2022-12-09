@@ -1,0 +1,27 @@
+From d9f60b2f02e71e7f857566518a5f4aab6bffff55 Mon Sep 17 00:00:00 2001
+From: Alvaro Guzman <alvaro.guzman@owasys.com>
+Date: Wed, 30 Nov 2022 12:06:09 +0100
+Subject: [PATCH 5/5] ENV can be on NAND and in NOWHERE
+
+---
+ configs/imx8mp_owa5x_defconfig | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+diff --git a/configs/imx8mp_owa5x_defconfig b/configs/imx8mp_owa5x_defconfig
+index 3ee3e5f9f6..c32123e115 100644
+--- a/configs/imx8mp_owa5x_defconfig
++++ b/configs/imx8mp_owa5x_defconfig
+@@ -65,8 +65,8 @@ CONFIG_OF_CONTROL=y
+ CONFIG_DEFAULT_DEVICE_TREE="imx8mp-owa5x"
+ CONFIG_ENV_IS_IN_MMC=y
+ CONFIG_ENV_IS_IN_SPI_FLASH=n
+-CONFIG_ENV_IS_IN_NAND=n
+-CONFIG_ENV_IS_NOWHERE=n
++CONFIG_ENV_IS_IN_NAND=y
++CONFIG_ENV_IS_NOWHERE=y
+ CONFIG_ENV_SIZE=0x80000
+ CONFIG_ENV_OFFSET=0x200000
+ CONFIG_ENV_SECT_SIZE=0x40000
+-- 
+2.25.1
+

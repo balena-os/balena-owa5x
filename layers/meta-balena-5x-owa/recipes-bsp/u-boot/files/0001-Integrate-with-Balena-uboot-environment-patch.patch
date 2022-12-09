@@ -1,0 +1,132 @@
+From 2ca7d3f0d8a6344044d6dde31d2d46d6b46f877a Mon Sep 17 00:00:00 2001
+From: Alvaro Guzman <alvaro.guzman@owasys.com>
+Date: Tue, 22 Nov 2022 15:10:24 +0100
+Subject: [PATCH] Integrate with Balena uboot environment patch
+
+---
+ configs/imx8mp_owa5x_defconfig | 18 +++++++++---------
+ include/configs/imx8mp_owa5x.h | 25 +++++++++++++++----------
+ 2 files changed, 24 insertions(+), 19 deletions(-)
+
+diff --git a/configs/imx8mp_owa5x_defconfig b/configs/imx8mp_owa5x_defconfig
+index deb109a60a..0a24c33b4b 100644
+--- a/configs/imx8mp_owa5x_defconfig
++++ b/configs/imx8mp_owa5x_defconfig
+@@ -35,7 +35,7 @@ CONFIG_SPL_I2C_SUPPORT=y
+ CONFIG_SPL_POWER_SUPPORT=y
+ CONFIG_NR_DRAM_BANKS=3
+ CONFIG_HUSH_PARSER=y
+-CONFIG_SYS_PROMPT="u-boot=> "
++CONFIG_SYS_PROMPT="owa5x_balena=> "
+ CONFIG_BOOTDELAY=0
+ # CONFIG_CMD_EXPORTENV is not set
+ # CONFIG_CMD_IMPORTENV is not set
+@@ -62,17 +62,17 @@ CONFIG_CMD_LED=y
+ CONFIG_OF_CONTROL=y
+ CONFIG_DEFAULT_DEVICE_TREE="imx8mp-owa5x"
+ CONFIG_ENV_IS_IN_MMC=y
+-CONFIG_ENV_IS_IN_SPI_FLASH=y
+-CONFIG_ENV_IS_IN_NAND=y
+-CONFIG_ENV_IS_NOWHERE=y
+-CONFIG_ENV_SIZE=0x100000
+-CONFIG_ENV_OFFSET=0x01000000
++CONFIG_ENV_IS_IN_SPI_FLASH=n
++CONFIG_ENV_IS_IN_NAND=n
++CONFIG_ENV_IS_NOWHERE=n
++CONFIG_ENV_SIZE=0x80000
++CONFIG_ENV_OFFSET=0x200000
+ CONFIG_ENV_SECT_SIZE=0x40000
+ CONFIG_SYS_ENV_SECT_SIZE=0x40000
+ CONFIG_SYS_REDUNDAND_ENVIRONMENT=y
+ #CONFIG_ENV_ADDR_REDUND=0x01100000
+-CONFIG_ENV_OFFSET_REDUND=0x01100000
+-CONFIG_ENV_SIZE_REDUND=0x100000
++CONFIG_ENV_OFFSET_REDUND=0x300000
++CONFIG_ENV_SIZE_REDUND=0x80000
+ CONFIG_SYS_RELOC_GD_ENV_ADDR=y
+ #CONFIG_ENV_VARS_UBOOT_RUNTIME=y
+ CONFIG_CLK_COMPOSITE_CCF=y
+@@ -163,7 +163,7 @@ CONFIG_VIDEO_LCD_RAYDIUM_RM67191=y
+ CONFIG_VIDEO_ADV7535=y
+ CONFIG_SYS_WHITE_ON_BLACK=y
+ 
+-CONFIG_LOCALVERSION="-1.0.4"
++CONFIG_LOCALVERSION="owa5x-Balena-2.0"
+ # CONFIG_LOCALVERSION_AUTO is not set
+ #NAND CONFIGURATION
+ CONFIG_NAND_BOOT=y
+diff --git a/include/configs/imx8mp_owa5x.h b/include/configs/imx8mp_owa5x.h
+index d86b189e8c..4ca024ed22 100644
+--- a/include/configs/imx8mp_owa5x.h
++++ b/include/configs/imx8mp_owa5x.h
+@@ -101,7 +101,7 @@
+          "fi; " \
+       "fi;" \
+       "run nandboot;\0" \
+-	"bootcmd=run boot_owa5x\0" \
++	"bootcmd=run BOOT_CMD_BALENA\0" \
+    "update_owa5x=" \
+       "if test ${updatefw} != 1; then " \
+          "echo Nothing to update; " \
+@@ -196,9 +196,12 @@
+ 	"console=ttymxc0,115200 earlycon=ec_imx6q,0x30860000,115200\0" \
+ 	"mmcdev=2\0" \
+ 	"mmcpart=1\0" \
+-	"mmcroot=" CONFIG_MMCROOT " rootwait quiet rw mtdparts\0" \
++	"mmcroot=" CONFIG_MMCROOT " rootwait quiet rw\0" \
+ 	"mmcautodetect=yes\0" \
+-	"mmcargs=setenv bootargs ${jh_clk} console=${console} root=${mmcroot}\0 " \
++	"zip_addr=0x70480000\0" \
++	"mmcargs=setenv bootargs console=${console} root=${mmcroot} rootfstype=ext4\0" \
++	"BOOT_CMD_BALENA=run mmcargs; fatload mmc ${mmcdev}:1 ${zip_addr} ${image}; fatload mmc ${mmcdev}:1 ${fdt_addr} ${fdt_file}; unzip ${zip_addr} ${loadaddr}; "\
++	"booti ${loadaddr} - ${fdt_addr};\0" \
+ 	"startmmcboot=echo Booting from mmc ...; " \
+ 		"run mmcargs; " \
+ 		"if test ${boot_fit} = yes || test ${boot_fit} = try; then " \
+@@ -243,7 +246,7 @@
+ 	"loadbootscript=fatload mmc ${mmcdev}:${mmcpart} ${loadaddr} ${script};\0" \
+ 	"loadimage=fatload mmc ${mmcdev}:${mmcpart} ${loadaddr} ${image}\0" \
+ 	"loadfdt=fatload mmc ${mmcdev}:${mmcpart} ${fdt_addr} ${fdt_file}\0" \
+-	"image=Image\0" \
++	"image=Image.gz\0" \
+ 	"netargs=setenv bootargs ${jh_clk} console=${console} " \
+ 		"root=/dev/nfs " \
+ 		"ip=dhcp nfsroot=${serverip}:${nfsroot},v3,tcp\0" \
+@@ -354,7 +357,7 @@
+ #define CONFIG_ENV_SPI_MODE		CONFIG_SF_DEFAULT_MODE
+ #define CONFIG_ENV_SPI_MAX_HZ		CONFIG_SF_DEFAULT_SPEED
+ 
+-//#define CONFIG_SYS_MMC_ENV_DEV		2   /* USDHC2 */
++#define CONFIG_SYS_MMC_ENV_DEV		2   /* USDHC2 */
+ #define CONFIG_MMCROOT			"/dev/mmcblk1p2"  /* USDHC2 */
+ 
+ /* Size of malloc() pool */
+@@ -365,6 +368,8 @@
+ #define PHYS_SDRAM			0x40000000
+ #define PHYS_SDRAM_SIZE			0x80000000	/* 2 GB */
+ 
++/* Maximum decompressed kernel size 64MB*/
++#define CONFIG_SYS_BOOTM_LEN		SZ_64M /* Increase max gunzip size */
+ /*
+ #define PHYS_SDRAM_2			0xC0000000
+ #define PHYS_SDRAM_2_SIZE		0x80000000	*//* 2 GB */
+@@ -374,11 +379,11 @@
+ #else
+ //#define PHYS_SDRAM_2_SIZE		0xC0000000	/* 3 GB */
+ #endif
+-/*
+-//#define CONFIG_SYS_MEMTEST_START	0x60000000
+-//#define CONFIG_SYS_MEMTEST_END		(CONFIG_SYS_MEMTEST_START + \
+-//					(PHYS_SDRAM_SIZE >> 1))
+-*/
++
++#define CONFIG_SYS_MEMTEST_START	0x60000000
++#define CONFIG_SYS_MEMTEST_END		(CONFIG_SYS_MEMTEST_START + \
++					(PHYS_SDRAM_SIZE >> 1))
++
+ //#define CONFIG_MXC_UART_BASE		UART2_BASE_ADDR
+ #define CONFIG_MXC_UART_BASE		UART1_BASE_ADDR
+ 
+-- 
+2.25.1
+
