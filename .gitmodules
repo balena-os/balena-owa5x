@@ -19,15 +19,9 @@
 [submodule "layers/meta-openembedded"]
 	path = layers/meta-openembedded
 	url = https://github.com/openembedded/meta-openembedded
-[submodule "layers/meta-rust"]
-	path = layers/meta-rust
-	url = https://github.com/meta-rust/meta-rust
 [submodule "layers/poky"]
 	path = layers/poky
 	url = https://github.com/balena-os/poky
-[submodule "layers/balena-owa5x"]
-	path = layers/balena-owa5x
-	url = ssh://git@192.168.100.7:10022/cetus/sdk_tools/cetus_yocto/balena-owa5x.git
 [submodule "layers/meta-owasys"]
 	path = layers/meta-owasys
 	url = ssh://git@192.168.100.7:10022/cetus/sdk_tools/cetus_yocto/meta-owasys.git
