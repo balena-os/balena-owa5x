@@ -1,18 +1,16 @@
 IMAGE_FSTYPES:append = " balenaos-img "
 
 BALENA_BOOT_PARTITION_FILES = " \
-    imx8mp-owa5x.dtb:/imx8mp-owa5x.dtb \
-    ${MACHINE}-flash.bin:/${MACHINE}-flash.bin \
+     ${KERNEL_IMAGETYPE}${KERNEL_INITRAMFS}-${MACHINE}.bin:/Image.gz \
+     imx8mp-owa5x.dtb:/imx8mp-owa5x.dtb \
+     ${MACHINE}-flash.bin:/${MACHINE}-flash.bin \
 "
 IMAGE_CMD:balenaos-img:append () {
     dd if=${DEPLOY_DIR_IMAGE}/${MACHINE}-flash.bin of=${BALENA_RAW_IMG} conv=notrunc seek=32 bs=1K
 }
 
 BALENA_BOOT_SIZE = "50000"
-IMAGE_ROOTFS_SIZE = "319488"
-IMAGE_OVERHEAD_FACTOR = "1.0"
-IMAGE_ROOTFS_EXTRA_SPACE = "53248"
-IMAGE_ROOTFS_MAXSIZE = "372736" 
+IMAGE_ROOTFS_SIZE = "409600"
 
 IMAGE_INSTALL:remove = "kernel-image"
 
