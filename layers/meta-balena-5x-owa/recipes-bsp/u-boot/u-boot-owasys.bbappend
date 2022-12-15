@@ -14,7 +14,6 @@ SRC_URI:append:owa5x = " file://0001-Integrate-with-Balena-uboot-environment-pat
                          file://0004-Balena-u-boot-forced-to-believe-it-boots-from-eMMC.patch \
                          file://0005-ENV-can-be-on-NAND-and-in-NOWHERE.patch \
                          file://0006-Fixed-defconfig.patch \
-                         file://0007-Kernel-loaded-from-resin_rootA-boot-folder.patch \
 "
 SRC_URI += "file://fw_env.config"
 
