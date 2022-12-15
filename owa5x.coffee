@@ -36,10 +36,10 @@ module.exports =
 
         yocto:
                 machine: 'owa5x'
-                image: 'balena-image'
+                image: 'balena-image-flasher'
                 fstype: 'balenaos-img'
                 version: 'yocto-kirkstone'
-                deployArtifact: 'balena-image-owa5x.balenaos-img'
+                deployArtifact: 'balena-image-flasher-owa5x.balenaos-img'
                 compressed: true
 
         options: [ networkOptions.group ]
