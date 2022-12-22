@@ -22,9 +22,9 @@
 [submodule "layers/poky"]
 	path = layers/poky
 	url = https://github.com/balena-os/poky
-[submodule "layers/meta-balena-5x-owa"]
-	path = layers/meta-balena-5x-owa
-	url = ssh://git@192.168.100.7:10022/cetus/sdk_tools/cetus_yocto/meta-balena-5x-owa.git
 [submodule "layers/meta-owasys"]
 	path = layers/meta-owasys
 	url = https://github.com/Owasys/meta-owasys.git
+[submodule "layers/meta-balena-5x-owa"]
+	path = layers/meta-balena-5x-owa
+	url = https://github.com/Owasys/meta-balena-5x-owa.git

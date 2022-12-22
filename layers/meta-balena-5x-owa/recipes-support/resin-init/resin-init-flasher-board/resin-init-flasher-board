@@ -1,9 +1,0 @@
-#!/bin/sh
-
-#
-# Initial flashing of u-boot
-#
-
-set -o errexit
-
-kobs-ng init -v --chip_0_device_path=/dev/mtd0 /usr/bin/nand-flash.bin
