@@ -1,0 +1,24 @@
+- commits:
+    - subject: "github: Remove all workflow files"
+      hash: 1ac3b1575d9b21ac1ca9543b193a88d27da0a50d
+      body: ""
+      footer:
+        Changelog-entry: "github: Remove all workflow files"
+        changelog-entry: "github: Remove all workflow files"
+        Signed-off-by: Alexandru Costache <alexandru@balena.io>
+        signed-off-by: Alexandru Costache <alexandru@balena.io>
+      author: Alexandru Costache
+      nested: []
+    - subject: Add renovate configuration
+      hash: dd178b46a1cb484e1456dbf81b195301031856f4
+      body: ""
+      footer:
+        Changelog-entry: Add renovate configuration
+        changelog-entry: Add renovate configuration
+        Signed-off-by: Alex Gonzalez <alexg@balena.io>
+        signed-off-by: Alex Gonzalez <alexg@balena.io>
+      author: Alex Gonzalez
+      nested: []
+  version: 2.107.5
+  title: ""
+  date: 2023-01-09T09:28:00.485Z
