@@ -1,4 +1,663 @@
 - commits:
+    - subject: Update contracts to cbc450a40296e716e50344b3d625fb9a9b6975f6
+      hash: 7dd28314664a25f37b42111a142ca4634cc458b5
+      body: Update contracts
+      footer:
+        Changelog-entry: Update contracts to cbc450a40296e716e50344b3d625fb9a9b6975f6
+        changelog-entry: Update contracts to cbc450a40296e716e50344b3d625fb9a9b6975f6
+      author: renovate[bot]
+      nested:
+        - commits:
+            - subject: "Forecr DSBOARD NX2 Xavier NX eMMC: Add community device-type"
+              hash: 9845bc4266923d6f66c118f14f976780a3b925a6
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alexandru Costache <alexandru@balena.io>
+                signed-off-by: Alexandru Costache <alexandru@balena.io>
+              author: Alexandru Costache
+          version: contracts-2.0.38
+          title: ""
+          date: 2023-01-07T16:16:43.024Z
+        - commits:
+            - subject: Add node v18.13.0 and v19.4.0
+              hash: 1275cdf7aa7f5a21aeac0edaca9c28906fbc957d
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Trong Nghia Nguyen <nghiant2710@gmail.com>
+                signed-off-by: Trong Nghia Nguyen <nghiant2710@gmail.com>
+              author: Trong Nghia Nguyen
+          version: contracts-2.0.37
+          title: ""
+          date: 2023-01-07T04:47:17.778Z
+        - commits:
+            - subject: Fix owa5x slug
+              hash: a310eafb4ebf50b4c91f40dca5ba0122e0949949
+              body: |
+                Only use lowercase in slug name
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Trong Nghia Nguyen <nghiant2710@gmail.com>
+                signed-off-by: Trong Nghia Nguyen <nghiant2710@gmail.com>
+              author: Trong Nghia Nguyen
+          version: contracts-2.0.36
+          title: ""
+          date: 2022-12-22T11:15:02.988Z
+        - commits:
+            - subject: "hw.device-type: Add Owasys owa5X device"
+              hash: d92fb422d14da698061c53422ae7bfb4fdd64b03
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alvaro Guzman <alvaro.guzman@owasys.com>
+                signed-off-by: Alvaro Guzman <alvaro.guzman@owasys.com>
+              author: Alvaro Guzman
+          version: contracts-2.0.35
+          title: ""
+          date: 2022-12-20T11:53:50.722Z
+        - commits:
+            - subject: "Flowzone: Allow external contributions"
+              hash: bb2226cc9e36d056d33c70cb3926ce58b9e47e28
+              body: |
+                Update the flowzone workflow to allow external PRs from forks
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Florin Sarbu <florin@balena.io>
+                signed-off-by: Florin Sarbu <florin@balena.io>
+              author: Florin Sarbu
+          version: contracts-2.0.34
+          title: ""
+          date: 2022-12-16T15:12:18.550Z
+        - commits:
+            - subject: "Flowzone: Use inherited secrets"
+              hash: 8d5f9d9f28de663b32b58999f076dd7932dbaa3b
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Florin Sarbu <florin@balena.io>
+                signed-off-by: Florin Sarbu <florin@balena.io>
+              author: Florin Sarbu
+          version: contracts-2.0.33
+          title: ""
+          date: 2022-12-16T14:46:36.924Z
+        - commits:
+            - subject: Add node v19.3.0 v16.19.0 and v14.21.2
+              hash: 6cd73b8776fbf8cddc36560e74ffcfeeac23cfd8
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Trong Nghia Nguyen <nghiant2710@gmail.com>
+                signed-off-by: Trong Nghia Nguyen <nghiant2710@gmail.com>
+              author: Trong Nghia Nguyen
+          version: contracts-2.0.32
+          title: ""
+          date: 2022-12-15T08:15:08.199Z
+        - commits:
+            - subject: Add partials for dotnet v7
+              hash: b6e275498276319e59b8210e5d62f8c86804919d
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Trong Nghia Nguyen <nghiant2710@gmail.com>
+                signed-off-by: Trong Nghia Nguyen <nghiant2710@gmail.com>
+              author: Trong Nghia Nguyen
+          version: contracts-2.0.31
+          title: ""
+          date: 2022-12-10T03:49:36.476Z
+        - commits:
+            - subject: Add support for Alpine Linux v3.17
+              hash: 245c201a06d03eb89210654d1d44f0f156ccb790
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Trong Nghia Nguyen <nghiant2710@gmail.com>
+                signed-off-by: Trong Nghia Nguyen <nghiant2710@gmail.com>
+              author: Trong Nghia Nguyen
+            - subject: Add dotnet v7, update v6.x and v3.x to latest versions
+              hash: 2e5771eb99ce3b032e4ba955b12a9bdd95d14408
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Trong Nghia Nguyen <nghiant2710@gmail.com>
+                signed-off-by: Trong Nghia Nguyen <nghiant2710@gmail.com>
+              author: Trong Nghia Nguyen
+            - subject: Add Python v3.11.1 v3.10.9 v3.9.16 v3.8.16 and v3.7.16
+              hash: b22e097bdf0e3b314f8d715c41bb4bbe1efa2570
+              body: |
+                Update pip to v22.3.1 and setuptools to v65.6.3
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Trong Nghia Nguyen <nghiant2710@gmail.com>
+                signed-off-by: Trong Nghia Nguyen <nghiant2710@gmail.com>
+              author: Trong Nghia Nguyen
+            - subject: Add Golang v1.19.4 and v1.18.9
+              hash: 01dc72fe1e17aa5d90b4dc65c03150379811665f
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Trong Nghia Nguyen <nghiant2710@gmail.com>
+                signed-off-by: Trong Nghia Nguyen <nghiant2710@gmail.com>
+              author: Trong Nghia Nguyen
+          version: contracts-2.0.30
+          title: ""
+          date: 2022-12-09T18:39:08.906Z
+        - commits:
+            - subject: Add node v19.2.0
+              hash: 98f7eff861b16af92930ac2f2ab995e85ba83897
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Trong Nghia Nguyen <nghiant2710@gmail.com>
+                signed-off-by: Trong Nghia Nguyen <nghiant2710@gmail.com>
+              author: Trong Nghia Nguyen
+          version: contracts-2.0.29
+          title: ""
+          date: 2022-11-30T06:43:18.144Z
+        - commits:
+            - subject: Add node v18.12.1
+              hash: ec1ce7e89c1882f531e394ebf7f815ae3f9af94f
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Trong Nghia Nguyen <nghiant2710@gmail.com>
+                signed-off-by: Trong Nghia Nguyen <nghiant2710@gmail.com>
+              author: Trong Nghia Nguyen
+          version: contracts-2.0.28
+          title: ""
+          date: 2022-11-09T07:37:26.681Z
+        - commits:
+            - subject: Add go v1.19.3 and v1.18.8
+              hash: 7c66a3e29c17db2ac969d4f26b35eba4284aca8d
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Trong Nghia Nguyen <nghiant2710@gmail.com>
+                signed-off-by: Trong Nghia Nguyen <nghiant2710@gmail.com>
+              author: Trong Nghia Nguyen
+            - subject: Add node v19.0.1 v16.18.1 and v14.21.1
+              hash: 731e93e6d60858850265f0619aa30ca35c897585
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Trong Nghia Nguyen <nghiant2710@gmail.com>
+                signed-off-by: Trong Nghia Nguyen <nghiant2710@gmail.com>
+              author: Trong Nghia Nguyen
+          version: contracts-2.0.27
+          title: ""
+          date: 2022-11-07T11:10:43.480Z
+        - commits:
+            - subject: Add Python v3.11.0 v3.10.8 v3.9.15 v3.8.15 and v3.7.15
+              hash: fbabb315a61ab269458acd051d91e848e2e81cc3
+              body: |
+                Update pip to v22.3 and setuptools to v65.5.0.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Trong Nghia Nguyen <nghiant2710@gmail.com>
+                signed-off-by: Trong Nghia Nguyen <nghiant2710@gmail.com>
+              author: Trong Nghia Nguyen
+          version: contracts-2.0.26
+          title: ""
+          date: 2022-10-31T01:49:50.638Z
+        - commits:
+            - subject: Fix incorrect partials in device type contracts
+              hash: 23b23bf963943277e5d5c02bc78d2fb52b4ba7fd
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Micah Halter <micah@balena.io>
+                signed-off-by: Micah Halter <micah@balena.io>
+              author: Micah Halter
+          version: contracts-2.0.25
+          title: ""
+          date: 2022-10-27T16:05:36.897Z
+        - commits:
+            - subject: Add node v18.12.0
+              hash: 76cc4e57fb052486256f3b8f2c2b0239b11c2856
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Trong Nghia Nguyen <nghiant2710@gmail.com>
+                signed-off-by: Trong Nghia Nguyen <nghiant2710@gmail.com>
+              author: Trong Nghia Nguyen
+          version: contracts-2.0.24
+          title: ""
+          date: 2022-10-27T11:18:14.564Z
+        - commits:
+            - subject: "sw.os+hw.device-type: Add distro-config.tpl for
+                jetson-agx-orin-devkit"
+              hash: 76dfd72bece570ec8fdf96006135603d2e81b699
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alexandru Costache <alexandru@balena.io>
+                signed-off-by: Alexandru Costache <alexandru@balena.io>
+              author: Alexandru Costache
+          version: contracts-2.0.23
+          title: ""
+          date: 2022-10-25T15:58:44.499Z
+        - commits:
+            - subject: "hw+device-type: Add jetson-agx-orin-devkit device type"
+              hash: 9b5a7433a5965ed3152a63b9cab756e9cc68c015
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alexandru Costache <alexandru@balena.io>
+                signed-off-by: Alexandru Costache <alexandru@balena.io>
+              author: Alexandru Costache
+          version: contracts-2.0.22
+          title: ""
+          date: 2022-10-24T14:57:49.013Z
+        - commits:
+            - subject: Add node v19.0.0
+              hash: 2b5239255d31f2d33c808a6149064f1861b8a07f
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Trong Nghia Nguyen <nghiant2710@gmail.com>
+                signed-off-by: Trong Nghia Nguyen <nghiant2710@gmail.com>
+              author: Trong Nghia Nguyen
+          version: contracts-2.0.21
+          title: ""
+          date: 2022-10-20T12:03:45.573Z
+        - commits:
+            - subject: Add Golang v1.19.2 and v1.18.7
+              hash: 1e430f1bbf3deb491540dca04057452f01cfbcfb
+              body: |
+                Drop v1.17.x
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Trong Nghia Nguyen <nghiant2710@gmail.com>
+                signed-off-by: Trong Nghia Nguyen <nghiant2710@gmail.com>
+              author: Trong Nghia Nguyen
+            - subject: Add node v18.11.0 and v16.18.0
+              hash: 6a6274f5e56535ff82d84bd7fad788b64ae96289
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Trong Nghia Nguyen <nghiant2710@gmail.com>
+                signed-off-by: Trong Nghia Nguyen <nghiant2710@gmail.com>
+              author: Trong Nghia Nguyen
+          version: contracts-2.0.20
+          title: ""
+          date: 2022-10-14T09:22:14.221Z
+        - commits:
+            - subject: Update dotnet 6.0 and 3.1 to latest version
+              hash: e6e9c6d41b73dbbf15ea777d7fb54761389c16d8
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Trong Nghia Nguyen <nghiant2710@gmail.com>
+                signed-off-by: Trong Nghia Nguyen <nghiant2710@gmail.com>
+              author: Trong Nghia Nguyen
+            - subject: Add Python v3.10.7 v3.9.14 v3.8.14 and v3.7.14
+              hash: 238cdd69f9e48dd1b8192ec90dc9bca37a97f2a6
+              body: |
+                Update pip to v22.2.2
+                Update setuptools to v65.4.1
+                Update dbus-python to v1.3.2
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Trong Nghia Nguyen <nghiant2710@gmail.com>
+                signed-off-by: Trong Nghia Nguyen <nghiant2710@gmail.com>
+              author: Trong Nghia Nguyen
+          version: contracts-2.0.19
+          title: ""
+          date: 2022-10-05T09:13:06.785Z
+        - commits:
+            - subject: Switch from balenaCI to flowzone
+              hash: 9e06ba17acf1c3333c6c2ef7f0ba6a7b7bf088f9
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Trong Nghia Nguyen <nghiant2710@gmail.com>
+                signed-off-by: Trong Nghia Nguyen <nghiant2710@gmail.com>
+              author: Trong Nghia Nguyen
+          version: contracts-2.0.18
+          title: ""
+          date: 2022-10-05T09:07:08.310Z
+        - commits:
+            - subject: Add node v18.9.1, v16.17.1 and v14.20.1
+              hash: 3d17a04da87495bc26f6aaabb4e90baaa8f0a349
+              body: ""
+              footer:
+                change-type: patch
+                Signed-off-by: Trong Nghia Nguyen <nghiant2710@gmail.com>
+                signed-off-by: Trong Nghia Nguyen <nghiant2710@gmail.com>
+              author: Trong Nghia Nguyen
+            - subject: Add Golang v1.19.1 and v1.18.6
+              hash: 1f985fb82514dbeb8c9cddaa66efc8eb31ab9a30
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Trong Nghia Nguyen <nghiant2710@gmail.com>
+                signed-off-by: Trong Nghia Nguyen <nghiant2710@gmail.com>
+              author: Trong Nghia Nguyen
+          version: contracts-2.0.17
+          title: "'Few base images updates'"
+          date: 2022-09-27T20:03:39.091Z
+        - commits:
+            - subject: "hw.device-type: Remove led for RockPro64"
+              hash: 4b807a312743b4896c80fb865b2dbe3c7d303b43
+              body: |
+                This DT does not set a led in the device
+                repository, let's remove this option
+                from here for testbot.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alexandru Costache <alexandru@balena.io>
+                signed-off-by: Alexandru Costache <alexandru@balena.io>
+              author: Alexandru Costache
+          version: contracts-2.0.16
+          title: "'hw.device-type: Remove led for RockPro64'"
+          date: 2022-09-21T07:48:51.253Z
+        - commits:
+            - subject: "hw.device-type: Set LED to false for rockpi-4b"
+              hash: a3ba8781439427390d2dbd21d01b66cc6f33c027
+              body: |
+                LED is not supported for this DT in the device
+                repository, let's set it to false here so that
+                the tests are aware of this being unsupported.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alexandru Costache <alexandru@balena.io>
+                signed-off-by: Alexandru Costache <alexandru@balena.io>
+              author: Alexandru Costache
+          version: contracts-2.0.15
+          title: "'hw.device-type: Set LED to false for rockpi-4b'"
+          date: 2022-09-14T14:17:49.155Z
+        - commits:
+            - subject: Add node v18.8.0
+              hash: 22cc7c47e7582fa9ecf05d0b607b0e8619b5ac4e
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Trong Nghia Nguyen <nghiant2710@gmail.com>
+                signed-off-by: Trong Nghia Nguyen <nghiant2710@gmail.com>
+              author: Trong Nghia Nguyen
+          version: contracts-2.0.14
+          title: "'Add node v18.8.0'"
+          date: 2022-09-06T04:10:31.763Z
+        - commits:
+            - subject: "imx8mm-var-som: Add device type"
+              hash: a26ca290387c3c250b59d1b49df45c8a9ea9a89a
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alexandru Costache <alexandru@balena.io>
+                signed-off-by: Alexandru Costache <alexandru@balena.io>
+              author: Alexandru Costache
+          version: contracts-2.0.13
+          title: "'imx8mm-var-som: Add imx8mm-var-som devkit device type'"
+          date: 2022-08-26T11:11:21.899Z
+        - commits:
+            - subject: Add golang v1.19 and v1.18.5
+              hash: 8894fddc2adcac1fb33ed221af5e31133b743f4c
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Trong Nghia Nguyen <nghiant2710@gmail.com>
+                signed-off-by: Trong Nghia Nguyen <nghiant2710@gmail.com>
+              author: Trong Nghia Nguyen
+            - subject: Add node v16.17.0
+              hash: 37bcbeb9968c3f92a12b303523cccb15ee3b315a
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Trong Nghia Nguyen <nghiant2710@gmail.com>
+                signed-off-by: Trong Nghia Nguyen <nghiant2710@gmail.com>
+              author: Trong Nghia Nguyen
+          version: contracts-2.0.12
+          title: "'Few base images updates'"
+          date: 2022-08-19T06:01:15.871Z
+        - commits:
+            - subject: "generic-amd64: update logo to be vendor agnostic"
+              hash: 77be9ac931237432f35a993cfe30395c04f4c27e
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Joseph Kogut <joseph@balena.io>
+                signed-off-by: Joseph Kogut <joseph@balena.io>
+              author: Joseph Kogut
+          version: contracts-2.0.11
+          title: "'generic-amd64: update logo to be vendor agnostic'"
+          date: 2022-08-10T23:53:37.506Z
+        - commits:
+            - subject: "generic-amd64: disable private"
+              hash: fecb953bc4ea8162f476fb0f498febd9ce332813
+              body: |
+                This device type should be public
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Joseph Kogut <joseph@balena.io>
+                signed-off-by: Joseph Kogut <joseph@balena.io>
+              author: Joseph Kogut
+          version: contracts-2.0.10
+          title: "'generic-amd64: disable private'"
+          date: 2022-08-10T23:34:11.931Z
+        - commits:
+            - subject: "generic-amd64: match genericx86-64-ext connectivity"
+              hash: ed449edbd6504f97e94f11f1f97075582cf27e7b
+              body: >
+                Disable bluetooth/wifi in generic-amd64 to match genericx86-64-ext.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Joseph Kogut <joseph@balena.io>
+                signed-off-by: Joseph Kogut <joseph@balena.io>
+              author: Joseph Kogut
+            - subject: "generic-amd64: update name to include GPT qualifier"
+              hash: ab8af4bff6ccff7d650c794ec8dc3e31be6f1671
+              body: >
+                Update the long name for generic-amd64 to include the MBR qualifier,
+
+                matching the device type coffeescript file.
+
+
+                https://github.com/balena-os/balena-generic/pull/122
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Joseph Kogut <joseph@balena.io>
+                signed-off-by: Joseph Kogut <joseph@balena.io>
+              author: Joseph Kogut
+            - subject: "genericx86-64-ext: update name to include MBR qualifier"
+              hash: d511fa372a606ddbc1814b35d109c4cc0aef57e2
+              body: >
+                Update the long name for genericx86-64-ext to include the MBR qualifier,
+
+                matching the device type coffeescript file.
+
+
+                Related: https://github.com/balena-os/balena-intel/pull/534
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Joseph Kogut <joseph@balena.io>
+                signed-off-by: Joseph Kogut <joseph@balena.io>
+              author: Joseph Kogut
+          version: contracts-2.0.9
+          title: "'x86-64 device types rename'"
+          date: 2022-08-04T15:36:26.752Z
+        - commits:
+            - subject: Update dotnet contract to latest v6.x and v3.x
+              hash: 8723082c3e626e277d24a6ed4e8667fc2324377a
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Trong Nghia Nguyen <nghiant2710@gmail.com>
+                signed-off-by: Trong Nghia Nguyen <nghiant2710@gmail.com>
+              author: Trong Nghia Nguyen
+            - subject: Add node v18.7.0
+              hash: 71c4516bc9af8b65fae9f9f25ceca6e3f61eddc0
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Trong Nghia Nguyen <nghiant2710@gmail.com>
+                signed-off-by: Trong Nghia Nguyen <nghiant2710@gmail.com>
+              author: Trong Nghia Nguyen
+          version: contracts-2.0.8
+          title: "'Few base images updates'"
+          date: 2022-08-03T00:13:19.196Z
+        - commits:
+            - subject: "hw.device-type: fix tdpzu9 device name"
+              hash: acb15b0bc5d545447881d327977d7901e88a8dea
+              body: |
+                Remove "V1R2" version from Topic Device Name
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Francois Loubser <francois.loubser@topic.nl>
+                signed-off-by: Francois Loubser <francois.loubser@topic.nl>
+              author: Francois
+          version: contracts-2.0.7
+          title: "'hw.device-type: fix tdpzu9 device name'"
+          date: 2022-07-19T11:11:57.633Z
+        - commits:
+            - subject: "hw.device-type: Add correct tdpzu9 board"
+              hash: 854890e2c4516145bd8e92e9d2f8f8066cb364a5
+              body: |
+                There was a mismatch in between the dir name
+                and the actual slug name.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Florin Sarbu <florin@balena.io>
+                signed-off-by: Florin Sarbu <florin@balena.io>
+              author: Florin Sarbu
+          version: contracts-2.0.6
+          title: "'hw.device-type: Add correct tdpzu9 board'"
+          date: 2022-07-17T12:40:20.750Z
+        - commits:
+            - subject: Add node v18.6.0
+              hash: 9c2c0aeb2570a4c34e02d118c82d0ab548c01832
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Trong Nghia Nguyen <nghiant2710@gmail.com>
+                signed-off-by: Trong Nghia Nguyen <nghiant2710@gmail.com>
+              author: Trong Nghia Nguyen
+            - subject: Add golang v1.8.4 and v1.17.12
+              hash: ba582ac955d9f8c50634556860289ee1473770fd
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Trong Nghia Nguyen <nghiant2710@gmail.com>
+                signed-off-by: Trong Nghia Nguyen <nghiant2710@gmail.com>
+              author: Trong Nghia Nguyen
+            - subject: Add node v18.5.0 v16.16.0 and v14.20.0
+              hash: 036940834afc4231e89caffe4ea94dbfc2f665d2
+              body: |
+                Drop v17.x series
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Trong Nghia Nguyen <nghiant2710@gmail.com>
+                signed-off-by: Trong Nghia Nguyen <nghiant2710@gmail.com>
+              author: Trong Nghia Nguyen
+            - subject: Remove Debian Stretch as it is EOL
+              hash: 623e9032a3e81cf42d11736e7eed3ed54a24ebbc
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Trong Nghia Nguyen <nghiant2710@gmail.com>
+                signed-off-by: Trong Nghia Nguyen <nghiant2710@gmail.com>
+              author: Trong Nghia Nguyen
+          version: contracts-2.0.5
+          title: "'Few base images updates'"
+          date: 2022-07-14T10:50:25.683Z
+        - commits:
+            - subject: Add libffi3.4 linked python binaries
+              hash: 29fc985046aa9aeca97be260d09e026ad1319da1
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Trong Nghia Nguyen <nghiant2710@gmail.com>
+                signed-off-by: Trong Nghia Nguyen <nghiant2710@gmail.com>
+              author: Trong Nghia Nguyen
+          version: contracts-2.0.4
+          title: "'Add libffi3.4 linked python binaries'"
+          date: 2022-06-21T18:55:56.538Z
+        - commits:
+            - subject: Add Python v3.10.5 and v3.9.13
+              hash: 971223d30b9bf7391ffe57b36182c4857bf4c3aa
+              body: >
+                Update checksum for v3.8.13 and v3.7.13 since they were rebuilt to add
+                tkinter modules
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Trong Nghia Nguyen <nghiant2710@gmail.com>
+                signed-off-by: Trong Nghia Nguyen <nghiant2710@gmail.com>
+              author: Trong Nghia Nguyen
+            - subject: Add support for Alpine Linux 3.16
+              hash: 49617527cd147d2013158786ee22f8489340143c
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Trong Nghia Nguyen <nghiant2710@gmail.com>
+                signed-off-by: Trong Nghia Nguyen <nghiant2710@gmail.com>
+              author: Trong Nghia Nguyen
+            - subject: Add support for Ubuntu Jammy and Kinetic
+              hash: 143ad01883d861aba4f6359a4386634eb9592684
+              body: |
+                Drop support for Ubuntu Hirsute
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Trong Nghia Nguyen <nghiant2710@gmail.com>
+                signed-off-by: Trong Nghia Nguyen <nghiant2710@gmail.com>
+              author: Trong Nghia Nguyen
+          version: contracts-2.0.3
+          title: "'Few base images updates'"
+          date: 2022-06-13T20:38:36.573Z
+  version: 2.107.5+rev1
+  title: ""
+  date: 2023-01-09T13:35:17.308Z
+- commits:
     - subject: Update balena-yocto-scripts to 56bb055d91481023a6b6cff92d61ebfffa884139
       hash: 2ded4289841a5bf19f11be7b8690a13470fed35b
       body: Update balena-yocto-scripts
