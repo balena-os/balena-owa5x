@@ -1,4 +1,22 @@
 - commits:
+    - subject: NAND bootloader must show no traces
+      hash: daf71ae87e6da234d46a3ef83cb9b4323fdd63ab
+      body: >
+        As this bootloader is intended only to overcome the problem of booting
+        from eMMC no traces must be shown.
+
+        This is fixed with the new binary.
+      footer:
+        Changelog-entry: NAND bootloader must show no traces
+        changelog-entry: NAND bootloader must show no traces
+        Signed-off-by: Alvaro Guzman <alvaro.guzman@owasys.com
+        signed-off-by: Alvaro Guzman <alvaro.guzman@owasys.com
+      author: Alvaro Guzman
+      nested: []
+  version: 2.108.19+rev1
+  title: ""
+  date: 2023-01-11T11:02:36.696Z
+- commits:
     - subject: Update layers/meta-balena to 707ed18ca071fb7d7d557e0774f9f479323892af
       hash: 93f33f81e2c67af282bdd0feed4cd4194488a802
       body: Update layers/meta-balena

@@ -1,6 +1,11 @@
 # v2.107.5
 ## (2023-01-09)
 
+# v2.108.19+rev1
+## (2023-01-11)
+
+* NAND bootloader must show no traces [Alvaro Guzman]
+
 # v2.108.19
 ## (2023-01-10)
 
