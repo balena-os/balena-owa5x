@@ -1,4 +1,20 @@
 - commits:
+    - subject: Add ESR workflow
+      hash: fbe99dbc18a1645e2aeaaab821c38844d2f9a50c
+      body: |
+        This workflow runs every quarter and creates an ESR release for this
+        device type.
+      footer:
+        Changelog-entry: Add ESR workflow
+        changelog-entry: Add ESR workflow
+        Signed-off-by: Alex Gonzalez <alexg@balena.io>
+        signed-off-by: Alex Gonzalez <alexg@balena.io>
+      author: Alex Gonzalez
+      nested: []
+  version: 2.108.19+rev2
+  title: ""
+  date: 2023-01-12T12:25:09.078Z
+- commits:
     - subject: NAND bootloader must show no traces
       hash: daf71ae87e6da234d46a3ef83cb9b4323fdd63ab
       body: >
