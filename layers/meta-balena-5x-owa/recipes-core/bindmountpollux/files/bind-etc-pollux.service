@@ -1,0 +1,16 @@
+[Unit]
+Description=Bind mount for /etc/pollux
+DefaultDependencies=no
+Requires=resin-state.service resin-state-reset.service var-volatile-lib.service systemd-tmpfiles-setup.service
+After=resin-state.service resin-state-reset.service var-volatile-lib.service systemd-tmpfiles-setup.service
+Before=umount.target
+Conflicts=umount.target
+
+[Service]
+Type=oneshot
+RemainAfterExit=Yes
+ExecStart=/usr/bin/bindmount_pollux.sh
+ExecStop=/usr/bin/bindmount --target /etc/pollux --bind-root /mnt/state/root-overlay --command unmount
+
+[Install]
+WantedBy=multi-user.target

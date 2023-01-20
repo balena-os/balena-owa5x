@@ -1,0 +1,7 @@
+{
+    "name": "pmsrv",
+    "reset_lines": 20,
+    "set_hostname": 1,
+    "set_default": 1,
+    "set_time": 0
+}

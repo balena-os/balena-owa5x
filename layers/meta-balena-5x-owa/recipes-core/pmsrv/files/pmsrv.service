@@ -1,0 +1,10 @@
+[Unit]
+Description=pmsrv service
+DefaultDependencies=no
+
+[Service]
+ExecStart=/usr/bin/pmsrv
+Restart=always
+
+[Install]
+WantedBy=switchwifi.service

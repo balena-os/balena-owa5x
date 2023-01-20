@@ -45,6 +45,13 @@ IMAGE_INSTALL:append = " \
                         st32-firmware \
                         chatscripts \
                         issue-owa \
+                        switchwifi \
+                        switchgsm \
+                        redis \
+                        hiredis \
+                        pollux-libs \
+                        pollux-gps \
+                        bindmountpollux \
 "
 
 deltask do_packagedata
