@@ -1,0 +1,18 @@
+[Unit]
+Description=Systemd services used for powering up GSM module on boot using Owasys tools.
+Before=NetworkManager.service
+After=pmsrv.service
+Wants=pmsrv.service
+
+[Service]
+Type=oneshot
+RestartSec=10
+Restart=on-failure
+StartLimitBurst= 2
+ExecStart=/usr/bin/Switch_GSM 1
+StandardOutput=journal
+
+[Install]
+WantedBy=multi-user.target
+RequiredBy=ModemManager.service
+
