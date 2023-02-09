@@ -1,3 +1,8 @@
+# Initial flashing of u-boot
+#
+
+set -o errexit
+
 #!/bin/sh
 
 #
@@ -7,3 +12,30 @@
 set -o errexit
 
 kobs-ng init -v --chip_0_device_path=/dev/mtd0 /usr/bin/nand-flash.bin
+
+# Flashing process ended, this is indicated by a LED blinking pattern
+for l_var0 in {1..10}
+    do
+        echo 1 >  /sys/class/leds/ledsw0\:yellow/brightness
+        echo 1 >  /sys/class/leds/ledsw1:green/brightness
+        echo 1 >  /sys/class/leds/ledsw2:red/brightness
+        echo 1 >  /sys/class/leds/ppsgps:orange/brightness
+        sleep 0.5
+        echo 0 >  /sys/class/leds/ledsw0\:yellow/brightness
+        echo 0 >  /sys/class/leds/ledsw1:green/brightness
+        echo 0 >  /sys/class/leds/ledsw2:red/brightness
+        echo 0 >  /sys/class/leds/ppsgps:orange/brightness
+        sleep 0.5
+done
+
+# Finish disk I/O writes 
+sync
+
+#Device ready to be turned off, marked by Green led on. 
+echo 1 >  /sys/class/leds/ledsw1:green/brightness
+echo "BalenaOS has been flashed correctly:
+
+        1. Turn off the device.
+        2. Remove the SD card.
+        3. Turn on the device to test the new image.
+"

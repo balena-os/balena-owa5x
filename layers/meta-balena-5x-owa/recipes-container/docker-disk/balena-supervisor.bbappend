@@ -1,1 +1,1 @@
-LED_FILE:owa5x = "/sys/class/leds/ledsw0\:yellow/brightness"
+LED_FILE:owa5x = "/sys/class/leds/ledsw2:red/brightness"

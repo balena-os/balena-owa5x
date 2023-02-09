@@ -6,15 +6,10 @@ inherit resin-u-boot
 FILESEXTRAPATHS:prepend := "${THISDIR}/files:"
 
 # resin-u-boot class patch is rebased
-SRC_URI:remove = " file://resin-specific-env-integration-kconfig.patch"
+SRC_URI:remove = " file://resin-specific-env-integration-kconfig.patch "
 
-SRC_URI:append:owa5x = " file://0001-Integrate-with-Balena-uboot-environment-patch.patch \
-                         file://0002-Added-configs-to-load-uboot-from-NAND.patch \
-                         file://0003-Added-little-changes-in-defconfig.patch \
-                         file://0004-Balena-u-boot-forced-to-believe-it-boots-from-eMMC.patch \
-                         file://0005-ENV-can-be-on-NAND-and-in-NOWHERE.patch \
-                         file://0006-Fixed-defconfig.patch \
-"
+SRC_URI:append:owa5x = " file://Balena-integration-u-boot-env-configs.patch "
+
 SRC_URI += "file://fw_env.config"
 
 do_configure[nostamp] = "1"

@@ -38,6 +38,7 @@ IMAGE_INSTALL:append = " \
                         linux-firmware-owasys \
                         wpa-supplicant \
                         udev-rules-owasys \
+                        system-maintenance \
                         system-maintenance-service \
                         rtc-tools \
                         quectel-cm \
@@ -45,13 +46,9 @@ IMAGE_INSTALL:append = " \
                         st32-firmware \
                         chatscripts \
                         issue-owa \
-                        switchwifi \
-                        switchgsm \
                         redis \
                         hiredis \
                         pollux-libs \
-                        pollux-gps \
-                        bindmountpollux \
 "
 
 deltask do_packagedata

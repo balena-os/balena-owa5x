@@ -1,0 +1,9 @@
+[Unit]
+Description=Sytem maintenance service
+After=pmsrv.service
+
+[Service]
+ExecStart=/usr/bin/system_maintenance.sh
+
+[Install]
+WantedBy=multi-user.target
