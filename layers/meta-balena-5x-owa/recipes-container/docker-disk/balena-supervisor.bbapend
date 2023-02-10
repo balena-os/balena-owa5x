@@ -1,1 +1,0 @@
-LED_FILE:owa5x = "/sys/devices/platform/leds/leds/ledsw0:yellow/brightness"
