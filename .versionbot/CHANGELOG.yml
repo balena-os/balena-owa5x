@@ -1,4 +1,21 @@
 - commits:
+    - subject: Agreed changes in discussion PR22.
+      hash: f9b4161410a1e2bcf5e321ebe8928da49b3b0929
+      body: |
+        After discussion through PR 22: pollux, switchwifi, switchgsm,
+        system_mainentance and pmsrv has been removed from the PR in order
+        to split modifications and continue progressing with the agreed changes.
+      footer:
+        Changelog-entry: Agreed changes in discussion PR22.
+        changelog-entry: Agreed changes in discussion PR22.
+        Signed-off-by: Alvaro Guzman <alvaro.guzman@owasys.com>
+        signed-off-by: Alvaro Guzman <alvaro.guzman@owasys.com>
+      author: Alvaro Guzman
+      nested: []
+  version: 2.111.1+rev1
+  title: ""
+  date: 2023-02-13T14:21:20.962Z
+- commits:
     - subject: Update layers/meta-balena to ad77fa3dacfa32044deb80c2266e3c2d8e1e13dd
       hash: 406333fba3f4e03b1ecb4d66a5b71e4fef7aeed8
       body: Update layers/meta-balena

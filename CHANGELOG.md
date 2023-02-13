@@ -1,6 +1,11 @@
 # v2.107.5
 ## (2023-01-09)
 
+# v2.111.1+rev1
+## (2023-02-13)
+
+* Agreed changes in discussion PR22. [Alvaro Guzman]
+
 # v2.111.1
 ## (2023-02-13)
 
