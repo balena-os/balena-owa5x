@@ -1,0 +1,380 @@
+diff --git a/arch/arm/mach-imx/imx8m/soc.c b/arch/arm/mach-imx/imx8m/soc.c
+index d87db279b9..91b8100f65 100644
+--- a/arch/arm/mach-imx/imx8m/soc.c
++++ b/arch/arm/mach-imx/imx8m/soc.c
+@@ -1624,6 +1624,10 @@ enum env_location env_get_location(enum env_operation op, int prio)
+ 	enum boot_device dev = get_boot_device();
+ 	enum env_location env_loc = ENVL_UNKNOWN;
+ 
++	/*PATCH: Balena Uboot needs to be forced to store env vars in eMMC*/
++	dev = MMC2_BOOT; 
++
++
+ 	if (prio)
+ 		return env_loc;
+ 
+diff --git a/configs/imx8mp_owa5x_defconfig b/configs/imx8mp_owa5x_defconfig
+index 20e12229a3..6c82df9b72 100644
+--- a/configs/imx8mp_owa5x_defconfig
++++ b/configs/imx8mp_owa5x_defconfig
+@@ -35,10 +35,12 @@ CONFIG_SPL_I2C_SUPPORT=y
+ CONFIG_SPL_POWER_SUPPORT=y
+ CONFIG_NR_DRAM_BANKS=3
+ CONFIG_HUSH_PARSER=y
+-CONFIG_SYS_PROMPT="u-boot=> "
++CONFIG_SYS_PROMPT="owa5x_balena=>"
+ CONFIG_BOOTDELAY=0
+-# CONFIG_CMD_EXPORTENV is not set
+-# CONFIG_CMD_IMPORTENV is not set
++CONFIG_CMD_EXPORTENV=y
++CONFIG_CMD_IMPORTENV=y
++CONFIG_CMD_PART=y
++CONFIG_CMD_FS_UUID=y
+ CONFIG_CMD_ERASEENV=y
+ CONFIG_CMD_CRC32 is not set
+ # CONFIG_BOOTM_NETBSD is not set
+@@ -62,17 +64,17 @@ CONFIG_CMD_LED=y
+ CONFIG_OF_CONTROL=y
+ CONFIG_DEFAULT_DEVICE_TREE="imx8mp-owa5x"
+ CONFIG_ENV_IS_IN_MMC=y
+-CONFIG_ENV_IS_IN_SPI_FLASH=y
++CONFIG_ENV_IS_IN_SPI_FLASH=n
+ CONFIG_ENV_IS_IN_NAND=y
+ CONFIG_ENV_IS_NOWHERE=y
+-CONFIG_ENV_SIZE=0x100000
+-CONFIG_ENV_OFFSET=0x01000000
++CONFIG_ENV_SIZE=0x80000
++CONFIG_ENV_OFFSET=0x200000
+ CONFIG_ENV_SECT_SIZE=0x40000
+ CONFIG_SYS_ENV_SECT_SIZE=0x40000
+ CONFIG_SYS_REDUNDAND_ENVIRONMENT=y
+ #CONFIG_ENV_ADDR_REDUND=0x01100000
+-CONFIG_ENV_OFFSET_REDUND=0x01100000
+-CONFIG_ENV_SIZE_REDUND=0x100000
++CONFIG_ENV_OFFSET_REDUND=0x300000
++CONFIG_ENV_SIZE_REDUND=0x80000
+ CONFIG_SYS_RELOC_GD_ENV_ADDR=y
+ #CONFIG_ENV_VARS_UBOOT_RUNTIME=y
+ CONFIG_CLK_COMPOSITE_CCF=y
+@@ -163,7 +165,7 @@ CONFIG_VIDEO_LCD_RAYDIUM_RM67191=n
+ CONFIG_VIDEO_ADV7535=n
+ CONFIG_SYS_WHITE_ON_BLACK=y
+ 
+-CONFIG_LOCALVERSION="-1.0.5"
++CONFIG_LOCALVERSION="-owa5x-Balena-2.0"
+ # CONFIG_LOCALVERSION_AUTO is not set
+ #NAND CONFIGURATION
+ CONFIG_NAND_BOOT=y
+@@ -207,6 +209,6 @@ CONFIG_BLOBLIST_SIZE=0x400
+ CONFIG_BLOBLIST_ADDR=0x40000000
+ # CONFIG_HANDOFF is not set
+ 
+-CONFIG_SYS_MMC_ENV_DEV=2
++CONFIG_SYS_MMC_ENV_DEV=1
+ CONFIG_SYS_MEMTEST_START=0x60000000
+ CONFIG_SYS_MEMTEST_END=0xA0000000
+diff --git a/include/config_resin.h b/include/config_resin.h
+new file mode 100644
+index 0000000000..90c3f38c8c
+--- /dev/null
++++ b/include/config_resin.h
+@@ -0,0 +1,15 @@
++#define BALENA_UBOOT_DEVICES 0 1 2
++#define BALENA_UBOOT_DEVICE_TYPES usb mmc
++#define BALENA_BOOT_PART 1
++#define BALENA_DEFAULT_ROOT_PART 2
++#define BALENA_IMAGE_FLAG_FILE balena-image
++#define BALENA_FLASHER_FLAG_FILE balena-image-flasher
++#define BALENA_ENV_FILE resinOS_uEnv.txt
++#define BALENA_EXTRA_ENV_FILE extra_uEnv.txt
++#define BASE_OS_CMDLINE console=ttymxc0,115200n8
++#define OS_BOOTCOUNT_FILE bootcount.env
++#define OS_BOOTCOUNT_SKIP 0
++#define OS_BOOTCOUNT_LIMIT 3
++#define CONFIG_RESET_TO_RETRY 1
++#define CONFIG_BOOT_RETRY_TIME -1
++#define CONFIG_CMD_FS_UUID 1
+diff --git a/include/configs/imx8mp_owa5x.h b/include/configs/imx8mp_owa5x.h
+index d86b189e8c..4ca024ed22 100644
+--- a/include/configs/imx8mp_owa5x.h
++++ b/include/configs/imx8mp_owa5x.h
+@@ -101,7 +101,7 @@
+          "fi; " \
+       "fi;" \
+       "run nandboot;\0" \
+-	"bootcmd=run boot_owa5x\0" \
++	"bootcmd=run BOOT_CMD_BALENA\0" \
+    "update_owa5x=" \
+       "if test ${updatefw} != 1; then " \
+          "echo Nothing to update; " \
+@@ -196,9 +196,12 @@
+ 	"console=ttymxc0,115200 earlycon=ec_imx6q,0x30860000,115200\0" \
+ 	"mmcdev=2\0" \
+ 	"mmcpart=1\0" \
+-	"mmcroot=" CONFIG_MMCROOT " rootwait quiet rw mtdparts\0" \
++	"mmcroot=" CONFIG_MMCROOT " rootwait quiet rw\0" \
+ 	"mmcautodetect=yes\0" \
+-	"mmcargs=setenv bootargs ${jh_clk} console=${console} root=${mmcroot}\0 " \
++	"zip_addr=0x70480000\0" \
++	"mmcargs=setenv bootargs console=${console} root=${mmcroot} rootfstype=ext4\0" \
++	"BOOT_CMD_BALENA=run mmcargs; fatload mmc ${mmcdev}:1 ${zip_addr} ${image}; fatload mmc ${mmcdev}:1 ${fdt_addr} ${fdt_file}; unzip ${zip_addr} ${loadaddr}; "\
++	"booti ${loadaddr} - ${fdt_addr};\0" \
+ 	"startmmcboot=echo Booting from mmc ...; " \
+ 		"run mmcargs; " \
+ 		"if test ${boot_fit} = yes || test ${boot_fit} = try; then " \
+@@ -243,7 +246,7 @@
+ 	"loadbootscript=fatload mmc ${mmcdev}:${mmcpart} ${loadaddr} ${script};\0" \
+ 	"loadimage=fatload mmc ${mmcdev}:${mmcpart} ${loadaddr} ${image}\0" \
+ 	"loadfdt=fatload mmc ${mmcdev}:${mmcpart} ${fdt_addr} ${fdt_file}\0" \
+-	"image=Image\0" \
++	"image=Image.gz\0" \
+ 	"netargs=setenv bootargs ${jh_clk} console=${console} " \
+ 		"root=/dev/nfs " \
+ 		"ip=dhcp nfsroot=${serverip}:${nfsroot},v3,tcp\0" \
+@@ -354,7 +357,7 @@
+ #define CONFIG_ENV_SPI_MODE		CONFIG_SF_DEFAULT_MODE
+ #define CONFIG_ENV_SPI_MAX_HZ		CONFIG_SF_DEFAULT_SPEED
+ 
+-//#define CONFIG_SYS_MMC_ENV_DEV		2   /* USDHC2 */
++#define CONFIG_SYS_MMC_ENV_DEV		2   /* USDHC2 */
+ #define CONFIG_MMCROOT			"/dev/mmcblk1p2"  /* USDHC2 */
+ 
+ /* Size of malloc() pool */
+@@ -365,6 +368,8 @@
+ #define PHYS_SDRAM			0x40000000
+ #define PHYS_SDRAM_SIZE			0x80000000	/* 2 GB */
+ 
++/* Maximum decompressed kernel size 64MB*/
++#define CONFIG_SYS_BOOTM_LEN		SZ_64M /* Increase max gunzip size */
+ /*
+ #define PHYS_SDRAM_2			0xC0000000
+ #define PHYS_SDRAM_2_SIZE		0x80000000	*//* 2 GB */
+@@ -374,11 +379,11 @@
+ #else
+ //#define PHYS_SDRAM_2_SIZE		0xC0000000	/* 3 GB */
+ #endif
+-/*
+-//#define CONFIG_SYS_MEMTEST_START	0x60000000
+-//#define CONFIG_SYS_MEMTEST_END		(CONFIG_SYS_MEMTEST_START + \
+-//					(PHYS_SDRAM_SIZE >> 1))
+-*/
++
++#define CONFIG_SYS_MEMTEST_START	0x60000000
++#define CONFIG_SYS_MEMTEST_END		(CONFIG_SYS_MEMTEST_START + \
++					(PHYS_SDRAM_SIZE >> 1))
++
+ //#define CONFIG_MXC_UART_BASE		UART2_BASE_ADDR
+ #define CONFIG_MXC_UART_BASE		UART1_BASE_ADDR
+ 
+diff --git a/include/env_default.h b/include/env_default.h
+index ea31a8eddf..d08b5054db 100644
+--- a/include/env_default.h
++++ b/include/env_default.h
+@@ -9,6 +9,7 @@
+ 
+ #include <env_callback.h>
+ #include <linux/stringify.h>
++#include <env_resin.h>
+ 
+ #ifdef DEFAULT_ENV_INSTANCE_EMBEDDED
+ env_t embedded_environment __UBOOT_ENV_SECTION__(environment) = {
+@@ -24,6 +25,7 @@ uchar default_environment[] = {
+ #else
+ const uchar default_environment[] = {
+ #endif
++	BALENA_ENV
+ #ifndef CONFIG_USE_DEFAULT_ENV_FILE
+ #ifdef	CONFIG_ENV_CALLBACK_LIST_DEFAULT
+ 	ENV_CALLBACK_VAR "=" CONFIG_ENV_CALLBACK_LIST_DEFAULT "\0"
+diff --git a/include/env_resin.h b/include/env_resin.h
+new file mode 100644
+index 0000000000..36dce4a1b1
+--- /dev/null
++++ b/include/env_resin.h
+@@ -0,0 +1,172 @@
++#ifndef HEADER_ENV_BALENA_H
++#define HEADER_ENV_BALENA_H
++
++/*
++ * Assumes defined:
++ *     resin_kernel_load_addr - kernel load address as we use the same
++ *                              to load the env file
++ *     resin_root_part        - existing in the env file to import (optional)
++ *     resin_flasher_skip     - if set to 1 by integration layer, skips flasher detection (optional)
++ * Defines:
++ *     resin_set_kernel_root  - needs to be integrated with board
++ *                              specific configuration
++ *     set_os_cmdline         - Sets cmdline parameters as required by the OS
++ *                              in os_cmdline env variable.
++ *                              Needs to be integrated with board specific
++ *                              configuration so that os_cmdline is part of the
++ *                              final cmdline/bootargs passed to the kernel.
++ *                              This needs to run after resin_set_kernel_root
++ *                              as it can use the device scan which is
++ *                              performed in resin_set_kernel_root. Otherwise
++ *                              an additional scan is needed.
++ *     resin_kernel_root      - the root kernel argument
++ *     resin_dev_type         - device type from where we boot (e.g. mmc, usb etc.)
++ *     resin_dev_index        - device index to be used at boot
++ * Other notes:
++ *     os_bc_wr_sz            - The exact size of 'bootcount=X' to fatwrite
++ *
++ */
++
++#include <config_resin.h>
++
++#define BALENA_ENV \
++       "resin_env_file=" __stringify(BALENA_ENV_FILE) "\0" \
++       "balena_extra_env_file=" __stringify(BALENA_EXTRA_ENV_FILE) "\0" \
++       "os_bc_file=" __stringify(OS_BOOTCOUNT_FILE) "\0" \
++       "os_bc_skip=" __stringify(OS_BOOTCOUNT_SKIP) "\0" \
++       "os_bc_inced=0 \0" \
++       "os_bc_lim=" __stringify(OS_BOOTCOUNT_LIMIT) "\0" \
++       "os_bc_wr_sz=0xd \0" \
++       "upgrade_available=0 \0" \
++       "resin_flasher_flag_file=" __stringify(BALENA_FLASHER_FLAG_FILE) "\0" \
++       "resin_image_flag_file=" __stringify(BALENA_IMAGE_FLAG_FILE) "\0" \
++       "resin_uboot_devices=" __stringify(BALENA_UBOOT_DEVICES) "\0" \
++       "resin_uboot_device_types=" __stringify(BALENA_UBOOT_DEVICE_TYPES) "\0" \
++       "resin_boot_part=" __stringify(BALENA_BOOT_PART) "\0" \
++       "resin_root_part=" __stringify(BALENA_DEFAULT_ROOT_PART) "\0" \
++       "base_os_cmdline=" __stringify(BASE_OS_CMDLINE) "\0" \
++       "resin_flasher_skip=0 \0" \
++       \
++       "resin_find_root_part_uuid=" \
++               "fsuuid ${resin_dev_type} ${resin_dev_index}:${resin_root_part} resin_root_part_uuid\0" \
++       \
++       "resin_load_env_file=" \
++               "echo Loading ${resin_env_file} from ${resin_dev_type} device ${resin_dev_index} partition ${resin_boot_part};" \
++               "fatload ${resin_dev_type} ${resin_dev_index}:${resin_boot_part} ${resin_kernel_load_addr} ${resin_env_file};\0" \
++       "balena_load_extra_env_file=" \
++               "echo Loading ${balena_extra_env_file} from ${resin_dev_type} device ${resin_dev_index} partition ${resin_boot_part};" \
++               "fatload ${resin_dev_type} ${resin_dev_index}:${resin_boot_part} ${resin_kernel_load_addr} ${balena_extra_env_file};\0" \
++       "os_load_bootcount_file=" \
++               "echo Loading ${os_bc_file} from ${resin_dev_type} device ${resin_dev_index} partition ${resin_boot_part};" \
++               "fatload ${resin_dev_type} ${resin_dev_index}:${resin_boot_part} ${resin_kernel_load_addr} ${os_bc_file};\0" \
++       \
++       "resin_import_env_file=" \
++               "echo Import ${resin_env_file} in environment;" \
++               "env import -t ${resin_kernel_load_addr} ${filesize}\0" \
++       \
++       "balena_import_extra_env_file=" \
++               "echo Import ${balena_extra_env_file} in environment;" \
++               "env import -t ${resin_kernel_load_addr} ${filesize}\0" \
++       \
++       "os_import_bootcount_file=" \
++               "echo Import ${os_bc_file} in environment;" \
++               "env import -t ${resin_kernel_load_addr} ${filesize}\0" \
++       \
++       "os_inc_bc_save=" \
++              "if test ${os_bc_skip} = 0 && test ${os_bc_inced} = 0 && test ${upgrade_available} = 1; then " \
++                     "setexpr bootcount ${bootcount} + 1;" \
++                     "env set os_bc_inced 1;" \
++                     "echo bootcount=${bootcount} now;" \
++                     "env export -t ${resin_kernel_load_addr} bootcount;" \
++                     "if fatwrite ${resin_dev_type} ${resin_dev_index}:${resin_boot_part} ${resin_kernel_load_addr} ${os_bc_file} ${os_bc_wr_sz}; then; else; echo FATWRITE FAILED ; fi;" \
++                     "echo bootcount=${bootcount} written to ${resin_dev_type} ${resin_dev_index}:${resin_boot_part} ${os_bc_file};" \
++              "fi;\0" \
++       \
++       "resin_flasher_detect=" \
++               "if test \"${resin_scan_dev_type}\" = usb ; then " \
++	               "usb start ; " \
++               "fi; " \
++               "fatload ${resin_scan_dev_type} ${resin_scan_dev_index}:${resin_boot_part} ${resin_kernel_load_addr} ${resin_flasher_flag_file};\0" \
++       \
++       "resin_image_detect=" \
++               "if test \"${resin_scan_dev_type}\" = usb ; then " \
++                       "usb start ; " \
++               "fi; " \
++               "fatload ${resin_scan_dev_type} ${resin_scan_dev_index}:${resin_boot_part} ${resin_kernel_load_addr} ${resin_image_flag_file};\0" \
++       \
++       "resin_scan_devs=" \
++               "echo Scanning ${resin_uboot_device_types} devices ${resin_uboot_devices}; " \
++               "for resin_scan_dev_type in ${resin_uboot_device_types}; do " \
++                       "for resin_scan_dev_index in ${resin_uboot_devices}; do " \
++                               "if test ${resin_flasher_skip} = 0 && run resin_flasher_detect; then " \
++                                       "setenv resin_flasher_dev_index ${resin_scan_dev_index}; " \
++                                       "setenv resin_dev_type ${resin_scan_dev_type}; " \
++                                       "exit; " \
++                               "else; " \
++                                       "if test -n \"${resin_image_dev_index}\"; then ;" \
++                                               "else if run resin_image_detect; then " \
++                                                       "setenv resin_image_dev_index ${resin_scan_dev_index}; " \
++                                                       "setenv resin_dev_type ${resin_scan_dev_type}; " \
++                                               "fi; " \
++                                       "fi; " \
++                               "fi; " \
++                       "done;" \
++               "done;\0"  \
++       \
++       "resin_set_dev_index=" \
++               "run resin_scan_devs; " \
++               "if test -n ${resin_flasher_dev_index}; then " \
++                       "echo Found resin flasher on ${resin_dev_type} ${resin_flasher_dev_index}; "\
++                       "setenv bootparam_flasher flasher; "\
++                       "setenv resin_dev_index ${resin_flasher_dev_index}; "\
++               "else; "\
++                       "if test -n \"${resin_image_dev_index}\"; then " \
++                               "echo Found resin image on ${resin_dev_type} ${resin_image_dev_index}; "\
++                               "setenv resin_dev_index ${resin_image_dev_index}; "\
++                       "else; " \
++                               "echo ERROR: Could not find a resin image of any sort.; " \
++                       "fi; " \
++               "fi;\0" \
++       \
++       "resin_inject_env_file=" \
++               "if run resin_load_env_file; then " \
++                       "run resin_import_env_file;" \
++               "fi;" \
++               "if run balena_load_extra_env_file; then " \
++                       "run balena_import_extra_env_file;" \
++               "fi;" \
++               "if run os_load_bootcount_file; then " \
++                       "run os_import_bootcount_file;" \
++               "else; " \
++                       "echo No bootcount.env file. Setting bootcount=0 in environment;" \
++                       "env set bootcount 0;" \
++               "fi;\0" \
++       \
++       "resin_check_altroot=" \
++              "setexpr resin_roota ${resin_boot_part} + 1; " \
++              "setexpr resin_rootb ${resin_boot_part} + 2; " \
++              "run os_inc_bc_save;" \
++              "if test -n ${os_bc_lim}; then " \
++                      "if test ${bootcount} -gt ${os_bc_lim}; then " \
++                               "echo WARNING! BOOTLIMIT EXCEEDED. SWITCHING TO PREVIOUS ROOT;" \
++                               "echo WARNING! was: resin_root_part=${resin_root_part};" \
++                               "if test ${resin_root_part} = ${resin_roota}; then "\
++                                       "env set resin_root_part ${resin_rootb}; " \
++                               "else; "\
++                                       "env set resin_root_part ${resin_roota}; " \
++                               "fi;" \
++                               "echo WARNING! now: resin_root_part=${resin_root_part};" \
++                      "fi;" \
++              "fi;\0" \
++       \
++       "set_os_cmdline=" \
++               "setenv os_cmdline ${base_os_cmdline} ${bootparam_flasher} ${extra_os_cmdline};\0" \
++       "resin_set_kernel_root=" \
++               "run resin_set_dev_index;" \
++               "run resin_inject_env_file;" \
++               "run resin_check_altroot;" \
++               "run resin_find_root_part_uuid;" \
++               "setenv resin_kernel_root root=UUID=${resin_root_part_uuid}\0"
++
++#endif /* HEADER_ENV_BALENA_H */
++
+diff --git a/ucompilation.sh b/ucompilation.sh
+index 09dc556cf7..fda86692a1 100755
+--- a/ucompilation.sh
++++ b/ucompilation.sh
+@@ -20,6 +20,6 @@ cp ./spl/u-boot-spl.bin ./Install/u-boot-spl.bin
+ cp ./u-boot-nodtb.bin ./Install/u-boot-nodtb.bin
+ cp ./arch/arm/dts/imx8mp-owa5x.dtb ./Install/imx8mp-owa5x.dtb
+ 
+-cp ./Install/u-boot-spl.bin ../imx-mkimage/iMX8M/u-boot-spl.bin
+-cp ./Install/u-boot-nodtb.bin ../imx-mkimage/iMX8M/u-boot-nodtb.bin
+-cp ./Install/imx8mp-owa5x.dtb ../imx-mkimage/iMX8M/imx8mp-owa5x.dtb
++#cp ./Install/u-boot-spl.bin ../imx-mkimage/iMX8M/u-boot-spl.bin
++#cp ./Install/u-boot-nodtb.bin ../imx-mkimage/iMX8M/u-boot-nodtb.bin
++#cp ./Install/imx8mp-owa5x.dtb ../imx-mkimage/iMX8M/imx8mp-owa5x.dtb
