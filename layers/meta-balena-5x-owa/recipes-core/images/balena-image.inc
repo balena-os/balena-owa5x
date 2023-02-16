@@ -38,13 +38,14 @@ IMAGE_INSTALL:append = " \
                         linux-firmware-owasys \
                         wpa-supplicant \
                         udev-rules-owasys \
-                        system-maintenance-service \
                         rtc-tools \
                         quectel-cm \
                         switch-gsm \
                         st32-firmware \
                         chatscripts \
                         issue-owa \
+                        sync-time-rtc \
+                        owasys-hw-sn-file \
 "
 
 deltask do_packagedata
