@@ -1,6 +1,11 @@
 # v2.107.5
 ## (2023-01-09)
 
+# v2.112.8+rev2
+## (2023-02-20)
+
+* Updated meta-owasys and timesync features. [Alvaro Guzman]
+
 # v2.112.8+rev1
 ## (2023-02-18)
 
