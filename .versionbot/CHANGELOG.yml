@@ -1,4 +1,27 @@
 - commits:
+    - subject: Update contracts to 6acab7c69f61f6660fe5fa41ccfd617281442fb3
+      hash: ba4f65c27ff68fcfae0231598d643158683674b2
+      body: Update contracts
+      footer:
+        Changelog-entry: Update contracts to 6acab7c69f61f6660fe5fa41ccfd617281442fb3
+        changelog-entry: Update contracts to 6acab7c69f61f6660fe5fa41ccfd617281442fb3
+      author: Renovate Bot
+      nested:
+        - commits:
+            - subject: "patch: Fix spelling for eMMC in Radxa-zero contract"
+              hash: e9e6e36541edb814ec751bc31f30a1845f0a0dc1
+              body: ""
+              footer:
+                Signed-off-by: Vipul Gupta (@vipulgupta2048) <vipul@balena.io>
+                signed-off-by: Vipul Gupta (@vipulgupta2048) <vipul@balena.io>
+              author: Vipul Gupta (@vipulgupta2048)
+          version: contracts-2.0.49
+          title: ""
+          date: 2023-02-22T11:41:26.966Z
+  version: 2.112.12+rev4
+  title: ""
+  date: 2023-02-22T14:28:07.777Z
+- commits:
     - subject: Update contracts to d933e121fe1c7edfcce39eeafd74887f25d0ba7f
       hash: 9ffa67321be3c54f21bf17a4c0922aa8ea6b3c50
       body: Update contracts

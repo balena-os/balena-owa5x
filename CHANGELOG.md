@@ -1,6 +1,21 @@
 # v2.107.5
 ## (2023-01-09)
 
+# v2.112.12+rev4
+## (2023-02-22)
+
+
+<details>
+<summary> Update contracts to 6acab7c69f61f6660fe5fa41ccfd617281442fb3 [Renovate Bot] </summary>
+
+> ## contracts-2.0.49
+> ### (2023-02-22)
+> 
+> * patch: Fix spelling for eMMC in Radxa-zero contract [Vipul Gupta (@vipulgupta2048)]
+> 
+
+</details>
+
 # v2.112.12+rev3
 ## (2023-02-22)
 
