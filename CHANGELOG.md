@@ -1,6 +1,21 @@
 # v2.107.5
 ## (2023-01-09)
 
+# v2.112.12+rev3
+## (2023-02-22)
+
+
+<details>
+<summary> Update contracts to d933e121fe1c7edfcce39eeafd74887f25d0ba7f [Renovate Bot] </summary>
+
+> ## contracts-2.0.48
+> ### (2023-02-22)
+> 
+> * hw.device-type: Various fixes [Alexandru Costache]
+> 
+
+</details>
+
 # v2.112.12+rev2
 ## (2023-02-21)
 
