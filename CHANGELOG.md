@@ -1,6 +1,21 @@
 # v2.107.5
 ## (2023-01-09)
 
+# v2.112.12+rev5
+## (2023-02-22)
+
+
+<details>
+<summary> Update contracts to 7e5420c232e35b678f2138d9878f1d1fc921b1cf [Renovate Bot] </summary>
+
+> ## contracts-2.0.50
+> ### (2023-02-22)
+> 
+> * hw.device-type: Rename radxaFlash protocol to usbMassStorage [Alexandru Costache]
+> 
+
+</details>
+
 # v2.112.12+rev4
 ## (2023-02-22)
 
