@@ -1,6 +1,11 @@
 # v2.107.5
 ## (2023-01-09)
 
+# v2.112.12+rev8
+## (2023-03-16)
+
+* Prevent duplicate CI workflow executions [Kyle Harding]
+
 # v2.112.12+rev7
 ## (2023-03-08)
 
