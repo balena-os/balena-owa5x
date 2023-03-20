@@ -1,6 +1,11 @@
 # v2.107.5
 ## (2023-01-09)
 
+# v2.112.12+rev10
+## (2023-03-20)
+
+* u-boot CONFIG_ENV_OFFSET_REDUND removed [Alvaro Guzman]
+
 # v2.112.12+rev9
 ## (2023-03-20)
 

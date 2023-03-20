@@ -1,4 +1,21 @@
 - commits:
+    - subject: u-boot CONFIG_ENV_OFFSET_REDUND removed
+      hash: c4ad25b032805639a0c44cb044b00fd4be11311b
+      body: |
+        According to Florin Ionut this u-boot config CONFIG_ENV_OFFSET_REDUND,
+        must be removed in order to obtain a new release image, because there is
+        a problem with the compilation.
+      footer:
+        Changelog-entry: u-boot CONFIG_ENV_OFFSET_REDUND removed
+        changelog-entry: u-boot CONFIG_ENV_OFFSET_REDUND removed
+        Signed-off-by: Alvaro Guzman <alvaro.guzman@owasys.com>
+        signed-off-by: Alvaro Guzman <alvaro.guzman@owasys.com>
+      author: Alvaro Guzman
+      nested: []
+  version: 2.112.12+rev10
+  title: ""
+  date: 2023-03-20T16:31:54.652Z
+- commits:
     - subject: Update contracts to 0ff4f419b4467349d7cb1d1202b580004067664c
       hash: 20aac4f3652146e7604134d98dea905c737a781b
       body: Update contracts
