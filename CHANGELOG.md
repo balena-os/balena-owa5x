@@ -1,6 +1,11 @@
 # v2.107.5
 ## (2023-01-09)
 
+# v2.112.12+rev13
+## (2023-03-22)
+
+* no space left on boot partition fixed [Alvaro Guzman]
+
 # v2.112.12+rev12
 ## (2023-03-22)
 

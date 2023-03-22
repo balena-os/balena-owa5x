@@ -1,4 +1,23 @@
 - commits:
+    - subject: no space left on boot partition fixed
+      hash: c74a1e18a67479096215ff1aeb89f99d8ae4c8d5
+      body: |
+        When trying to perform a hostUpdateOS we came to the error:
+
+        _Boot files copy operations will fail with out of space error_
+
+        Increasing boot partition size fixes it.
+      footer:
+        Changelog-entry: no space left on boot partition fixed
+        changelog-entry: no space left on boot partition fixed
+        Signed-off-by: Alvaro Guzman alvaro.guzman@owasys.com
+        signed-off-by: Alvaro Guzman alvaro.guzman@owasys.com
+      author: Alvaro Guzman
+      nested: []
+  version: 2.112.12+rev13
+  title: ""
+  date: 2023-03-22T17:24:40.271Z
+- commits:
     - subject: combine all patches into one
       hash: 0ba981f021de49a68f379294a37d7fe9ea520e9c
       body: |
