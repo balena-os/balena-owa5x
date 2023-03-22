@@ -9,7 +9,7 @@ IMAGE_CMD:balenaos-img:append () {
     dd if=${DEPLOY_DIR_IMAGE}/${MACHINE}-flash.bin of=${BALENA_RAW_IMG} conv=notrunc seek=32 bs=1K
 }
 
-BALENA_BOOT_SIZE = "50000"
+BALENA_BOOT_SIZE = "70000"
 IMAGE_ROOTFS_SIZE = "409600"
 
 IMAGE_INSTALL:remove = "kernel-image"
