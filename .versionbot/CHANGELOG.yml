@@ -1,4 +1,22 @@
 - commits:
+    - subject: 99-flash-bootloader fixed
+      hash: 9e8dfcc31987f9e55b92263d48b04464788e988e
+      body: |
+        block_size and seek_blocks variables didn't exist
+        which caused a syntax error when running the hook.
+        Instead uboot_block_size and uboot_seek_block are now
+        used to compute the skipped bytes.
+      footer:
+        Changelog-entry: 99-flash-bootloader fixed
+        changelog-entry: 99-flash-bootloader fixed
+        Signed-off-by: Alvaro Guzman alvaro.guzman@owasys.com
+        signed-off-by: Alvaro Guzman alvaro.guzman@owasys.com
+      author: Alvaro Guzman
+      nested: []
+  version: 2.112.12+rev11
+  title: ""
+  date: 2023-03-22T10:37:03.948Z
+- commits:
     - subject: u-boot CONFIG_ENV_OFFSET_REDUND removed
       hash: c4ad25b032805639a0c44cb044b00fd4be11311b
       body: |
