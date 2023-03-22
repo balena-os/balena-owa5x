@@ -1,4 +1,20 @@
 - commits:
+    - subject: combine all patches into one
+      hash: 0ba981f021de49a68f379294a37d7fe9ea520e9c
+      body: |
+        Squashing several commits into one following recommendation
+        from balena team.
+      footer:
+        Changelog-entry: combine all patches into one
+        changelog-entry: combine all patches into one
+        Signed-off-by: Alvaro Guzman alvaro.guzman@owasys.com
+        signed-off-by: Alvaro Guzman alvaro.guzman@owasys.com
+      author: Alvaro Guzman
+      nested: []
+  version: 2.112.12+rev12
+  title: ""
+  date: 2023-03-22T15:36:24.356Z
+- commits:
     - subject: 99-flash-bootloader fixed
       hash: 9e8dfcc31987f9e55b92263d48b04464788e988e
       body: |

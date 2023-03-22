@@ -1,6 +1,11 @@
 # v2.107.5
 ## (2023-01-09)
 
+# v2.112.12+rev12
+## (2023-03-22)
+
+* combine all patches into one [Alvaro Guzman]
+
 # v2.112.12+rev11
 ## (2023-03-22)
 
