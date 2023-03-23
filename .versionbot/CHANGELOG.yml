@@ -1,4 +1,33 @@
 - commits:
+    - subject: Update layers/meta-balena to 71c0d9581c2d5285b91c66675317edbcbb7b8ef9
+      hash: 5d26e38329168bb560926f8a05bf3a7bfae8b1c6
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to 71c0d9581c2d5285b91c66675317edbcbb7b8ef9
+        changelog-entry: Update layers/meta-balena to 71c0d9581c2d5285b91c66675317edbcbb7b8ef9
+      author: Renovate Bot
+      nested:
+        - commits:
+            - subject: "kernel-balena: Include NFS V2, V3 and V4 client and server modules"
+              hash: 54c4090b518bccfdba0b635ead129502572685be
+              body: >
+                As per internal discussion thread
+
+                https://balena.zulipchat.com/#narrow/stream/345882-_help/topic/.E2.9C.94.20nfs.20.283.20or.204.29.20on.20jetson.20nano/near/342072698
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alexandru Costache <alexandru@balena.io>
+                signed-off-by: Alexandru Costache <alexandru@balena.io>
+              author: Alexandru Costache
+              nested: []
+          version: meta-balena-2.113.25
+          title: ""
+          date: 2023-03-23T19:39:38.006Z
+  version: 2.113.25
+  title: ""
+  date: 2023-03-23T22:23:46.812Z
+- commits:
     - subject: Update layers/meta-balena to 30718d08dfe1abfc2fe73ec6e67994477c1db4bd
       hash: dafbac85968f0530132579804e46372bcc2d7b7d
       body: Update layers/meta-balena

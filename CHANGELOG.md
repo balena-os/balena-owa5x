@@ -1,6 +1,21 @@
 # v2.107.5
 ## (2023-01-09)
 
+# v2.113.25
+## (2023-03-23)
+
+
+<details>
+<summary> Update layers/meta-balena to 71c0d9581c2d5285b91c66675317edbcbb7b8ef9 [Renovate Bot] </summary>
+
+> ## meta-balena-2.113.25
+> ### (2023-03-23)
+> 
+> * kernel-balena: Include NFS V2, V3 and V4 client and server modules [Alexandru Costache]
+> 
+
+</details>
+
 # v2.113.24
 ## (2023-03-22)
 
