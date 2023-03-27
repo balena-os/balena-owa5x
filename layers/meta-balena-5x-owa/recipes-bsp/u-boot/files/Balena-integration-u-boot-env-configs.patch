@@ -140,15 +140,15 @@ index d86b189e8c..ba6b885e24 100644
  	"mmcautodetect=yes\0" \
 -	"mmcargs=setenv bootargs ${jh_clk} console=${console} root=${mmcroot}\0 " \
 +	"zip_addr=0x70480000\0" \
-+	"mmcargs=setenv bootargs ${jh_clk} console=${console} ${resin_kernel_root} ${os_cmdline}\0" \
++	"mmcargs=setenv bootargs ${jh_clk} console=${console} ${resin_kernel_root} ${os_cmdline} quiet \0" \
 +	"set_up_balena_env_vars=setenv resin_kernel_load_addr ${loadaddr};" \
 +		"run resin_set_kernel_root; run set_os_cmdline; " \
 +		"setenv usbdev ${resin_dev_index};" \
 +		"setenv usbbootpart ${resin_boot_part};" \
 +		"setenv mmcdev ${resin_dev_index};" \
-+		"setenv mmcbootpart ${resin_boot_part};\0" \
-+	"balena_load_kernel=fatload mmc ${mmcdev}:${mmcbootpart} ${zip_addr} ${image}\0 " \
-+	"balena_load_fdt=fatload mmc ${mmcdev}:${mmcbootpart} ${fdt_addr} ${fdt_file}\0 " \
++		"setenv mmcbootpart ${resin_root_part};\0" \
++	"balena_load_kernel=ext4load mmc ${mmcdev}:${resin_root_part} ${zip_addr} boot/${image}\0 " \
++	"balena_load_fdt=fatload mmc ${mmcdev}:${resin_boot_part} ${fdt_addr} ${fdt_file}\0 " \
 +	"BOOT_CMD_BALENA=run set_up_balena_env_vars; " \
 +		"run mmcargs; " \ 
 +		"run balena_load_kernel; " \
