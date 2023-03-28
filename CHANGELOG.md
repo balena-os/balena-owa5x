@@ -1,6 +1,21 @@
 # v2.107.5
 ## (2023-01-09)
 
+# v2.113.32
+## (2023-03-28)
+
+
+<details>
+<summary> Update layers/meta-balena to 33e97ba46b3fa14325f412bd7d983c92947bca65 [Renovate Bot] </summary>
+
+> ## meta-balena-2.113.32
+> ### (2023-03-28)
+> 
+> * renovate: Inherit automerge settings from org [Kyle Harding]
+> 
+
+</details>
+
 # v2.113.31+rev1
 ## (2023-03-28)
 

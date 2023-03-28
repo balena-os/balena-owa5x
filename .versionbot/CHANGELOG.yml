@@ -1,4 +1,30 @@
 - commits:
+    - subject: Update layers/meta-balena to 33e97ba46b3fa14325f412bd7d983c92947bca65
+      hash: b5359b756b769a663e444cf9454453d094ea1ab0
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to 33e97ba46b3fa14325f412bd7d983c92947bca65
+        changelog-entry: Update layers/meta-balena to 33e97ba46b3fa14325f412bd7d983c92947bca65
+      author: Renovate Bot
+      nested:
+        - commits:
+            - subject: "renovate: Inherit automerge settings from org"
+              hash: 1db559de9180eaf96235bed661060b4b34d98ca4
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: meta-balena-2.113.32
+          title: ""
+          date: 2023-03-28T16:06:51.691Z
+  version: 2.113.32
+  title: ""
+  date: 2023-03-28T18:25:25.003Z
+- commits:
     - subject: no space left on boot partition fixed
       hash: bb6de201238b8f7e3c2a952f030a7435cd52adc4
       body: |
