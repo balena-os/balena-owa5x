@@ -1,4 +1,19 @@
 - commits:
+    - subject: no space left on boot partition fixed
+      hash: bb6de201238b8f7e3c2a952f030a7435cd52adc4
+      body: |
+        Moved out kernel to rootfs partition.
+      footer:
+        Changelog-entry: no space left on boot partition fixed
+        changelog-entry: no space left on boot partition fixed
+        Signed-off-by: Alvaro Guzman alvaro.guzman@owasys.com
+        signed-off-by: Alvaro Guzman alvaro.guzman@owasys.com
+      author: Alvaro Guzman
+      nested: []
+  version: 2.113.31+rev1
+  title: ""
+  date: 2023-03-28T08:46:22.157Z
+- commits:
     - subject: Update layers/meta-balena to c06fe0336f8582acf95c0615c48deafd4bed2731
       hash: ad1837d2498b31d016326e51d8895816621a7753
       body: Update layers/meta-balena
