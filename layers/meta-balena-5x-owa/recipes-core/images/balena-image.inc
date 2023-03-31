@@ -18,6 +18,7 @@ IMAGE_INSTALL:append = " \
                         imx-kobs \
                         net-tools \ 
                         inetutils \
+                        systemd-extra-utils \
                         iw \
                         iproute2 \
                         can-utils \
