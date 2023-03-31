@@ -1,4 +1,38 @@
 - commits:
+    - subject: Update layers/meta-balena to 98b6efa43d3d83df72b49b4caed6ade5b5326fa9
+      hash: 641cea99c8afa969a53e83364e14386825c242bb
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to 98b6efa43d3d83df72b49b4caed6ade5b5326fa9
+        changelog-entry: Update layers/meta-balena to 98b6efa43d3d83df72b49b4caed6ade5b5326fa9
+      author: Renovate Bot
+      nested:
+        - commits:
+            - subject: Update tests/leviathan digest to e5dcbae
+              hash: a536523b56cbbfc50b9db7e356cd142bb674e9fd
+              body: Update tests/leviathan
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: Renovate Bot
+              nested:
+                - commits:
+                    - subject: "patch: Update path to balena-io/renovate-config"
+                      hash: 2698c25cb7bf70920b5025f941ea57b16532285c
+                      body: ""
+                      footer: {}
+                      author: Kyle Harding
+                      nested: []
+                  version: leviathan-2.23.2
+                  title: ""
+                  date: 2023-03-28T17:08:00.960Z
+          version: meta-balena-2.113.33
+          title: ""
+          date: 2023-03-28T20:47:58.221Z
+  version: 2.113.33
+  title: ""
+  date: 2023-03-31T11:43:41.494Z
+- commits:
     - subject: balenaOS Update fixed
       hash: 23599ab924916e7f20e0983e6b6e1432464edf9a
       body: |

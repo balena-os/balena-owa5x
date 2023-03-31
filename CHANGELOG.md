@@ -1,6 +1,32 @@
 # v2.107.5
 ## (2023-01-09)
 
+# v2.113.33
+## (2023-03-31)
+
+
+<details>
+<summary> Update layers/meta-balena to 98b6efa43d3d83df72b49b4caed6ade5b5326fa9 [Renovate Bot] </summary>
+
+> ## meta-balena-2.113.33
+> ### (2023-03-28)
+> 
+> 
+> <details>
+> <summary> Update tests/leviathan digest to e5dcbae [Renovate Bot] </summary>
+> 
+>> ### leviathan-2.23.2
+>> #### (2023-03-28)
+>> 
+>> * patch: Update path to balena-io/renovate-config [Kyle Harding]
+>> 
+> 
+> </details>
+> 
+> 
+
+</details>
+
 # v2.113.32+rev2
 ## (2023-03-31)
 
