@@ -1,4 +1,23 @@
 - commits:
+    - subject: ensure apparmor is disabled
+      hash: 9af5bc06641ec1e5ccf34b7f5edb3c0aeb7f70ba
+      body: |
+        Currently balenaOS disables DEFAULT_SECURITY_APPARMOR
+        due to containers failing to start with missing dependencies.
+
+        Owasys BSP enables CONFIG_SECURITY_APPARMOR and the final
+        result is apparmor enabled although disabled from meta-balena.
+      footer:
+        Changelog-entry: ensure apparmor is disabled
+        changelog-entry: ensure apparmor is disabled
+        Signed-off-by: Alvaro Guzman alvaro.guzman@owasys.com
+        signed-off-by: Alvaro Guzman alvaro.guzman@owasys.com
+      author: Alvaro Guzman
+      nested: []
+  version: 2.114.1+rev1
+  title: ""
+  date: 2023-04-11T17:43:58.878Z
+- commits:
     - subject: Update layers/meta-balena to aa8a58d761c11e9ed875d78e74f6838cb4e2ff02
       hash: 3375405b3e33a191b1b790de2e3be270b0d1ab6d
       body: Update layers/meta-balena

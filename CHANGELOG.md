@@ -1,6 +1,11 @@
 # v2.107.5
 ## (2023-01-09)
 
+# v2.114.1+rev1
+## (2023-04-11)
+
+* ensure apparmor is disabled [Alvaro Guzman]
+
 # v2.114.1
 ## (2023-04-07)
 
