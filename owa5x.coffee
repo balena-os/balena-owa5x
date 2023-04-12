@@ -16,6 +16,7 @@ module.exports =
         name: 'owa5x'
         arch: 'aarch64'
         state: 'released'
+        community: true
  
         stateInstructions:
                 postProvisioning: postProvisioningInstructions
