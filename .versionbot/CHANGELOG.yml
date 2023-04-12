@@ -1,4 +1,22 @@
 - commits:
+    - subject: added community supported file
+      hash: 7532935abe35d56f185e9c888a510d75a9a9dd85
+      body: |
+        Added a supported by community field on
+        board description file owa5x.coffee
+        Although not currently used, it helps balena
+        identify community supported boards.
+      footer:
+        Changelog-entry: added community supported file
+        changelog-entry: added community supported file
+        Signed-off-by: Alvaro Guzman alvaro.guzman@owasys.com
+        signed-off-by: Alvaro Guzman alvaro.guzman@owasys.com
+      author: Alvaro Guzman
+      nested: []
+  version: 2.114.2+rev1
+  title: ""
+  date: 2023-04-12T15:46:36.732Z
+- commits:
     - subject: Update layers/meta-balena to af7446b3723221a5dbaa6e979c57e305d481f2d3
       hash: fcd80f3508e5e846ded49dde3976b0dd7b9bc18a
       body: Update layers/meta-balena
