@@ -2,6 +2,11 @@ LICENSE = "CLOSED"
 
 inherit kernel-resin deploy
 
+SRC_URI:remove = " git://source.codeaurora.org/external/imx/linux-imx.git;protocol=https;branch=${SRCBRANCH} "
+
+SRC_URI:append:owa5x = " git://github.com/nxp-imx/linux-imx.git;protocol=https;branch=${SRCBRANCH} \
+ "
+
 BALENA_CONFIGS:append = " nfsfs"
 BALENA_CONFIGS[nfsfs] = " \
     CONFIG_NFS_FS=m \

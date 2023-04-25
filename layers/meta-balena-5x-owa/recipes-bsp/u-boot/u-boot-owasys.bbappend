@@ -6,10 +6,13 @@ inherit resin-u-boot
 FILESEXTRAPATHS:prepend := "${THISDIR}/files:"
 
 # resin-u-boot class patch is rebased
-SRC_URI:remove = " file://resin-specific-env-integration-kconfig.patch "
+SRC_URI:remove = " file://resin-specific-env-integration-kconfig.patch \
+                   git://source.codeaurora.org/external/imx/uboot-imx.git;protocol=https;branch=${SRCBRANCH} \
+"
 
-SRC_URI:append:owa5x = " \
+SRC_URI:append:owa5x = " git://github.com/nxp-imx/uboot-imx.git;protocol=https;branch=${SRCBRANCH} \
                       file://Balena-integration-u-boot-env-configs.patch \
+                      file://0001-Fix-reboot-issue-upgrade-available-init-value-is-0.patch \
  "
 
 SRC_URI += "file://fw_env.config"
