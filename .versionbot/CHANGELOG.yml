@@ -1,4 +1,20 @@
 - commits:
+    - subject: fixed reboot issue
+      hash: 1f676c656d612c1311e5e32c1f7bfd591c92fc47
+      body: |
+        After 4 reboots the device halted due to upgrage_available
+        variable set to 1 by default.
+      footer:
+        Changelog-entry: fixed reboot issue
+        changelog-entry: fixed reboot issue
+        Signed-off-by: Alvaro Guzman alvaro.guzman@owasys.com
+        signed-off-by: Alvaro Guzman alvaro.guzman@owasys.com
+      author: Alvaro Guzman
+      nested: []
+  version: 2.114.16+rev1
+  title: ""
+  date: 2023-05-03T09:07:38.552Z
+- commits:
     - subject: Update layers/meta-balena to 43bf9f98db7de74bce36141f5e55c4dcffb7e060
       hash: 7ff3cba8f9f50cbfba635e772f6e2155db1f8f38
       body: Update layers/meta-balena
