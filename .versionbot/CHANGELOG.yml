@@ -1,4 +1,29 @@
 - commits:
+    - subject: Update contracts to 75cd5e9f19d49b8723b7e39033763ca698e1254f
+      hash: 749e031c3491050a7d340d96539eb414e6d10eb2
+      body: Update contracts
+      footer:
+        Changelog-entry: Update contracts to 75cd5e9f19d49b8723b7e39033763ca698e1254f
+        changelog-entry: Update contracts to 75cd5e9f19d49b8723b7e39033763ca698e1254f
+      author: Renovate Bot
+      nested:
+        - commits:
+            - subject: "hw.device-type: Add revpi-connect-s"
+              hash: d81ef3d12565d9c0e81d776a6a156f22f6322728
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Obaid Chemkhi obaid.chemkhi@voltstorage.com
+                signed-off-by: Obaid Chemkhi obaid.chemkhi@voltstorage.com
+              author: Obaid Ch
+          version: contracts-2.0.59
+          title: ""
+          date: 2023-05-03T09:53:24.491Z
+  version: 2.114.16+rev2
+  title: ""
+  date: 2023-05-03T11:26:48.909Z
+- commits:
     - subject: fixed reboot issue
       hash: 1f676c656d612c1311e5e32c1f7bfd591c92fc47
       body: |
