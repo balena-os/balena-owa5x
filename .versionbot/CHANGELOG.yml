@@ -1,4 +1,21 @@
 - commits:
+    - subject: upgrade of meta-owasys layer
+      hash: 38056b49756eb7b467fef3888a10c0da7a40f533
+      body: >
+        Recently nxp closed all repos at sourcecodeaurora
+
+        and moved them to nxp's github. This is the update that implement that change along others.
+      footer:
+        Changelog-entry: upgrade of meta-owasys layer
+        changelog-entry: upgrade of meta-owasys layer
+        Signed-off-by: Alvaro Guzman alvaro.guzman@owasys.com
+        signed-off-by: Alvaro Guzman alvaro.guzman@owasys.com
+      author: Alvaro Guzman
+      nested: []
+  version: 2.114.18+rev1
+  title: ""
+  date: 2023-05-04T09:11:03.002Z
+- commits:
     - subject: Update layers/meta-balena to 0d43fec5037b2b4be928647e9b626c62c794c6f0
       hash: 2f41d26a1c61be496e3d6874623028847afce365
       body: Update layers/meta-balena

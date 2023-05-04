@@ -1,6 +1,11 @@
 # v2.107.5
 ## (2023-01-09)
 
+# v2.114.18+rev1
+## (2023-05-04)
+
+* upgrade of meta-owasys layer [Alvaro Guzman]
+
 # v2.114.18
 ## (2023-05-03)
 
