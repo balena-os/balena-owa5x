@@ -1,4 +1,20 @@
 - commits:
+    - subject: updated device power manager service
+      hash: f18274ee9cc190b8f82aab7bba8d636804081e4e
+      body: |
+        Power manager service is needed to have an early boot, thus
+        dependencies has been tailored to shrink the time
+      footer:
+        Changelog-entry: updated device power manager service
+        changelog-entry: updated device power manager service
+        Signed-off-by: Alvaro Guzman alvaro.guzman@owasys.com
+        signed-off-by: Alvaro Guzman alvaro.guzman@owasys.com
+      author: Alvaro Guzman
+      nested: []
+  version: 2.114.21+rev1
+  title: ""
+  date: 2023-05-05T07:33:48.222Z
+- commits:
     - subject: Update layers/meta-balena to 0f0fec2a68746d8616cc55a06cf636363786bdca
       hash: c151d24274b46d4b4d98f0ddd09548f6c767f578
       body: Update layers/meta-balena

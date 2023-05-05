@@ -1,6 +1,11 @@
 # v2.107.5
 ## (2023-01-09)
 
+# v2.114.21+rev1
+## (2023-05-05)
+
+* updated device power manager service [Alvaro Guzman]
+
 # v2.114.21
 ## (2023-05-05)
 
