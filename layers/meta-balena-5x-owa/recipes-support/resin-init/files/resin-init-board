@@ -2,6 +2,14 @@
 
 set -e
 
+LOCKFILE="/var/lock/owaapi.lck"                                                            
+
+sleep 10
+while [ -f "$LOCKFILE" ]
+do
+    sleep 1
+done
+
 /usr/bin/Start_BT_WiFi 1
 /usr/bin/Switch_GSM 1
 
