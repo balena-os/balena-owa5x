@@ -2,6 +2,7 @@
 
 set -e
 
+sleep 30
 /usr/bin/Start_BT_WiFi 1
 /usr/bin/Switch_GSM 1
 
