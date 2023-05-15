@@ -1,4 +1,20 @@
 - commits:
+    - subject: updated meta-owasys
+      hash: d6e2f22396cda91f71abdd47de14d8dbe710c45e
+      body: >
+        Updated owa5X owasys layer including important changes related to the
+        power manager service.
+      footer:
+        Changelog-entry: updated meta-owasys
+        changelog-entry: updated meta-owasys
+        Signed-off-by: Alvaro Guzman <alvaro.guzman@owasys.com>
+        signed-off-by: Alvaro Guzman <alvaro.guzman@owasys.com>
+      author: Alvaro Guzman
+      nested: []
+  version: 2.115.0+rev1
+  title: ""
+  date: 2023-05-15T14:42:19.465Z
+- commits:
     - subject: Update layers/meta-balena to e86e103292e67dda18ca243e46721e65cd89c577
       hash: 7b143822921fc1580eb25df7b0c21b3860384ae6
       body: Update layers/meta-balena
