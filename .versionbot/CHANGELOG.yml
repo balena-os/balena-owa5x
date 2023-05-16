@@ -1,4 +1,24 @@
 - commits:
+    - subject: delay to flash onboard uC FW
+      hash: fafc59cb8057e07a78f01eaf730e8a30aeb03cd1
+      body: >
+        The owa5X has an onboard uC which manages power. This uC is programmable
+        and upgradable from the OS and it needs some time to be flashed. In
+        order to perform a correct update when the uC firmware changes between
+        BSP versions, we need at least 10s. A delay of 10s plus a checking on a
+        lock has been inserted in the resin-init-board script to do the uC FW
+        flashing.
+      footer:
+        Changelog-entry: delay to flash onboard uC FW
+        changelog-entry: delay to flash onboard uC FW
+        Signed-off-by: Alvaro Guzman <alvaro.guzman@owasys.com>
+        signed-off-by: Alvaro Guzman <alvaro.guzman@owasys.com>
+      author: Alvaro Guzman
+      nested: []
+  version: 2.115.0+rev2
+  title: ""
+  date: 2023-05-16T15:36:59.815Z
+- commits:
     - subject: updated meta-owasys
       hash: d6e2f22396cda91f71abdd47de14d8dbe710c45e
       body: >

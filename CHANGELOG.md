@@ -1,6 +1,11 @@
 # v2.107.5
 ## (2023-01-09)
 
+# v2.115.0+rev2
+## (2023-05-16)
+
+* delay to flash onboard uC FW [Alvaro Guzman]
+
 # v2.115.0+rev1
 ## (2023-05-15)
 
