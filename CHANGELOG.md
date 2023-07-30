@@ -1,6 +1,21 @@
 # v2.107.5
 ## (2023-01-09)
 
+# v3.1.4
+## (2023-07-30)
+
+
+<details>
+<summary> Update layers/meta-balena to 3ee7dc32110f9da60a088b5bd4bb39642d901bb5 [Self-hosted Renovate Bot] </summary>
+
+> ## meta-balena-3.1.4
+> ### (Invalid date)
+> 
+> * kernel-balena: remove mispelled config setting [Alex Gonzalez]
+> 
+
+</details>
+
 # v3.1.3
 ## (2023-07-28)
 
