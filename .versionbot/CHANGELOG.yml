@@ -1,4 +1,16 @@
 - commits:
+    - subject: Update balena-os/github-workflows to v0.0.21
+      hash: daebad358c8237db258b7fee40789f25374dc135
+      body: Update balena-os/github-workflows
+      footer:
+        Changelog-entry: Update balena-os/github-workflows to v0.0.21
+        changelog-entry: Update balena-os/github-workflows to v0.0.21
+      author: Self-hosted Renovate Bot
+      nested: []
+  version: 3.1.4+rev1
+  title: ""
+  date: 2023-08-01T19:36:07.235Z
+- commits:
     - subject: Update layers/meta-balena to 3ee7dc32110f9da60a088b5bd4bb39642d901bb5
       hash: 3b8dbbee80e5c086e64d9a03b89134cdf2ac5229
       body: Update layers/meta-balena
