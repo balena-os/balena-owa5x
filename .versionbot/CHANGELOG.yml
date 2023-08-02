@@ -1,4 +1,29 @@
 - commits:
+    - subject: Update contracts to 4c166923fa0c507314e37ae7f7c4190c07d66aef
+      hash: b15782200c8923ab425c19314f5bb5d267ab8ec9
+      body: Update contracts
+      footer:
+        Changelog-entry: Update contracts to 4c166923fa0c507314e37ae7f7c4190c07d66aef
+        changelog-entry: Update contracts to 4c166923fa0c507314e37ae7f7c4190c07d66aef
+      author: Self-hosted Renovate Bot
+      nested:
+        - commits:
+            - subject: Remove OpenJDK v7 as it has been removed from alpine edge
+              hash: 343a2f5d0a08de2f9bb5ad1013150e98f23feb2c
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+          version: contracts-2.0.64
+          title: ""
+          date: 2023-08-02T20:02:24.824Z
+  version: 3.1.6+rev1
+  title: ""
+  date: 2023-08-02T20:59:38.756Z
+- commits:
     - subject: Update layers/meta-balena to a84dc6fbc5967f67acf0d12f4fe5a9081a70cb63
       hash: d3cefce8dbc21a96b5c89be243340a122734c3cf
       body: Update layers/meta-balena
