@@ -1,4 +1,29 @@
 - commits:
+    - subject: Update contracts to bf0ec3d5a42dae4babeed8485030a0ca50f6fde3
+      hash: 26de846fa78f18cc482ef9f7fe2fc5abb3ca333e
+      body: Update contracts
+      footer:
+        Changelog-entry: Update contracts to bf0ec3d5a42dae4babeed8485030a0ca50f6fde3
+        changelog-entry: Update contracts to bf0ec3d5a42dae4babeed8485030a0ca50f6fde3
+      author: Self-hosted Renovate Bot
+      nested:
+        - commits:
+            - subject: Replace ifupdown with ifupdown-ng for alpine edge
+              hash: cf7dde1ae72cd0edaa94c783da271b1bf22542ea
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+          version: contracts-2.0.65
+          title: ""
+          date: 2023-08-02T20:23:30.063Z
+  version: 3.1.6+rev2
+  title: ""
+  date: 2023-08-02T22:40:29.251Z
+- commits:
     - subject: Update contracts to 4c166923fa0c507314e37ae7f7c4190c07d66aef
       hash: b15782200c8923ab425c19314f5bb5d267ab8ec9
       body: Update contracts
