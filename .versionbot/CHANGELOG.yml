@@ -1,4 +1,28 @@
 - commits:
+    - subject: Update build instructions in README
+      hash: f97c7dd3f7d4628015e930819758680a7df068dc
+      body: |
+        Update the build instructions with
+        steps for containerized builds.
+      footer:
+        Changelog-entry: Update build instructions in README
+        changelog-entry: Update build instructions in README
+        Signed-off-by: Alex Gonzalez <alexg@balena.io>
+        signed-off-by: Alex Gonzalez <alexg@balena.io>
+      author: Alex Gonzalez
+      nested: []
+    - subject: Update layers/meta-balena to b64d73fcc51374ed90f2ede803b3efee13351d30
+      hash: 377dbcd1f7a4892efd6d20b9423f184266b0069e
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to b64d73fcc51374ed90f2ede803b3efee13351d30
+        changelog-entry: Update layers/meta-balena to b64d73fcc51374ed90f2ede803b3efee13351d30
+      author: Self-hosted Renovate Bot
+      nested: []
+  version: 3.1.8
+  title: ""
+  date: 2023-08-10T13:35:37.966Z
+- commits:
     - subject: Update layers/meta-balena to a54f1b2a8253d564634789283980d54004201bdf
       hash: 50647ef244e5d3c169d4ff3ea8dc3ed176d3fd52
       body: Update layers/meta-balena
