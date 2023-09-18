@@ -1,27 +1,35 @@
 [submodule "balena-yocto-scripts"]
 	path = balena-yocto-scripts
 	url = https://github.com/balena-os/balena-yocto-scripts
+	branch = master
 [submodule "contracts"]
 	path = contracts
 	url = https://github.com/balena-io/contracts
+	branch = master
 [submodule "layers/meta-balena"]
 	path = layers/meta-balena
 	url = https://github.com/balena-os/meta-balena
+	branch = master
 [submodule "layers/meta-freescale"]
 	path = layers/meta-freescale
 	url = https://github.com/Freescale/meta-freescale
+	branch = kirkstone
 [submodule "layers/meta-freescale-3rdparty"]
 	path = layers/meta-freescale-3rdparty
 	url = https://github.com/Freescale/meta-freescale-3rdparty
 [submodule "layers/meta-freescale-distro"]
 	path = layers/meta-freescale-distro
 	url = https://github.com/Freescale/meta-freescale-distro
+	branch = kirkstone
 [submodule "layers/meta-openembedded"]
 	path = layers/meta-openembedded
 	url = https://github.com/openembedded/meta-openembedded
+	branch = kirkstone
 [submodule "layers/poky"]
 	path = layers/poky
 	url = https://github.com/balena-os/poky
+	branch = kirkstone
 [submodule "layers/meta-owasys"]
 	path = layers/meta-owasys
 	url = https://github.com/Owasys/meta-owasys.git
+	branch = master
