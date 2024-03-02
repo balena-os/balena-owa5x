@@ -1,4 +1,72 @@
 - commits:
+    - subject: Update layers/meta-balena to 548477f18ea46d404e44121c9ccb399f40ccabd3
+      hash: a435055b31830071cb6e817b98aaf695443fe5dd
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to 548477f18ea46d404e44121c9ccb399f40ccabd3
+        changelog-entry: Update layers/meta-balena to 548477f18ea46d404e44121c9ccb399f40ccabd3
+      author: Self-hosted Renovate Bot
+      nested:
+        - commits:
+            - subject: "resin_update_state_probe: ignore RAID members when looking for root"
+              hash: e984b21b0270729784735d99f222294be65afd20
+              body: >
+                At this moment resin_update_state_probe looks for the root
+                partition
+
+                by UUID and assumes that only a single device is returned. This
+
+                assumption breaks when the root is on a MD RAID1 device as not only
+
+                the virtual MD device holds a filesystem with the given UUID,
+
+                each member does as well.
+
+
+                This patch makes resin_update_state_probe ignore devices
+
+                that are RAID members which in that case will only return
+
+                the MD device as expected.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Michal Toman <michalt@balena.io>
+                signed-off-by: Michal Toman <michalt@balena.io>
+              author: Michal Toman
+              nested: []
+          version: meta-balena-5.1.46
+          title: ""
+          date: 2024-03-02T01:20:54.562Z
+        - commits:
+            - subject: Update tests/leviathan digest to 2b34fec
+              hash: 695bd2b086a94945e80d9d677a6019462dd9e35f
+              body: Update tests/leviathan
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: Self-hosted Renovate Bot
+              nested:
+                - commits:
+                    - subject: Update core/contracts digest to f3ba2ee
+                      hash: 2334fd02530b6669a3fb5275421543c0a66bca2f
+                      body: |
+                        Update core/contracts
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: Self-hosted Renovate Bot
+                      nested: []
+                  version: leviathan-2.29.63
+                  title: ""
+                  date: 2024-02-27T17:34:15.697Z
+          version: meta-balena-5.1.45
+          title: ""
+          date: 2024-02-29T23:05:05.727Z
+  version: 5.1.46
+  title: ""
+  date: 2024-03-02T03:10:19.030Z
+- commits:
     - subject: Update layers/meta-balena to 64cd9e85978a6148a5b0f9231edab4fe42db9c33
       hash: 0ebf06b5b6676981ae00a2fbea8c2851393a2649
       body: Update layers/meta-balena

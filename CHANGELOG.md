@@ -1,6 +1,37 @@
 # v2.107.5
 ## (2023-01-09)
 
+# v5.1.46
+## (2024-03-02)
+
+
+<details>
+<summary> Update layers/meta-balena to 548477f18ea46d404e44121c9ccb399f40ccabd3 [Self-hosted Renovate Bot] </summary>
+
+> ## meta-balena-5.1.46
+> ### (2024-03-02)
+> 
+> * resin_update_state_probe: ignore RAID members when looking for root [Michal Toman]
+> 
+> ## meta-balena-5.1.45
+> ### (2024-02-29)
+> 
+> 
+> <details>
+> <summary> Update tests/leviathan digest to 2b34fec [Self-hosted Renovate Bot] </summary>
+> 
+>> ### leviathan-2.29.63
+>> #### (2024-02-27)
+>> 
+>> * Update core/contracts digest to f3ba2ee [Self-hosted Renovate Bot]
+>> 
+> 
+> </details>
+> 
+> 
+
+</details>
+
 # v5.1.44
 ## (2024-02-29)
 
