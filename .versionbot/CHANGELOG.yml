@@ -1,4 +1,18 @@
 - commits:
+    - subject: pass input parameters to common esr workflow
+      hash: 6c44f1479b63963385b160e94ffe0a1587bed6e0
+      body: ""
+      footer:
+        Changelog-entry: pass input parameters to common esr workflow
+        changelog-entry: pass input parameters to common esr workflow
+        Signed-off-by: Alex Gonzalez <alexg@balena.io>
+        signed-off-by: Alex Gonzalez <alexg@balena.io>
+      author: Alex Gonzalez
+      nested: []
+  version: 5.1.47+rev1
+  title: ""
+  date: 2024-03-05T19:19:29.665Z
+- commits:
     - subject: Update layers/meta-balena to 6accf97a7c0276a78d47b8d5fa93c515f31d24c2
       hash: 09fe175939b539be9d9377be0b5cf909c6817ad1
       body: Update layers/meta-balena
