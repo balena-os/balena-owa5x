@@ -1,4 +1,16 @@
 - commits:
+    - subject: Update contracts to 835fbfdda9d4955b5c2a7d801a16878352a95342
+      hash: 2662a487326cff80ac92e7dad1ad3e669c7d4373
+      body: Update contracts
+      footer:
+        Changelog-entry: Update contracts to 835fbfdda9d4955b5c2a7d801a16878352a95342
+        changelog-entry: Update contracts to 835fbfdda9d4955b5c2a7d801a16878352a95342
+      author: Self-hosted Renovate Bot
+      nested: []
+  version: 5.2.4+rev2
+  title: ""
+  date: 2024-04-08T18:42:58.287Z
+- commits:
     - subject: Update contracts to cb7b2220f327c5a21c1c0ab193ac03016537c05a
       hash: 58ff55bfb13925394dcf44401de7415e140ad4a7
       body: Update contracts
