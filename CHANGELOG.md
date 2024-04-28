@@ -1,6 +1,11 @@
 # v2.107.5
 ## (2023-01-09)
 
+# v5.3.2+rev1
+## (2024-04-28)
+
+* Update layers/meta-openembedded to 5a6f7925bd2b885955c942573f70a5594f231563 [Self-hosted Renovate Bot]
+
 # v5.3.2
 ## (2024-04-25)
 
