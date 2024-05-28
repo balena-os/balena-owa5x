@@ -1,4 +1,19 @@
 - commits:
+    - subject: Update layers/meta-openembedded to
+        0560b848996a0feb410a8cd8ca07c60fe2f3b5bc
+      hash: b16bbabc03072ac4ed88a087440a22bb38ea14b0
+      body: Update layers/meta-openembedded
+      footer:
+        Changelog-entry: Update layers/meta-openembedded to
+          0560b848996a0feb410a8cd8ca07c60fe2f3b5bc
+        changelog-entry: Update layers/meta-openembedded to
+          0560b848996a0feb410a8cd8ca07c60fe2f3b5bc
+      author: Self-hosted Renovate Bot
+      nested: []
+  version: 5.3.11+rev1
+  title: ""
+  date: 2024-05-28T17:48:00.489Z
+- commits:
     - subject: Update layers/meta-balena to 15a8f82cb7722e22ba3abb6aea4e7618e133d7be
       hash: a79566c75d11cfb2911fba9bdc445546efebc42a
       body: Update layers/meta-balena
