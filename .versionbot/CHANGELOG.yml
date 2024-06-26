@@ -1,4 +1,32 @@
 - commits:
+    - subject: Update balena-yocto-scripts to 0bd64809b2cce6833f8732eecdd64d32921f1b4d
+      hash: 08939633cb3d754b10663cfbb04347ca71ad0580
+      body: Update balena-yocto-scripts
+      footer:
+        Changelog-entry: Update balena-yocto-scripts to 0bd64809b2cce6833f8732eecdd64d32921f1b4d
+        changelog-entry: Update balena-yocto-scripts to 0bd64809b2cce6833f8732eecdd64d32921f1b4d
+      author: Self-hosted Renovate Bot
+      nested:
+        - commits:
+            - subject: Refactor secrets and variables to use environments
+              hash: c46eb9cfa4a272f00af4029c31e355477169802a
+              body: |
+                Reduce the required secrets and inputs required by
+                relying on vars and secrets set in each GitHub Environment.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: balena-yocto-scripts-1.23.1
+          title: ""
+          date: 2024-06-26T12:43:22.833Z
+  version: 5.3.21+rev5
+  title: ""
+  date: 2024-06-26T14:41:16.957Z
+- commits:
     - subject: Update balena-yocto-scripts to 0164431c7032e80f145464e8cc7becfe8bb8597c
       hash: 85af2c9bfc792e50b69b8747ba02220695048a9f
       body: Update balena-yocto-scripts
