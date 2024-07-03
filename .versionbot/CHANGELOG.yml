@@ -1,4 +1,37 @@
 - commits:
+    - subject: Update balena-yocto-scripts to 5469d877de428856cd630f2a18bc39edefdb924d
+      hash: 99177eb4438464f9625232fa441adeb4c403b933
+      body: Update balena-yocto-scripts
+      footer:
+        Changelog-entry: Update balena-yocto-scripts to 5469d877de428856cd630f2a18bc39edefdb924d
+        changelog-entry: Update balena-yocto-scripts to 5469d877de428856cd630f2a18bc39edefdb924d
+      author: Self-hosted Renovate Bot
+      nested:
+        - commits:
+            - subject: Do not run any tests by default unless provided by calling workflow
+              hash: d0cfc42cf8a17ef6b5f2ac4eed6f84d1581435e6
+              body: >
+                As there are currently more device types without tests than
+                with,
+
+                and some of those with tests need to provide overrides anyway,
+                it's
+
+                simpler to assume an empty test matrix unless provided.
+              footer:
+                Change-type: minor
+                change-type: minor
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: balena-yocto-scripts-1.25.0
+          title: ""
+          date: 2024-07-03T15:44:25.729Z
+  version: 5.3.23+rev1
+  title: ""
+  date: 2024-07-03T18:08:26.909Z
+- commits:
     - subject: Update layers/meta-balena to e6c2037615db74af70250c5d3351c44e2ee31fbb
       hash: 90b052aac325b88d281ad231359d96257392baea
       body: Update layers/meta-balena
