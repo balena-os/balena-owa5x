@@ -1,4 +1,46 @@
 - commits:
+    - subject: Update balena-yocto-scripts to 32b15f1729158dec8046b9861da37062c68ff292
+      hash: 8408c2f3b05d4b029ea5c8c8be8b7421bf781a86
+      body: Update balena-yocto-scripts
+      footer:
+        Changelog-entry: Update balena-yocto-scripts to 32b15f1729158dec8046b9861da37062c68ff292
+        changelog-entry: Update balena-yocto-scripts to 32b15f1729158dec8046b9861da37062c68ff292
+      author: Self-hosted Renovate Bot
+      nested:
+        - commits:
+            - subject: Remove dry-run flag from S3 upload
+              hash: cf0301996022ef58a9c19d40d002d72a1bbcf705
+              body: |
+                We are publishing hostapp releases to staging already, we should
+                start including the associated S3 files as well.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: balena-yocto-scripts-1.25.2
+          title: ""
+          date: 2024-07-03T21:19:20.964Z
+        - commits:
+            - subject: Fix actionlint errors and warnings in shell steps
+              hash: da910ed9ac6fdd70bd0ebd1beb0dbbd1248517fd
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: balena-yocto-scripts-1.25.1
+          title: ""
+          date: 2024-07-03T18:33:05.802Z
+  version: 5.3.24+rev1
+  title: ""
+  date: 2024-07-04T21:13:04.966Z
+- commits:
     - subject: Update layers/meta-balena to e1d709a6f00e8dd3271a3c84d9fb6430cedec485
       hash: 682e53c5dbff5fb053405a0828f4419ad768a7eb
       body: Update layers/meta-balena
