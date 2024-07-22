@@ -17,6 +17,7 @@
 [submodule "layers/meta-freescale-3rdparty"]
 	path = layers/meta-freescale-3rdparty
 	url = https://github.com/Freescale/meta-freescale-3rdparty
+	branch = kirkstone
 [submodule "layers/meta-freescale-distro"]
 	path = layers/meta-freescale-distro
 	url = https://github.com/Freescale/meta-freescale-distro
