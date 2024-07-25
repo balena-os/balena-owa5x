@@ -1,6 +1,21 @@
 # v2.107.5
 ## (2023-01-09)
 
+# v6.0.6
+## (2024-07-25)
+
+
+<details>
+<summary> Update layers/meta-balena to 137a7882c5f56d505ee5c757cedfb27ab20d89a8 [Self-hosted Renovate Bot] </summary>
+
+> ## meta-balena-6.0.6
+> ### (2024-07-25)
+> 
+> * patch: Fix broken links in CDS Docs [Vipul Gupta]
+> 
+
+</details>
+
 # v6.0.5+rev1
 ## (2024-07-22)
 
