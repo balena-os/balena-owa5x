@@ -1,6 +1,28 @@
 # v2.107.5
 ## (2023-01-09)
 
+# v6.0.6+rev1
+## (2024-07-25)
+
+
+<details>
+<summary> Update balena-yocto-scripts to 34b4ee6c3aeabd21b9bb7b90536d837dbf465730 [Self-hosted Renovate Bot] </summary>
+
+> ## balena-yocto-scripts-1.25.10
+> ### (2024-07-23)
+> 
+> * By default, deploy hostapp on push only [Leandro Motta Barros]
+> 
+> ## balena-yocto-scripts-1.25.9
+> ### (2024-07-22)
+> 
+> * use token to fetch private contracts [rcooke-warwick]
+> * unroll balena_lib_build_contract function [rcooke-warwick]
+> * unroll balena_api_is_dt_private function [rcooke-warwick]
+> 
+
+</details>
+
 # v6.0.6
 ## (2024-07-25)
 
