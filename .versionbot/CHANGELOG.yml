@@ -1,4 +1,32 @@
 - commits:
+    - subject: Update balena-yocto-scripts to cdc09006ec79c82efe149abfc8eb8b932924ef89
+      hash: 5f873c5b34268fef64443fd40824f39e3feef017
+      body: Update balena-yocto-scripts
+      footer:
+        Changelog-entry: Update balena-yocto-scripts to cdc09006ec79c82efe149abfc8eb8b932924ef89
+        changelog-entry: Update balena-yocto-scripts to cdc09006ec79c82efe149abfc8eb8b932924ef89
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: "revovate: change config to use balena-io template"
+              hash: f4d82d9029f39245cf15d2433a783d33787a73d1
+              body: >
+                in this repo we are using "change-type" commits, but renovate is
+                using the balena-os default which is using "changelog-entry"
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Ryan Cooke <ryan@balena.io>
+                signed-off-by: Ryan Cooke <ryan@balena.io>
+              author: rcooke-warwick
+              nested: []
+          version: balena-yocto-scripts-1.25.11
+          title: ""
+          date: 2024-07-29T15:14:59.755Z
+  version: 6.0.6+rev4
+  title: ""
+  date: 2024-07-29T16:04:39.068Z
+- commits:
     - subject: Update layers/meta-freescale-distro to
         d5bbb487b2816dfc74984a78b67f7361ce404253
       hash: bda4ec5a3cb8b99f5194af757f19b3a33e1ca852

@@ -1,6 +1,21 @@
 # v2.107.5
 ## (2023-01-09)
 
+# v6.0.6+rev4
+## (2024-07-29)
+
+
+<details>
+<summary> Update balena-yocto-scripts to cdc09006ec79c82efe149abfc8eb8b932924ef89 [balena-renovate[bot]] </summary>
+
+> ## balena-yocto-scripts-1.25.11
+> ### (2024-07-29)
+> 
+> * revovate: change config to use balena-io template [rcooke-warwick]
+> 
+
+</details>
+
 # v6.0.6+rev3
 ## (2024-07-25)
 
