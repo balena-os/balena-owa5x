@@ -1,4 +1,31 @@
 - commits:
+    - subject: Update layers/meta-balena to 5e5235368b985d34d1efbedb7ba95951b547dd1b
+      hash: 5faa12704eb1fbbb73380b0b9e6c8d4dddf900a9
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to 5e5235368b985d34d1efbedb7ba95951b547dd1b
+        changelog-entry: Update layers/meta-balena to 5e5235368b985d34d1efbedb7ba95951b547dd1b
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: "tests: config: restore both network options to false"
+              hash: a1ed821735940bd56b3f6b92ae3db85bba4dd241
+              body: |
+                See: https://github.com/balena-os/meta-balena/pull/3117
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: meta-balena-6.0.20
+          title: ""
+          date: 2024-08-31T14:20:53.330Z
+  version: 6.0.20
+  title: ""
+  date: 2024-08-31T15:12:44.850Z
+- commits:
     - subject: Update layers/meta-balena to 782207a721f505e9e414c7a79259c407e2d6c445
       hash: 5591e96c7e4278e8c21a3449bbc45170a62594a8
       body: Update layers/meta-balena
