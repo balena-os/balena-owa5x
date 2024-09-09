@@ -1,4 +1,30 @@
 - commits:
+    - subject: Update balena-yocto-scripts to 2fc3e95d8c64dd36f963fda5a2f770ef8cd350f0
+      hash: 1bd9bbf59c710693942cbfc8779c6ef736260bc1
+      body: Update balena-yocto-scripts
+      footer:
+        Changelog-entry: Update balena-yocto-scripts to 2fc3e95d8c64dd36f963fda5a2f770ef8cd350f0
+        changelog-entry: Update balena-yocto-scripts to 2fc3e95d8c64dd36f963fda5a2f770ef8cd350f0
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Include semver when bumping leviathan action
+              hash: 39084536604f4713516ab50bce7a82a0aae28523
+              body: >
+                This makes it more human readable, and allows us to treat patch,
+                minor, and major revisions of the action differently if needed.
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: Kyle Harding
+              nested: []
+          version: balena-yocto-scripts-1.25.38
+          title: ""
+          date: 2024-09-09T17:05:16.878Z
+  version: 6.0.21+rev7
+  title: ""
+  date: 2024-09-09T20:33:58.596Z
+- commits:
     - subject: Update balena-yocto-scripts to 4f3072e342756e45ed206dc659f125b3ab000a59
       hash: 72dff66a7009120293c401e3d828a30fd27be956
       body: Update balena-yocto-scripts
