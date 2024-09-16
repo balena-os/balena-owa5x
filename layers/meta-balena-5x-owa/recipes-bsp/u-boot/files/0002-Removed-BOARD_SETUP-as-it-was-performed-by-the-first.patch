@@ -1,0 +1,26 @@
+From c155ede9d03b7c0b74a8f7eaae9bd8591a5b8c38 Mon Sep 17 00:00:00 2001
+From: Alvaro Guzman <alvaro.guzman@owasys.com>
+Date: Wed, 11 Sep 2024 14:30:46 +0200
+Subject: [PATCH] Removed BOARD_SETUP as it was performed by the first
+ bootloader
+
+---
+ configs/imx8mp_owa5x_defconfig | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/configs/imx8mp_owa5x_defconfig b/configs/imx8mp_owa5x_defconfig
+index 87536b90652..8d0765dc4b0 100644
+--- a/configs/imx8mp_owa5x_defconfig
++++ b/configs/imx8mp_owa5x_defconfig
+@@ -155,7 +155,7 @@ CONFIG_USB_XHCI_DWC3=y
+ CONFIG_USB_DWC3=y
+ CONFIG_USB_DWC3_GADGET=y
+ 
+-CONFIG_OF_BOARD_SETUP=y
++CONFIG_OF_BOARD_SETUP=n
+ 
+ CONFIG_REGMAP=y
+ CONFIG_SYSCON=y
+-- 
+2.34.1
+
