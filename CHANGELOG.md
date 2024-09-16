@@ -1,6 +1,421 @@
 # v2.107.5
 ## (2023-01-09)
 
+# v6.0.25
+## (2024-09-13)
+
+
+<details>
+<summary> Update layers/meta-balena to 743309ff6019a6b956ad21f73ced5ae5673f2b1b [balena-renovate[bot]] </summary>
+
+> ## meta-balena-6.0.25
+> ### (2024-09-13)
+> 
+> * initrdscripts: Make cryptsetup fail hard in unexpected conditions [Michal Toman]
+> 
+
+</details>
+
+# v6.0.24
+## (2024-09-13)
+
+
+<details>
+<summary> Update layers/meta-balena to 99684cda8ebe27dc5c5882ebc410b525d606b632 [balena-renovate[bot]] </summary>
+
+> ## meta-balena-6.0.24
+> ### (2024-09-13)
+> 
+> * common: fix return in commit_apply-dbx HUP hook [Joseph Kogut]
+> 
+
+</details>
+
+# v6.0.23+rev1
+## (2024-09-12)
+
+
+<details>
+<summary> Update balena-yocto-scripts to 0684ef25f676baddd6c55a504b575776269588de [balena-renovate[bot]] </summary>
+
+> ## balena-yocto-scripts-1.25.41
+> ### (2024-09-12)
+> 
+> * Update balena-os/leviathan action to v2.31.40 [balena-renovate[bot]]
+> 
+
+</details>
+
+# v6.0.23
+## (2024-09-12)
+
+
+<details>
+<summary> Update layers/meta-balena to b81a2d7084cb519aa78b5d56a96ca571150df63b [balena-renovate[bot]] </summary>
+
+> ## meta-balena-6.0.23
+> ### (2024-09-12)
+> 
+> * tests:os: Avoid setting apiEndpoint for unmanaged tests [Kyle Harding]
+> 
+
+</details>
+
+# v6.0.22+rev1
+## (2024-09-12)
+
+
+<details>
+<summary> Update balena-yocto-scripts to 4bc14c6b105fd26f5cad219f2cf4c324e8be038c [balena-renovate[bot]] </summary>
+
+> ## balena-yocto-scripts-1.25.40
+> ### (2024-09-12)
+> 
+> * Update balena-os/leviathan action to v2.31.37 [balena-renovate[bot]]
+> 
+
+</details>
+
+# v6.0.22
+## (2024-09-12)
+
+
+<details>
+<summary> Update layers/meta-balena to c210599ad8e55675a29fe24800b7046eb260f397 [balena-renovate[bot]] </summary>
+
+> ## meta-balena-6.0.22
+> ### (2024-09-12)
+> 
+> * Update balena-os/balena-yocto-scripts action to v1.25.39 [balena-renovate[bot]]
+> 
+
+</details>
+
+# v6.0.21+rev8
+## (2024-09-12)
+
+
+<details>
+<summary> Update balena-yocto-scripts to 80a157ec0c2ec3f5b8bc4f9041eb27f9e31233f7 [balena-renovate[bot]] </summary>
+
+> ## balena-yocto-scripts-1.25.39
+> ### (2024-09-11)
+> 
+> * Update actions/create-github-app-token action to v1.11.0 [balena-renovate[bot]]
+> 
+
+</details>
+
+# v6.0.21+rev7
+## (2024-09-09)
+
+
+<details>
+<summary> Update balena-yocto-scripts to 2fc3e95d8c64dd36f963fda5a2f770ef8cd350f0 [balena-renovate[bot]] </summary>
+
+> ## balena-yocto-scripts-1.25.38
+> ### (2024-09-09)
+> 
+> * Include semver when bumping leviathan action [Kyle Harding]
+> 
+
+</details>
+
+# v6.0.21+rev6
+## (2024-09-06)
+
+
+<details>
+<summary> Update balena-yocto-scripts to 4f3072e342756e45ed206dc659f125b3ab000a59 [balena-renovate[bot]] </summary>
+
+> ## balena-yocto-scripts-1.25.37
+> ### (2024-09-05)
+> 
+> * Update balena-os/leviathan digest to 8fb47f2 [balena-renovate[bot]]
+> 
+
+</details>
+
+# v6.0.21+rev5
+## (2024-09-05)
+
+
+<details>
+<summary> Update balena-yocto-scripts to 0f0b5cc033b03b5535c13082000225f179a60758 [balena-renovate[bot]] </summary>
+
+> ## balena-yocto-scripts-1.25.36
+> ### (2024-09-05)
+> 
+> * Update balena-os/leviathan digest to 5db2b5d [balena-renovate[bot]]
+> 
+
+</details>
+
+# v6.0.21+rev4
+## (2024-09-04)
+
+
+<details>
+<summary> Update balena-yocto-scripts to 511c58dfa068d2fab2c8340c7fc2f6edb12b2f09 [balena-renovate[bot]] </summary>
+
+> ## balena-yocto-scripts-1.25.35
+> ### (2024-09-04)
+> 
+> * Update balena-os/leviathan digest to da52396 [balena-renovate[bot]]
+> 
+
+</details>
+
+# v6.0.21+rev3
+## (2024-09-04)
+
+
+<details>
+<summary> Update balena-yocto-scripts to df4ce150ec4c99fc78ce61f78d6efca4061e6adb [balena-renovate[bot]] </summary>
+
+> ## balena-yocto-scripts-1.25.34
+> ### (2024-09-04)
+> 
+> * Update actions/create-github-app-token action to v1.10.4 [balena-renovate[bot]]
+> 
+
+</details>
+
+# v6.0.21+rev2
+## (2024-09-02)
+
+
+<details>
+<summary> Update balena-yocto-scripts to 99c07ec07449e1705be38f48c8fe6a914b5ecb3b [balena-renovate[bot]] </summary>
+
+> ## balena-yocto-scripts-1.25.33
+> ### (2024-09-02)
+> 
+> * Update balena-os/leviathan digest to d8572e2 [balena-renovate[bot]]
+> 
+
+</details>
+
+# v6.0.21+rev1
+## (2024-09-02)
+
+
+<details>
+<summary> Update balena-yocto-scripts to 11f6becf05ead40e926a52022b9fca763b49eebe [balena-renovate[bot]] </summary>
+
+> ## balena-yocto-scripts-1.25.32
+> ### (2024-09-02)
+> 
+> * Update Lock file maintenance [balena-renovate[bot]]
+> 
+
+</details>
+
+# v6.0.21
+## (2024-09-01)
+
+
+<details>
+<summary> Update layers/meta-balena to 5310f76b1f409f6fc164ab3f307b381250ff8f5a [balena-renovate[bot]] </summary>
+
+> ## meta-balena-6.0.21
+> ### (2024-09-01)
+> 
+> * Update balena-os/balena-yocto-scripts action to v1.25.30 [balena-renovate[bot]]
+> 
+
+</details>
+
+# v6.0.20+rev2
+## (2024-09-01)
+
+
+<details>
+<summary> Update balena-yocto-scripts to 578161cba337cccf1a23a2b4b8a5f45cbb16abb2 [balena-renovate[bot]] </summary>
+
+> ## balena-yocto-scripts-1.25.31
+> ### (2024-09-01)
+> 
+> * Update actions/upload-artifact action to v4.4.0 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.25.30
+> ### (2024-09-01)
+> 
+> * Update balena-os/leviathan digest to ff6a079 [balena-renovate[bot]]
+> 
+
+</details>
+
+# v6.0.20+rev1
+## (2024-09-01)
+
+
+<details>
+<summary> Update balena-yocto-scripts to cc1d2e4eec194181974a018588d154c41d7cd040 [balena-renovate[bot]] </summary>
+
+> ## balena-yocto-scripts-1.25.29
+> ### (2024-09-01)
+> 
+> * Restrict runners via yocto label, not 16cpu [Kyle Harding]
+> 
+
+</details>
+
+# v6.0.20
+## (2024-08-31)
+
+
+<details>
+<summary> Update layers/meta-balena to 5e5235368b985d34d1efbedb7ba95951b547dd1b [balena-renovate[bot]] </summary>
+
+> ## meta-balena-6.0.20
+> ### (2024-09-01)
+> 
+> * tests: config: restore both network options to false [Kyle Harding]
+> 
+
+</details>
+
+# v6.0.19
+## (2024-08-31)
+
+
+<details>
+<summary> Update layers/meta-balena to 782207a721f505e9e414c7a79259c407e2d6c445 [balena-renovate[bot]] </summary>
+
+> ## meta-balena-6.0.19
+> ### (2024-09-01)
+> 
+> 
+> <details>
+> <summary> Update balena-supervisor to v16.6.1 [balena-renovate[bot]] </summary>
+> 
+>> ### balena-supervisor-16.6.1
+>> #### (2024-08-29)
+>> 
+>> * Remove unused patchDevice function [Felipe Lalanne]
+>> 
+>> ### balena-supervisor-16.6.0
+>> #### (2024-08-28)
+>> 
+>> * Add support for redsocks dnsu2t config [Christina Ying Wang]
+>> 
+> 
+> </details>
+> 
+> 
+
+</details>
+
+# v6.0.18
+## (2024-08-31)
+
+
+<details>
+<summary> Update layers/meta-balena to a74e7ee8a18dae7a2284de787fd2e7531b840b36 [balena-renovate[bot]] </summary>
+
+> ## meta-balena-6.0.18
+> ### (2024-09-01)
+> 
+> * Update balena-os/balena-yocto-scripts action to v1.25.28 [balena-renovate[bot]]
+> 
+> ## meta-balena-6.0.17
+> ### (2024-09-01)
+> 
+> * Update Pin balena-os/balena-yocto-scripts action to a3dfa26 [balena-renovate[bot]]
+> 
+
+</details>
+
+# v6.0.16+rev1
+## (2024-08-30)
+
+
+<details>
+<summary> Update balena-yocto-scripts to 5c8805dcd0013ca3aab6ec82e094595ad8f6780b [balena-renovate[bot]] </summary>
+
+> ## balena-yocto-scripts-1.25.28
+> ### (Invalid date)
+> 
+> * checkout private contracts for test job [rcooke-warwick]
+> 
+
+</details>
+
+# v6.0.16
+## (2024-08-29)
+
+
+<details>
+<summary> Update layers/meta-balena to ff036025013fc850f9293e3ff590ea467543172f [balena-renovate[bot]] </summary>
+
+> ## meta-balena-6.0.16
+> ### (2024-08-29)
+> 
+> 
+> <details>
+> <summary> Update tests/leviathan digest to ff6a079 [balena-renovate[bot]] </summary>
+> 
+>> ### leviathan-2.31.29
+>> #### (2024-08-29)
+>> 
+>> * Update core/contracts digest to 59752b7 [balena-renovate[bot]]
+>> 
+>> ### leviathan-2.31.28
+>> #### (2024-08-29)
+>> 
+>> * Update balena-os/leviathan-worker to v2.9.43 [balena-renovate[bot]]
+>> 
+>> ### leviathan-2.31.27
+>> #### (2024-08-29)
+>> 
+>> * Update docker/setup-buildx-action digest to 988b5a0 [balena-renovate[bot]]
+>> 
+>> ### leviathan-2.31.26
+>> #### (2024-08-29)
+>> 
+>> * specify ipv4 localhost for balena tunnel [rcooke-warwick]
+>> * Move balena-cli download to a build stage with renovate management [Kyle Harding]
+>> * core: update CLI to 19.0.0 [rcooke-warwick]
+>> 
+> 
+> </details>
+> 
+> 
+
+</details>
+
+# v6.0.15+rev1
+## (2024-08-29)
+
+
+<details>
+<summary> Update balena-yocto-scripts to 6270e6a763450e7bd98e08b699dc22ea55a19bc5 [balena-renovate[bot]] </summary>
+
+> ## balena-yocto-scripts-1.25.27
+> ### (2024-08-29)
+> 
+> * use apt-get to install s4cmd instead of pip [rcooke-warwick]
+> 
+
+</details>
+
+# v6.0.15
+## (2024-08-29)
+
+
+<details>
+<summary> Update layers/meta-balena to 651d5bb6f5a5a437198bef1f188913a2ef68c7bd [balena-renovate[bot]] </summary>
+
+> ## meta-balena-6.0.15
+> ### (2024-08-29)
+> 
+> * remove up-board and cl-som-imx8 [rcooke-warwick]
+> * Add GHA workflows for additional device types [Kyle Harding]
+> 
+
+</details>
+
 # v6.0.14
 ## (2024-08-28)
 

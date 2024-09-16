@@ -1,4 +1,840 @@
 - commits:
+    - subject: Update layers/meta-balena to 743309ff6019a6b956ad21f73ced5ae5673f2b1b
+      hash: 4997761ed240aaf574bde6b689cac762b821cd9c
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to 743309ff6019a6b956ad21f73ced5ae5673f2b1b
+        changelog-entry: Update layers/meta-balena to 743309ff6019a6b956ad21f73ced5ae5673f2b1b
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: "initrdscripts: Make cryptsetup fail hard in unexpected conditions"
+              hash: c1bccdbd95bcb0202c4b80679ade0967df643342
+              body: >
+                This patch adds a set of checks that make sure that the
+                partition
+
+                layout is as expected on a system with encrypted disks. Namely
+                it
+
+                * Checks that the boot partition is split
+
+                * Checks that it can find the correct amount of encrypted
+                partitions
+
+                * Checks that the label on the unlocked filesystem matches the
+                label
+                  on the encrypted partition
+                * Checks that system is not mixing encrypted and unencrypted
+                  partitions
+                * Checks there are no ambiguities or duplicit partitions
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Michal Toman <michalt@balena.io>
+                signed-off-by: Michal Toman <michalt@balena.io>
+              author: Michal Toman
+              nested: []
+          version: meta-balena-6.0.25
+          title: ""
+          date: 2024-09-13T16:23:25.632Z
+  version: 6.0.25
+  title: ""
+  date: 2024-09-13T17:49:20.626Z
+- commits:
+    - subject: Update layers/meta-balena to 99684cda8ebe27dc5c5882ebc410b525d606b632
+      hash: 2eded7fca3880fcc3774c2684216bc240cc794eb
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to 99684cda8ebe27dc5c5882ebc410b525d606b632
+        changelog-entry: Update layers/meta-balena to 99684cda8ebe27dc5c5882ebc410b525d606b632
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: "common: fix return in commit_apply-dbx HUP hook"
+              hash: a557b614a0ce2cf39d6bdfb3e464834b0d570895
+              body: >
+                This code was moved from rollback-health into a hostapp-update
+                commit
+
+                hook, where it now runs outside of a function.
+
+
+                Replace the invalid return statements with exits.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Joseph Kogut <joseph@balena.io>
+                signed-off-by: Joseph Kogut <joseph@balena.io>
+              author: Joseph Kogut
+              nested: []
+          version: meta-balena-6.0.24
+          title: ""
+          date: 2024-09-13T08:22:06.217Z
+  version: 6.0.24
+  title: ""
+  date: 2024-09-13T09:48:09.921Z
+- commits:
+    - subject: Update balena-yocto-scripts to 0684ef25f676baddd6c55a504b575776269588de
+      hash: 1ad2a7a0ae64dc0840fcd7b751fbaa534fa53142
+      body: Update balena-yocto-scripts
+      footer:
+        Changelog-entry: Update balena-yocto-scripts to 0684ef25f676baddd6c55a504b575776269588de
+        changelog-entry: Update balena-yocto-scripts to 0684ef25f676baddd6c55a504b575776269588de
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Update balena-os/leviathan action to v2.31.40
+              hash: e11f1d2897a59918f2e79c0a1b1aa39204e5fa79
+              body: |
+                Update balena-os/leviathan from 2.31.37 to 2.31.40
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: balena-yocto-scripts-1.25.41
+          title: ""
+          date: 2024-09-12T19:49:37.222Z
+  version: 6.0.23+rev1
+  title: ""
+  date: 2024-09-12T23:46:38.361Z
+- commits:
+    - subject: Update layers/meta-balena to b81a2d7084cb519aa78b5d56a96ca571150df63b
+      hash: 0c4b92b8da0e3c3df6e2395264c2d5e7e8fa8abd
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to b81a2d7084cb519aa78b5d56a96ca571150df63b
+        changelog-entry: Update layers/meta-balena to b81a2d7084cb519aa78b5d56a96ca571150df63b
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: "tests:os: Avoid setting apiEndpoint for unmanaged tests"
+              hash: 123e5476c4740abb29e0818d93449ca8da804f5c
+              body: >
+                When this config.json field has a value, the supervisor will
+                treat the device as managed and will crash and start to boot
+                loop.
+
+
+                On faster device-types we don't seem to notice and the tests
+                pass by chance, but on Pi Zero and similar we consistently see
+                ECONNRESET when hitting local SV endpoints.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: meta-balena-6.0.23
+          title: ""
+          date: 2024-09-12T18:15:21.088Z
+  version: 6.0.23
+  title: ""
+  date: 2024-09-12T19:45:46.610Z
+- commits:
+    - subject: Update balena-yocto-scripts to 4bc14c6b105fd26f5cad219f2cf4c324e8be038c
+      hash: 3253d7da4f8c10ef9f5afb7ea58e685dfaa974c6
+      body: Update balena-yocto-scripts
+      footer:
+        Changelog-entry: Update balena-yocto-scripts to 4bc14c6b105fd26f5cad219f2cf4c324e8be038c
+        changelog-entry: Update balena-yocto-scripts to 4bc14c6b105fd26f5cad219f2cf4c324e8be038c
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Update balena-os/leviathan action to v2.31.37
+              hash: d42a13e04b1ba57dea8431f4da3ffc74a9b189ea
+              body: |
+                Update balena-os/leviathan from 2.31.34 to 2.31.37
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: balena-yocto-scripts-1.25.40
+          title: ""
+          date: 2024-09-12T10:27:55.545Z
+  version: 6.0.22+rev1
+  title: ""
+  date: 2024-09-12T11:44:25.176Z
+- commits:
+    - subject: Update layers/meta-balena to c210599ad8e55675a29fe24800b7046eb260f397
+      hash: ce5c67ab13b45a4b3d7deb4d8a97b70640331215
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to c210599ad8e55675a29fe24800b7046eb260f397
+        changelog-entry: Update layers/meta-balena to c210599ad8e55675a29fe24800b7046eb260f397
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Update balena-os/balena-yocto-scripts action to v1.25.39
+              hash: 6e1c2685e6be2982ca7175936e0f4babae37081f
+              body: |
+                Update balena-os/balena-yocto-scripts from v1.25.30 to v1.25.39
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: meta-balena-6.0.22
+          title: ""
+          date: 2024-09-12T01:14:39.979Z
+  version: 6.0.22
+  title: ""
+  date: 2024-09-12T04:43:15.889Z
+- commits:
+    - subject: Update balena-yocto-scripts to 80a157ec0c2ec3f5b8bc4f9041eb27f9e31233f7
+      hash: 1941a01ba880cb98b04ba9ca01bdd17bc5d49557
+      body: Update balena-yocto-scripts
+      footer:
+        Changelog-entry: Update balena-yocto-scripts to 80a157ec0c2ec3f5b8bc4f9041eb27f9e31233f7
+        changelog-entry: Update balena-yocto-scripts to 80a157ec0c2ec3f5b8bc4f9041eb27f9e31233f7
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Update actions/create-github-app-token action to v1.11.0
+              hash: f96ac0de8cb911cacb2e9699a35d2b7a22cd7404
+              body: |
+                Update actions/create-github-app-token from 1.10.4 to 1.11.0
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: balena-yocto-scripts-1.25.39
+          title: ""
+          date: 2024-09-11T22:32:31.676Z
+  version: 6.0.21+rev8
+  title: ""
+  date: 2024-09-12T00:42:55.243Z
+- commits:
+    - subject: Update balena-yocto-scripts to 2fc3e95d8c64dd36f963fda5a2f770ef8cd350f0
+      hash: 1bd9bbf59c710693942cbfc8779c6ef736260bc1
+      body: Update balena-yocto-scripts
+      footer:
+        Changelog-entry: Update balena-yocto-scripts to 2fc3e95d8c64dd36f963fda5a2f770ef8cd350f0
+        changelog-entry: Update balena-yocto-scripts to 2fc3e95d8c64dd36f963fda5a2f770ef8cd350f0
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Include semver when bumping leviathan action
+              hash: 39084536604f4713516ab50bce7a82a0aae28523
+              body: >
+                This makes it more human readable, and allows us to treat patch,
+                minor, and major revisions of the action differently if needed.
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: Kyle Harding
+              nested: []
+          version: balena-yocto-scripts-1.25.38
+          title: ""
+          date: 2024-09-09T17:05:16.878Z
+  version: 6.0.21+rev7
+  title: ""
+  date: 2024-09-09T20:33:58.596Z
+- commits:
+    - subject: Update balena-yocto-scripts to 4f3072e342756e45ed206dc659f125b3ab000a59
+      hash: 72dff66a7009120293c401e3d828a30fd27be956
+      body: Update balena-yocto-scripts
+      footer:
+        Changelog-entry: Update balena-yocto-scripts to 4f3072e342756e45ed206dc659f125b3ab000a59
+        changelog-entry: Update balena-yocto-scripts to 4f3072e342756e45ed206dc659f125b3ab000a59
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Update balena-os/leviathan digest to 8fb47f2
+              hash: 0bdd362c660078414259a167e492f1e91f3ea70e
+              body: |
+                Update balena-os/leviathan
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: balena-yocto-scripts-1.25.37
+          title: ""
+          date: 2024-09-05T23:21:25.987Z
+  version: 6.0.21+rev6
+  title: ""
+  date: 2024-09-06T00:18:57.960Z
+- commits:
+    - subject: Update balena-yocto-scripts to 0f0b5cc033b03b5535c13082000225f179a60758
+      hash: 78aa794a2ece0ebb37b7b6356a9b1a6b87a6465c
+      body: Update balena-yocto-scripts
+      footer:
+        Changelog-entry: Update balena-yocto-scripts to 0f0b5cc033b03b5535c13082000225f179a60758
+        changelog-entry: Update balena-yocto-scripts to 0f0b5cc033b03b5535c13082000225f179a60758
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Update balena-os/leviathan digest to 5db2b5d
+              hash: 3ea0421883a4c50185c8fa4f66de9f4e74f12a0b
+              body: |
+                Update balena-os/leviathan
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: balena-yocto-scripts-1.25.36
+          title: ""
+          date: 2024-09-05T16:03:09.417Z
+  version: 6.0.21+rev5
+  title: ""
+  date: 2024-09-05T18:17:45.738Z
+- commits:
+    - subject: Update balena-yocto-scripts to 511c58dfa068d2fab2c8340c7fc2f6edb12b2f09
+      hash: af2d6b87dca8cc34a070851ecdcc80909b04234f
+      body: Update balena-yocto-scripts
+      footer:
+        Changelog-entry: Update balena-yocto-scripts to 511c58dfa068d2fab2c8340c7fc2f6edb12b2f09
+        changelog-entry: Update balena-yocto-scripts to 511c58dfa068d2fab2c8340c7fc2f6edb12b2f09
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Update balena-os/leviathan digest to da52396
+              hash: 807851bdb98648080dfd8565e3de047f92323454
+              body: |
+                Update balena-os/leviathan
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: balena-yocto-scripts-1.25.35
+          title: ""
+          date: 2024-09-04T09:07:04.754Z
+  version: 6.0.21+rev4
+  title: ""
+  date: 2024-09-04T12:13:06.685Z
+- commits:
+    - subject: Update balena-yocto-scripts to df4ce150ec4c99fc78ce61f78d6efca4061e6adb
+      hash: fb73d47cc22c0f5821655059a601273257e9858b
+      body: Update balena-yocto-scripts
+      footer:
+        Changelog-entry: Update balena-yocto-scripts to df4ce150ec4c99fc78ce61f78d6efca4061e6adb
+        changelog-entry: Update balena-yocto-scripts to df4ce150ec4c99fc78ce61f78d6efca4061e6adb
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Update actions/create-github-app-token action to v1.10.4
+              hash: e6a68531b03ca9d6b477fa85c9ec43990edd1a7a
+              body: |
+                Update actions/create-github-app-token from 1.10.3 to 1.10.4
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: balena-yocto-scripts-1.25.34
+          title: ""
+          date: 2024-09-04T06:38:29.340Z
+  version: 6.0.21+rev3
+  title: ""
+  date: 2024-09-04T09:12:17.821Z
+- commits:
+    - subject: Update balena-yocto-scripts to 99c07ec07449e1705be38f48c8fe6a914b5ecb3b
+      hash: 8871445723092401cd1203dc6972edb2d6928766
+      body: Update balena-yocto-scripts
+      footer:
+        Changelog-entry: Update balena-yocto-scripts to 99c07ec07449e1705be38f48c8fe6a914b5ecb3b
+        changelog-entry: Update balena-yocto-scripts to 99c07ec07449e1705be38f48c8fe6a914b5ecb3b
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Update balena-os/leviathan digest to d8572e2
+              hash: 32066fde42690d51da3609f028cb68a2e3c7be2c
+              body: |
+                Update balena-os/leviathan
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: balena-yocto-scripts-1.25.33
+          title: ""
+          date: 2024-09-02T19:01:22.932Z
+  version: 6.0.21+rev2
+  title: ""
+  date: 2024-09-02T21:06:20.218Z
+- commits:
+    - subject: Update balena-yocto-scripts to 11f6becf05ead40e926a52022b9fca763b49eebe
+      hash: 0d91407228aeb8c457055e64c6584df69b4f3bd6
+      body: Update balena-yocto-scripts
+      footer:
+        Changelog-entry: Update balena-yocto-scripts to 11f6becf05ead40e926a52022b9fca763b49eebe
+        changelog-entry: Update balena-yocto-scripts to 11f6becf05ead40e926a52022b9fca763b49eebe
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Update Lock file maintenance
+              hash: ef09edfd0b30062bbf0744e9fa2694a1326544ed
+              body: |
+                Update 
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: balena-yocto-scripts-1.25.32
+          title: ""
+          date: 2024-09-02T01:59:38.392Z
+  version: 6.0.21+rev1
+  title: ""
+  date: 2024-09-02T04:03:26.998Z
+- commits:
+    - subject: Update layers/meta-balena to 5310f76b1f409f6fc164ab3f307b381250ff8f5a
+      hash: 61baa62f9c4b2243e299aa04142aa03b307e6137
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to 5310f76b1f409f6fc164ab3f307b381250ff8f5a
+        changelog-entry: Update layers/meta-balena to 5310f76b1f409f6fc164ab3f307b381250ff8f5a
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Update balena-os/balena-yocto-scripts action to v1.25.30
+              hash: c6c64ab317c0a7756c6a0aa218ab656b468b56df
+              body: |
+                Update balena-os/balena-yocto-scripts from v1.25.28 to v1.25.30
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: meta-balena-6.0.21
+          title: ""
+          date: 2024-09-01T04:40:51.408Z
+  version: 6.0.21
+  title: ""
+  date: 2024-09-01T22:16:00.654Z
+- commits:
+    - subject: Update balena-yocto-scripts to 578161cba337cccf1a23a2b4b8a5f45cbb16abb2
+      hash: 73bd0b63ad004e420d85df1da5d4cf5688796d4a
+      body: Update balena-yocto-scripts
+      footer:
+        Changelog-entry: Update balena-yocto-scripts to 578161cba337cccf1a23a2b4b8a5f45cbb16abb2
+        changelog-entry: Update balena-yocto-scripts to 578161cba337cccf1a23a2b4b8a5f45cbb16abb2
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Update actions/upload-artifact action to v4.4.0
+              hash: 50fe40fee6dde2abd580606a60e5a613959e2d3e
+              body: |
+                Update actions/upload-artifact from 4.3.6 to 4.4.0
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: balena-yocto-scripts-1.25.31
+          title: ""
+          date: 2024-09-01T04:28:48.680Z
+        - commits:
+            - subject: Update balena-os/leviathan digest to ff6a079
+              hash: 3eff42640327916a3ea7acb35eb1b5c4905303e8
+              body: |
+                Update balena-os/leviathan
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: balena-yocto-scripts-1.25.30
+          title: ""
+          date: 2024-09-01T02:30:52.700Z
+  version: 6.0.20+rev2
+  title: ""
+  date: 2024-09-01T07:00:09.998Z
+- commits:
+    - subject: Update balena-yocto-scripts to cc1d2e4eec194181974a018588d154c41d7cd040
+      hash: 8aa56cb497fba4287b7850c5a586da736cbb0e7e
+      body: Update balena-yocto-scripts
+      footer:
+        Changelog-entry: Update balena-yocto-scripts to cc1d2e4eec194181974a018588d154c41d7cd040
+        changelog-entry: Update balena-yocto-scripts to cc1d2e4eec194181974a018588d154c41d7cd040
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Restrict runners via yocto label, not 16cpu
+              hash: 5ec368545ccc173631b7b82f68f7619b1dbfe5e5
+              body: >
+                We currently have many `8cpu` runners available that are
+
+                migrating from Jenkins that we should allow to use for yocto
+                builds.
+
+
+                As long as some runners don't have the `yocto` tag so we don't
+                bottleneck the runner queue for other orgs.
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: Kyle Harding
+              nested: []
+          version: balena-yocto-scripts-1.25.29
+          title: ""
+          date: 2024-08-31T23:20:44.235Z
+  version: 6.0.20+rev1
+  title: ""
+  date: 2024-09-01T00:19:01.146Z
+- commits:
+    - subject: Update layers/meta-balena to 5e5235368b985d34d1efbedb7ba95951b547dd1b
+      hash: 5faa12704eb1fbbb73380b0b9e6c8d4dddf900a9
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to 5e5235368b985d34d1efbedb7ba95951b547dd1b
+        changelog-entry: Update layers/meta-balena to 5e5235368b985d34d1efbedb7ba95951b547dd1b
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: "tests: config: restore both network options to false"
+              hash: a1ed821735940bd56b3f6b92ae3db85bba4dd241
+              body: |
+                See: https://github.com/balena-os/meta-balena/pull/3117
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: meta-balena-6.0.20
+          title: ""
+          date: 2024-08-31T14:20:53.330Z
+  version: 6.0.20
+  title: ""
+  date: 2024-08-31T15:12:44.850Z
+- commits:
+    - subject: Update layers/meta-balena to 782207a721f505e9e414c7a79259c407e2d6c445
+      hash: 5591e96c7e4278e8c21a3449bbc45170a62594a8
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to 782207a721f505e9e414c7a79259c407e2d6c445
+        changelog-entry: Update layers/meta-balena to 782207a721f505e9e414c7a79259c407e2d6c445
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Update balena-supervisor to v16.6.1
+              hash: 6fdf650a5e214dacb40dd87e34c9369464cc2d12
+              body: |
+                Update balena-supervisor from 16.5.8 to 16.6.1
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested:
+                - commits:
+                    - subject: Remove unused patchDevice function
+                      hash: 788afee9a1ebce3d1a319b0ca998ba4163f482ce
+                      body: >
+                        This function was a remainder of the dependent devices
+                        code that no
+
+                        was removed on #2105
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: Felipe Lalanne
+                      nested: []
+                  version: balena-supervisor-16.6.1
+                  title: ""
+                  date: 2024-08-29T16:36:07.606Z
+                - commits:
+                    - subject: Add support for redsocks dnsu2t config
+                      hash: eaa07e97a9fd2089d1f6a2f3bdff74215cdee789
+                      body: >
+                        Users may specify dnsu2t config by including a `dns`
+                        field
+
+                        in the `proxy` section of PATCH /v1/device/host-config's
+                        body:
+
+                        ```
+
+                        {
+                          network: {
+                            proxy: {
+                              dns: '1.1.1.1:53',
+                            }
+                          }
+                        }
+
+                        ```
+
+
+                        If `dns` is a string, ADDRESS and PORT are required and
+                        should be
+
+                        in the format `ADDRESS:PORT`. The endpoint with error
+                        with
+
+                        code 400 if either ADDRESS or PORT are missing.
+
+
+                        `dns` may also be a boolean. If true, defaults will be
+                        configured.
+
+                        If false, the dns configuration will be removed.
+
+
+                        If `proxy` is patched to empty, `dns` will be removed
+                        regardless
+
+                        of its current or input configs, as `dns` depends on an
+                        active
+
+                        redsocks proxy to function.
+                      footer:
+                        Change-type: minor
+                        change-type: minor
+                        Signed-off-by: Christina Ying Wang <christina@balena.io>
+                        signed-off-by: Christina Ying Wang <christina@balena.io>
+                      author: Christina Ying Wang
+                      nested: []
+                  version: balena-supervisor-16.6.0
+                  title: ""
+                  date: 2024-08-28T22:47:08.152Z
+          version: meta-balena-6.0.19
+          title: ""
+          date: 2024-08-31T07:40:08.932Z
+  version: 6.0.19
+  title: ""
+  date: 2024-08-31T10:16:24.997Z
+- commits:
+    - subject: Update layers/meta-balena to a74e7ee8a18dae7a2284de787fd2e7531b840b36
+      hash: 14bc03b784fea00a8a125d2873cf4e868cc1adf6
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to a74e7ee8a18dae7a2284de787fd2e7531b840b36
+        changelog-entry: Update layers/meta-balena to a74e7ee8a18dae7a2284de787fd2e7531b840b36
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Update balena-os/balena-yocto-scripts action to v1.25.28
+              hash: 5d1ed6bafe7269c890b1f976f1065df7407ae7e7
+              body: |
+                Update balena-os/balena-yocto-scripts from v1.25.26 to v1.25.28
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: meta-balena-6.0.18
+          title: ""
+          date: 2024-08-31T04:29:39.151Z
+        - commits:
+            - subject: Update Pin balena-os/balena-yocto-scripts action to a3dfa26
+              hash: 3243ce257ab7824e3cf90e214dc31e56b3697ec5
+              body: |
+                Update balena-os/balena-yocto-scripts
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: meta-balena-6.0.17
+          title: ""
+          date: 2024-08-31T01:13:35.118Z
+  version: 6.0.18
+  title: ""
+  date: 2024-08-31T07:56:32.223Z
+- commits:
+    - subject: Update balena-yocto-scripts to 5c8805dcd0013ca3aab6ec82e094595ad8f6780b
+      hash: 313717f39ac382246e4205cea6cbc00647dea5ac
+      body: Update balena-yocto-scripts
+      footer:
+        Changelog-entry: Update balena-yocto-scripts to 5c8805dcd0013ca3aab6ec82e094595ad8f6780b
+        changelog-entry: Update balena-yocto-scripts to 5c8805dcd0013ca3aab6ec82e094595ad8f6780b
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: checkout private contracts for test job
+              hash: d49882c54127d8b805191ff313a3a00d1c163590
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Ryan Cooke <ryan@balena.io>
+                signed-off-by: Ryan Cooke <ryan@balena.io>
+              author: rcooke-warwick
+              nested: []
+          version: balena-yocto-scripts-1.25.28
+          title: ""
+          date: 2024-08-30T14:24:42.877Z
+  version: 6.0.16+rev1
+  title: ""
+  date: 2024-08-30T15:53:55.465Z
+- commits:
+    - subject: Update layers/meta-balena to ff036025013fc850f9293e3ff590ea467543172f
+      hash: 8b671a7edcff61afe7af3affc3e0c6d49655cb8e
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to ff036025013fc850f9293e3ff590ea467543172f
+        changelog-entry: Update layers/meta-balena to ff036025013fc850f9293e3ff590ea467543172f
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Update tests/leviathan digest to ff6a079
+              hash: 5b915b20c402774b2926a8f2ea73200daffdd607
+              body: Update tests/leviathan
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested:
+                - commits:
+                    - subject: Update core/contracts digest to 59752b7
+                      hash: 77fb084fa0073a4ce024c258bc81b44c7df84daa
+                      body: |
+                        Update core/contracts
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: balena-renovate[bot]
+                      nested: []
+                  version: leviathan-2.31.29
+                  title: ""
+                  date: 2024-08-29T19:33:37.619Z
+                - commits:
+                    - subject: Update balena-os/leviathan-worker to v2.9.43
+                      hash: 47bf1a79a6935e7c99430266f67d90f0f0155256
+                      body: |
+                        Update balena-os/leviathan-worker from 2.9.41 to 2.9.43
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: balena-renovate[bot]
+                      nested: []
+                  version: leviathan-2.31.28
+                  title: ""
+                  date: 2024-08-29T18:44:20.177Z
+                - commits:
+                    - subject: Update docker/setup-buildx-action digest to 988b5a0
+                      hash: e6b3ef176fbadff3adeb317158d8be96c635092a
+                      body: |
+                        Update docker/setup-buildx-action
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: balena-renovate[bot]
+                      nested: []
+                  version: leviathan-2.31.27
+                  title: ""
+                  date: 2024-08-29T17:37:31.318Z
+                - commits:
+                    - subject: specify ipv4 localhost for balena tunnel
+                      hash: 26d159fb88c3455975a048aa70bfeaad530d6330
+                      body: ""
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                        Signed-off-by: Ryan Cooke <ryan@balena.io>
+                        signed-off-by: Ryan Cooke <ryan@balena.io>
+                      author: rcooke-warwick
+                      nested: []
+                    - subject: Move balena-cli download to a build stage with renovate management
+                      hash: 6bc62dc2b0b8368aea6b1763968ee5d775657d0e
+                      body: ""
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                        Signed-off-by: Kyle Harding <kyle@balena.io>
+                        signed-off-by: Kyle Harding <kyle@balena.io>
+                      author: Kyle Harding
+                      nested: []
+                    - subject: "core: update CLI to 19.0.0"
+                      hash: 382dd48d3c3f7bc4fbad1e3376d84a40c1342c15
+                      body: >
+                        we were previously using CLI 16.0.0, which is now over
+                        365 days since the next major release (17.0.0) , so its
+                        deprecated and won't work without adding the
+                        --unsupported flag, or updating. Choosing to update
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                        Signed-off-by: Ryan Cooke <ryan@balena.io>
+                        signed-off-by: Ryan Cooke <ryan@balena.io>
+                      author: rcooke-warwick
+                      nested: []
+                  version: leviathan-2.31.26
+                  title: ""
+                  date: 2024-08-29T16:24:31.112Z
+          version: meta-balena-6.0.16
+          title: ""
+          date: 2024-08-29T22:23:40.786Z
+  version: 6.0.16
+  title: ""
+  date: 2024-08-29T23:07:39.965Z
+- commits:
+    - subject: Update balena-yocto-scripts to 6270e6a763450e7bd98e08b699dc22ea55a19bc5
+      hash: aac752b706034894d8e5efcde3d4c060f81a3887
+      body: Update balena-yocto-scripts
+      footer:
+        Changelog-entry: Update balena-yocto-scripts to 6270e6a763450e7bd98e08b699dc22ea55a19bc5
+        changelog-entry: Update balena-yocto-scripts to 6270e6a763450e7bd98e08b699dc22ea55a19bc5
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: use apt-get to install s4cmd instead of pip
+              hash: 938730ae60d60574f9abf757c1c4efcc4e526a2f
+              body: >
+                using pip to install python packages also installable by debian
+                is not recommended, and leads to errors while trying to do so.
+                Switch to using apt-get to install s4cmd to address this
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Ryan Cooke <ryan@balena.io>
+                signed-off-by: Ryan Cooke <ryan@balena.io>
+              author: rcooke-warwick
+              nested: []
+          version: balena-yocto-scripts-1.25.27
+          title: ""
+          date: 2024-08-29T13:53:51.392Z
+  version: 6.0.15+rev1
+  title: ""
+  date: 2024-08-29T18:59:10.711Z
+- commits:
+    - subject: Update layers/meta-balena to 651d5bb6f5a5a437198bef1f188913a2ef68c7bd
+      hash: 468b8f353abc37cdc7b772e79372cc8e3c941779
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to 651d5bb6f5a5a437198bef1f188913a2ef68c7bd
+        changelog-entry: Update layers/meta-balena to 651d5bb6f5a5a437198bef1f188913a2ef68c7bd
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: remove up-board and cl-som-imx8
+              hash: e89f03602ba6b9565db22e90ff1c7f604c6f2eca
+              body: >
+                These were recently removed from yocto-all as they need to be
+                moved to kirkstone or higher - and that work is not trivial
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Ryan Cooke <ryan@balena.io>
+                signed-off-by: Ryan Cooke <ryan@balena.io>
+              author: rcooke-warwick
+              nested: []
+            - subject: Add GHA workflows for additional device types
+              hash: de582e93afe502654f02617fbf6daa930e4cad03
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: meta-balena-6.0.15
+          title: ""
+          date: 2024-08-29T13:04:15.729Z
+  version: 6.0.15
+  title: ""
+  date: 2024-08-29T15:49:48.428Z
+- commits:
     - subject: Update layers/meta-balena to b42b3484ad1fd0f71224d70b08d40bf8e3bef784
       hash: e776164e140a562a9c5a48f94a824ddc18187b4e
       body: Update layers/meta-balena
