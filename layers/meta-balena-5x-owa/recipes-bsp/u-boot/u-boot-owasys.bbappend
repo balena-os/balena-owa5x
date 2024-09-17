@@ -10,7 +10,6 @@ SRC_URI:remove = " file://resin-specific-env-integration-kconfig.patch "
 
 SRC_URI:append:owa5x = " \
                       file://0001-Balena-integrations.patch \
-                      file://0002-Removed-BOARD_SETUP-as-it-was-performed-by-the-first.patch \
 "
 
 SRC_URI += "file://fw_env.config"

@@ -11,7 +11,7 @@ set -o errexit
 
 set -o errexit
 
-kobs-ng init -v --chip_0_device_path=/dev/mtd0 /usr/bin/nand-flash.bin
+kobs-ng init -v --chip_0_device_path=/dev/mtd0 /flash-boot/owa5x-flash.bin
 
 # Flashing process ended, this is indicated by a LED blinking pattern
 for l_var0 in {1..10}
