@@ -18,6 +18,6 @@ BBLAYERS ?= " \
     ${TOPDIR}/../layers/meta-openembedded/meta-filesystems \
     ${TOPDIR}/../layers/meta-balena/meta-balena-common \
     ${TOPDIR}/../layers/meta-balena/meta-balena-kirkstone \
-    ${TOPDIR}/../layers/meta-owasys/meta-owa5x \
+    ${TOPDIR}/../layers/meta-owasys-owa5x-bsp \
     ${TOPDIR}/../layers/meta-balena-5x-owa \
     "
