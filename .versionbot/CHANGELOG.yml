@@ -1,4 +1,40 @@
 - commits:
+    - subject: Update layers/meta-balena to c702e9376d4424d8df32dff465a4e17ebdf009a9
+      hash: 6351a023ded63049ce9e9bab20989d63baeb22ee
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to c702e9376d4424d8df32dff465a4e17ebdf009a9
+        changelog-entry: Update layers/meta-balena to c702e9376d4424d8df32dff465a4e17ebdf009a9
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: "modemmanager: Fix SIM7100E crash"
+              hash: e397c18742117596fed133e0b5992362e230f538
+              body: >
+                With the update to MM 1.22.0 we have received reports that
+
+                SIM7100E is not functioning correctly.
+
+                Followed up with ModemManager devs and it was discovered the
+                issue
+
+                is related to a PCO setting:
+
+                https://gitlab.freedesktop.org/mobile-broadband/ModemManager/-/issues/884
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Florin Sarbu <florin@balena.io>
+                signed-off-by: Florin Sarbu <florin@balena.io>
+              author: Florin Sarbu
+              nested: []
+          version: meta-balena-6.0.29
+          title: ""
+          date: 2024-09-18T12:31:58.505Z
+  version: 6.0.29
+  title: ""
+  date: 2024-09-18T16:23:15.813Z
+- commits:
     - subject: Update balena-yocto-scripts to 8082486ee52f464cb11d9c7abc2c3654445087b3
       hash: d05b45d94a1aac17876b543b8d4ab7fc4a3be6f4
       body: Update balena-yocto-scripts
