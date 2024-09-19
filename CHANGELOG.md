@@ -1,6 +1,13 @@
 # v2.107.5
 ## (2023-01-09)
 
+# v6.0.30+rev1
+## (2024-09-19)
+
+* added newest Owasys layer [Alvaro Guzman]
+* removed all meta-owasys [Alvaro Guzman]
+* adding changes to interal layer files [Alvaro Guzman]
+
 # v6.0.30
 ## (2024-09-19)
 

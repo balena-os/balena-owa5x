@@ -1,4 +1,38 @@
 - commits:
+    - subject: added newest Owasys layer
+      hash: 5d235d0d9e52c6cadfd03d1c4545e6e63aa4342e
+      body: ""
+      footer:
+        Changelog-entry: added newest Owasys layer
+        changelog-entry: added newest Owasys layer
+        Signed-off-by: Alvaro Guzman <alvaro.guzman@owasys.com>
+        signed-off-by: Alvaro Guzman <alvaro.guzman@owasys.com>
+      author: Alvaro Guzman
+      nested: []
+    - subject: removed all meta-owasys
+      hash: c1b5ac813ed2f6ec73394e8423855e5693542c3d
+      body: ""
+      footer:
+        Changelog-entry: removed all meta-owasys
+        changelog-entry: removed all meta-owasys
+        Signed-off-by: Alvaro Guzman <alvaro.guzman@owasys.com>
+        signed-off-by: Alvaro Guzman <alvaro.guzman@owasys.com>
+      author: Alvaro Guzman
+      nested: []
+    - subject: adding changes to interal layer files
+      hash: c728d1891da9458dba762295d7649de0625dd522
+      body: ""
+      footer:
+        Changelog-entry: adding changes to interal layer files
+        changelog-entry: adding changes to interal layer files
+        Signed-off-by: Alvaro Guzman <alvaro.guzman@owasys.com>
+        signed-off-by: Alvaro Guzman <alvaro.guzman@owasys.com>
+      author: Alvaro Guzman
+      nested: []
+  version: 6.0.30+rev1
+  title: ""
+  date: 2024-09-19T10:21:49.693Z
+- commits:
     - subject: Update layers/meta-balena to 9a9378bb245dbf1de3aca1fe69b92bb4d462e087
       hash: cf1339db6b2c31d9690de180a67455598fa57e5a
       body: Update layers/meta-balena
