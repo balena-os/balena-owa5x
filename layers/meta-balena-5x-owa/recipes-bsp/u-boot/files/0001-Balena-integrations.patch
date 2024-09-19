@@ -1,25 +1,24 @@
-From 33d407e41004e883a8c4c38f44be7c9d0f7b3251 Mon Sep 17 00:00:00 2001
+From 3cf050781735af4641f3e9f95758af9bdaf387f4 Mon Sep 17 00:00:00 2001
 From: Alvaro Guzman <alvaro.guzman@owasys.com>
-Date: Wed, 22 Mar 2023 12:26:42 +0100
-Subject: [PATCH] Balena integration u boot env configs
+Date: Wed, 28 Aug 2024 16:41:49 +0200
+Subject: [PATCH] Balena integrations
 
 ---
  arch/arm/mach-imx/imx8m/soc.c  |   4 +
- configs/imx8mp_owa5x_defconfig |  25 ++---
+ configs/imx8mp_owa5x_defconfig |  29 +++---
  include/config_resin.h         |  15 +++
- include/configs/imx8mp_owa5x.h |  39 +++++---
- include/env_default.h          |   2 +
- include/env_resin.h            | 172 +++++++++++++++++++++++++++++++++
- ucompilation.sh                |   6 +-
- 7 files changed, 238 insertions(+), 25 deletions(-)
+ include/configs/imx8mp_owa5x.h | 153 +++++++++++++---------------
+ include/env_default.h          |  16 ++-
+ include/env_resin.h            | 180 +++++++++++++++++++++++++++++++++
+ 6 files changed, 300 insertions(+), 97 deletions(-)
  create mode 100644 include/config_resin.h
  create mode 100644 include/env_resin.h
 
 diff --git a/arch/arm/mach-imx/imx8m/soc.c b/arch/arm/mach-imx/imx8m/soc.c
-index d87db279b9..91b8100f65 100644
+index 1ac2cb1b27..f4569e49ca 100644
 --- a/arch/arm/mach-imx/imx8m/soc.c
 +++ b/arch/arm/mach-imx/imx8m/soc.c
-@@ -1624,6 +1624,10 @@ enum env_location env_get_location(enum env_operation op, int prio)
+@@ -1636,6 +1636,10 @@ enum env_location env_get_location(enum env_operation op, int prio)
  	enum boot_device dev = get_boot_device();
  	enum env_location env_loc = ENVL_UNKNOWN;
  
@@ -31,7 +30,7 @@ index d87db279b9..91b8100f65 100644
  		return env_loc;
  
 diff --git a/configs/imx8mp_owa5x_defconfig b/configs/imx8mp_owa5x_defconfig
-index 705bbb83ea..646b6a979c 100644
+index 407bf7ea11..87536b9065 100644
 --- a/configs/imx8mp_owa5x_defconfig
 +++ b/configs/imx8mp_owa5x_defconfig
 @@ -35,11 +35,14 @@ CONFIG_SPL_I2C_SUPPORT=y
@@ -41,9 +40,8 @@ index 705bbb83ea..646b6a979c 100644
 -CONFIG_SYS_PROMPT="u-boot=> "
 +CONFIG_SYS_PROMPT="owa5x_balena=>"
  CONFIG_BOOTDELAY=0
--# CONFIG_CMD_EXPORTENV is not set
--# CONFIG_CMD_IMPORTENV is not set
-+CONFIG_CMD_EXPORTENV=y
+-CONFIG_CMD_IMPORTENV=y
+ CONFIG_CMD_EXPORTENV=y
 +CONFIG_CMD_IMPORTENV=y
 +CONFIG_CMD_PART=y
 +CONFIG_CMD_FS_UUID=y
@@ -76,16 +74,30 @@ index 705bbb83ea..646b6a979c 100644
  CONFIG_SYS_RELOC_GD_ENV_ADDR=y
  #CONFIG_ENV_VARS_UBOOT_RUNTIME=y
  CONFIG_CLK_COMPOSITE_CCF=y
-@@ -163,7 +166,7 @@ CONFIG_VIDEO_LCD_RAYDIUM_RM67191=n
+@@ -161,9 +164,9 @@ CONFIG_VIDEO_IMX_SEC_DSI=n
+ CONFIG_DM_VIDEO=n
+ CONFIG_VIDEO_LCD_RAYDIUM_RM67191=n
  CONFIG_VIDEO_ADV7535=n
- CONFIG_SYS_WHITE_ON_BLACK=y
+-CONFIG_SYS_WHITE_ON_BLACK=n
++CONFIG_SYS_WHITE_ON_BLACK=y
  
--CONFIG_LOCALVERSION="-1.0.5"
-+CONFIG_LOCALVERSION="-owa5x-Balena-2.0"
+-CONFIG_LOCALVERSION="-1.0.7.1"
++CONFIG_LOCALVERSION="-owa5x-Balena-2.2"
  # CONFIG_LOCALVERSION_AUTO is not set
  #NAND CONFIGURATION
  CONFIG_NAND_BOOT=y
-@@ -207,6 +210,6 @@ CONFIG_BLOBLIST_SIZE=0x400
+@@ -182,9 +185,7 @@ CONFIG_FDT_FIXUP_PARTITIONS=y
+ CONFIG_MTDIDS_DEFAULT="nand0=nand.0"
+ 
+ #CONFIG_MTDPARTS_DEFAULT="nand.0:8m(NAND.u-boot),8m(NAND.u-boot-bckp),1m(NAND.u-boot-env),1m(NAND.u-boot-env.backup),1m(NAND.dtb),64m(NAND.kernel),-(NAND.file-system)"
+-CONFIG_MTDPARTS_DEFAULT="nand.0:8m(NAND.u-boot),8m(NAND.u-boot-bckp),1m(NAND.u-boot-env),1m(NAND.u-boot-env.backup),16m(NAND.device),16m(NAND.device.backup),450m(NAND.file-systemA),450m(NAND.file-systemB)"
+-CONFIG_MTD_UBI_FASTMAP=n
+-CONFIG_MTD_UBI_FASTMAP_AUTOCONVERT=1
++CONFIG_MTDPARTS_DEFAULT="nand.0:8m(NAND.u-boot),8m(NAND.u-boot-bckp),1m(NAND.u-boot-env),1m(NAND.u-boot-env.backup),503m(NAND.file-systemA),-(NAND.file-systemB)"
+ CONFIG_CMD_MD5SUM=y
+ CONFIG_VERSION_VARIABLE=y
+ CONFIG_BOOTCOUNT_LIMIT=y 
+@@ -210,6 +211,6 @@ CONFIG_BLOBLIST_SIZE=0x400
  CONFIG_BLOBLIST_ADDR=0x40000000
  # CONFIG_HANDOFF is not set
  
@@ -115,19 +127,94 @@ index 0000000000..90c3f38c8c
 +#define CONFIG_BOOT_RETRY_TIME -1
 +#define CONFIG_CMD_FS_UUID 1
 diff --git a/include/configs/imx8mp_owa5x.h b/include/configs/imx8mp_owa5x.h
-index d86b189e8c..ba6b885e24 100644
+index 44a21fc396..9cce7f21e7 100644
 --- a/include/configs/imx8mp_owa5x.h
 +++ b/include/configs/imx8mp_owa5x.h
-@@ -101,7 +101,7 @@
-          "fi; " \
-       "fi;" \
-       "run nandboot;\0" \
+@@ -84,29 +84,25 @@
+ 	"devicetreefile=devicetree.dtb\0" \
+ 	"enterflashmode=nand erase.part NAND.u-boot; reset;\0" \
+ 	"boot_owa5x=echo Look for boot scripts;" \
+-		"if fatload mmc 1 0x82000000 owa5x-boot.script; then " \
+-			"echo MMC boot script found; " \
+-			"source 0x82000000; " \
+-			"run update_owa5x; " \
+-		"else " \
+-			"usb reset; " \
+-			"if fatload usb 0:1 0x82000000 owa5x-boot.script; then " \
+-			"usb stop; " \
+-			"echo USB boot script found; " \
+-			"source 0x82000000; " \
+-			"run update_owa5x; " \
+-			"else " \
+-			"echo Boot scripts not found; " \
+-			"usb stop; " \
+-			"run update_owa5x; " \
+-			"fi; " \
+-		"fi;" \
+-		"run default_mmc_boot;" \
+-		"run default_nand_boot;" \
+-		"reset\0" \
 -	"bootcmd=run boot_owa5x\0" \
+-	"default_mmc_boot=run mmcboot-systemA;\0 " \
+-	"default_nand_boot=run nandboot-systemA;\0 " \
++      "if fatload mmc 1 0x82000000 owa5x-boot.script; then " \
++         "echo MMC boot script found; " \
++         "source 0x82000000; " \
++         "run update_owa5x; " \
++      "else " \
++         "usb reset; " \
++         "if fatload usb 0:1 0x82000000 owa5x-boot.script; then " \
++            "usb stop; " \
++            "echo USB boot script found; " \
++            "source 0x82000000; " \
++            "run update_owa5x; " \
++         "else " \
++            "echo Boot scripts not found; " \
++            "usb stop; " \
++            "run update_owa5x; " \
++         "fi; " \
++      "fi;" \
++      "run nandboot;\0" \
 +	"bootcmd=run BOOT_CMD_BALENA\0" \
     "update_owa5x=" \
        "if test ${updatefw} != 1; then " \
           "echo Nothing to update; " \
-@@ -193,12 +193,27 @@
+@@ -178,38 +174,47 @@
+       "else " \
+          "echo FS backup file not found; " \
+       "fi;\0" \
+-	"mmcboot-systemA=echo Booting from mmc-systemA ...; " \
+-		"run mmcargs-systemA; " \
+-		"mmcpart=1; " \
+-		"run loadfdt; " \
+-		"if run loadimage; then " \
+-			"booti ${loadaddr} - ${fdt_addr}; " \
+-		"fi;\0 " \
+-	"mmcboot-systemB=echo Booting from mmc-systemB ...; " \
+-		"run mmcargs-systemB; " \
+-		"mmcpart=2; " \
+-		"run loadfdt; " \
+-		"if run loadimage; then " \
+-			"booti ${loadaddr} - ${fdt_addr}; " \
+-		"fi;\0 " \
++	"mmcboot=mmc dev ${mmcdev}; if mmc rescan; then " \
++	   "if run loadbootscript; then " \
++		   "run bootscript; " \
++	   "else " \
++		   "if run loadimage; then " \
++			   "run startmmcboot; " \
++		   "else run netboot; " \
++		   "fi; " \
++	   "fi; " \
++	"fi;\0" \
+ 	"bootscript=echo Running bootscript from mmc ...; " \
+ 		"source\0" \
+ 	"splashimage=0x50000000\0" \
+ 	"fdt_addr=0x88000000\0"			\
+ 	"fdt_high=0xffffffffffffffff\0" \
+ 	"fdt_file=" CONFIG_DEFAULT_FDT_FILE "\0" \
+-	"upgrade_available=1\0" \
++	"upgrade_available=0\0" \
  	"boot_fit=no\0" \
  	"mtdids="	CONFIG_MTDIDS_DEFAULT	"\0" \
  	"mtdparts=" CONFIG_MTDPARTS_DEFAULT "\0" \
@@ -135,10 +222,13 @@ index d86b189e8c..ba6b885e24 100644
 +	"console=ttymxc0,115200\0" \
  	"mmcdev=2\0" \
  	"mmcpart=1\0" \
--	"mmcroot=" CONFIG_MMCROOT " rootwait quiet rw mtdparts\0" \
+-	"mmcroot-systemA=/dev/mmcblk2p1 rootwait quiet rw ubi.mtd=NAND.device\0" \
+-	"mmcroot-systemB=/dev/mmcblk2p2 rootwait quiet rw ubi.mtd=NAND.device\0" \
+-	"mmcautodetect=no\0" \
+-	"mmcargs-systemA=setenv bootargs ${jh_clk} console=${console} root=${mmcroot-systemA}\0 " \
+-	"mmcargs-systemB=setenv bootargs ${jh_clk} console=${console} root=${mmcroot-systemB}\0 " \
 +	"mmcroot=" CONFIG_MMCROOT " rootwait quiet rw\0" \
- 	"mmcautodetect=yes\0" \
--	"mmcargs=setenv bootargs ${jh_clk} console=${console} root=${mmcroot}\0 " \
++	"mmcautodetect=yes\0" \
 +	"zip_addr=0x70480000\0" \
 +	"mmcargs=setenv bootargs ${jh_clk} console=${console} ${resin_kernel_root} ${os_cmdline} quiet \0" \
 +	"set_up_balena_env_vars=setenv resin_kernel_load_addr ${loadaddr};" \
@@ -158,52 +248,116 @@ index d86b189e8c..ba6b885e24 100644
  	"startmmcboot=echo Booting from mmc ...; " \
  		"run mmcargs; " \
  		"if test ${boot_fit} = yes || test ${boot_fit} = try; then " \
-@@ -243,7 +258,7 @@
+@@ -238,19 +243,14 @@
+ 			"echo Kernel Image is not trusted, reseting device...; " \
+ 			"reset; " \
+ 		"fi;\0" \
+-	"nandargs-systemA=setenv bootargs console=${console} " \
++	"nandargs=setenv bootargs console=${console} " \
+ 		"${optargs} " \
+-		"root=${nandroot-systemA} " \
++		"root=${nandroot} " \
+ 		"rootfstype=${nandrootfstype}\0" \
+-	"nandargs-systemB=setenv bootargs console=${console} " \
+-		"${optargs} " \
+-		"root=${nandroot-systemB} " \
+-		"rootfstype=${nandrootfstype}\0" \
+-	"nandroot-systemA=ubi0:rootfs rw ubi.mtd=NAND.file-systemA,4096 ubi.mtd=NAND.device\0" \
+-	"nandroot-systemB=ubi0:rootfs rw ubi.mtd=NAND.file-systemB,4096 ubi.mtd=NAND.device\0" \
++	"nandroot=ubi0:rootfs rw ubi.mtd=NAND.file-systemA,4096\0" \
+ 	"nandrootfstype=ubifs rootwait=1 quiet\0" \
+-	"nandboot-systemA=echo Booting from nand filesystemA ...; " \
+-		"run nandargs-systemA; " \
++	"nandboot=echo Booting from nand ...; " \
++		"run nandargs; " \
+ 		"ubi part NAND.file-systemA; " \
+ 		"ubifsmount ubi0; " \
+ 		"ubifsload ${fdt_addr} /boot/${devicetreefile}; " \
+@@ -264,9 +264,9 @@
+ 		"ubifsload ${loadaddr} /boot/Image; " \
+ 		"booti ${loadaddr} - ${fdt_addr}\0" \
  	"loadbootscript=fatload mmc ${mmcdev}:${mmcpart} ${loadaddr} ${script};\0" \
- 	"loadimage=fatload mmc ${mmcdev}:${mmcpart} ${loadaddr} ${image}\0" \
- 	"loadfdt=fatload mmc ${mmcdev}:${mmcpart} ${fdt_addr} ${fdt_file}\0" \
+-	"loadimage=ext4load mmc ${mmcdev}:${mmcpart} ${loadaddr} /boot/${image}\0" \
+-	"loadfdt=ext4load mmc ${mmcdev}:${mmcpart} ${fdt_addr} /boot/${fdt_file}\0" \
 -	"image=Image\0" \
++	"loadimage=fatload mmc ${mmcdev}:${mmcpart} ${loadaddr} ${image}\0" \
++	"loadfdt=fatload mmc ${mmcdev}:${mmcpart} ${fdt_addr} ${fdt_file}\0" \
 +	"image=Image.gz\0" \
  	"netargs=setenv bootargs ${jh_clk} console=${console} " \
  		"root=/dev/nfs " \
  		"ip=dhcp nfsroot=${serverip}:${nfsroot},v3,tcp\0" \
-@@ -354,7 +369,7 @@
+@@ -286,8 +286,8 @@
+ 		"else " \
+ 			"echo WARN: Cannot load the DT; " \
+ 		"fi; " \
+-	"fi;\0" \
+-		 
++	"fi;\0"
++
+ #else
+ #define CONFIG_EXTRA_ENV_SETTINGS		\
+ 	CONFIG_MFG_ENV_SETTINGS \
+@@ -306,29 +306,16 @@
+ 	"mmcpart=" __stringify(CONFIG_SYS_MMC_IMG_LOAD_PART) "\0" \
+ 	"mtdids="	CONFIG_MTDIDS_DEFAULT	"\0" \
+ 	"mtdparts=" CONFIG_MTDPARTS_DEFAULT "\0" \
+-	"mmcroot-systemA=/dev/mmcblk2p1 rootwait quiet rw ubi.mtd=NAND.device\0" \
+-	"mmcroot-systemB=/dev/mmcblk2p2 rootwait quiet rw ubi.mtd=NAND.device\0" \
+-	"mmcautodetect=no\0" \
+-	"mmcargs-systemA=setenv bootargs ${jh_clk} console=${console} root=${mmcroot-systemA}\0 " \
+-	"mmcargs-systemB=setenv bootargs ${jh_clk} console=${console} root=${mmcroot-systemB}\0 " \
++	"mmcroot=" CONFIG_MMCROOT " rootwait quiet rw mtdparts\0" \
++	"mmcautodetect=yes\0" \
++	"mmcargs=setenv bootargs ${jh_clk} console=${console} root=${mmcroot}\0 " \
+ 	"loadbootscript=fatload mmc ${mmcdev}:${mmcpart} ${loadaddr} ${script};\0" \
+ 	"bootscript=echo Running bootscript from mmc ...; " \
+ 		"source\0" \
+-	"loadimage=ext4load mmc ${mmcdev}:${mmcpart} ${loadaddr} /boot/${image}\0" \
+-	"loadfdt=ext4load mmc ${mmcdev}:${mmcpart} ${fdt_addr} /boot/${fdt_file}\0" \
+-	"mmcboot-systemA=echo Booting from mmc filesystemA ...; " \
+-		"run mmcargs-systemaA; " \
+-		"if test ${boot_fit} = yes || test ${boot_fit} = try; then " \
+-			"bootm ${loadaddr}; " \
+-		"else " \
+-			"if run loadfdt; then " \
+-				"booti ${loadaddr} - ${fdt_addr}; " \
+-			"else " \
+-				"echo WARN: Cannot load the DT; " \
+-			"fi; " \
+-		"fi;\0" \
+-	"mmcboot-systemB=echo Booting from mmc filesystemB ...; " \
+-		"run mmcargs-systemB; " \
++	"loadimage=fatload mmc ${mmcdev}:${mmcpart} ${loadaddr} ${image}\0" \
++	"loadfdt=fatload mmc ${mmcdev}:${mmcpart} ${fdt_addr} ${fdt_file}\0" \
++	"mmcboot=echo Booting from mmc ...; " \
++		"run mmcargs; " \
+ 		"if test ${boot_fit} = yes || test ${boot_fit} = try; then " \
+ 			"bootm ${loadaddr}; " \
+ 		"else " \
+@@ -390,8 +377,8 @@
  #define CONFIG_ENV_SPI_MODE		CONFIG_SF_DEFAULT_MODE
  #define CONFIG_ENV_SPI_MAX_HZ		CONFIG_SF_DEFAULT_SPEED
  
 -//#define CONFIG_SYS_MMC_ENV_DEV		2   /* USDHC2 */
+-#define CONFIG_MMCROOT			"/dev/mmcblk2p1"  /* USDHC2 */
 +#define CONFIG_SYS_MMC_ENV_DEV		2   /* USDHC2 */
- #define CONFIG_MMCROOT			"/dev/mmcblk1p2"  /* USDHC2 */
++#define CONFIG_MMCROOT			"/dev/mmcblk1p2"  /* USDHC2 */
  
  /* Size of malloc() pool */
-@@ -365,6 +380,8 @@
+ #define CONFIG_SYS_MALLOC_LEN		SZ_32M
+@@ -401,7 +388,9 @@
  #define PHYS_SDRAM			0x40000000
  #define PHYS_SDRAM_SIZE			0x80000000	/* 2 GB */
  
+-//Allways set for 2GB/4GB SW compatibility
 +/* Maximum decompressed kernel size 64MB*/
 +#define CONFIG_SYS_BOOTM_LEN		SZ_64M /* Increase max gunzip size */
- /*
++
  #define PHYS_SDRAM_2			0xC0000000
- #define PHYS_SDRAM_2_SIZE		0x80000000	*//* 2 GB */
-@@ -374,11 +391,11 @@
- #else
- //#define PHYS_SDRAM_2_SIZE		0xC0000000	/* 3 GB */
- #endif
--/*
--//#define CONFIG_SYS_MEMTEST_START	0x60000000
--//#define CONFIG_SYS_MEMTEST_END		(CONFIG_SYS_MEMTEST_START + \
--//					(PHYS_SDRAM_SIZE >> 1))
--*/
-+
-+#define CONFIG_SYS_MEMTEST_START	0x60000000
-+#define CONFIG_SYS_MEMTEST_END		(CONFIG_SYS_MEMTEST_START + \
-+					(PHYS_SDRAM_SIZE >> 1))
-+
- //#define CONFIG_MXC_UART_BASE		UART2_BASE_ADDR
- #define CONFIG_MXC_UART_BASE		UART1_BASE_ADDR
- 
+ #define PHYS_SDRAM_2_SIZE		0x80000000	/* 2 GB */
+ //#define PHYS_SDRAM_2			0x100000000
 diff --git a/include/env_default.h b/include/env_default.h
-index ea31a8eddf..d08b5054db 100644
+index ea31a8eddf..a53231e89f 100644
 --- a/include/env_default.h
 +++ b/include/env_default.h
 @@ -9,6 +9,7 @@
@@ -214,20 +368,34 @@ index ea31a8eddf..d08b5054db 100644
  
  #ifdef DEFAULT_ENV_INSTANCE_EMBEDDED
  env_t embedded_environment __UBOOT_ENV_SECTION__(environment) = {
-@@ -24,6 +25,7 @@ uchar default_environment[] = {
+@@ -23,7 +24,20 @@ static char default_environment[] = {
+ uchar default_environment[] = {
  #else
  const uchar default_environment[] = {
- #endif
+-#endif
++#include <env_resin.h>
++	BALENA_ENV
++#include <env_resin.h>
++	BALENA_ENV
++#include <env_resin.h>
++	BALENA_ENV
++#include <env_resin.h>
++	BALENA_ENV
++#include <env_resin.h>
++	BALENA_ENV
++#include <env_resin.h>
++	BALENA_ENV
++#endif
 +	BALENA_ENV
  #ifndef CONFIG_USE_DEFAULT_ENV_FILE
  #ifdef	CONFIG_ENV_CALLBACK_LIST_DEFAULT
  	ENV_CALLBACK_VAR "=" CONFIG_ENV_CALLBACK_LIST_DEFAULT "\0"
 diff --git a/include/env_resin.h b/include/env_resin.h
 new file mode 100644
-index 0000000000..36dce4a1b1
+index 0000000000..a8be2bdaac
 --- /dev/null
 +++ b/include/env_resin.h
-@@ -0,0 +1,172 @@
+@@ -0,0 +1,180 @@
 +#ifndef HEADER_ENV_BALENA_H
 +#define HEADER_ENV_BALENA_H
 +
@@ -298,6 +466,13 @@ index 0000000000..36dce4a1b1
 +               "echo Import ${balena_extra_env_file} in environment;" \
 +               "env import -t ${resin_kernel_load_addr} ${filesize}\0" \
 +       \
++       "balena_import_scan_dev_extra_env_file=" \
++               "if fatload ${resin_scan_dev_type} ${resin_scan_dev_index}:${resin_boot_part} ${resin_kernel_load_addr} ${balena_extra_env_file}; then " \
++                   "run balena_import_extra_env_file; " \
++                   "echo Imported ${balena_extra_env_file} from scanned device ${resin_scan_dev_type}:${resin_scan_dev_index} in environment;" \
++               "else " \
++                   "echo File ${balena_extra_env_file} not found on scanned device ${resin_scan_dev_type}:${resin_scan_dev_index}; " \
++               "fi; \0" \
 +       "os_import_bootcount_file=" \
 +               "echo Import ${os_bc_file} in environment;" \
 +               "env import -t ${resin_kernel_load_addr} ${filesize}\0" \
@@ -328,6 +503,7 @@ index 0000000000..36dce4a1b1
 +               "echo Scanning ${resin_uboot_device_types} devices ${resin_uboot_devices}; " \
 +               "for resin_scan_dev_type in ${resin_uboot_device_types}; do " \
 +                       "for resin_scan_dev_index in ${resin_uboot_devices}; do " \
++                               "run balena_import_scan_dev_extra_env_file; " \
 +                               "if test ${resin_flasher_skip} = 0 && run resin_flasher_detect; then " \
 +                                       "setenv resin_flasher_dev_index ${resin_scan_dev_index}; " \
 +                                       "setenv resin_dev_type ${resin_scan_dev_type}; " \
@@ -400,20 +576,6 @@ index 0000000000..36dce4a1b1
 +
 +#endif /* HEADER_ENV_BALENA_H */
 +
-diff --git a/ucompilation.sh b/ucompilation.sh
-index 09dc556cf7..fda86692a1 100755
---- a/ucompilation.sh
-+++ b/ucompilation.sh
-@@ -20,6 +20,6 @@ cp ./spl/u-boot-spl.bin ./Install/u-boot-spl.bin
- cp ./u-boot-nodtb.bin ./Install/u-boot-nodtb.bin
- cp ./arch/arm/dts/imx8mp-owa5x.dtb ./Install/imx8mp-owa5x.dtb
- 
--cp ./Install/u-boot-spl.bin ../imx-mkimage/iMX8M/u-boot-spl.bin
--cp ./Install/u-boot-nodtb.bin ../imx-mkimage/iMX8M/u-boot-nodtb.bin
--cp ./Install/imx8mp-owa5x.dtb ../imx-mkimage/iMX8M/imx8mp-owa5x.dtb
-+#cp ./Install/u-boot-spl.bin ../imx-mkimage/iMX8M/u-boot-spl.bin
-+#cp ./Install/u-boot-nodtb.bin ../imx-mkimage/iMX8M/u-boot-nodtb.bin
-+#cp ./Install/imx8mp-owa5x.dtb ../imx-mkimage/iMX8M/imx8mp-owa5x.dtb
 -- 
-2.25.1
+2.34.1
 

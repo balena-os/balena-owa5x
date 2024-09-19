@@ -30,7 +30,6 @@
 	path = layers/poky
 	url = https://github.com/balena-os/poky
 	branch = kirkstone
-[submodule "layers/meta-owasys"]
-	path = layers/meta-owasys
-	url = https://github.com/Owasys/meta-owasys.git
-	branch = master
+[submodule "layers/meta-owasys-owa5x-bsp"]
+	path = layers/meta-owasys-owa5x-bsp
+	url = https://gitlab.owasys.com/owasys-public/products/owa5x/firmware/meta-owasys-owa5x-bsp
