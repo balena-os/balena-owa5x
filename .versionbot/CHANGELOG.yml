@@ -1,4 +1,18 @@
 - commits:
+    - subject: Add GHA workflow
+      hash: 483414556cd7b2daaf31fc749dd16964942b5091
+      body: ""
+      footer:
+        Changelog-entry: Add GHA workflow
+        changelog-entry: Add GHA workflow
+        Signed-off-by: Ryan Cooke <ryan@balena.io>
+        signed-off-by: Ryan Cooke <ryan@balena.io>
+      author: Ryan Cooke
+      nested: []
+  version: 6.0.33+rev1
+  title: ""
+  date: 2024-10-10T22:53:09.445Z
+- commits:
     - subject: Update layers/meta-balena to f2c72d6bbd312821f0bb97897fe7836c525950f7
       hash: f0ec3d2d629be52a7276f363ffbd6d4d93e08c67
       body: Update layers/meta-balena
