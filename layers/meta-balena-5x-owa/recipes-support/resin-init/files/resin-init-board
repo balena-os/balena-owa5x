@@ -12,5 +12,6 @@ done
 
 /usr/bin/Start_BT_WiFi 1
 /usr/bin/Switch_GSM 1
+/usr/bin/Start_CAN 1
 
 exit 0
