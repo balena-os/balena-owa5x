@@ -1,4 +1,35 @@
 - commits:
+    - subject: Update balena-yocto-scripts to 6ed9e9bb080b7de8515da847682723b8ca07e2da
+      hash: c5983fcf679136f10c8437ad87a8857da5a94f40
+      body: Update balena-yocto-scripts
+      footer:
+        Changelog-entry: Update balena-yocto-scripts to 6ed9e9bb080b7de8515da847682723b8ca07e2da
+        changelog-entry: Update balena-yocto-scripts to 6ed9e9bb080b7de8515da847682723b8ca07e2da
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Fix concurrency and cancel in progress contexts
+              hash: 912b07647f7d0114d53b5971e653a65ed6fedd67
+              body: |
+                When evaluating expressions for cancel-in-progress, certain
+                parameters may not be available at the time of evaluation.
+
+                For instance, the github.job context is not accessible, as it's
+                specific to the running job and not the concurrency group.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: balena-yocto-scripts-1.25.62
+          title: ""
+          date: 2024-10-11T13:09:20.324Z
+  version: 6.0.44+rev2
+  title: ""
+  date: 2024-10-11T14:50:17.988Z
+- commits:
     - subject: Update balena-yocto-scripts to b5db1b7f9267c3dcbe515e2841747ef3a0409278
       hash: a8cc389b731e621177cba38c6f3a4fd2c9182ebc
       body: Update balena-yocto-scripts
