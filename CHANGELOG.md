@@ -1,6 +1,22 @@
 # v2.107.5
 ## (2023-01-09)
 
+# v6.0.33+rev2
+## (2024-10-11)
+
+
+<details>
+<summary> Update contracts to 5ac053bb4bfe82519a1ea8bd53b9adb8e925051e [balena-renovate[bot]] </summary>
+
+> ## contracts-2.0.114
+> ### (2024-10-09)
+> 
+> * sw.os+hw.device-type: Update all Orin devices to r36.3 in sources.list [Alexandru Costache]
+> * hw.device-type: Remove superfluous instructions for beagleplay [Alexandru]
+> 
+
+</details>
+
 # v6.0.33+rev1
 ## (2024-10-10)
 
