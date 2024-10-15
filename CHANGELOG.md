@@ -1,6 +1,21 @@
 # v2.107.5
 ## (2023-01-09)
 
+# v6.0.44+rev5
+## (2024-10-15)
+
+
+<details>
+<summary> Update balena-yocto-scripts to d9a810c7eb0d8e37c37b1bc27ecc0b4347a9dc21 [balena-renovate[bot]] </summary>
+
+> ## balena-yocto-scripts-1.26.0
+> ### (2024-10-15)
+> 
+> * Expose secure boot testing features via matrix input [Kyle Harding]
+> 
+
+</details>
+
 # v6.0.44+rev4
 ## (2024-10-11)
 
