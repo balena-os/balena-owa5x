@@ -1,4 +1,27 @@
 - commits:
+    - subject: Update contracts to 88fb8adfa09a1a270d9cd5d59627255298e1684e
+      hash: 52cf237fd6f356883f1f5c6755a0e64e9bfe96cb
+      body: Update contracts
+      footer:
+        Changelog-entry: Update contracts to 88fb8adfa09a1a270d9cd5d59627255298e1684e
+        changelog-entry: Update contracts to 88fb8adfa09a1a270d9cd5d59627255298e1684e
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Add alpine 3.20
+              hash: 6d47b5012c98f11c2a6e83944509aee90db099c0
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: Otavio Jacobi
+          version: contracts-2.0.116
+          title: ""
+          date: 2024-10-17T14:55:03.926Z
+  version: 6.0.44+rev8
+  title: ""
+  date: 2024-10-17T16:14:06.162Z
+- commits:
     - subject: Update contracts to 9cab0bbaafa974f15b8d8e0288b3b7659b1d1eaf
       hash: c44a12fc82836df78d80de1ec4a1aebc9cca4100
       body: Update contracts
