@@ -1,6 +1,26 @@
 # v2.107.5
 ## (2023-01-09)
 
+# v6.0.46
+## (2024-10-19)
+
+
+<details>
+<summary> Update layers/meta-balena to 95f1922c199e99e1cfaddceee5392e16e14ee018 [balena-renovate[bot]] </summary>
+
+> ## meta-balena-6.0.46
+> ### (2024-10-19)
+> 
+> * balena-units-conf: Add os-fan-profile to units conf [Alexandru Costache]
+> 
+> ## meta-balena-6.0.45
+> ### (2024-10-18)
+> 
+> * workflows/meta-balena-esr: fix version creation bash [Ryan Cooke]
+> 
+
+</details>
+
 # v6.0.44+rev8
 ## (2024-10-17)
 

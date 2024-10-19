@@ -1,4 +1,49 @@
 - commits:
+    - subject: Update layers/meta-balena to 95f1922c199e99e1cfaddceee5392e16e14ee018
+      hash: d275c5be868e2106e18e273fbb63bb5da7700145
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to 95f1922c199e99e1cfaddceee5392e16e14ee018
+        changelog-entry: Update layers/meta-balena to 95f1922c199e99e1cfaddceee5392e16e14ee018
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: "balena-units-conf: Add os-fan-profile to units conf"
+              hash: 1424e413680f30a156bef66e46ead170562edaf4
+              body: |
+                This service needs to be restarted every time the
+                fan profile is modified in config.json, so that
+                it can apply the change and restart the device
+                specific fan control daemon. This is unlike the
+                power model service, which only runs once, at startup.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alexandru Costache <alexandru@balena.io>
+                signed-off-by: Alexandru Costache <alexandru@balena.io>
+              author: Alexandru Costache
+              nested: []
+          version: meta-balena-6.0.46
+          title: ""
+          date: 2024-10-19T16:51:02.546Z
+        - commits:
+            - subject: "workflows/meta-balena-esr: fix version creation bash"
+              hash: 40266212820dca50c7d6a938ca512b779dbd24b3
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Ryan Cooke <ryan@balena.io>
+                signed-off-by: Ryan Cooke <ryan@balena.io>
+              author: Ryan Cooke
+              nested: []
+          version: meta-balena-6.0.45
+          title: ""
+          date: 2024-10-18T13:39:38.158Z
+  version: 6.0.46
+  title: ""
+  date: 2024-10-19T19:38:26.511Z
+- commits:
     - subject: Update contracts to 88fb8adfa09a1a270d9cd5d59627255298e1684e
       hash: 52cf237fd6f356883f1f5c6755a0e64e9bfe96cb
       body: Update contracts
