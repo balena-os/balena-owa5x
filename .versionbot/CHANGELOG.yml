@@ -1,4 +1,38 @@
 - commits:
+    - subject: Update layers/meta-balena to d6ed535df8dc0cf2b928a7f2f908568702ecb2f2
+      hash: 19a3dda46d6a7b6d0d1d0b6fa3b659c07031eac3
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to d6ed535df8dc0cf2b928a7f2f908568702ecb2f2
+        changelog-entry: Update layers/meta-balena to d6ed535df8dc0cf2b928a7f2f908568702ecb2f2
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: "hostapp-update-hooks: remove alternative bootloader environment files"
+              hash: b152124216f8360514961b83195c0e49f63c1a73
+              body: >
+                The rollback-parse-bootloader script will give priority to
+
+                resinOS_uEnv.txt so make sure there are no U-Boot leftovers when
+
+                migrating to a balena-bootloader enabled system which needs to
+                read
+
+                the bootenv environment file on rollbacks.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+          version: meta-balena-6.0.47
+          title: ""
+          date: 2024-10-21T17:55:13.550Z
+  version: 6.0.47
+  title: ""
+  date: 2024-10-21T20:45:11.633Z
+- commits:
     - subject: Update layers/meta-balena to 95f1922c199e99e1cfaddceee5392e16e14ee018
       hash: d275c5be868e2106e18e273fbb63bb5da7700145
       body: Update layers/meta-balena
