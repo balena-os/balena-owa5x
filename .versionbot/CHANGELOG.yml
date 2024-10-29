@@ -1,4 +1,16 @@
 - commits:
+    - subject: Update balena-os/balena-yocto-scripts to v1.27.3
+      hash: 454decc21ffebaec8a4ac78fe23aaa2abefb8f50
+      body: Update balena-os/balena-yocto-scripts
+      footer:
+        Changelog-entry: Update balena-os/balena-yocto-scripts to v1.27.3
+        changelog-entry: Update balena-os/balena-yocto-scripts to v1.27.3
+      author: balena-renovate[bot]
+      nested: []
+  version: 6.0.50+rev3
+  title: ""
+  date: 2024-10-29T17:50:06.132Z
+- commits:
     - subject: Bring down the eth iface in order to signal the end of provisioning
       hash: 4128ae571a05693e4b509a9c1a8855c6fe92bb39
       body: >
