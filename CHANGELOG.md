@@ -1,6 +1,11 @@
 # v2.107.5
 ## (2023-01-09)
 
+# v6.0.50+rev1
+## (2024-10-29)
+
+* Restore pull request target triggers for PRs from forks [Kyle Harding]
+
 # v6.0.50
 ## (2024-10-27)
 
