@@ -1,6 +1,11 @@
 # v2.107.5
 ## (2023-01-09)
 
+# v6.0.50+rev2
+## (2024-10-29)
+
+* Bring down the eth iface in order to signal the end of provisioning [Florin Sarbu]
+
 # v6.0.50+rev1
 ## (2024-10-29)
 

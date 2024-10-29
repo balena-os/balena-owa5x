@@ -1,4 +1,26 @@
 - commits:
+    - subject: Bring down the eth iface in order to signal the end of provisioning
+      hash: 4128ae571a05693e4b509a9c1a8855c6fe92bb39
+      body: >
+        The board will not bring down the eth interface when issuing a shutdown
+        so instead
+
+        at the end of provisioning we bring down the eth interface and sleep for
+        30 seconds which
+
+        should be enough for the worker to detect this as the end of the
+        provisioning process.
+      footer:
+        Changelog-entry: Bring down the eth iface in order to signal the end of provisioning
+        changelog-entry: Bring down the eth iface in order to signal the end of provisioning
+        Signed-off-by: Florin Sarbu <florin@balena.io>
+        signed-off-by: Florin Sarbu <florin@balena.io>
+      author: Florin Sarbu
+      nested: []
+  version: 6.0.50+rev2
+  title: ""
+  date: 2024-10-29T14:00:09.611Z
+- commits:
     - subject: Restore pull request target triggers for PRs from forks
       hash: 429cf6a074078adf349daeccec288e6e2cac84ea
       body: ""
