@@ -23,8 +23,6 @@ IMAGE_INSTALL:append = " \
                         iproute2 \
                         can-utils \
                         u-boot-fw-utils \
-                        pmsrv \
-                        pmsrv-service \
                         u-boot-owasys \
                         imx-boot-owasys \
                         alsa-lib \
