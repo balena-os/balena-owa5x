@@ -1,4 +1,24 @@
 - commits:
+    - subject: Start CAN on boot
+      hash: 89e3a6972e6fc2de00359b306d61a0491e4cfd58
+      body: >
+        As discussed in #397 starting CAN communication from within balena
+        docker applications is difficult due to needing owasys libraries in the
+        image and needing to mount sockets to the running container.
+
+
+        This commit enables CAN on boot.
+      footer:
+        Changelog-entry: Start CAN on boot
+        changelog-entry: Start CAN on boot
+        Signed-off-by: Otto Laitila <otto@laiti.la>
+        signed-off-by: Otto Laitila <otto@laiti.la>
+      author: Otto Laitila
+      nested: []
+  version: 6.0.50+rev5
+  title: ""
+  date: 2024-10-30T14:41:04.200Z
+- commits:
     - subject: Update balena-yocto-scripts to 9ae5d6075069f8e5dec053701e2a1c6173bf78d7
       hash: ca87aee43cf7433020d18b46dc1ca21006909081
       body: Update balena-yocto-scripts
