@@ -1,4 +1,30 @@
 - commits:
+    - subject: Update layers/meta-balena to 26dd79ea1569ad3f365e669f3e646e21d67e9121
+      hash: e43fd0b183d342279e15b01f846613419d712bff
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to 26dd79ea1569ad3f365e669f3e646e21d67e9121
+        changelog-entry: Update layers/meta-balena to 26dd79ea1569ad3f365e669f3e646e21d67e9121
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Add auth. header to /os/v1/config requests
+              hash: 0c35aa38fec436fa0469aaf414fbcf68d97f6b0b
+              body: >
+                Allows the API to identify devices requesting configuration and
+                apply routing logic (e.g. switch from TCP to UDP OpenVPN
+                configuration).
+              footer:
+                change-type: minor
+              author: Anton Belodedenko
+              nested: []
+          version: meta-balena-6.1.0
+          title: ""
+          date: 2024-11-01T13:53:03.607Z
+  version: 6.1.0
+  title: ""
+  date: 2024-11-01T16:56:30.288Z
+- commits:
     - subject: Start CAN on boot
       hash: 89e3a6972e6fc2de00359b306d61a0491e4cfd58
       body: >
