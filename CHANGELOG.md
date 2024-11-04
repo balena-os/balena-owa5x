@@ -1,6 +1,21 @@
 # v2.107.5
 ## (2023-01-09)
 
+# v6.1.0+rev5
+## (2024-11-04)
+
+
+<details>
+<summary> Update balena-yocto-scripts to 80964ecccdeb4cc3ffd7142ce82efb8a6c3dafc3 [balena-renovate[bot]] </summary>
+
+> ## balena-yocto-scripts-1.27.6
+> ### (2024-11-04)
+> 
+> * Use official aws cli binaries and commands [Kyle Harding]
+> 
+
+</details>
+
 # v6.1.0+rev4
 ## (2024-11-04)
 
