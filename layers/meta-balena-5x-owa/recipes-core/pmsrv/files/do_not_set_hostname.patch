@@ -1,0 +1,13 @@
+Index: 1.0.27-r0/pmsrv.json
+===================================================================
+--- 1.0.27-r0.orig/pmsrv.json
++++ 1.0.27-r0/pmsrv.json
+@@ -1,7 +1,7 @@
+ {
+     "name": "pmsrv",
+     "reset_lines": 20,
+-    "set_hostname": 1,
++    "set_hostname": 0,
+     "set_default": 1,
+     "set_time": 0,
+     "secure_time": 1,
