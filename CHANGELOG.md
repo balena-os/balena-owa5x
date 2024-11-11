@@ -1,6 +1,21 @@
 # v2.107.5
 ## (2023-01-09)
 
+# v6.1.2
+## (2024-11-11)
+
+
+<details>
+<summary> Update layers/meta-balena to 767da5e6a765dc5bb922fc2ee6c3f338ca214628 [balena-renovate[bot]] </summary>
+
+> ## meta-balena-6.1.2
+> ### (2024-11-11)
+> 
+> * modemmanager: Update outdated context of patches [Florin Sarbu]
+> 
+
+</details>
+
 # v6.1.1+rev2
 ## (2024-11-11)
 
