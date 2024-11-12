@@ -1,6 +1,22 @@
 # v2.107.5
 ## (2023-01-09)
 
+# v6.1.4
+## (2024-11-12)
+
+
+<details>
+<summary> Update layers/meta-balena to e89bd184891acdab646ea490b84ab3e773fde14b [balena-renovate[bot]] </summary>
+
+> ## meta-balena-6.1.4
+> ### (2024-11-12)
+> 
+> * os: test for rootfs by-state link uniqueness [Joseph Kogut]
+> * common: fix udev helper by-state link creation [Joseph Kogut]
+> 
+
+</details>
+
 # v6.1.3+rev2
 ## (2024-11-11)
 
