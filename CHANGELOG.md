@@ -1,6 +1,21 @@
 # v2.107.5
 ## (2023-01-09)
 
+# v6.1.8
+## (2024-11-15)
+
+
+<details>
+<summary> Update layers/meta-balena to b54108c60a91e6a0cabf3b7e7f69e29d22963b0f [balena-renovate[bot]] </summary>
+
+> ## meta-balena-6.1.8
+> ### (2024-11-15)
+> 
+> * recipes-kernel/linux-firmware: Package Intel AX210 firmware [Alexandru Costache]
+> 
+
+</details>
+
 # v6.1.7
 ## (2024-11-13)
 
