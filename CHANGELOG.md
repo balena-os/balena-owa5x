@@ -1,6 +1,21 @@
 # v2.107.5
 ## (2023-01-09)
 
+# v6.1.17+rev1
+## (2024-12-02)
+
+
+<details>
+<summary> Update balena-yocto-scripts to 3eebec1f898038f5bbee0fcccb62b7178db2ef47 [balena-renovate[bot]] </summary>
+
+> ## balena-yocto-scripts-1.27.16
+> ### (2024-11-29)
+> 
+> * Set additional github token permissions [Ryan Cooke]
+> 
+
+</details>
+
 # v6.1.17
 ## (2024-12-02)
 
