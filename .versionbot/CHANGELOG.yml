@@ -1,4 +1,66 @@
 - commits:
+    - subject: Update layers/meta-balena to f208cd6b57462d3a987b5f8c1a47c8b7dd7040d4
+      hash: 63d1493a1c7a0081b61ff801308a1c51fb4a7291
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to f208cd6b57462d3a987b5f8c1a47c8b7dd7040d4
+        changelog-entry: Update layers/meta-balena to f208cd6b57462d3a987b5f8c1a47c8b7dd7040d4
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: "kernel-module-build: update to 3.0.1"
+              hash: 87d1b45fad357cb25eda2bd82c9ea12b3c0645b2
+              body: |
+                This adds a required dependency.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+            - subject: "tests: secureboot: fix passing of kernel headers version"
+              hash: 4484c59fc924100232cc10303a4636ed0082760a
+              body: |
+                Specifying the kernel headers version was not woriking.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+            - subject: "tests: secureboot: add dm devices support in FDE test"
+              hash: 89518778741013d099048319cba8846530261dee
+              body: >
+                Use dmsetup to identify encrypted partitions instead of
+                filesystem type
+
+                as this will work for both LUKS and DM encrypted partitions.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+            - subject: "tests: secureboot: add imx specialization"
+              hash: 539bca4652ccef5d2ec8be9a5b669bcd2f073f27
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+          version: meta-balena-6.1.20
+          title: ""
+          date: 2024-12-04T12:38:37.422Z
+  version: 6.1.20
+  title: ""
+  date: 2024-12-04T13:12:02.345Z
+- commits:
     - subject: Update layers/meta-balena to 1206eb202fe7883eb5a915f01615a4c8de17e6e3
       hash: f176984616a42588fab169fda47177a9e32508f0
       body: Update layers/meta-balena
