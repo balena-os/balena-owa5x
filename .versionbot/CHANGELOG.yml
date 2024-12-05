@@ -1,4 +1,62 @@
 - commits:
+    - subject: Update layers/meta-balena to fb251872ee048d5e5eb5558d47c1bae6771b95bd
+      hash: b220dfa9b5b333ea1ed7614445c6f4fd35b56098
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to fb251872ee048d5e5eb5558d47c1bae6771b95bd
+        changelog-entry: Update layers/meta-balena to fb251872ee048d5e5eb5558d47c1bae6771b95bd
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: "os-helpers-fs: add function to erase disks"
+              hash: cb2e8b97f6451c40504543cc0b56130564394bc0
+              body: >
+                The function overwrites the first 16 MiB of each partition (the
+                default
+
+                LUKS2 header size), as well as the primary and backup GPT
+                partition
+
+                tables.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+          version: meta-balena-6.1.22
+          title: ""
+          date: 2024-12-05T17:35:54.393Z
+        - commits:
+            - subject: Update tests/leviathan digest to 90d1685
+              hash: 647ef9196e83407d5220e03d1ce3fe09575c5bc8
+              body: Update tests/leviathan
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested:
+                - commits:
+                    - subject: Update core/contracts digest to 474ab2d
+                      hash: 8faa54c6388d41797667a2d2bc51a9b4a8ebad1c
+                      body: |
+                        Update core/contracts
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: balena-renovate[bot]
+                      nested: []
+                  version: leviathan-2.31.66
+                  title: ""
+                  date: 2024-12-04T18:50:19.476Z
+          version: meta-balena-6.1.21
+          title: ""
+          date: 2024-12-04T21:36:12.833Z
+  version: 6.1.22
+  title: ""
+  date: 2024-12-05T20:43:12.472Z
+- commits:
     - subject: Update balena-yocto-scripts to 5e7e9611dc40a552070baf8a5b56621188e80715
       hash: a8c45bd8b25d26927e0f011771c2167312a21fc2
       body: Update balena-yocto-scripts

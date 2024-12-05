@@ -1,6 +1,37 @@
 # v2.107.5
 ## (2023-01-09)
 
+# v6.1.22
+## (2024-12-05)
+
+
+<details>
+<summary> Update layers/meta-balena to fb251872ee048d5e5eb5558d47c1bae6771b95bd [balena-renovate[bot]] </summary>
+
+> ## meta-balena-6.1.22
+> ### (2024-12-05)
+> 
+> * os-helpers-fs: add function to erase disks [Alex Gonzalez]
+> 
+> ## meta-balena-6.1.21
+> ### (2024-12-04)
+> 
+> 
+> <details>
+> <summary> Update tests/leviathan digest to 90d1685 [balena-renovate[bot]] </summary>
+> 
+>> ### leviathan-2.31.66
+>> #### (2024-12-04)
+>> 
+>> * Update core/contracts digest to 474ab2d [balena-renovate[bot]]
+>> 
+> 
+> </details>
+> 
+> 
+
+</details>
+
 # v6.1.20+rev2
 ## (2024-12-05)
 
