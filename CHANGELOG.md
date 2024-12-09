@@ -1,6 +1,22 @@
 # v2.107.5
 ## (2023-01-09)
 
+# v6.1.23+rev3
+## (2024-12-09)
+
+
+<details>
+<summary> Update balena-yocto-scripts to 86272d84eec20942f5c3252b394ae6b207186710 [balena-renovate[bot]] </summary>
+
+> ## balena-yocto-scripts-1.27.20
+> ### (2024-12-09)
+> 
+> * barys: add support for scarthgap [Joseph Kogut]
+> * barys: make honister+ syntax default [Joseph Kogut]
+> 
+
+</details>
+
 # v6.1.23+rev2
 ## (2024-12-07)
 
