@@ -1,4 +1,30 @@
 - commits:
+    - subject: Update balena-yocto-scripts to 8d5ff1ff1aad3148ef03bab6ea811e72525d60ff
+      hash: 9cdc6d0e4c8af7cc1ded604b17f1706b9fdd4f06
+      body: Update balena-yocto-scripts
+      footer:
+        Changelog-entry: Update balena-yocto-scripts to 8d5ff1ff1aad3148ef03bab6ea811e72525d60ff
+        changelog-entry: Update balena-yocto-scripts to 8d5ff1ff1aad3148ef03bab6ea811e72525d60ff
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: re-enable AMI deploys
+              hash: 6b951a1ef76da4896e676477a8f550b3186b7e55
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Ryan Cooke <ryan@balena.io>
+                signed-off-by: Ryan Cooke <ryan@balena.io>
+              author: Ryan Cooke
+              nested: []
+          version: balena-yocto-scripts-1.29.1
+          title: ""
+          date: 2024-12-13T18:55:49.988Z
+  version: 6.1.26+rev2
+  title: ""
+  date: 2024-12-13T21:48:40.124Z
+- commits:
     - subject: Update balena-yocto-scripts to 242572671a2a8a98fd3cf75776c5ef49e3ceea1a
       hash: 0662fe16f320095fb9fd87674254a7fc1f77fef0
       body: Update balena-yocto-scripts
