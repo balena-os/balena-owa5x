@@ -1,4 +1,33 @@
 - commits:
+    - subject: Update layers/meta-balena to 000eb51f9196fe15bbefa8c4ae7639639ccc8e48
+      hash: 2aa302a2d954ab0cc76ab119cd220b7103aad1d9
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to 000eb51f9196fe15bbefa8c4ae7639639ccc8e48
+        changelog-entry: Update layers/meta-balena to 000eb51f9196fe15bbefa8c4ae7639639ccc8e48
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: "README: Add fan profile and power mode info to docs"
+              hash: b48a99a247cf28ecbf46864f9f41f92c8828d1f7
+              body: |
+                This commit adds detailed information for the
+                new power and cooling configuration options
+                available for Jetson Orin devices.
+              footer:
+                Signed-off-by: Alexandru Costache <alexandru@balena.io>
+                signed-off-by: Alexandru Costache <alexandru@balena.io>
+                Change-type: patch
+                change-type: patch
+              author: Alexandru Costache
+              nested: []
+          version: meta-balena-6.1.27
+          title: ""
+          date: 2024-12-14T13:36:02.387Z
+  version: 6.1.27
+  title: ""
+  date: 2024-12-14T15:11:42.374Z
+- commits:
     - subject: Update balena-yocto-scripts to 47f64ca1617288a0e4da6af73609155981865712
       hash: b9aae853082b7e5ef694d48a3918b6ec88edd1fc
       body: Update balena-yocto-scripts
