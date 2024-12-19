@@ -1,6 +1,21 @@
 # v2.107.5
 ## (2023-01-09)
 
+# v6.2.1
+## (2024-12-19)
+
+
+<details>
+<summary> Update layers/meta-balena to aa715d098183a09e3f52467f5118f51646c796f6 [balena-renovate[bot]] </summary>
+
+> ## meta-balena-6.2.1
+> ### (2024-12-19)
+> 
+> * classes: kernel-balena: configure reset on oops [Alex Gonzalez]
+> 
+
+</details>
+
 # v6.2.0+rev8
 ## (2024-12-19)
 

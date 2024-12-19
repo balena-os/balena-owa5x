@@ -1,4 +1,37 @@
 - commits:
+    - subject: Update layers/meta-balena to aa715d098183a09e3f52467f5118f51646c796f6
+      hash: 85439b476f8ca75dd078a925318ab470e6bad2f2
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to aa715d098183a09e3f52467f5118f51646c796f6
+        changelog-entry: Update layers/meta-balena to aa715d098183a09e3f52467f5118f51646c796f6
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: "classes: kernel-balena: configure reset on oops"
+              hash: dc2c8fc20d27d269d0132981ab03e62c882a9e8b
+              body: >
+                This is specially useful to prevent devices freezing at boot on
+                errors,
+
+                for example when the initramfs fail() is called allowing the
+                device to
+
+                reboot and rollback.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+          version: meta-balena-6.2.1
+          title: ""
+          date: 2024-12-19T11:55:56.499Z
+  version: 6.2.1
+  title: ""
+  date: 2024-12-19T14:24:47.096Z
+- commits:
     - subject: Update balena-yocto-scripts to 8ac2c94cba482a68902453f71b758d2fc3907f98
       hash: 0b0d3011801ba5cd9f4e00e8df651d03c15b2e23
       body: Update balena-yocto-scripts
