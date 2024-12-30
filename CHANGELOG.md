@@ -1,6 +1,26 @@
 # v2.107.5
 ## (2023-01-09)
 
+# v6.2.4+rev1
+## (2024-12-30)
+
+
+<details>
+<summary> Update balena-yocto-scripts to a5d24c7ba0efb8441fca45d3cf103c86765edd7d [balena-renovate[bot]] </summary>
+
+> ## balena-yocto-scripts-1.30.4
+> ### (Invalid date)
+> 
+> * Update actions/create-github-app-token action to v1.11.1 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.30.3
+> ### (Invalid date)
+> 
+> * Update balena-os/leviathan action to v2.31.77 [balena-renovate[bot]]
+> 
+
+</details>
+
 # v6.2.4
 ## (2024-12-26)
 
