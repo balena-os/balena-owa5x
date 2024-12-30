@@ -1,4 +1,41 @@
 - commits:
+    - subject: Update layers/meta-balena to 54af14ef4fbbe2355e3f93a0e443871a9f7c5759
+      hash: a19982de5e25a384c9082c128e7355a648dbbe7b
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to 54af14ef4fbbe2355e3f93a0e443871a9f7c5759
+        changelog-entry: Update layers/meta-balena to 54af14ef4fbbe2355e3f93a0e443871a9f7c5759
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Update tests/leviathan digest to c4feff6
+              hash: 9595de8e0767d34c5be5ca0e6f76e6b8b7ae6225
+              body: Update tests/leviathan
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested:
+                - commits:
+                    - subject: Update core/contracts digest to 8bd5651
+                      hash: a336cde18c85bd8c01a8bdebbe8a7f6ef0c311be
+                      body: |
+                        Update core/contracts
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: balena-renovate[bot]
+                      nested: []
+                  version: leviathan-2.31.77
+                  title: ""
+                  date: 2024-12-30T10:17:33.420Z
+          version: meta-balena-6.2.5
+          title: ""
+          date: 2024-12-30T15:34:25.474Z
+  version: 6.2.5
+  title: ""
+  date: 2024-12-30T20:05:05.917Z
+- commits:
     - subject: Update balena-yocto-scripts to a5d24c7ba0efb8441fca45d3cf103c86765edd7d
       hash: 562d028e0162020c15af566ad6d25f7a89884610
       body: Update balena-yocto-scripts
