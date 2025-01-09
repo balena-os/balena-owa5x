@@ -1,4 +1,43 @@
 - commits:
+    - subject: Update layers/meta-balena to 32f5b9ed66ba5d2336fe92e9ca91e62ccf595c0b
+      hash: 2a0dfb3c15991151fead03d8223b0a06010bd86d
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to 32f5b9ed66ba5d2336fe92e9ca91e62ccf595c0b
+        changelog-entry: Update layers/meta-balena to 32f5b9ed66ba5d2336fe92e9ca91e62ccf595c0b
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Update usb-modeswitch to version 2.6.1
+              hash: 54b5b72a879e942e4b907e49e7387b505772dc55
+              body: >
+                Version 2.5.2 of usb-modeswitch contained a local 0.72 jimtcl
+                copy which was used
+
+                when the static version of the dispatcher was being compiled.
+                Version 2.6.1 removed
+
+                this copy of jimtcl from the source package so we add it back
+                ourselves because it's
+
+                easier to have libjim.a compiled here rather than add a whole
+                new Yocto recipe just for it.
+              footer:
+                Change-type: minor
+                change-type: minor
+                Changelog-entry: Update usb-modeswitch to version 2.6.1
+                changelog-entry: Update usb-modeswitch to version 2.6.1
+                Signed-off-by: Florin Sarbu <florin@balena.io>
+                signed-off-by: Florin Sarbu <florin@balena.io>
+              author: Florin Sarbu
+              nested: []
+          version: meta-balena-6.3.0
+          title: ""
+          date: 2025-01-09T14:29:56.985Z
+  version: 6.3.0
+  title: ""
+  date: 2025-01-09T17:49:39.673Z
+- commits:
     - subject: Update balena-os/balena-yocto-scripts to
         953fe6835fc01eba0071649b7b7f3058bcd7867e
       hash: 70a451e0b6241eaac8f7ae7b0bfda489b3eb4658
