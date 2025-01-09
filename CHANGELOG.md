@@ -1,6 +1,11 @@
 # v2.107.5
 ## (2023-01-09)
 
+# v6.3.0+rev1
+## (2025-01-09)
+
+* Update balena-os/balena-yocto-scripts to 88037d34fab8609cceca65335d8c329e11c71692 [balena-renovate[bot]]
+
 # v6.3.0
 ## (2025-01-09)
 
