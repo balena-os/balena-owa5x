@@ -1,4 +1,30 @@
 - commits:
+    - subject: Update balena-yocto-scripts to fab87868acf44744c512df594be72d4dcdcc8b7a
+      hash: 481784db24cf8c1032af15fdb92720f4dc1d658e
+      body: Update balena-yocto-scripts
+      footer:
+        Changelog-entry: Update balena-yocto-scripts to fab87868acf44744c512df594be72d4dcdcc8b7a
+        changelog-entry: Update balena-yocto-scripts to fab87868acf44744c512df594be72d4dcdcc8b7a
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Upload yocto build logs even on failure
+              hash: 30bb89951d31c27d579a936cce5c9d862bce9e66
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: balena-yocto-scripts-1.30.8
+          title: ""
+          date: 2025-01-09T08:59:28.305Z
+  version: 6.2.8+rev1
+  title: ""
+  date: 2025-01-09T11:11:17.406Z
+- commits:
     - subject: Update layers/meta-balena to 2043b093aced21ed2caf1649d38e34e282361dda
       hash: 940aceb5b9ee7652561b2fbbe6eca0390c147655
       body: Update layers/meta-balena
