@@ -1,4 +1,44 @@
 - commits:
+    - subject: Update layers/meta-balena to 25e216d91a0fcb47eca6bd79acf4f47ef4f627ae
+      hash: f1791b38867407dc8033840dcdbfdd6830982172
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to 25e216d91a0fcb47eca6bd79acf4f47ef4f627ae
+        changelog-entry: Update layers/meta-balena to 25e216d91a0fcb47eca6bd79acf4f47ef4f627ae
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: "classes/kernel-balena: Avoid re-building kernel modules when not
+                signed"
+              hash: 729490be46acc63b00d842dd8174ad0f03e5e55f
+              body: >
+                Setting the nostamp flag to any value, even if it is an empty
+                string, causes
+
+                the kernel modules to be rebuilt, which is contrary to the
+
+                documentation:
+                https://lists.openembedded.org/g/bitbake-devel/message/12359
+
+
+                Let's avoid setting it altogether on kernels which are not
+                signed,
+
+                to speed up builds.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alexandru Costache <alexandru@balena.io>
+                signed-off-by: Alexandru Costache <alexandru@balena.io>
+              author: Alexandru Costache
+              nested: []
+          version: meta-balena-6.3.5
+          title: ""
+          date: 2025-01-16T19:38:46.906Z
+  version: 6.3.5
+  title: ""
+  date: 2025-01-16T21:25:33.870Z
+- commits:
     - subject: Update layers/meta-balena to 9e9a4ca10eceb59d14866d87a1486b63f2c636ce
       hash: 8094d2eda1f46931f0a0d83e04428a4f000da56c
       body: Update layers/meta-balena
