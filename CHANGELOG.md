@@ -1,6 +1,21 @@
 # v2.107.5
 ## (2023-01-09)
 
+# v6.3.4
+## (2025-01-16)
+
+
+<details>
+<summary> Update layers/meta-balena to 9e9a4ca10eceb59d14866d87a1486b63f2c636ce [balena-renovate[bot]] </summary>
+
+> ## meta-balena-6.3.4
+> ### (2025-01-16)
+> 
+> * workflows: iot-gate-imx8: add custom template path [Alex Gonzalez]
+> 
+
+</details>
+
 # v6.3.3
 ## (2025-01-15)
 
