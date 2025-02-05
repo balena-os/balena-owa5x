@@ -1,6 +1,21 @@
 # v2.107.5
 ## (2023-01-09)
 
+# v6.3.14
+## (2025-02-05)
+
+
+<details>
+<summary> Update layers/meta-balena to a73bffc3f96fd28c67a4ebf93adfac54ef86fb6a [balena-renovate[bot]] </summary>
+
+> ## meta-balena-6.3.14
+> ### (2025-02-05)
+> 
+> * tests: secureboot: remove preload test for secureboot enabled DUTs [Ryan Cooke]
+> 
+
+</details>
+
 # v6.3.13+rev1
 ## (2025-02-03)
 
