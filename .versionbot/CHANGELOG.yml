@@ -1,4 +1,29 @@
 - commits:
+    - subject: Update balena-yocto-scripts to fa12a4dff3f9d8c2298719d7c8c4cdcce24253e1
+      hash: 25d9365f9d8bfab877bf072539cf50d2e22f6cc7
+      body: Update balena-yocto-scripts
+      footer:
+        Changelog-entry: Update balena-yocto-scripts to fa12a4dff3f9d8c2298719d7c8c4cdcce24253e1
+        changelog-entry: Update balena-yocto-scripts to fa12a4dff3f9d8c2298719d7c8c4cdcce24253e1
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Update actions/create-github-app-token action to v1.11.3
+              hash: 8149f57c433a17c56fd2357baee0d77333ad196b
+              body: |
+                Update actions/create-github-app-token from 1.11.2 to 1.11.3
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: balena-yocto-scripts-1.30.26
+          title: ""
+          date: 2025-02-06T13:36:56.062Z
+  version: 6.3.14+rev3
+  title: ""
+  date: 2025-02-06T17:43:35.142Z
+- commits:
     - subject: Update contracts to 1adfd1c331b3464969cc09a5c7cc3583ef1fe3de
       hash: 018c91c9de782271be5be730699fb8e80d001e29
       body: Update contracts
