@@ -1,6 +1,22 @@
 # v2.107.5
 ## (2023-01-09)
 
+# v6.3.14+rev2
+## (2025-02-06)
+
+
+<details>
+<summary> Update contracts to 1adfd1c331b3464969cc09a5c7cc3583ef1fe3de [balena-renovate[bot]] </summary>
+
+> ## contracts-2.0.128
+> ### (2025-02-05)
+> 
+> * Improve testing of contracts [Felipe Lalanne]
+> * Remove unused sw.os-image contracts [Felipe Lalanne]
+> 
+
+</details>
+
 # v6.3.14+rev1
 ## (2025-02-06)
 
