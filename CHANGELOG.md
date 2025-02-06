@@ -1,6 +1,26 @@
 # v2.107.5
 ## (2023-01-09)
 
+# v6.3.16
+## (2025-02-06)
+
+
+<details>
+<summary> Update layers/meta-balena to 85e629c383239e7219e7c8825aa0128cb29f1812 [balena-renovate[bot]] </summary>
+
+> ## meta-balena-6.3.16
+> ### (2025-02-06)
+> 
+> * tests: os: swap: increase wiggle room in swap check [Ryan Cooke]
+> 
+> ## meta-balena-6.3.15
+> ### (2025-02-06)
+> 
+> * tests: cloud: env vars: restart supervisor to speed up tests [Ryan Cooke]
+> 
+
+</details>
+
 # v6.3.14+rev3
 ## (2025-02-06)
 

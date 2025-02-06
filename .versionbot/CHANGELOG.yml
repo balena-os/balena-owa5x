@@ -1,4 +1,52 @@
 - commits:
+    - subject: Update layers/meta-balena to 85e629c383239e7219e7c8825aa0128cb29f1812
+      hash: 31b1b2eae00675ac61dac6fe44ecdfda8ab87d14
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to 85e629c383239e7219e7c8825aa0128cb29f1812
+        changelog-entry: Update layers/meta-balena to 85e629c383239e7219e7c8825aa0128cb29f1812
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: "tests: os: swap: increase wiggle room in swap check"
+              hash: f13121bba5b413c932afd8f8db43f87ccb7bca0a
+              body: >
+                We encountered the variance in expected and measured swap in the
+                rpi5 to be higher than the allowed value of 10 - to make this
+                safe and allowing of more device types, changed the allowed
+                variation - still small enough to actually check the value is
+                right, but should reduce false negatives
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Ryan Cooke <ryan@balena.io>
+                signed-off-by: Ryan Cooke <ryan@balena.io>
+              author: Ryan Cooke
+              nested: []
+          version: meta-balena-6.3.16
+          title: ""
+          date: 2025-02-06T18:25:14.533Z
+        - commits:
+            - subject: "tests: cloud: env vars: restart supervisor to speed up tests"
+              hash: 047519b3d11b48b55a6dac8b5d5b4af63cb85171
+              body: >
+                Tests can get stuck here for 15 to 20 minutes if the timings are
+                unlucky. Forcing a supervisor restart ensures a clean slate and
+                ensures that the variables are included as quickly as possible
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Ryan Cooke <ryan@balena.io>
+                signed-off-by: Ryan Cooke <ryan@balena.io>
+              author: Ryan Cooke
+              nested: []
+          version: meta-balena-6.3.15
+          title: ""
+          date: 2025-02-06T17:05:15.720Z
+  version: 6.3.16
+  title: ""
+  date: 2025-02-06T19:43:45.213Z
+- commits:
     - subject: Update balena-yocto-scripts to fa12a4dff3f9d8c2298719d7c8c4cdcce24253e1
       hash: 25d9365f9d8bfab877bf072539cf50d2e22f6cc7
       body: Update balena-yocto-scripts
