@@ -1,6 +1,21 @@
 # v2.107.5
 ## (2023-01-09)
 
+# v6.3.19
+## (2025-02-13)
+
+
+<details>
+<summary> Update layers/meta-balena to da5f840db1f2dee4e4c5893f31ddf29c0bb9237f [balena-renovate[bot]] </summary>
+
+> ## meta-balena-6.3.19
+> ### (2025-02-13)
+> 
+> * wpa-supplicant: Update to recipe from Kirkstone [Florin Sarbu]
+> 
+
+</details>
+
 # v6.3.18+rev1
 ## (2025-02-11)
 
