@@ -1,4 +1,30 @@
 - commits:
+    - subject: Update layers/meta-balena to b87445d1ae125b108e2d8e0fa766382a42ba7730
+      hash: da40c0d1200239b35d695303125f8331cdcf05c2
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to b87445d1ae125b108e2d8e0fa766382a42ba7730
+        changelog-entry: Update layers/meta-balena to b87445d1ae125b108e2d8e0fa766382a42ba7730
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: "kernel-balena.bbclass: Add aufs patches for 6.12 kernels"
+              hash: 21469a4d0fb4ddf15d17ec1cff3687329abea018
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Florin Sarbu <florin@balena.io>
+                signed-off-by: Florin Sarbu <florin@balena.io>
+              author: Florin Sarbu
+              nested: []
+          version: meta-balena-6.3.21
+          title: ""
+          date: 2025-02-21T20:03:08.166Z
+  version: 6.3.21
+  title: ""
+  date: 2025-02-21T21:40:26.160Z
+- commits:
     - subject: Update balena-yocto-scripts to 800cd18b1f924e8ad8029689fef3ca52d99d7e1e
       hash: 1f8c431cacc6bbf4d70027d230a9cf99850e9e68
       body: Update balena-yocto-scripts
