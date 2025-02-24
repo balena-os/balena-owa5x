@@ -1,4 +1,30 @@
 - commits:
+    - subject: Update balena-yocto-scripts to 2620a0faf744cb9561c6e0b402c913c19b251ff6
+      hash: bd127a89569aa523f61ed53f7c86b8364399ac9b
+      body: Update balena-yocto-scripts
+      footer:
+        Changelog-entry: Update balena-yocto-scripts to 2620a0faf744cb9561c6e0b402c913c19b251ff6
+        changelog-entry: Update balena-yocto-scripts to 2620a0faf744cb9561c6e0b402c913c19b251ff6
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Remove legacy yocto NFS cache host setup
+              hash: 3554f19eecca29a7c7af2d73693b1238a787bfb9
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: balena-yocto-scripts-1.30.33
+          title: ""
+          date: 2025-02-24T16:35:19.346Z
+  version: 6.3.22+rev1
+  title: ""
+  date: 2025-02-24T18:58:18.034Z
+- commits:
     - subject: Update layers/meta-balena to 5dfed54ec4ffcfb78d1af5a53a8cb8d7e569a806
       hash: c9e2e48d58e861943e07bbf17049a3a13f0be95f
       body: Update layers/meta-balena
