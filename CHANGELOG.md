@@ -1,6 +1,21 @@
 # v2.107.5
 ## (2023-01-09)
 
+# v6.4.0+rev1
+## (2025-02-27)
+
+
+<details>
+<summary> Update balena-yocto-scripts to 3db10c29a30b1dbb9457d364840e6d9a9ab38908 [balena-renovate[bot]] </summary>
+
+> ## balena-yocto-scripts-1.31.1
+> ### (2025-02-27)
+> 
+> * Update Pin dependencies [balena-renovate[bot]]
+> 
+
+</details>
+
 # v6.4.0
 ## (2025-02-27)
 
