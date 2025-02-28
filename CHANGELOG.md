@@ -1,6 +1,22 @@
 # v2.107.5
 ## (2023-01-09)
 
+# v6.4.1+rev2
+## (2025-02-28)
+
+
+<details>
+<summary> Update balena-yocto-scripts to a3833c2e74cea22461c45feb790e7893858da70b [balena-renovate[bot]] </summary>
+
+> ## balena-yocto-scripts-1.31.3
+> ### (2025-02-28)
+> 
+> * Rename build environment to signing environment [Kyle Harding]
+> * Do not allow changing the S3 deploy environment [Kyle Harding]
+> 
+
+</details>
+
 # v6.4.1+rev1
 ## (2025-02-28)
 
