@@ -1,6 +1,21 @@
 # v2.107.5
 ## (2023-01-09)
 
+# v6.4.1+rev4
+## (2025-03-03)
+
+
+<details>
+<summary> Update balena-yocto-scripts to 31f09423b7f1abad19ee9bfa79f4b140282cbe45 [balena-renovate[bot]] </summary>
+
+> ## balena-yocto-scripts-1.31.5
+> ### (2025-03-02)
+> 
+> * Update actions/download-artifact digest to cc20338 [balena-renovate[bot]]
+> 
+
+</details>
+
 # v6.4.1+rev3
 ## (2025-03-02)
 
