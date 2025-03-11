@@ -1,6 +1,31 @@
 # v2.107.5
 ## (2023-01-09)
 
+# v6.4.3+rev2
+## (2025-03-11)
+
+
+<details>
+<summary> Update balena-yocto-scripts to 79fb7d5c8eaaebc8a0225157c1dafef95593dd6f [balena-renovate[bot]] </summary>
+
+> ## balena-yocto-scripts-1.31.23
+> ### (2025-03-11)
+> 
+> * workflows: yocto-build-deploy: pass device type to build [Alex Gonzalez]
+> 
+> ## balena-yocto-scripts-1.31.22
+> ### (2025-03-10)
+> 
+> * Update aws/aws-cli to v2.24.21 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.31.21
+> ### (2025-03-10)
+> 
+> * Update balena-io/balena-cli to v20.2.10 [balena-renovate[bot]]
+> 
+
+</details>
+
 # v6.4.3+rev1
 ## (2025-03-10)
 
