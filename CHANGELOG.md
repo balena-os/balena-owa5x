@@ -1,6 +1,31 @@
 # v2.107.5
 ## (2023-01-09)
 
+# v6.4.3+rev4
+## (2025-03-14)
+
+
+<details>
+<summary> Update balena-yocto-scripts to 757eaa82595c0a0570be90cf93782f2474aa954e [balena-renovate[bot]] </summary>
+
+> ## balena-yocto-scripts-1.31.28
+> ### (2025-03-14)
+> 
+> * Update docker/login-action action to v3.4.0 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.31.27
+> ### (2025-03-13)
+> 
+> * Update aws/aws-cli to v2.24.23 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.31.26
+> ### (2025-03-12)
+> 
+> * Update balena-io/balena-cli to v21.1.0 [balena-renovate[bot]]
+> 
+
+</details>
+
 # v6.4.3+rev3
 ## (2025-03-11)
 
