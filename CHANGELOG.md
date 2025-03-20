@@ -1,6 +1,46 @@
 # v2.107.5
 ## (2023-01-09)
 
+# v6.4.3+rev7
+## (2025-03-20)
+
+
+<details>
+<summary> Update balena-yocto-scripts to 670d5fe63a7254d01f1b638ccd4120ad42659043 [balena-renovate[bot]] </summary>
+
+> ## balena-yocto-scripts-1.31.37
+> ### (2025-03-19)
+> 
+> * Update actions/download-artifact digest to 95815c3 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.31.36
+> ### (2025-03-19)
+> 
+> * Update balena-os/leviathan action to v2.31.91 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.31.35
+> ### (2025-03-19)
+> 
+> * Update actions/upload-artifact action to v4.6.2 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.31.34
+> ### (2025-03-19)
+> 
+> * Update product-os/review-commit-action action to v0.2.5 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.31.33
+> ### (2025-03-18)
+> 
+> * Update aws/aws-cli to v2.24.26 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.31.32
+> ### (2025-03-18)
+> 
+> * Update actions/download-artifact digest to b14cf4c [balena-renovate[bot]]
+> 
+
+</details>
+
 # v6.4.3+rev6
 ## (2025-03-17)
 
