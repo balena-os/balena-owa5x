@@ -1,6 +1,84 @@
 # v2.107.5
 ## (2023-01-09)
 
+# v6.5.3
+## (2025-03-27)
+
+
+<details>
+<summary> Update layers/meta-balena to a3c407781861dad26b17e718c7a5c7f1b8715184 [balena-renovate[bot]] </summary>
+
+> ## meta-balena-6.5.3
+> ### (2025-03-27)
+> 
+> 
+> <details>
+> <summary> Update tests/leviathan digest to c3c6661 [balena-renovate[bot]] </summary>
+> 
+>> ### leviathan-2.31.95
+>> #### (2025-03-25)
+>> 
+>> * Update balena-io/balena-cli to v21 [balena-renovate[bot]]
+>> 
+>> ### leviathan-2.31.94
+>> #### (2025-03-25)
+>> 
+>> * Extend selection of devices to run secureboot tests [Alex Gonzalez]
+>> 
+>> ### leviathan-2.31.93
+>> #### (2025-03-19)
+>> 
+>> * Update balena-io/balena-cli to v20.2.10 [balena-renovate[bot]]
+>> 
+>> ### leviathan-2.31.92
+>> #### (2025-03-19)
+>> 
+>> * Update docker/setup-buildx-action digest to b5ca514 [balena-renovate[bot]]
+>> 
+>> ### leviathan-2.31.91
+>> #### (2025-03-19)
+>> 
+>> * Update actions/upload-artifact digest to ea165f8 [balena-renovate[bot]]
+>> 
+> 
+> </details>
+> 
+> 
+> ## meta-balena-6.5.2
+> ### (2025-03-19)
+> 
+> * kernel-balena: enable CONFIG_MODULE_COMPRESS as needed [Joseph Kogut]
+> 
+> ## meta-balena-6.5.1
+> ### (2025-03-14)
+> 
+> 
+> <details>
+> <summary> Update tests/leviathan digest to 81e7f26 [balena-renovate[bot]] </summary>
+> 
+>> ### leviathan-2.31.90
+>> #### (2025-02-25)
+>> 
+>> * Update balena-io/balena-cli to v20.2.7 [balena-renovate[bot]]
+>> 
+> 
+> </details>
+> 
+> 
+> ## meta-balena-6.5.0
+> ### (2025-03-13)
+> 
+> * resin-init-flasher: Support devices using 3rd party UEFI drivers [Michal Toman]
+> * efitools: Allow building an ESL from a list of hashes [Michal Toman]
+> 
+> ## meta-balena-6.4.4
+> ### (2025-03-12)
+> 
+> * Differentiate MACHINE from DEVICE_TYPE [Alex Gonzalez]
+> 
+
+</details>
+
 # v6.4.3+rev9
 ## (2025-03-27)
 
