@@ -1,6 +1,12 @@
 # v2.107.5
 ## (2023-01-09)
 
+# v6.4.3+rev8
+## (2025-03-27)
+
+* extend initramfs size [Alex Gonzalez]
+* Update layers/meta-freescale to c525e0c19bdc46d45f71873b5f286f49abb69418 [balena-renovate[bot]]
+
 # v6.4.3+rev7
 ## (2025-03-20)
 

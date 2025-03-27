@@ -1,4 +1,29 @@
 - commits:
+    - subject: extend initramfs size
+      hash: 9db922935c7dfb7b3dec3012df6980b0ed05814f
+      body: |
+        The updated meta-layers brings the initramfs size above its limit.
+      footer:
+        Changelog-entry: extend initramfs size
+        changelog-entry: extend initramfs size
+        Signed-off-by: Alex Gonzalez <alexg@balena.io>
+        signed-off-by: Alex Gonzalez <alexg@balena.io>
+      author: Alex Gonzalez
+      nested: []
+    - subject: Update layers/meta-freescale to c525e0c19bdc46d45f71873b5f286f49abb69418
+      hash: c9d8c164d658b5b18f98ff394a7410c7633f61cb
+      body: Update layers/meta-freescale
+      footer:
+        Changelog-entry: Update layers/meta-freescale to
+          c525e0c19bdc46d45f71873b5f286f49abb69418
+        changelog-entry: Update layers/meta-freescale to
+          c525e0c19bdc46d45f71873b5f286f49abb69418
+      author: balena-renovate[bot]
+      nested: []
+  version: 6.4.3+rev8
+  title: ""
+  date: 2025-03-27T12:12:47.104Z
+- commits:
     - subject: Update balena-yocto-scripts to 670d5fe63a7254d01f1b638ccd4120ad42659043
       hash: 27067f4c104462e77c7270a564ee42274d2189b1
       body: Update balena-yocto-scripts
