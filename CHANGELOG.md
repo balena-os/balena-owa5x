@@ -1,6 +1,21 @@
 # v2.107.5
 ## (2023-01-09)
 
+# v6.5.4+rev4
+## (2025-03-28)
+
+
+<details>
+<summary> Update balena-yocto-scripts to 5c72c82f232990eefadb1bbe7f4e13b57a2ec5e6 [balena-renovate[bot]] </summary>
+
+> ## balena-yocto-scripts-1.31.50
+> ### (2025-03-28)
+> 
+> * Leviathan: Allow specifying alternative image to test [Ryan Cooke]
+> 
+
+</details>
+
 # v6.5.4+rev3
 ## (2025-03-28)
 
