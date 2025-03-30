@@ -1,6 +1,26 @@
 # v2.107.5
 ## (2023-01-09)
 
+# v6.5.4+rev7
+## (2025-03-30)
+
+
+<details>
+<summary> Update balena-yocto-scripts to da0ca6f95585c330a2eac0821c8e4cdbaa77d110 [balena-renovate[bot]] </summary>
+
+> ## balena-yocto-scripts-1.31.54
+> ### (2025-03-29)
+> 
+> * Update balena-io/balena-cli to v21.1.3 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.31.53
+> ### (2025-03-28)
+> 
+> * Update easimon/maximize-build-space digest to c28619d [balena-renovate[bot]]
+> 
+
+</details>
+
 # v6.5.4+rev6
 ## (2025-03-28)
 
