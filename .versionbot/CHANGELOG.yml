@@ -1,4 +1,47 @@
 - commits:
+    - subject: Update layers/meta-balena to 499703f41326f57debff7b98479ebb55c862a759
+      hash: 84f26c7def0823ec7318c984944c94fc25b90490
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to 499703f41326f57debff7b98479ebb55c862a759
+        changelog-entry: Update layers/meta-balena to 499703f41326f57debff7b98479ebb55c862a759
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: "initrdscripts: mount securityfs in migrate script"
+              hash: 37c70ed240e67ff367ae5af44f287a5089a5fde7
+              body: >
+                At this moment securityfs is not mounted in the initramfs,
+
+                so when flasher is running from the migrate script, it won't
+                find
+
+                the TPM event log. This is fine for most systems, but on systems
+
+                that have extra TPM events logged and measured, the expected
+                PCR7
+
+                value will be computed incorrectly.
+
+
+                This patch mounts securityfs before running flasher from the
+                migrate
+
+                script.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Michal Toman <michalt@balena.io>
+                signed-off-by: Michal Toman <michalt@balena.io>
+              author: Michal Toman
+              nested: []
+          version: meta-balena-6.5.15
+          title: ""
+          date: 2025-04-09T12:39:41.112Z
+  version: 6.5.15
+  title: ""
+  date: 2025-04-09T15:48:47.311Z
+- commits:
     - subject: Update layers/meta-balena to 27b703a828bae52a01fa2a5bc0ddc24ab1aefeeb
       hash: fd3586dba174f00c0840ffb47e2bd8c1b5115262
       body: Update layers/meta-balena
