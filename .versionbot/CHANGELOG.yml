@@ -1,4 +1,42 @@
 - commits:
+    - subject: Update layers/meta-balena to 3ae8a7468efe9fef34974d49a028ce041dd8f0d6
+      hash: e5068339f4ff41aea260564ec91c42f5942dd9c0
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to 3ae8a7468efe9fef34974d49a028ce041dd8f0d6
+        changelog-entry: Update layers/meta-balena to 3ae8a7468efe9fef34974d49a028ce041dd8f0d6
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Update tests/leviathan digest to b8e76d7
+              hash: a782ef21b71a408635e0a75754555d1571c5ab49
+              body: Update tests/leviathan
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested:
+                - commits:
+                    - subject: Add kernel headers artifacts
+                      hash: f15ad5e91cd22ba03193a7dd53512324a09ce87e
+                      body: ""
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                        Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                        signed-off-by: Alex Gonzalez <alexg@balena.io>
+                      author: Alex Gonzalez
+                      nested: []
+                  version: leviathan-2.31.103
+                  title: ""
+                  date: 2025-04-08T13:01:01.819Z
+          version: meta-balena-6.5.12
+          title: ""
+          date: 2025-04-08T21:49:57.591Z
+  version: 6.5.12
+  title: ""
+  date: 2025-04-09T02:23:16.500Z
+- commits:
     - subject: Update layers/meta-balena to bac9fc78cfd45e80221dec4f9b6c14833b2bd462
       hash: a585a5693fe17e5ce957ea15dbb2bf67d071b42c
       body: Update layers/meta-balena
