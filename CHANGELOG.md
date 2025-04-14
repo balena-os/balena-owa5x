@@ -1,6 +1,11 @@
 # v2.107.5
 ## (2023-01-09)
 
+# v6.5.17+rev2
+## (2025-04-14)
+
+* Add missing meta-balena-rust layer to bblayers.conf.sample [Florin Sarbu]
+
 # v6.5.17+rev1
 ## (2025-04-12)
 
