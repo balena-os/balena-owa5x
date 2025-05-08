@@ -1,4 +1,35 @@
 - commits:
+    - subject: Update layers/meta-balena to 72bb35f5fa5b006033f2e360f7464abaed48e2c3
+      hash: 87f98b41daa81efaf50fe07860cf5899822e55a9
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to 72bb35f5fa5b006033f2e360f7464abaed48e2c3
+        changelog-entry: Update layers/meta-balena to 72bb35f5fa5b006033f2e360f7464abaed48e2c3
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: "tests: cloud: Don't disable DUT internet access if secureboot enabled"
+              hash: e4a000782b5cff3f3416950eb5cc62b360a1c359
+              body: >
+                For the preload test, we disable DUT internet access to check
+                the preloaded app starts without API access. For secureboot
+                devices, we dont run the preload test as its not a supported
+                feature yet. So don't disable the internet access for a
+                secureboot device
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Ryan Cooke <ryan@balena.io>
+                signed-off-by: Ryan Cooke <ryan@balena.io>
+              author: Ryan Cooke
+              nested: []
+          version: meta-balena-6.5.29
+          title: ""
+          date: 2025-05-08T20:36:21.893Z
+  version: 6.5.29
+  title: ""
+  date: 2025-05-08T23:46:50.676Z
+- commits:
     - subject: Update layers/meta-balena to 5fdd86b4ff4fbaedf08ce545b33df191c932294d
       hash: 13c92473126686618b323c9e1147a6de76460eec
       body: Update layers/meta-balena
