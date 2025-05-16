@@ -1,6 +1,21 @@
 # v2.107.5
 ## (2023-01-09)
 
+# v6.5.31
+## (2025-05-16)
+
+
+<details>
+<summary> Update layers/meta-balena to 21a27937a0c64c599316e8db0e642581b2a33bb4 [balena-renovate[bot]] </summary>
+
+> ## meta-balena-6.5.31
+> ### (2025-05-16)
+> 
+> * .github/workflows: Change meta-balena ref to last commit of the pull request [Florin Sarbu]
+> 
+
+</details>
+
 # v6.5.30+rev2
 ## (2025-05-15)
 
