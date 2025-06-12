@@ -1,6 +1,58 @@
 # v2.107.5
 ## (2023-01-09)
 
+# v6.5.38
+## (2025-06-12)
+
+
+<details>
+<summary> Update layers/meta-balena to a9448144a03697610d9906fb6d689e64ca5a681a [balena-renovate[bot]] </summary>
+
+> ## meta-balena-6.5.38
+> ### (2025-06-12)
+> 
+> 
+> <details>
+> <summary> Update tests/leviathan digest to 473af4b [balena-renovate[bot]] </summary>
+> 
+>> ### leviathan-2.33.1
+>> #### (2025-06-10)
+>> 
+>> * Update Lock file maintenance [balena-renovate[bot]]
+>> 
+>> ### leviathan-2.33.0
+>> #### (2025-06-10)
+>> 
+>> * minor: Upgrade Typedoc to v0.26.11 [Vipul Gupta (@vipulgupta2048)]
+>> 
+>> ### leviathan-2.32.9
+>> #### (2025-06-09)
+>> 
+>> * Update balena-os/leviathan-worker to v2.9.60 [balena-renovate[bot]]
+>> 
+>> ### leviathan-2.32.8
+>> #### (2025-06-09)
+>> 
+>> * Update balena-io/balena-cli to v22.0.6 [balena-renovate[bot]]
+>> 
+>> ### leviathan-2.32.7
+>> #### (2025-06-09)
+>> 
+>> * core/lib: Specify partition indexes for Jetson Nano eMMC and JN30B Nano [Alexandru]
+>> 
+> 
+> </details>
+> 
+> 
+> ## meta-balena-6.5.37
+> ### (2025-06-09)
+> 
+> * Update tests/leviathan digest to 2c6c6ef [balena-renovate[bot]]
+> * tests: hup: enable specifying image type [Ryan Cooke]
+> 
+
+</details>
+
 # v6.5.36+rev2
 ## (2025-06-05)
 
