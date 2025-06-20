@@ -1,4 +1,38 @@
 - commits:
+    - subject: Update layers/meta-balena to 3fb88b23e141d1177729937f08562e2a086fdbc1
+      hash: 983c4ef689ab09f1211378412e1774f3c2ba7487
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to 3fb88b23e141d1177729937f08562e2a086fdbc1
+        changelog-entry: Update layers/meta-balena to 3fb88b23e141d1177729937f08562e2a086fdbc1
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: "workflows: remove Jetson Xavier AGX"
+              hash: 2c15ce8d878115f45c77bc39ced83ab4bfda0d4d
+              body: >
+                This device type is no longer being built in the device
+                repository,
+
+                although it has not been officially discontinued yet it probably
+                should.
+
+
+                Removing it from meta-balena not to block development.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+          version: meta-balena-6.5.39
+          title: ""
+          date: 2025-06-20T12:30:59.288Z
+  version: 6.5.39
+  title: ""
+  date: 2025-06-20T13:53:42.095Z
+- commits:
     - subject: Update layers/poky to 58c95e1d4c44d54eee44a3503371b4f672790897
       hash: ff89da2ebf5d955da64b5b8619bc00dbfef2c8f7
       body: Update layers/poky
