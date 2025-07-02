@@ -1,4 +1,34 @@
 - commits:
+    - subject: Update layers/meta-balena to ed8866d6a0b4de8bb40dfd35fbdd465c8814bb57
+      hash: a38f5d9adfa0e17e6289d514fa86a6ae589d426e
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to ed8866d6a0b4de8bb40dfd35fbdd465c8814bb57
+        changelog-entry: Update layers/meta-balena to ed8866d6a0b4de8bb40dfd35fbdd465c8814bb57
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Update outdated context of efitools patches
+              hash: de30667d5b7548ea6381978c45d7ae3bdeb3b10c
+              body: >
+                Patches with outdated context will trigger fatal build errors in
+                Yocto Scarthgap
+              footer:
+                Change-type: patch
+                change-type: patch
+                Changelog-entry: Update outdated context of efitools patches
+                changelog-entry: Update outdated context of efitools patches
+                Signed-off-by: Florin Sarbu <florin@balena.io>
+                signed-off-by: Florin Sarbu <florin@balena.io>
+              author: Florin Sarbu
+              nested: []
+          version: meta-balena-6.5.41
+          title: ""
+          date: 2025-07-02T00:16:55.553Z
+  version: 6.5.41
+  title: ""
+  date: 2025-07-02T03:53:45.654Z
+- commits:
     - subject: Update layers/poky to 78c9cb3eaf071932567835742608404d5ce23cc4
       hash: 8d56bee26c4e21187b254166b9fc4df463a2b302
       body: Update layers/poky
