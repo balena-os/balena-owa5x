@@ -21,4 +21,5 @@ BBLAYERS ?= " \
     ${TOPDIR}/../layers/meta-openembedded/meta-filesystems \
     ${TOPDIR}/../layers/meta-owasys-owa5x-bsp \
     ${TOPDIR}/../layers/meta-balena-5x-owa \
+    ${TOPDIR}/../layers/meta-cyclonedx  \
     "

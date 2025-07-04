@@ -33,3 +33,7 @@
 [submodule "layers/meta-owasys-owa5x-bsp"]
 	path = layers/meta-owasys-owa5x-bsp
 	url = https://gitlab.owasys.com/owasys-public/products/owa5x/firmware/meta-owasys-owa5x-bsp
+[submodule "layers/meta-cyclonedx"]
+	path = layers/meta-cyclonedx
+	url = https://github.com/balena-os/meta-cyclonedx
+	branch = kirkstone
