@@ -1,6 +1,21 @@
 # v2.107.5
 ## (2023-01-09)
 
+# v6.5.50
+## (2025-08-13)
+
+
+<details>
+<summary> Update layers/meta-balena to 1977d99e2bde7837606c3962a7f0620cb0297a95 [balena-renovate[bot]] </summary>
+
+> ## meta-balena-6.5.50
+> ### (2025-08-13)
+> 
+> * wpa_supplicant: Enable SAE to support WPA3 personal [Michal Toman]
+> 
+
+</details>
+
 # v6.5.49
 ## (2025-08-11)
 

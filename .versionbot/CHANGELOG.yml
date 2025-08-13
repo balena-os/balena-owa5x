@@ -1,4 +1,43 @@
 - commits:
+    - subject: Update layers/meta-balena to 1977d99e2bde7837606c3962a7f0620cb0297a95
+      hash: 71267257e62cd3dd20c79fd7c3604b7ac756c9f8
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to 1977d99e2bde7837606c3962a7f0620cb0297a95
+        changelog-entry: Update layers/meta-balena to 1977d99e2bde7837606c3962a7f0620cb0297a95
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: "wpa_supplicant: Enable SAE to support WPA3 personal"
+              hash: f293e606129ba9f9f9a67ce0cd1cad208973bd8d
+              body: >
+                At this moment we completely lack WPA3 support in
+                wpa_supplicant.
+
+                Mixed WPA2/WPA3 networks will sometimes fall back to WPA2 and
+                sometimes
+
+                won't work. WPA3-only networks never work.
+
+
+                This patch enables SAE in the config, which should allow
+                networks
+
+                secured with WPA3 personal to work.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Michal Toman <michalt@balena.io>
+                signed-off-by: Michal Toman <michalt@balena.io>
+              author: Michal Toman
+              nested: []
+          version: meta-balena-6.5.50
+          title: ""
+          date: 2025-08-13T13:41:27.493Z
+  version: 6.5.50
+  title: ""
+  date: 2025-08-13T21:56:46.802Z
+- commits:
     - subject: Update layers/meta-balena to 9462ad02ceb4ee6ecdbe08d59e870f2531a5b2f7
       hash: 5793be68b9e079f28ffd689a948cec0909f44e0b
       body: Update layers/meta-balena
