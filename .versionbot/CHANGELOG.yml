@@ -1,4 +1,18 @@
 - commits:
+    - subject: Update layers/meta-cyclonedx to 61c6b6be40daa132beef72a3e04dc97337ef17c1
+      hash: 47b7ca2933e61ed4149537c44f8c6559db781630
+      body: Update layers/meta-cyclonedx
+      footer:
+        Changelog-entry: Update layers/meta-cyclonedx to
+          61c6b6be40daa132beef72a3e04dc97337ef17c1
+        changelog-entry: Update layers/meta-cyclonedx to
+          61c6b6be40daa132beef72a3e04dc97337ef17c1
+      author: balena-renovate[bot]
+      nested: []
+  version: 6.5.53+rev2
+  title: ""
+  date: 2025-08-20T14:13:16.714Z
+- commits:
     - subject: Update layers/poky to 39df9602b1c0339519be81d1cba9a4a25379309a
       hash: 96c7e36672d7db0cff78ef0ffcd33161f187a78f
       body: Update layers/poky
