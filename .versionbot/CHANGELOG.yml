@@ -1,4 +1,51 @@
 - commits:
+    - subject: Update layers/meta-balena to 1f56b4f65c8d1ea00b1b1541d86ed0ba50d833cd
+      hash: 506c7d734963cbfa55d5a4ddf6733cfb99bedd27
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to 1f56b4f65c8d1ea00b1b1541d86ed0ba50d833cd
+        changelog-entry: Update layers/meta-balena to 1f56b4f65c8d1ea00b1b1541d86ed0ba50d833cd
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: "patch: add metadata to improve balena-engine cve tracking"
+              hash: d3bacbe379e5ffd335daf111942998477e5fb58c
+              body: ""
+              footer: {}
+              author: Edwin Joassart
+              nested: []
+          version: meta-balena-6.5.55
+          title: ""
+          date: 2025-08-22T10:15:24.486Z
+        - commits:
+            - subject: "recipes-connectivity/balena-proxy-config: Clean-up redsocks rules by
+                index"
+              hash: 55d2b92a235efab0f131a99d670c122fea4be113
+              body: >
+                ... instead of rule matching, since this may fail on particular
+                devices
+
+                and prevent the redsocks chain from being removed, as well as
+
+                new iptables rules from being added.
+
+
+                We also switch to using the os logging helpers while we're at
+                this.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alexandru Costache <alexandru@balena.io>
+                signed-off-by: Alexandru Costache <alexandru@balena.io>
+              author: Alexandru Costache
+              nested: []
+          version: meta-balena-6.5.54
+          title: ""
+          date: 2025-08-21T16:11:59.568Z
+  version: 6.5.55
+  title: ""
+  date: 2025-08-22T10:52:22.678Z
+- commits:
     - subject: Update layers/meta-freescale to dd7a8a50025c3bc8925d59f818bafbdae4e2001c
       hash: 0e01d0076f61dc78706e6104a7e8b5cabe2b68e7
       body: Update layers/meta-freescale
