@@ -1,4 +1,26 @@
 - commits:
+    - subject: Update layers/meta-balena to 950df971405c6cd326999aca420db5cd55878cb5
+      hash: ab9e3f1d21d1479877ca72c558945a37328b3a16
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to 950df971405c6cd326999aca420db5cd55878cb5
+        changelog-entry: Update layers/meta-balena to 950df971405c6cd326999aca420db5cd55878cb5
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: "minor: remove ssh service from os-config.json"
+              hash: e6f4c951dcdfc32bc748807a4a40ab74a24309b9
+              body: ""
+              footer: {}
+              author: Edwin Joassart
+              nested: []
+          version: meta-balena-6.6.0
+          title: ""
+          date: 2025-08-23T05:15:48.339Z
+  version: 6.6.0
+  title: ""
+  date: 2025-08-23T08:24:41.873Z
+- commits:
     - subject: Update layers/meta-cyclonedx to 175bc45b40ea2da00baefb5b532176694d70596d
       hash: cf0b900e7bf4c22ff4ea36c76dbffea883986128
       body: Update layers/meta-cyclonedx
