@@ -1,4 +1,35 @@
 - commits:
+    - subject: Update layers/meta-balena to 2768e974381299086254e6199991bdc8be26dee4
+      hash: 75afd386a3442755fa9e875c5cd70353d3e14550
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to 2768e974381299086254e6199991bdc8be26dee4
+        changelog-entry: Update layers/meta-balena to 2768e974381299086254e6199991bdc8be26dee4
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Remove the AX102 requirement for secure boot tests
+              hash: 89822ae1c747c990c5ec0881e1a38a62d5b76913
+              body: |
+                The latest self-hosted runners support cpu templates
+                so the guests will experience a consistent feature set
+                supported by the host.
+
+                See: https://github.com/product-os/github-runner-vm/pull/252
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: meta-balena-6.6.1
+          title: ""
+          date: 2025-08-25T15:33:20.164Z
+  version: 6.6.1
+  title: ""
+  date: 2025-08-25T21:01:17.718Z
+- commits:
     - subject: Update layers/poky to 6b05a9736953089e1f900a1c49cca37404737cfd
       hash: 2d61f991a16f43d86650c5446740f66518fedf7c
       body: Update layers/poky
