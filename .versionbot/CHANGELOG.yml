@@ -1,4 +1,51 @@
 - commits:
+    - subject: Update layers/meta-balena to cc3c504c6b804787854d20af021650b11ab87c13
+      hash: 6f42593e0a036056e8a991622353ee536f139402
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to cc3c504c6b804787854d20af021650b11ab87c13
+        changelog-entry: Update layers/meta-balena to cc3c504c6b804787854d20af021650b11ab87c13
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: "recipes-connectivity/libnss-ato: Do not hardcode the homedir for user
+                root"
+              hash: b5457ab54bcd354b01adcc001ee02afe76785f65
+              body: |
+                Starting with Scarthgap the homedir of user root is /root
+                instead of /home/root like in previous Yocto releases.
+
+                See https://github.com/balena-os/poky/commit/74f0fd144f73cf658f5018ab8f4140a4a2dc99b7
+                for details on why the home directory of user root has changed for systemd based distros
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Florin Sarbu <florin@balena.io>
+                signed-off-by: Florin Sarbu <florin@balena.io>
+              author: Florin Sarbu
+              nested: []
+          version: meta-balena-6.6.3
+          title: ""
+          date: 2025-08-29T13:49:39.497Z
+        - commits:
+            - subject: "linux-firmware: Ensure Intel AX210 firmware can be installed"
+              hash: f54f1988aaa46746c70ad8b4cf63a88218d4f983
+              body: |
+                ... on devices which enable firmware compression.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alexandru Costache <alexandru@balena.io>
+                signed-off-by: Alexandru Costache <alexandru@balena.io>
+              author: Alexandru Costache
+              nested: []
+          version: meta-balena-6.6.2
+          title: ""
+          date: 2025-08-26T08:56:53.219Z
+  version: 6.6.3
+  title: ""
+  date: 2025-08-29T19:16:50.577Z
+- commits:
     - subject: Update layers/meta-balena to 2768e974381299086254e6199991bdc8be26dee4
       hash: 75afd386a3442755fa9e875c5cd70353d3e14550
       body: Update layers/meta-balena

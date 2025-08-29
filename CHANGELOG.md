@@ -1,6 +1,26 @@
 # v2.107.5
 ## (2023-01-09)
 
+# v6.6.3
+## (2025-08-29)
+
+
+<details>
+<summary> Update layers/meta-balena to cc3c504c6b804787854d20af021650b11ab87c13 [balena-renovate[bot]] </summary>
+
+> ## meta-balena-6.6.3
+> ### (2025-08-29)
+> 
+> * recipes-connectivity/libnss-ato: Do not hardcode the homedir for user root [Florin Sarbu]
+> 
+> ## meta-balena-6.6.2
+> ### (2025-08-26)
+> 
+> * linux-firmware: Ensure Intel AX210 firmware can be installed [Alexandru Costache]
+> 
+
+</details>
+
 # v6.6.1
 ## (2025-08-25)
 
