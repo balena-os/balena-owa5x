@@ -1,4 +1,45 @@
 - commits:
+    - subject: Update layers/meta-balena to c5f4f2f4b7f7b9987479a4bc4346277d20b7ff1c
+      hash: be109f891a0a7cfd9dada3c2a9100a07d7f32390
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to c5f4f2f4b7f7b9987479a4bc4346277d20b7ff1c
+        changelog-entry: Update layers/meta-balena to c5f4f2f4b7f7b9987479a4bc4346277d20b7ff1c
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Fail if IOMMU is disabled on secure boot systems
+              hash: ecedf68132543a21d906b299c365db7be34abe9f
+              body: >
+                At this moment we provision secure boot systems without checking
+
+                whether the IOMMU is enabled. With the IOMMU disabled, all PCIe
+                cards
+
+                have full DMA access and are able to retrieve the encryption
+                keys
+
+                from memory. On some systems this logs an extra event into PCR7.
+
+
+                This patch makes the OS look for the event in the TPM event log
+
+                and refuse to provision or unlock the disks if the IOMMU is
+                disabled.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Michal Toman <michalt@balena.io>
+                signed-off-by: Michal Toman <michalt@balena.io>
+              author: Michal Toman
+              nested: []
+          version: meta-balena-6.6.4
+          title: ""
+          date: 2025-09-03T13:27:58.602Z
+  version: 6.6.4
+  title: ""
+  date: 2025-09-03T19:05:26.957Z
+- commits:
     - subject: Update layers/poky to d655701622de0228e28324c0a1e8eabf73668e56
       hash: bf7dde75c78f732ab94be061b83e1f580ece61aa
       body: Update layers/poky
