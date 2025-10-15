@@ -1,6 +1,11 @@
 # v2.107.5
 ## (2023-01-09)
 
+# v6.6.12+rev1
+## (2025-10-15)
+
+* Update layers/poky to 962d08fb4077f44a1d2b6d6c6d29a466adebeb85 [balena-renovate[bot]]
+
 # v6.6.12
 ## (2025-10-14)
 

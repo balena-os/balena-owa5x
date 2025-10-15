@@ -1,4 +1,16 @@
 - commits:
+    - subject: Update layers/poky to 962d08fb4077f44a1d2b6d6c6d29a466adebeb85
+      hash: ea8b9a3a90e33e6d6624c3fe9ff7f60e6fc8d0f0
+      body: Update layers/poky
+      footer:
+        Changelog-entry: Update layers/poky to 962d08fb4077f44a1d2b6d6c6d29a466adebeb85
+        changelog-entry: Update layers/poky to 962d08fb4077f44a1d2b6d6c6d29a466adebeb85
+      author: balena-renovate[bot]
+      nested: []
+  version: 6.6.12+rev1
+  title: ""
+  date: 2025-10-15T11:49:01.904Z
+- commits:
     - subject: Update layers/meta-balena to 96e98d7096d1e00d736b9964a3f7d7e2fc4b8983
       hash: 6d4345c2f46c355182322639015eb88f538d12ea
       body: Update layers/meta-balena
