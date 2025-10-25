@@ -1,6 +1,42 @@
 # v2.107.5
 ## (2023-01-09)
 
+# v6.6.14
+## (2025-10-25)
+
+
+<details>
+<summary> Update layers/meta-balena to f1e627e3a1c38bff16e0f67de112e2c24b29dfe8 [balena-renovate[bot]] </summary>
+
+> ## meta-balena-6.6.14
+> ### (2025-10-20)
+> 
+> 
+> <details>
+> <summary> Update tests/leviathan digest to 19c382d [balena-renovate[bot]] </summary>
+> 
+>> ### leviathan-2.36.54
+>> #### (2025-10-20)
+>> 
+>> * Update Lock file maintenance [balena-renovate[bot]]
+>> 
+>> ### leviathan-2.36.53
+>> #### (2025-10-17)
+>> 
+>> * Update balena-io/balena-cli to v22.4.14 [balena-renovate[bot]]
+>> 
+>> ### leviathan-2.36.52
+>> #### (2025-10-14)
+>> 
+>> * Update balena-io/balena-cli to v22.4.13 [balena-renovate[bot]]
+>> 
+> 
+> </details>
+> 
+> 
+
+</details>
+
 # v6.6.13+rev2
 ## (2025-10-25)
 
