@@ -1,4 +1,16 @@
 - commits:
+    - subject: Update layers/poky to 7ca21c761ab9f2cc8f9880729d6149e0e2e68598
+      hash: 583583eb248e85fce8f33c452da82dfac34c182e
+      body: Update layers/poky
+      footer:
+        Changelog-entry: Update layers/poky to 7ca21c761ab9f2cc8f9880729d6149e0e2e68598
+        changelog-entry: Update layers/poky to 7ca21c761ab9f2cc8f9880729d6149e0e2e68598
+      author: balena-renovate[bot]
+      nested: []
+  version: 6.6.13+rev2
+  title: ""
+  date: 2025-10-25T11:09:17.978Z
+- commits:
     - subject: Update layers/poky to d847c8aac132c557e93933c10c51a4caa397f52a
       hash: 8a8a4648c0f230958031043291b480e4892fa3c0
       body: Update layers/poky
