@@ -1,6 +1,21 @@
 # v2.107.5
 ## (2023-01-09)
 
+# v6.6.15
+## (2025-10-28)
+
+
+<details>
+<summary> Update layers/meta-balena to 725a906541aa6e1aab192015ad541362a72b59c6 [balena-renovate[bot]] </summary>
+
+> ## meta-balena-6.6.15
+> ### (2025-10-28)
+> 
+> * Remove non-autokit DTs from build list [Ryan Cooke]
+> 
+
+</details>
+
 # v6.6.14
 ## (2025-10-25)
 
