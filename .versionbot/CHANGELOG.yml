@@ -1,4 +1,33 @@
 - commits:
+    - subject: Update layers/meta-balena to 56deec9ca6730486bd759cdac710d7622e78f05f
+      hash: ec22709e5d91f728c4175876644c2b1490c84a90
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to 56deec9ca6730486bd759cdac710d7622e78f05f
+        changelog-entry: Update layers/meta-balena to 56deec9ca6730486bd759cdac710d7622e78f05f
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: add disk-watchdog daemon
+              hash: fa725ce23e93d918d0eafaf9fa7b15549b0f8b7f
+              body: >
+                This service helps in detecting io errors and try to solve them
+                by issuing a reboot. It avoids reboot loops by tracking boot
+                with a timestamp.
+              footer:
+                Change-type: minor
+                change-type: minor
+                Signed-off-by: Yann CARDAILLAC <yann.cardaillac@balena.io>
+                signed-off-by: Yann CARDAILLAC <yann.cardaillac@balena.io>
+              author: Yann CARDAILLAC
+              nested: []
+          version: meta-balena-6.7.0
+          title: ""
+          date: 2025-11-05T10:29:49.790Z
+  version: 6.7.0
+  title: ""
+  date: 2025-11-05T15:46:16.065Z
+- commits:
     - subject: Update layers/meta-balena to a8a50373fdec0c07e97672ddffaa7124e45f2f21
       hash: c9c989175204d93b3de11db6c79d71b44b3d3207
       body: Update layers/meta-balena
