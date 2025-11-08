@@ -1,4 +1,30 @@
 - commits:
+    - subject: Update layers/meta-balena to 79cd1386d3b8319708a10c46153d0af3087fcf80
+      hash: 663b257dde5bc3785cc87685015afd03227606a1
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to 79cd1386d3b8319708a10c46153d0af3087fcf80
+        changelog-entry: Update layers/meta-balena to 79cd1386d3b8319708a10c46153d0af3087fcf80
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: add CONFIG_DM_FLAKEY for disk-watchdog testing
+              hash: f523f9cde68a93b770f47f6cc2522b1a96284eea
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Yann CARDAILLAC <yann.cardaillac@balena.io>
+                signed-off-by: Yann CARDAILLAC <yann.cardaillac@balena.io>
+              author: Yann CARDAILLAC
+              nested: []
+          version: meta-balena-6.7.4
+          title: ""
+          date: 2025-11-08T09:10:11.321Z
+  version: 6.7.4
+  title: ""
+  date: 2025-11-08T12:26:48.543Z
+- commits:
     - subject: Update layers/meta-balena to 98e384feb48bfc1d1f568cb553505e32418edb76
       hash: 8bd9478c9a613dcf36a05c2f8c6475de990df32e
       body: Update layers/meta-balena
