@@ -1,4 +1,30 @@
 - commits:
+    - subject: Update layers/meta-balena to 3655901b8a00af49ac09037f45f17227628eefc5
+      hash: 0aeec0549444fff02441ac9b2dfc2091c282a361
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to 3655901b8a00af49ac09037f45f17227628eefc5
+        changelog-entry: Update layers/meta-balena to 3655901b8a00af49ac09037f45f17227628eefc5
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: simplify disk watchdog tests
+              hash: 2216355d073162c79748367f49d4a1294ede7796
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Yann CARDAILLAC <yann.cardaillac@balena.io>
+                signed-off-by: Yann CARDAILLAC <yann.cardaillac@balena.io>
+              author: Yann CARDAILLAC
+              nested: []
+          version: meta-balena-6.7.7
+          title: ""
+          date: 2025-11-18T17:31:09.706Z
+  version: 6.7.7
+  title: ""
+  date: 2025-11-20T11:53:17.814Z
+- commits:
     - subject: Update layers/poky to 851a3f0c556f18fcbe82717b5acc366cf4b3f676
       hash: 66d651318850a34b806c4eede54f011719b45a5e
       body: Update layers/poky
