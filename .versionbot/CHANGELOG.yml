@@ -1,4 +1,31 @@
 - commits:
+    - subject: Update layers/meta-balena to fe80fe27ae9c207378a35f566c40fc8423129a30
+      hash: 1cab5854569348fc9c5d86f332aeda6c363696d3
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to fe80fe27ae9c207378a35f566c40fc8423129a30
+        changelog-entry: Update layers/meta-balena to fe80fe27ae9c207378a35f566c40fc8423129a30
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: "linux-firmware_20240909.bb: Fix packaging amdgpu and various other
+                firmware"
+              hash: 90c8b5e2eb091736f531d242c3088baaaba93b2f
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Florin Sarbu <florin@balena.io>
+                signed-off-by: Florin Sarbu <florin@balena.io>
+              author: Florin Sarbu
+              nested: []
+          version: meta-balena-6.8.4
+          title: ""
+          date: 2025-12-03T09:19:37.296Z
+  version: 6.8.4
+  title: ""
+  date: 2025-12-03T13:12:38.378Z
+- commits:
     - subject: Update layers/meta-balena to 0e997cc147cab1b0d66a567de853b1b373d88fd8
       hash: cadd052feec743c38c00cc1ddede5ae038f4ed4f
       body: Update layers/meta-balena

@@ -1,6 +1,21 @@
 # v2.107.5
 ## (2023-01-09)
 
+# v6.8.4
+## (2025-12-03)
+
+
+<details>
+<summary> Update layers/meta-balena to fe80fe27ae9c207378a35f566c40fc8423129a30 [balena-renovate[bot]] </summary>
+
+> ## meta-balena-6.8.4
+> ### (2025-12-03)
+> 
+> * linux-firmware_20240909.bb: Fix packaging amdgpu and various other firmware [Florin Sarbu]
+> 
+
+</details>
+
 # v6.8.3
 ## (2025-12-03)
 
