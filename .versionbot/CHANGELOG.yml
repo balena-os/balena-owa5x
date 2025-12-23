@@ -1,4 +1,33 @@
 - commits:
+    - subject: Update layers/meta-balena to 3c4875e4136989285a784656bfc6614dd379a913
+      hash: 556a0c4ba9aa97e54aa9a41a009debfb7add485c
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to 3c4875e4136989285a784656bfc6614dd379a913
+        changelog-entry: Update layers/meta-balena to 3c4875e4136989285a784656bfc6614dd379a913
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: "classes/kernel-balena: Enable support for xz firmware compression"
+              hash: d6188bbc557e54989bc6307f285ab88c0a5315d2
+              body: |
+                Firmware is compressed using [xz](https://github.com/balena-os/meta-balena/blob/master/meta-balena-common/classes/balena-linux-firmware.bbclass#L64-L70) by default.
+
+                We thus we need to ensure support for firmware compressed with xz is enabled in the kernel.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alexandru Costache <alexandru@balena.io>
+                signed-off-by: Alexandru Costache <alexandru@balena.io>
+              author: Alexandru
+              nested: []
+          version: meta-balena-6.10.5
+          title: ""
+          date: 2025-12-23T15:35:30.964Z
+  version: 6.10.5
+  title: ""
+  date: 2025-12-23T19:04:43.074Z
+- commits:
     - subject: Update layers/meta-balena to a5bae83f8032f24e17f47af3673f7eda96561f0c
       hash: de3ffc22fd0b78839836ca32a99a86d48cdaa783
       body: Update layers/meta-balena
