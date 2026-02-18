@@ -1,4 +1,23 @@
 - commits:
+    - subject: Wifi&SIM binary tools addition.
+      hash: 6aee74e6cea82c653eaaefbbfe78922ab311ff11
+      body: >
+        Owasys provides Mff2_Select binary to enable the user switch between
+        using SIM card or eSIM.
+
+        The wifi module offers a rich set of paramters made available through
+        the usage of the tool mlanutl.
+      footer:
+        Changelog-entry: Wifi&SIM binary tools addition.
+        changelog-entry: Wifi&SIM binary tools addition.
+        Signed-off-by: Alvaro Guzman <alvaro.guzman@owasys.com>
+        signed-off-by: Alvaro Guzman <alvaro.guzman@owasys.com>
+      author: Alvaro Guzman
+      nested: []
+  version: 6.11.1+rev1
+  title: ""
+  date: 2026-02-18T14:13:26.115Z
+- commits:
     - subject: Update layers/meta-balena to f37c4fd776dfcec74405e137fe79e24a7a92a924
       hash: 0f7b8a3b37b560a88d35b6256dd97469cd061409
       body: Update layers/meta-balena

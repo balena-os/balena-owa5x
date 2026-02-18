@@ -1,6 +1,11 @@
 # v2.107.5
 ## (2023-01-09)
 
+# v6.11.1+rev1
+## (2026-02-18)
+
+* Wifi&SIM binary tools addition. [Alvaro Guzman]
+
 # v6.11.1
 ## (2026-02-18)
 
