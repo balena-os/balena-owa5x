@@ -41,7 +41,6 @@ IMAGE_INSTALL:append = " \
                         udev-rules-owasys \
                         rtc-tools \
                         quectel-cm \
-                        mff2selec \
                         switch-gsm \
                         st32-firmware \
                         chatscripts \
