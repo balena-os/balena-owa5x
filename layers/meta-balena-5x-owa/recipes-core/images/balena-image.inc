@@ -45,6 +45,8 @@ IMAGE_INSTALL:append = " \
                         st32-firmware \
                         chatscripts \
                         issue-owa \
+                        mlanutl \
+                        mff2select \
 "
 
 deltask do_packagedata
