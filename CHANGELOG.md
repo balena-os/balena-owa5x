@@ -1,6 +1,27 @@
 # v2.107.5
 ## (2023-01-09)
 
+# v6.11.3
+## (2026-02-20)
+
+
+<details>
+<summary> Update layers/meta-balena to da0ec5aac21ee02dab8be843a37dee512ff37ffe [balena-renovate[bot]] </summary>
+
+> ## meta-balena-6.11.3
+> ### (2026-02-20)
+> 
+> * balena-bootloader.bbclass: disable more unnecessary drivers [Michal Toman]
+> * balena-bootloader.bbclass: add spaces to BALENA_CONFIGS appends [Michal Toman]
+> 
+> ## meta-balena-6.11.2
+> ### (2026-02-18)
+> 
+> * tests:modem: Disable for kontron-come-xelx [Florin Sarbu]
+> 
+
+</details>
+
 # v6.11.1+rev1
 ## (2026-02-18)
 
