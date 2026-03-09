@@ -1,6 +1,21 @@
 # v2.107.5
 ## (2023-01-09)
 
+# v6.11.9+rev1
+## (2026-03-09)
+
+
+<details>
+<summary> Update contracts to 73054ac4debf63ab177d662ece5d43deb11364c6 [balena-renovate[bot]] </summary>
+
+> ## contracts-2.0.138
+> ### (2026-03-09)
+> 
+> * contracts/raspberrypi5: Update device name to mention CM5 support [Alexandru]
+> 
+
+</details>
+
 # v6.11.9
 ## (2026-03-04)
 
