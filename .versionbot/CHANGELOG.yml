@@ -1,4 +1,31 @@
 - commits:
+    - subject: Update layers/meta-balena to 3163559db59c23c55f81a18b5caabf422ee55499
+      hash: 7ca2603e0eccb723c9a08fe64a81d817588a6725
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to 3163559db59c23c55f81a18b5caabf422ee55499
+        changelog-entry: Update layers/meta-balena to 3163559db59c23c55f81a18b5caabf422ee55499
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: "tcgtool: update to v0.1.4"
+              hash: e87d51dcafe025009a86c18b757dbea6ebbaf6fe
+              body: |
+                This should fix hash calculation for kernel 6.18 binaries
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Michal Toman <michalt@balena.io>
+                signed-off-by: Michal Toman <michalt@balena.io>
+              author: Michal Toman
+              nested: []
+          version: meta-balena-6.11.13
+          title: ""
+          date: 2026-03-14T22:54:14.152Z
+  version: 6.11.13
+  title: ""
+  date: 2026-03-15T05:04:50.869Z
+- commits:
     - subject: Update layers/meta-balena to 735a3d3bf89ea21b8d6c303fcdeadac60599cf6e
       hash: 46d385785a27a30931370a7eac9d877e235d370d
       body: Update layers/meta-balena
