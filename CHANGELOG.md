@@ -1,6 +1,11 @@
 # v2.107.5
 ## (2023-01-09)
 
+# v6.11.14+rev2
+## (2026-03-16)
+
+* Update layers/meta-freescale to f1ecdeec20dd95d2eab6c6d9036b2a2309b7d862 [balena-renovate[bot]]
+
 # v6.11.14+rev1
 ## (2026-03-16)
 
