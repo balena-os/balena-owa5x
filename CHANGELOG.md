@@ -1,6 +1,26 @@
 # v2.107.5
 ## (2023-01-09)
 
+# v6.12.1
+## (2026-03-18)
+
+
+<details>
+<summary> Update layers/meta-balena to a41a740681e9ce082f7fe1b5775eb2c3e834b371 [balena-renovate[bot]] </summary>
+
+> ## meta-balena-6.12.1
+> ### (2026-03-18)
+> 
+> * os/tests: Fix sporadic failure in recover-sshd-socket [Alexandru Costache]
+> 
+> ## meta-balena-6.12.0
+> ### (2026-03-17)
+> 
+> * add flock and lockfile documentation [Yann CARDAILLAC]
+> 
+
+</details>
+
 # v6.11.14+rev3
 ## (2026-03-17)
 
