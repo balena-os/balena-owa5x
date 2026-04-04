@@ -1,4 +1,16 @@
 - commits:
+    - subject: Update product-os/flowzone to 9ba87de4b6abf49c021894388f81de59bfa4a523
+      hash: c170c60af53c0c857af0d071beb9804f4cf114bb
+      body: Update product-os/flowzone
+      footer:
+        Changelog-entry: Update product-os/flowzone to 9ba87de4b6abf49c021894388f81de59bfa4a523
+        changelog-entry: Update product-os/flowzone to 9ba87de4b6abf49c021894388f81de59bfa4a523
+      author: balena-renovate[bot]
+      nested: []
+  version: 6.12.4+rev3
+  title: ""
+  date: 2026-04-04T01:54:10.749Z
+- commits:
     - subject: Update layers/meta-freescale-3rdparty to
         738a0022b709feebf1672cbe574bc987933b806f
       hash: d89078c3993266c67344e69eab4d0d4adf74f589
