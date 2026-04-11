@@ -1,4 +1,19 @@
 - commits:
+    - subject: Update balena-os/github-workflows to
+        4bc63a367ce835a49ce50aa8a972b916150f6cd6
+      hash: 7180352f7a1156a664cca13aa75e0ca8f9e5f255
+      body: Update balena-os/github-workflows
+      footer:
+        Changelog-entry: Update balena-os/github-workflows to
+          4bc63a367ce835a49ce50aa8a972b916150f6cd6
+        changelog-entry: Update balena-os/github-workflows to
+          4bc63a367ce835a49ce50aa8a972b916150f6cd6
+      author: balena-renovate[bot]
+      nested: []
+  version: 6.12.6+rev2
+  title: ""
+  date: 2026-04-11T06:41:23.364Z
+- commits:
     - subject: Update product-os/flowzone to 3b69c8f20fbd2f43b5fcedb31373d7c45e86948e
       hash: b24529813e8403c6772a085e3c89222df299ebd5
       body: Update product-os/flowzone
