@@ -1,6 +1,21 @@
 # v2.107.5
 ## (2023-01-09)
 
+# v6.12.10
+## (2026-04-22)
+
+
+<details>
+<summary> Update layers/meta-balena to f4d9e15128f217e6fe2963b89bd8f9069a4cd2a5 [balena-renovate[bot]] </summary>
+
+> ## meta-balena-6.12.10
+> ### (2026-04-21)
+> 
+> * balena-bootloader.bbclass: Add required CONFIG_NLS_ISO8859_1 as built-in [Florin Sarbu]
+> 
+
+</details>
+
 # v6.12.9+rev1
 ## (2026-04-22)
 
