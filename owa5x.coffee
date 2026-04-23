@@ -36,7 +36,7 @@ module.exports =
         supportsBlink: true
 
         yocto:
-                machine: 'owa5x-nand'
+                machine: 'owa5x'
                 image: 'balena-image-flasher'
                 fstype: 'balenaos-img'
                 version: 'yocto-scarthgap'
