@@ -8,7 +8,7 @@ BBFILES ?= ""
 BBLAYERS ?= " \
     ${TOPDIR}/../layers/meta-balena/meta-balena-rust \
     ${TOPDIR}/../layers/meta-balena/meta-balena-common \
-    ${TOPDIR}/../layers/meta-balena/meta-balena-kirkstone \
+    ${TOPDIR}/../layers/meta-balena/meta-balena-scarthgap \
     ${TOPDIR}/../layers/poky/meta \
     ${TOPDIR}/../layers/poky/meta-poky \
     ${TOPDIR}/../layers/meta-openembedded/meta-oe \
@@ -23,3 +23,6 @@ BBLAYERS ?= " \
     ${TOPDIR}/../layers/meta-balena-5x-owa \
     ${TOPDIR}/../layers/meta-cyclonedx  \
     "
+
+BBMASK += " ${TOPDIR}/../layers/meta-owasys-owa5x-bsp/recipes-core/rauc/"
+BBMASK += " ${TOPDIR}/../layers/meta-owasys-owa5x-bsp/recipes-core/images/owa5-raucb-onfield"

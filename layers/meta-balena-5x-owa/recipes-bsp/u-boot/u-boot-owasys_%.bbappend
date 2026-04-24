@@ -8,8 +8,8 @@ FILESEXTRAPATHS:prepend := "${THISDIR}/files:"
 # resin-u-boot class patch is rebased
 SRC_URI:remove = " file://resin-specific-env-integration-kconfig.patch "
 
-SRC_URI:append:owa5x = " \
-                      file://0001-Balena-integrations.patch \
+SRC_URI:append:owa5x-nand = " \
+                      file://0001-Balena-integration-u-boot-2.1.6.patch \
 "
 
 SRC_URI += "file://fw_env.config"

@@ -1,1 +1,1 @@
-FILESEXTRAPATHS:prepend:owa5x := "${THISDIR}/files:"
+FILESEXTRAPATHS:prepend:owa5x-nand := "${THISDIR}/files:"

@@ -39,7 +39,7 @@ module.exports =
                 machine: 'owa5x'
                 image: 'balena-image-flasher'
                 fstype: 'balenaos-img'
-                version: 'yocto-kirkstone'
+                version: 'yocto-scarthgap'
                 deployArtifact: 'balena-image-flasher-owa5x.balenaos-img'
                 compressed: true
 

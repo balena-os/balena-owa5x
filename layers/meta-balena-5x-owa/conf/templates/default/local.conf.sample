@@ -1,5 +1,5 @@
 # Supported machines
-MACHINE ?= "owa5x"
+MACHINE ?= "owa5x-nand"
 
 # We use the overlayfs docker storage driver
 BALENA_STORAGE = "overlay2"
