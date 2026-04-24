@@ -1,6 +1,26 @@
 # v2.107.5
 ## (2023-01-09)
 
+# v6.12.11+rev1
+## (2026-04-23)
+
+* Update layers/poky to 4a5e618f5713600552c6c3edb1bfaa42c4506789 [balena-renovate[bot]]
+
+# v6.12.11
+## (2026-04-23)
+
+
+<details>
+<summary> Update layers/meta-balena to cc6d368d0efde0552b2cab398ea005848cc51d6c [balena-renovate[bot]] </summary>
+
+> ## meta-balena-6.12.11
+> ### (2026-04-23)
+> 
+> * tests: cloud: Stop waiting for healthy supervisor in cloud suite before preload test [Ryan Cooke]
+> 
+
+</details>
+
 # v6.12.10+rev1
 ## (2026-04-22)
 
