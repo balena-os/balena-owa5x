@@ -43,7 +43,7 @@ while [ $count -le 12 ]; do
 done
 
 RTC_RAW_TIME=$(echo "get rtctime
-exit" | /usr/bin/Test_owa5x | grep "Time:" )
+exit" | /usr/bin/Test-owa5x | grep "Time:" )
 RTC_RAW_TIME=$(echo ${RTC_RAW_TIME#Time:} )
 RTC_RAW_TIME=$(echo ${RTC_RAW_TIME/Date:/} )
 OWASYS_RTC_TIME=$(date -u "+%4Y%2m%2d%2H%2M%2S" -d "${RTC_RAW_TIME}")
@@ -54,8 +54,10 @@ SYS_TIME=$(get_system_time_as_timestamp)
 TIME_DIFF=$(get_abs_time_diff_from_timestamps "$SYS_TIME" "$RTC_TIME")
 
 if [ "$SYS_TIME" -lt "$RTC_TIME" ]; then
+        warn "System time is older than RTC time"
         if [ "$TIME_DIFF" -gt "$TIME_DIFF_THRESHOLD" ]; then
                 $(set_system_time_from_timestamp "$RTC_TIME")
+                info "System time set from HW RTC"
                 info "Old time: $(get_display_time_from_timestamp "$SYS_TIME")"
                 info "New time: $(get_display_time_from_timestamp "$RTC_TIME")"
         else
@@ -65,6 +67,8 @@ else
         info "System time is already set."
         if [ "$TIME_DIFF" -gt "$TIME_DIFF_THRESHOLD" ]; then
                 warn "RTC time is in the past."
+                sysclktohw
+                info "Updated RTC time with System time"
                 warn "Check RTC battery if this issue persists."
                 warn "RTC time:    $(get_display_time_from_timestamp "$RTC_TIME")"
                 warn "System time: $(get_display_time_from_timestamp "$SYS_TIME")"
