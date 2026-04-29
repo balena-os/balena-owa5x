@@ -41,6 +41,7 @@ IMAGE_INSTALL:append = " \
                         owasys-start-bt-wifi \
                         owasys-test \
                         owasys-turn-gsm-off \
+                        owasysd-timesync \
                         udev-owasys \
                         owasys-rtc \
                         owasys-rtu \
