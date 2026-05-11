@@ -58,6 +58,7 @@ IMAGE_INSTALL:append = " \
                         owasys-pollux-cli \
                         owasys-pollux-device \
                         owasys-pollux-can \
+                        owasys-quectel-modem-setup \
 "
 
 deltask do_packagedata
