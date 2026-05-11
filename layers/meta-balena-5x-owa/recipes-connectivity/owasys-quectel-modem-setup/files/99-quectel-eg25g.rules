@@ -1,0 +1,1 @@
+ACTION=="add", SUBSYSTEM=="tty", ENV{ID_BUS}=="usb", ENV{ID_USB_INTERFACE_NUM}=="03", ATTRS{idVendor}=="2c7c", ATTRS{idProduct}=="0125", TAG+="systemd", ENV{SYSTEMD_WANTS}="owasys-quectel-mode-setup.service"

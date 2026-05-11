@@ -1,0 +1,18 @@
+[Unit]
+Description=Configure Quectel EG25-G usbnet mode
+After=dev-ttyUSB3.device
+Requires=dev-ttyUSB3.device
+
+[Service]
+Type=oneshot
+ExecStartPre=sleep 2
+ExecStart=/usr/sbin/owasys-quectel-mode-setup.sh
+
+# Security hardening
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=true
+NoNewPrivileges=true
+
+[Install]
+WantedBy=multi-user.target
