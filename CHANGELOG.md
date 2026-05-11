@@ -1,6 +1,41 @@
 # v2.107.5
 ## (2023-01-09)
 
+# v7.0.1+rev1
+## (2026-05-09)
+
+* Update product-os/flowzone to 3385aec28224936f1fde1bf75a2c02b60af8019d [balena-renovate[bot]]
+
+# v7.0.1
+## (2026-05-08)
+
+
+<details>
+<summary> Update layers/meta-balena to f9a1cd0090e778084298dfc8b68f0b74286ffb47 [balena-renovate[bot]] </summary>
+
+> ## meta-balena-7.0.1
+> ### (2026-05-08)
+> 
+> * kernel-balena: address CVE-2026-31431 [Alex Gonzalez]
+> 
+
+</details>
+
+# v7.0.0+rev6
+## (2026-05-07)
+
+
+<details>
+<summary> Update balena-yocto-scripts to 50033716c5e2384d71a896205465d0a1223f3bed [balena-renovate[bot]] </summary>
+
+> ## balena-yocto-scripts-1.39.34
+> ### (2026-05-07)
+> 
+> * Dockerfile_yocto-build-env: Switch to docker-ce, pin 28.5.2 [Kyle Harding]
+> 
+
+</details>
+
 # v7.0.0+rev5
 ## (2026-05-02)
 
