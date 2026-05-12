@@ -1,6 +1,6 @@
 LICENSE = "CLOSED"
 
-inherit kernel-resin deploy
+inherit kernel-balena deploy
 
 BALENA_CONFIGS:append = " nfsfs"
 BALENA_CONFIGS[nfsfs] = " \
@@ -12,9 +12,9 @@ BALENA_CONFIGS[nfsfs] = " \
     CONFIG_NFSD_V4=y \
 "
 
-BALENA_CONFIGS:append = " disable_apparmor"
-BALENA_CONFIGS[disable_apparmor] = " \
-    CONFIG_SECURITY_APPARMOR=n \
+BALENA_CONFIGS:append = " enable_apparmor"
+BALENA_CONFIGS[enable_apparmor] = " \
+    CONFIG_SECURITY_APPARMOR=y \
 "
 
 SCMVERSION="n"

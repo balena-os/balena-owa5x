@@ -1,5 +1,7 @@
 IMAGE_FSTYPES:append = " balenaos-img "
 
+DEVICE_TYPE = "owa5x"
+
 BALENA_BOOT_PARTITION_FILES:owa5x += " \
      ${MACHINE}-flash.bin:/${MACHINE}-flash.bin \
      imx8mp-owa5x.dtb:/imx8mp-owa5x.dtb \
@@ -15,6 +17,8 @@ IMAGE_ROOTFS_SIZE = "409600"
 IMAGE_INSTALL:remove = "kernel-image"
 
 IMAGE_INSTALL:append = " \
+                        u-boot-owasys \
+                        imx-boot-owasys \
                         imx-kobs \
                         net-tools \ 
                         inetutils \
@@ -23,30 +27,38 @@ IMAGE_INSTALL:append = " \
                         iproute2 \
                         can-utils \
                         u-boot-fw-utils \
-                        pmsrv \
-                        pmsrv-service \
-                        u-boot-owasys \
-                        imx-boot-owasys \
-                        alsa-lib \
-                        owasys-libs \
-                        kernel-modules\
-                        owaturnoff \
-                        owastandby \
-                        start-can \
-                        start-bt-wifi \
-                        test-owa5x \
-                        turn-gsm-off \
+                        kernel-modules\                        
                         linux-firmware-owasys \
-                        wpa-supplicant \
-                        udev-rules-owasys \
-                        rtc-tools \
+                        wpa-supplicant \                        
+                        pmsrv-service \
+                        stm32l431vc \
+                        mlanutl \                        
+                        alsa-lib \
+                        packagegroup-owasys-libs \
+                        owasys-off \
+                        owasys-standby \
+                        owasys-start-can \
+                        owasys-start-bt-wifi \
+                        owasys-test \
+                        owasys-turn-gsm-off \
+                        owasysd-timesync \
+                        udev-owasys \
+                        owasys-rtc \
+                        owasys-rtu \
+                        owasys-eth0 \
+                        sysclktohw \
+                        hwclktosys \
                         quectel-cm \
-                        switch-gsm \
-                        st32-firmware \
-                        chatscripts \
+                        owasys-switch-gsm \
                         issue-owa \
-                        mlanutl \
-                        mff2select \
+                        owasys-mff2-select \
+                        owasys-libpollux \
+                        owasys-pollux-gps \
+                        owasys-pollux-core \
+                        owasys-pollux-cli \
+                        owasys-pollux-device \
+                        owasys-pollux-can \
+                        owasys-quectel-modem-setup \
 "
 
 deltask do_packagedata

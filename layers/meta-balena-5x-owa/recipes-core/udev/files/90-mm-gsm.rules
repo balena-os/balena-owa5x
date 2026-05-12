@@ -1,0 +1,2 @@
+#EG25-G /dev/ttyUSBx
+ACTION=="add|change|move|bind", SUBSYSTEM=="tty", ENV{ID_VENDOR_ID}=="2c7c", ENV{ID_MODEL_ID}=="0125", ENV{ID_MM_CANDIDATE}="0"
