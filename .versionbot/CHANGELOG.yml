@@ -1,4 +1,297 @@
 - commits:
+    - subject: Modem is set on ECM if it needs to.
+      hash: 44fcc4e114592e2077f398474e19f76884a2eeed
+      body: |
+        After an OTA upgrade we need to ensure modem is in ECM mode.
+      footer:
+        Changelog-entry: Modem is set on ECM if it needs to.
+        changelog-entry: Modem is set on ECM if it needs to.
+        Signed-off-by: Alvaro Guzman <alvaro.guzman@owasys.com>
+        signed-off-by: Alvaro Guzman <alvaro.guzman@owasys.com>
+      author: Alvaro Guzman
+      nested: []
+    - subject: ModemManager ignores EG25 management
+      hash: a29d6ab14e7727cae4316c97683f0c394338fff2
+      body: >
+        As we switched to ECM mode, now ModemManager does not need to handle the
+        modem.
+      footer:
+        Changelog-entry: ModemManager ignores EG25 management
+        changelog-entry: ModemManager ignores EG25 management
+        Signed-off-by: Alvaro Guzman <alvaro.guzman@owasys.com>
+        signed-off-by: Alvaro Guzman <alvaro.guzman@owasys.com>
+      author: Alvaro Guzman
+      nested: []
+    - subject: EG25-G modem as router
+      hash: 52cc8b4742004c514023106eeafb650a619e188f
+      body: >
+        Now our onboard quectel modem will handle TCP/IP connection acting as a
+        router for the host.
+      footer:
+        Changelog-entry: EG25-G modem as router
+        changelog-entry: EG25-G modem as router
+        Signed-off-by: Alvaro Guzman <alvaro.guzman@owasys.com>
+        signed-off-by: Alvaro Guzman <alvaro.guzman@owasys.com>
+      author: Alvaro Guzman
+      nested: []
+    - subject: Fix RTC call from timeinit-rtc
+      hash: 70a0766a40c5b9130db9bcd9012b7d1d2227f6a4
+      body: >
+        Service was starting before the RTC were available, therefore RTUConnect
+        error appeared.
+
+
+        Making timeinit-rtc.service depends on pmsrv service fix the issue.
+      footer:
+        Changelog-entry: Fix RTC call from timeinit-rtc
+        changelog-entry: Fix RTC call from timeinit-rtc
+        Signed-off-by: Alvaro Guzman <alvaro.guzman@owasys.com>
+        signed-off-by: Alvaro Guzman <alvaro.guzman@owasys.com>
+      author: Alvaro Guzman
+      nested: []
+    - subject: Owasys RTC syncs from NTP service
+      hash: 7a37faff1afce5d9723d35333b28cab05bca8113
+      body: ""
+      footer:
+        Changelog-entry: Owasys RTC syncs from NTP service
+        changelog-entry: Owasys RTC syncs from NTP service
+        Signed-off-by: Alvaro Guzman <alvaro.guzman@owasys.com>
+        signed-off-by: Alvaro Guzman <alvaro.guzman@owasys.com>
+      author: Alvaro Guzman
+      nested: []
+    - subject: disables pollux services
+      hash: 389ff22ed9ce40a922459e19f01c16e2384c6113
+      body: ""
+      footer:
+        Changelog-entry: disables pollux services
+        changelog-entry: disables pollux services
+        Signed-off-by: Alvaro Guzman <alvaro.guzman@owasys.com>
+        signed-off-by: Alvaro Guzman <alvaro.guzman@owasys.com>
+      author: Alvaro Guzman
+      nested: []
+    - subject: timinit fixed and improved
+      hash: 7dd275d5217efbff6b6edd9739c349a5b2b24f9a
+      body: >
+        Now if system time is in the future comparing to RTC, we update the RTC
+        out from the system time.
+
+        For sure, timeinit-https, will sync against reliable https servers.
+      footer:
+        Changelog-entry: timinit fixed and improved
+        changelog-entry: timinit fixed and improved
+        Signed-off-by: Alvaro Guzman <alvaro.guzman@owasys.com>
+        signed-off-by: Alvaro Guzman <alvaro.guzman@owasys.com>
+      author: Alvaro Guzman
+      nested: []
+    - subject: fixed bootloader filename
+      hash: 61d401f8e90c3583992df241210f34b940271bf6
+      body: ""
+      footer:
+        Changelog-entry: fixed bootloader filename
+        changelog-entry: fixed bootloader filename
+        Signed-off-by: Alvaro Guzman <alvaro.guzman@owasys.com>
+        signed-off-by: Alvaro Guzman <alvaro.guzman@owasys.com>
+      author: Alvaro Guzman
+      nested: []
+    - subject: wrapping owa5x-nand machine in owa5x
+      hash: 60acfadf71c372044892e72891458b23c6a889c9
+      body: >
+        In Owasys BSP now we can build for 3 different machines owa5x-nand,
+        owa5x-emmc and owa5x-sd.
+
+        In order to leverage current owa5x.coffee file we've wrapped owa5x-nand
+        in an owa5x.conf machine file.
+      footer:
+        Changelog-entry: wrapping owa5x-nand machine in owa5x
+        changelog-entry: wrapping owa5x-nand machine in owa5x
+        Signed-off-by: Alvaro Guzman <alvaro.guzman@owasys.com>
+        signed-off-by: Alvaro Guzman <alvaro.guzman@owasys.com>
+      author: Alvaro Guzman
+      nested: []
+    - subject: deletion of wrong templates
+      hash: 785711a95776bddd386b122b0d4c3c988155127c
+      body: >
+        templates/default is the correct folder for bblayers and local.conf
+        templates.
+      footer:
+        Changelog-entry: deletion of wrong templates
+        changelog-entry: deletion of wrong templates
+        Signed-off-by: Alvaro Guzman <alvaro.guzman@owasys.com>
+        signed-off-by: Alvaro Guzman <alvaro.guzman@owasys.com>
+      author: Alvaro Guzman
+      nested: []
+    - subject: fix
+      hash: 0b440efdd1ef4018df0cb5a175938832fc791431
+      body: ""
+      footer:
+        Changelog-entry: fix
+        changelog-entry: fix
+        Signed-off-by: Alvaro Guzman <alvaro.guzman@owasys.com>
+        signed-off-by: Alvaro Guzman <alvaro.guzman@owasys.com>
+      author: Alvaro Guzman
+      nested: []
+    - subject: updated Yocto version
+      hash: 89f6e78790324883b291317e9e611dd911e1d74a
+      body: ""
+      footer:
+        Changelog-entry: updated Yocto version
+        changelog-entry: updated Yocto version
+        Signed-off-by: Alvaro Guzman <alvaro.guzman@owasys.com>
+        signed-off-by: Alvaro Guzman <alvaro.guzman@owasys.com>
+      author: Alvaro Guzman
+      nested: []
+    - subject: updated machine name
+      hash: 02438d85b24d835fb9f9a0395c6faabd45b932d3
+      body: ""
+      footer:
+        Changelog-entry: updated machine name
+        changelog-entry: updated machine name
+        Signed-off-by: Alvaro Guzman <alvaro.guzman@owasys.com>
+        signed-off-by: Alvaro Guzman <alvaro.guzman@owasys.com>
+      author: Alvaro Guzman
+      nested: []
+    - subject: removed shared-mime-info
+      hash: f0280c41954ca907c7ddf188025280450a8426fe
+      body: ""
+      footer:
+        Changelog-entry: removed shared-mime-info
+        changelog-entry: removed shared-mime-info
+        Signed-off-by: Alvaro Guzman <alvaro.guzman@owasys.com>
+        signed-off-by: Alvaro Guzman <alvaro.guzman@owasys.com>
+      author: Alvaro Guzman
+      nested: []
+    - subject: FW name updated
+      hash: b7be51c1e77bc6d16a13df98aafcc0da180102ea
+      body: ""
+      footer:
+        Changelog-entry: FW name updated
+        changelog-entry: FW name updated
+        Signed-off-by: Alvaro Guzman <alvaro.guzman@owasys.com>
+        signed-off-by: Alvaro Guzman <alvaro.guzman@owasys.com>
+      author: Alvaro Guzman
+      nested: []
+    - subject: template added
+      hash: 20618ea231e1f344723c80b2959fece7c130e0a8
+      body: ""
+      footer:
+        Changelog-entry: template added
+        changelog-entry: template added
+        Signed-off-by: Alvaro Guzman <alvaro.guzman@owasys.com>
+        signed-off-by: Alvaro Guzman <alvaro.guzman@owasys.com>
+      author: Alvaro Guzman
+      nested: []
+    - subject: bootloader renamed
+      hash: e860ae08de4201b469fca5147e2beceb0e62e18a
+      body: ""
+      footer:
+        Changelog-entry: bootloader renamed
+        changelog-entry: bootloader renamed
+        Signed-off-by: Alvaro Guzman <alvaro.guzman@owasys.com>
+        signed-off-by: Alvaro Guzman <alvaro.guzman@owasys.com>
+      author: Alvaro Guzman
+      nested: []
+    - subject: update bootloader name
+      hash: eee4b5ffc7b9f0ba9c00b5d2ad363d6aa804244a
+      body: >
+        Changing machine name make the bootloader file also to be renamed and we
+        need to extend this changes to resin init
+      footer:
+        Changelog-entry: update bootloader name
+        changelog-entry: update bootloader name
+        Signed-off-by: Alvaro Guzman <alvaro.guzman@owasys.com>
+        signed-off-by: Alvaro Guzman <alvaro.guzman@owasys.com>
+      author: Alvaro Guzman
+      nested: []
+    - subject: update base image FW
+      hash: bc62e05f0ae9b1e8b1ab8e51c0dabd8e3190180c
+      body: >
+        Pollux is becaming more and more integrated with our libraries, making
+        it essential to leverage onboard HW.
+      footer:
+        Changelog-entry: update base image FW
+        changelog-entry: update base image FW
+        Signed-off-by: Alvaro Guzman <alvaro.guzman@owasys.com>
+        signed-off-by: Alvaro Guzman <alvaro.guzman@owasys.com>
+      author: Alvaro Guzman
+      nested: []
+    - subject: Owasys udev rules renamed
+      hash: 91d1ed78c69fb86cfd93cd092ba3be2fb785dd80
+      body: ""
+      footer:
+        Changelog-entry: Owasys udev rules renamed
+        changelog-entry: Owasys udev rules renamed
+        Signed-off-by: Alvaro Guzman <alvaro.guzman@owasys.com>
+        signed-off-by: Alvaro Guzman <alvaro.guzman@owasys.com>
+      author: Alvaro Guzman
+      nested: []
+    - subject: Increased initramfs size
+      hash: 877165177c44a53897ae51b8093e8a5347c5d946
+      body: ""
+      footer:
+        Changelog-entry: Increased initramfs size
+        changelog-entry: Increased initramfs size
+        Signed-off-by: Alvaro Guzman <alvaro.guzman@owasys.com>
+        signed-off-by: Alvaro Guzman <alvaro.guzman@owasys.com>
+      author: Alvaro Guzman
+      nested: []
+    - subject: Updated led path
+      hash: 3630323e8ec695d6cf84ff9c07f1f76159e6b105
+      body: ""
+      footer:
+        Changelog-entry: Updated led path
+        changelog-entry: Updated led path
+        Signed-off-by: Alvaro Guzman <alvaro.guzman@owasys.com>
+        signed-off-by: Alvaro Guzman <alvaro.guzman@owasys.com>
+      author: Alvaro Guzman
+      nested: []
+    - subject: Enable AppArmor in kernel
+      hash: c8bf13a18a397d1f59f41d073095096252384b2a
+      body: |
+        Enable AppArmor to prevent compilation error lsmslot_list
+      footer:
+        Changelog-entry: Enable AppArmor in kernel
+        changelog-entry: Enable AppArmor in kernel
+        Signed-off-by: Alvaro Guzman <alvaro.guzman@owasys.com>
+        signed-off-by: Alvaro Guzman <alvaro.guzman@owasys.com>
+      author: Alvaro Guzman
+      nested: []
+    - subject: u-boot update
+      hash: f4c2fb593e6c5c01541262b3f45931bbed39cda4
+      body: |
+        Owasys u-boot updated to version 2.1.5.
+      footer:
+        Changelog-entry: u-boot update
+        changelog-entry: u-boot update
+        Signed-off-by: Alvaro Guzman <alvaro.guzman@owasys.com>
+        signed-off-by: Alvaro Guzman <alvaro.guzman@owasys.com>
+      author: Alvaro Guzman
+      nested: []
+    - subject: making layer compatible with scarthgap
+      hash: 174aaacbcb98fb402c970fd9fcc2c32c8a6f8c4a
+      body: ""
+      footer:
+        Changelog-entry: making layer compatible with scarthgap
+        changelog-entry: making layer compatible with scarthgap
+        Signed-off-by: Alvaro Guzman <alvaro.guzman@owasys.com>
+        signed-off-by: Alvaro Guzman <alvaro.guzman@owasys.com>
+      author: Alvaro Guzman
+      nested: []
+    - subject: update layers.
+      hash: 5970e019f33ce97c4e74f643fab00906f0521bc5
+      body: >
+        Owasys is starting the process to update its BalenaOS image to Yocto
+        Scarthgap.
+      footer:
+        Changelog-entry: update layers.
+        changelog-entry: update layers.
+        Signed-off-by: Alvaro Guzman <alvaro.guzman@owasys.com>
+        signed-off-by: Alvaro Guzman <alvaro.guzman@owasys.com>
+      author: Alvaro Guzman
+      nested: []
+  version: 7.0.2+rev1
+  title: ""
+  date: 2026-05-12T11:34:54.985Z
+- commits:
     - subject: Update layers/meta-balena to 3f363dc14666d0d39b8f039b194198b5f5cf81f7
       hash: 439c187d52d86f1f3cdf934531343878dcaadf01
       body: Update layers/meta-balena

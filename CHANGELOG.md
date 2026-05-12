@@ -1,6 +1,36 @@
 # v2.107.5
 ## (2023-01-09)
 
+# v7.0.2+rev1
+## (2026-05-12)
+
+* Modem is set on ECM if it needs to. [Alvaro Guzman]
+* ModemManager ignores EG25 management [Alvaro Guzman]
+* EG25-G modem as router [Alvaro Guzman]
+* Fix RTC call from timeinit-rtc [Alvaro Guzman]
+* Owasys RTC syncs from NTP service [Alvaro Guzman]
+* disables pollux services [Alvaro Guzman]
+* timinit fixed and improved [Alvaro Guzman]
+* fixed bootloader filename [Alvaro Guzman]
+* wrapping owa5x-nand machine in owa5x [Alvaro Guzman]
+* deletion of wrong templates [Alvaro Guzman]
+* fix [Alvaro Guzman]
+* updated Yocto version [Alvaro Guzman]
+* updated machine name [Alvaro Guzman]
+* removed shared-mime-info [Alvaro Guzman]
+* FW name updated [Alvaro Guzman]
+* template added [Alvaro Guzman]
+* bootloader renamed [Alvaro Guzman]
+* update bootloader name [Alvaro Guzman]
+* update base image FW [Alvaro Guzman]
+* Owasys udev rules renamed [Alvaro Guzman]
+* Increased initramfs size [Alvaro Guzman]
+* Updated led path [Alvaro Guzman]
+* Enable AppArmor in kernel [Alvaro Guzman]
+* u-boot update [Alvaro Guzman]
+* making layer compatible with scarthgap [Alvaro Guzman]
+* update layers. [Alvaro Guzman]
+
 # v7.0.2
 ## (2026-05-11)
 
