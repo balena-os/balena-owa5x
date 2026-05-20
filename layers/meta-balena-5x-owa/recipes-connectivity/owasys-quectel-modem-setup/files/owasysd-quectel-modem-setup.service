@@ -1,7 +1,7 @@
 [Unit]
 Description=Configure Quectel EG25-G usbnet mode
-After=dev-ttyUSB3.device
-Requires=dev-ttyUSB3.device
+After=dev-ttyUSB2.device
+Requires=dev-ttyUSB2.device
 
 [Service]
 Type=oneshot

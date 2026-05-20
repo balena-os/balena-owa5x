@@ -10,12 +10,12 @@
 #     SUBSYSTEM=="usb", ATTR{idVendor}=="2c7c", ATTR{idProduct}=="0125"
 #
 # Modem AT port:
-#   /dev/ttyUSB3
+#   /dev/ttyUSB2
 #
 
 set -euo pipefail
 
-TTY_DEV="/dev/ttyUSB3"
+TTY_DEV="/dev/ttyUSB2"
 LOG_TAG="owasys-quectel-mode-setup"
 
 TARGET_USBNET="1"
