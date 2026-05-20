@@ -1,6 +1,12 @@
 # v2.107.5
 ## (2023-01-09)
 
+# v7.0.3+rev6
+## (2026-05-20)
+
+* Increase uSD flashing speed. [Alvaro Guzman]
+* Updated ttyUSB used to configure Quectel Modem [Alvaro Guzman]
+
 # v7.0.3+rev5
 ## (2026-05-20)
 

@@ -1,4 +1,30 @@
 - commits:
+    - subject: Increase uSD flashing speed.
+      hash: a93ffd67e7b8da4e507a97455762d272d86fd8fd
+      body: |
+        Just saving some sleep time so we can flash quicker.
+      footer:
+        Changelog-entry: Increase uSD flashing speed.
+        changelog-entry: Increase uSD flashing speed.
+        Signed-off-by: Alvaro Guzman <alvaro.guzman@owasys.com>
+        signed-off-by: Alvaro Guzman <alvaro.guzman@owasys.com>
+      author: Alvaro Guzman
+      nested: []
+    - subject: Updated ttyUSB used to configure Quectel Modem
+      hash: d96a4a84da62f10ef49b359bbe4aa05a8816bf73
+      body: |
+        Updated the ttyUSB used to configure the Quectel modem.
+      footer:
+        Changelog-entry: Updated ttyUSB used to configure Quectel Modem
+        changelog-entry: Updated ttyUSB used to configure Quectel Modem
+        Signed-off-by: Alvaro Guzman <alvaro.guzman@owasys.com>
+        signed-off-by: Alvaro Guzman <alvaro.guzman@owasys.com>
+      author: Alvaro Guzman
+      nested: []
+  version: 7.0.3+rev6
+  title: ""
+  date: 2026-05-20T10:51:01.155Z
+- commits:
     - subject: fixed wrong bootloader name
       hash: eac94bcaf4936a8eba54d8d5ac1063e6c7206a4e
       body: >
