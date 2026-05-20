@@ -1,6 +1,11 @@
 # v2.107.5
 ## (2023-01-09)
 
+# v7.0.3+rev5
+## (2026-05-20)
+
+* fixed wrong bootloader name [Alvaro Guzman]
+
 # v7.0.3+rev4
 ## (2026-05-19)
 

@@ -1,4 +1,20 @@
 - commits:
+    - subject: fixed wrong bootloader name
+      hash: eac94bcaf4936a8eba54d8d5ac1063e6c7206a4e
+      body: >
+        The name of the bootloader was wrong. Now we set the same used on the
+        resin-init-flasher service.
+      footer:
+        Changelog-entry: fixed wrong bootloader name
+        changelog-entry: fixed wrong bootloader name
+        Signed-off-by: Alvaro Guzman <alvaro.guzman@owasys.com>
+        signed-off-by: Alvaro Guzman <alvaro.guzman@owasys.com>
+      author: Alvaro Guzman
+      nested: []
+  version: 7.0.3+rev5
+  title: ""
+  date: 2026-05-20T09:47:58.120Z
+- commits:
     - subject: Update contracts to 9fe86f23e02c5d438a96ab3209239dcb5df4dc5b
       hash: 7a2c92278d5e49facdc85fcc00fa81b65f3fa14b
       body: Update contracts
