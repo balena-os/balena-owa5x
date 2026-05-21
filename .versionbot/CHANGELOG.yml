@@ -1,4 +1,40 @@
 - commits:
+    - subject: Update layers/meta-balena to 27c1a0ec7a9a61ceb388bcebaa97b3a01d8e369d
+      hash: 48293283d7915b7e61938d307453500f303a619a
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to 27c1a0ec7a9a61ceb388bcebaa97b3a01d8e369d
+        changelog-entry: Update layers/meta-balena to 27c1a0ec7a9a61ceb388bcebaa97b3a01d8e369d
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: "image-balena: include size of boot directory in HUP check"
+              hash: 46af76930d0c23200d96350e26063672f0215aaa
+              body: >
+                As part of hostapp-update, after pulling the container image
+                into the
+
+                alternative root partition, a volume is created with the
+                contents of
+
+                `/boot`. If there is no space left for this, HUP will fail on
+                the
+
+                field with no space left on device.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+          version: meta-balena-7.0.5
+          title: ""
+          date: 2026-05-21T14:53:59.471Z
+  version: 7.0.5
+  title: ""
+  date: 2026-05-21T23:47:53.438Z
+- commits:
     - subject: unpin flowzone, track @master
       hash: 6a10a4802253782e818eb06c9d25a74e2c440a1c
       body: |

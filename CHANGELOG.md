@@ -1,6 +1,21 @@
 # v2.107.5
 ## (2023-01-09)
 
+# v7.0.5
+## (2026-05-21)
+
+
+<details>
+<summary> Update layers/meta-balena to 27c1a0ec7a9a61ceb388bcebaa97b3a01d8e369d [balena-renovate[bot]] </summary>
+
+> ## meta-balena-7.0.5
+> ### (2026-05-21)
+> 
+> * image-balena: include size of boot directory in HUP check [Alex Gonzalez]
+> 
+
+</details>
+
 # v7.0.4+rev1
 ## (2026-05-21)
 
