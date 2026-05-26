@@ -11,4 +11,4 @@ remove_files_from_fingerprint () {
      > md5sum.tmp && mv md5sum.tmp ${IMAGE_ROOTFS}/${BALENA_FINGERPRINT_FILENAME}.${BALENA_FINGERPRINT_EXT}
 }
 
-IMAGE_POSTPROCESS_COMMAND += " remove_files_from_fingerprint ; "
+IMAGE_PREPROCESS_COMMAND:append = " remove_files_from_fingerprint ; "
