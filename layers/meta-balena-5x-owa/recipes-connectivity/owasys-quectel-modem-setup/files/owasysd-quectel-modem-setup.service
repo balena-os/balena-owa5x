@@ -4,9 +4,10 @@ After=resin-init.service dev-ttyUSB2.device
 BindsTo=dev-ttyUSB2.device
 
 [Service]
-Type=oneshot
 ExecStartPre=sleep 2
-ExecStart=/usr/sbin/owasys-quectel-mode-setup.sh
+ExecStart=/usr/sbin/owasys-quectel-modem-setup.sh
+Restart=on-failure
+RestartSec=10s
 
 # Security hardening
 PrivateTmp=true
