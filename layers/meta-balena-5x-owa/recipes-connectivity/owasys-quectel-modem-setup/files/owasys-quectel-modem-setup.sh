@@ -16,9 +16,9 @@
 set -euo pipefail
 
 TTY_DEV="/dev/ttyUSB2"
-LOG_TAG="owasys-quectel-mode-setup"
+LOG_TAG="owasys-quectel-modem-setup"
 
-TARGET_USBNET="2"
+TARGET_USBNET="1"
 
 log() {
     logger -t "${LOG_TAG}" "$1"

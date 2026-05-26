@@ -6,8 +6,8 @@ BindsTo=dev-ttyUSB2.device
 [Service]
 ExecStartPre=sleep 2
 ExecStart=/usr/sbin/owasys-quectel-modem-setup.sh
-Restart=on-failure
-RestartSec=10s
+Restart     = on-failure
+RestartSec  = 120
 
 # Security hardening
 PrivateTmp=true
