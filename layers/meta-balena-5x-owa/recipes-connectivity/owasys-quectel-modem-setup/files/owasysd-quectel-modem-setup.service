@@ -1,19 +1,15 @@
 [Unit]
 Description=Configure Quectel EG25-G usbnet mode
-After=resin-init.service dev-ttyUSB2.device
-BindsTo=dev-ttyUSB2.device
+After=resin-init.service
 
 [Service]
 ExecStartPre=sleep 2
 ExecStart=/usr/sbin/owasys-quectel-modem-setup.sh
 Restart     = on-failure
-RestartSec  = 120
+RestartSec  = 10
 
 # Security hardening
 PrivateTmp=true
 ProtectSystem=strict
 ProtectHome=true
 NoNewPrivileges=true
-
-[Install]
-WantedBy=multi-user.target
