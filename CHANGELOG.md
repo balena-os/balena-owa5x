@@ -1,6 +1,12 @@
 # v2.107.5
 ## (2023-01-09)
 
+# v7.0.5+rev1
+## (2026-05-27)
+
+* moved fingerprint tweak to IMAGE PREPROCESS [Alvaro Guzman]
+* remove pmupdate.txt from balenaos.fingerptinr [Alvaro Guzman]
+
 # v7.0.5
 ## (2026-05-21)
 

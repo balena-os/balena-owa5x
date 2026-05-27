@@ -1,4 +1,35 @@
 - commits:
+    - subject: moved fingerprint tweak to IMAGE PREPROCESS
+      hash: 5a9007bafd9d1b0f61abd49e54b8c8400332a886
+      body: ""
+      footer:
+        Changelog-entry: moved fingerprint tweak to IMAGE PREPROCESS
+        changelog-entry: moved fingerprint tweak to IMAGE PREPROCESS
+        Signed-off-by: Alvaro Guzman <alvaro.guzman@owasys.com>
+        signed-off-by: Alvaro Guzman <alvaro.guzman@owasys.com>
+      author: Alvaro Guzman
+      nested: []
+    - subject: remove pmupdate.txt from balenaos.fingerptinr
+      hash: 65031a600af41746e4025bcbee8b8ae697a51615
+      body: |
+        We need to exclude pmupdate.txt as it is only a flag-file
+        that indicates the need to flash the onboard uC with new FW.
+        This process is needed after every FW update, whether it is
+        an OTA update or an USB/uSD reflashing, and the problem is that
+        after reflashing the uC the flag is removed by the pmsrv service.
+        Therefore, fingerprint file contains a reference to a non-existent
+        file, pmupdate.
+      footer:
+        Changelog-entry: remove pmupdate.txt from balenaos.fingerptinr
+        changelog-entry: remove pmupdate.txt from balenaos.fingerptinr
+        Signed-off-by: Alvaro Guzman <alvaro.guzman@owasys.com>
+        signed-off-by: Alvaro Guzman <alvaro.guzman@owasys.com>
+      author: Alvaro Guzman
+      nested: []
+  version: 7.0.5+rev1
+  title: ""
+  date: 2026-05-27T04:42:23.496Z
+- commits:
     - subject: Update layers/meta-balena to 27c1a0ec7a9a61ceb388bcebaa97b3a01d8e369d
       hash: 48293283d7915b7e61938d307453500f303a619a
       body: Update layers/meta-balena
