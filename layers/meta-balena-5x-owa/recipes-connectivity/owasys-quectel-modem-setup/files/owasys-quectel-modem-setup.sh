@@ -78,9 +78,7 @@ log "Set response: ${SET_RESPONSE//$'\n'/ }"
 if echo "${SET_RESPONSE}" | grep -q "OK"; then
     log "usbnet successfully changed to ${TARGET_USBNET}"
 
-    # Optional modem reset may be required on some firmware versions
-    # Uncomment if needed:
-    # send_at 'AT+CFUN=1,1'
+    send_at 'AT+CFUN=1,1'
 
     exit 0
 else
