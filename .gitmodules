@@ -13,27 +13,27 @@
 [submodule "layers/meta-freescale"]
 	path = layers/meta-freescale
 	url = https://github.com/Freescale/meta-freescale
-	branch = kirkstone
+	branch = scarthgap
 [submodule "layers/meta-freescale-3rdparty"]
 	path = layers/meta-freescale-3rdparty
 	url = https://github.com/Freescale/meta-freescale-3rdparty
-	branch = kirkstone
+	branch = scarthgap
 [submodule "layers/meta-freescale-distro"]
 	path = layers/meta-freescale-distro
 	url = https://github.com/Freescale/meta-freescale-distro
-	branch = kirkstone
+	branch = scarthgap
 [submodule "layers/meta-openembedded"]
 	path = layers/meta-openembedded
 	url = https://github.com/openembedded/meta-openembedded
-	branch = kirkstone
+	branch = scarthgap
 [submodule "layers/poky"]
 	path = layers/poky
 	url = https://github.com/balena-os/poky
-	branch = kirkstone
+	branch = scarthgap
 [submodule "layers/meta-owasys-owa5x-bsp"]
 	path = layers/meta-owasys-owa5x-bsp
 	url = https://gitlab.owasys.com/owasys-public/products/owa5x/firmware/meta-owasys-owa5x-bsp
 [submodule "layers/meta-cyclonedx"]
 	path = layers/meta-cyclonedx
 	url = https://github.com/balena-os/meta-cyclonedx
-	branch = kirkstone
+	branch = scarthgap
