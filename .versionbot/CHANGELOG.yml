@@ -1,4 +1,19 @@
 - commits:
+    - subject: fix issue file check
+      hash: 9a95a555c137c0f9a42f20c10d13f2d4a1b49cc3
+      body: |
+        Fix issue file check at Autokit rig test suite.
+      footer:
+        Changelog-entry: fix issue file check
+        changelog-entry: fix issue file check
+        Signed-off-by: Alvaro Guzman <alvaro.guzman@owasys.com>
+        signed-off-by: Alvaro Guzman <alvaro.guzman@owasys.com>
+      author: Alvaro Guzman
+      nested: []
+  version: 7.0.5+rev2
+  title: ""
+  date: 2026-05-28T03:12:55.568Z
+- commits:
     - subject: moved fingerprint tweak to IMAGE PREPROCESS
       hash: 5a9007bafd9d1b0f61abd49e54b8c8400332a886
       body: ""
