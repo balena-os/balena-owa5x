@@ -1,4 +1,18 @@
 - commits:
+    - subject: Change branch references to scarthgap in .gitmodules
+      hash: c42926d28be48478fa7af0d87f16573f862e3306
+      body: ""
+      footer:
+        Changelog-entry: Change branch references to scarthgap in .gitmodules
+        changelog-entry: Change branch references to scarthgap in .gitmodules
+        Signed-off-by: Florin Sarbu <florin@balena.io>
+        signed-off-by: Florin Sarbu <florin@balena.io>
+      author: Florin Sarbu
+      nested: []
+  version: 7.0.5+rev3
+  title: ""
+  date: 2026-05-28T13:19:51.503Z
+- commits:
     - subject: fix issue file check
       hash: 9a95a555c137c0f9a42f20c10d13f2d4a1b49cc3
       body: |

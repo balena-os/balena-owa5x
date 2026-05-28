@@ -1,6 +1,11 @@
 # v2.107.5
 ## (2023-01-09)
 
+# v7.0.5+rev3
+## (2026-05-28)
+
+* Change branch references to scarthgap in .gitmodules [Florin Sarbu]
+
 # v7.0.5+rev2
 ## (2026-05-28)
 
