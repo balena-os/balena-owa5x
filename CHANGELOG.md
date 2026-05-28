@@ -1,6 +1,11 @@
 # v2.107.5
 ## (2023-01-09)
 
+# v7.0.5+rev2
+## (2026-05-28)
+
+* fix issue file check [Alvaro Guzman]
+
 # v7.0.5+rev1
 ## (2026-05-27)
 
