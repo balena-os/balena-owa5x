@@ -1,6 +1,11 @@
 # v2.107.5
 ## (2023-01-09)
 
+# v7.1.1+rev2
+## (2026-05-29)
+
+* Update layers/meta-freescale-distro to b9d6a5d9931922558046d230c1f5f4ef6ee72345 [balena-renovate[bot]]
+
 # v7.1.1+rev1
 ## (2026-05-29)
 

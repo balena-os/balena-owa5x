@@ -1,4 +1,19 @@
 - commits:
+    - subject: Update layers/meta-freescale-distro to
+        b9d6a5d9931922558046d230c1f5f4ef6ee72345
+      hash: 5ed5fbfa7bdc3cacd96e6fee68c41ba67b5cd7ba
+      body: Update layers/meta-freescale-distro
+      footer:
+        Changelog-entry: Update layers/meta-freescale-distro to
+          b9d6a5d9931922558046d230c1f5f4ef6ee72345
+        changelog-entry: Update layers/meta-freescale-distro to
+          b9d6a5d9931922558046d230c1f5f4ef6ee72345
+      author: balena-renovate[bot]
+      nested: []
+  version: 7.1.1+rev2
+  title: ""
+  date: 2026-05-29T04:46:32.155Z
+- commits:
     - subject: Update layers/meta-freescale-3rdparty to
         ce10c065119c2d4e359235c77aae7e0d843533ef
       hash: d62d2c378f379884c397cc19059e43635b42ae1b
