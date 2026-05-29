@@ -1,4 +1,18 @@
 - commits:
+    - subject: Update layers/meta-freescale to 0c27c21cab57876474bb572e5d378b6707e41224
+      hash: b3eb3b751a8d94ee7920d34c68c55b178466af34
+      body: Update layers/meta-freescale
+      footer:
+        Changelog-entry: Update layers/meta-freescale to
+          0c27c21cab57876474bb572e5d378b6707e41224
+        changelog-entry: Update layers/meta-freescale to
+          0c27c21cab57876474bb572e5d378b6707e41224
+      author: balena-renovate[bot]
+      nested: []
+  version: 7.1.1+rev4
+  title: ""
+  date: 2026-05-29T06:33:09.240Z
+- commits:
     - subject: Update layers/meta-openembedded to
         ae7dfb12245c7f9b9a353499e2688015bd4e6413
       hash: c1764195f52ae68e70ddd24ddad1719e22d7e5ed
