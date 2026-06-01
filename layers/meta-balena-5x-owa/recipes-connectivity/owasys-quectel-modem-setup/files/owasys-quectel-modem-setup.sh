@@ -10,13 +10,13 @@
 #     SUBSYSTEM=="usb", ATTR{idVendor}=="2c7c", ATTR{idProduct}=="0125"
 #
 # Modem AT port:
-#   /dev/ttyUSB2
+#   /dev/ttyUSB3
 #
 
 set -euo pipefail
 
-TTY_DEV="/dev/ttyUSB2"
-LOG_TAG="owasys-quectel-mode-setup"
+TTY_DEV="/dev/ttyUSB3"
+LOG_TAG="owasysd-quectel-modem-setup"
 
 TARGET_USBNET="1"
 
@@ -78,9 +78,7 @@ log "Set response: ${SET_RESPONSE//$'\n'/ }"
 if echo "${SET_RESPONSE}" | grep -q "OK"; then
     log "usbnet successfully changed to ${TARGET_USBNET}"
 
-    # Optional modem reset may be required on some firmware versions
-    # Uncomment if needed:
-    # send_at 'AT+CFUN=1,1'
+    send_at 'AT+CFUN=1,1'
 
     exit 0
 else
