@@ -1,4 +1,30 @@
 - commits:
+    - subject: Update layers/meta-balena to da9190fabf525a37eb1ac781e4a1664b386066d4
+      hash: bf69fb19e17340bbee2446d2c7a7e4cd233b2bcb
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to da9190fabf525a37eb1ac781e4a1664b386066d4
+        changelog-entry: Update layers/meta-balena to da9190fabf525a37eb1ac781e4a1664b386066d4
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: "tests: pieeprom test raspberrypi4 and CM4"
+              hash: c4589cf31d1d245a2fc19ad8809c2ae35c88c927
+              body: ""
+              footer:
+                Change-type: minor
+                change-type: minor
+                Signed-off-by: Yann CARDAILLAC <yann.cardaillac@balena.io>
+                signed-off-by: Yann CARDAILLAC <yann.cardaillac@balena.io>
+              author: Yann CARDAILLAC
+              nested: []
+          version: meta-balena-7.3.0
+          title: ""
+          date: 2026-06-09T11:50:41.226Z
+  version: 7.3.0
+  title: ""
+  date: 2026-06-09T16:53:32.615Z
+- commits:
     - subject: Update layers/poky to d03f09df0ab0bf326ab1e0d0969f4643a9f8a378
       hash: 2acb69fdfd8258b75552bb83512550da43c8c2cd
       body: Update layers/poky
