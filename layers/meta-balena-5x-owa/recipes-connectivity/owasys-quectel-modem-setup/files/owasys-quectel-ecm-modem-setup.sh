@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 #
-# owasys-quectel-mode-setup.sh
+# owasys-quectel-ecm-modem-setup
 #
 # Purpose:
 #   Ensure Quectel EG25-G modem is configured with usbnet=1
@@ -9,15 +9,11 @@
 #   Intended to be launched by udev when the modem appears:
 #     SUBSYSTEM=="usb", ATTR{idVendor}=="2c7c", ATTR{idProduct}=="0125"
 #
-# Modem AT port:
-#   /dev/ttyUSB2
-#
 
 set -euo pipefail
 
-TTY_DEV="/dev/ttyUSB2"
-LOG_TAG="owasys-quectel-mode-setup"
-
+LOG_TAG="owasysd-quectel-ecm-modem-setup"
+# Quectel EG25-G usdbnet 1, modem appears as an usb-ethernet adapter
 TARGET_USBNET="1"
 
 log() {
@@ -25,30 +21,34 @@ log() {
     echo "$1"
 }
 
-# Wait for tty device to become available
+# Wait for ModemManager to discover at least one modem
+MODEM_ID=""
+
 for i in {1..15}; do
-    if [[ -e "${TTY_DEV}" ]]; then
+    MODEM_ID="$(
+        mmcli -L 2>/dev/null \
+        | sed -n 's#.*/Modem/\([0-9]\+\).*#\1#p' \
+        | head -n1
+    )"
+
+    if [[ -n "${MODEM_ID}" ]]; then
         break
     fi
+
     sleep 1
 done
 
-if [[ ! -e "${TTY_DEV}" ]]; then
-    log "ERROR: ${TTY_DEV} not found"
+if [[ -z "${MODEM_ID}" ]]; then
+    log "ERROR: No modem found in ModemManager"
     exit 1
 fi
+
+log "Using modem ${MODEM_ID}"
 
 send_at() {
     local cmd="$1"
 
-    # Clear pending data
-    timeout 1 cat "${TTY_DEV}" > /dev/null 2>&1 || true
-
-    # Send command
-    printf '%s\r' "${cmd}" > "${TTY_DEV}"
-
-    # Read response
-    timeout 3 cat "${TTY_DEV}" || true
+    mmcli -m "${MODEM_ID}" --command="${cmd}" 2>/dev/null || true
 }
 
 log "Checking current usbnet mode..."
@@ -57,7 +57,11 @@ RESPONSE="$(send_at 'AT+QCFG="usbnet"')"
 
 log "Modem response: ${RESPONSE//$'\n'/ }"
 
-CURRENT_MODE="$(echo "${RESPONSE}" | sed -n 's/^.*+QCFG: "usbnet",\([0-9]\+\).*$/\1/p')"
+CURRENT_MODE="$(
+    echo "${RESPONSE}" \
+    | sed -n 's/^.*+QCFG: "usbnet",\([0-9]\+\).*$/\1/p' \
+    | head -n1
+)"
 
 if [[ -z "${CURRENT_MODE}" ]]; then
     log "ERROR: Could not determine current usbnet mode"
@@ -71,16 +75,17 @@ fi
 
 log "Changing usbnet mode from ${CURRENT_MODE} to ${TARGET_USBNET}..."
 
-SET_RESPONSE="$(send_at 'AT+QCFG="usbnet",1')"
+AT_CMD="AT+QCFG=\"usbnet\",${TARGET_USBNET}"
+SET_RESPONSE="$(send_at "${AT_CMD}")"
 
 log "Set response: ${SET_RESPONSE//$'\n'/ }"
 
 if echo "${SET_RESPONSE}" | grep -q "OK"; then
     log "usbnet successfully changed to ${TARGET_USBNET}"
 
-    # Optional modem reset may be required on some firmware versions
-    # Uncomment if needed:
-    # send_at 'AT+CFUN=1,1'
+    log "Rebooting modem..."
+
+    send_at 'AT+CFUN=1,1'
 
     exit 0
 else

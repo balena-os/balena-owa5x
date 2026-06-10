@@ -9,12 +9,12 @@ RDEPENDS:${PN} += " \
 "
 
 SYSTEMD_AUTO_ENABLE = "enable"
-SYSTEMD_SERVICE:${PN} ="owasysd-quectel-modem-setup.service"
+SYSTEMD_SERVICE:${PN} ="owasysd-quectel-ecm-modem-setup.service"
 
 SRC_URI = " \
     file://99-quectel-eg25g.rules \
-    file://owasys-quectel-mode-setup.sh \
-    file://owasysd-quectel-modem-setup.service \
+    file://owasys-quectel-ecm-modem-setup.sh \
+    file://owasysd-quectel-ecm-modem-setup.service \
 "
 
 do_install() {
@@ -23,14 +23,14 @@ do_install() {
     install -d ${D}${libdir}/udev/rules.d
     install -d ${D}${sysconfdir}/systemd/system  
 
-    install -m 0755 ${WORKDIR}/owasys-quectel-mode-setup.sh ${D}${sbindir}
+    install -m 0755 ${WORKDIR}/owasys-quectel-ecm-modem-setup.sh ${D}${sbindir}
     install -m 0644 ${WORKDIR}/99-quectel-eg25g.rules ${D}${libdir}/udev/rules.d
-    install -m 0644 ${WORKDIR}/owasysd-quectel-modem-setup.service ${D}${sysconfdir}/systemd/system
+    install -m 0644 ${WORKDIR}/owasysd-quectel-ecm-modem-setup.service ${D}${sysconfdir}/systemd/system
 
 }
 
 FILES:${PN} += " \
-    ${sbindir}/owasys-quectel-mode-setup.sh \
+    ${sbindir}/owasys-quectel-ecm-modem-setup.sh \
     ${sysconfdir}/udev/rules.d/99-quectel-eg25g.rules \
-    ${sysconfdir}/systemd/owasysd-quectel-modem-setup.service \    
+    ${sysconfdir}/systemd/owasysd-quectel-ecm-modem-setup.service \    
 "
