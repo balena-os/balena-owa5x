@@ -1,6 +1,6 @@
 [Unit]
 Description=Inject existing APN in system-connections to EG25-G modem
-After=owasysd-quectel-ecm-modem-setup.services
+After=owasysd-quectel-ecm-modem-setup.service
 Requires=ModemManager.service
 
 [Service]
