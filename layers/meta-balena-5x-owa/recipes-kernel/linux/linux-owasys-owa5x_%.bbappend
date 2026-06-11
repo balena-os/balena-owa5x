@@ -2,6 +2,12 @@ LICENSE = "CLOSED"
 
 inherit kernel-balena deploy
 
+FILESEXTRAPATHS:append := "${THISDIR}/files:"
+
+SRC_URI += " \
+    file://0001-mwifiex-CONFIG_WIFI_DIRECT_SUPPORT-disabled.patch \
+"
+
 BALENA_CONFIGS:append = " nfsfs"
 BALENA_CONFIGS[nfsfs] = " \
     CONFIG_NFS_FS=m \
