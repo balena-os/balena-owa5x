@@ -1,6 +1,11 @@
 # v2.107.5
 ## (2023-01-09)
 
+# v7.4.1+rev1
+## (2026-06-11)
+
+* wifi driver recompiled without wifi direct [Alvaro Guzman]
+
 # v7.4.1
 ## (2026-06-11)
 

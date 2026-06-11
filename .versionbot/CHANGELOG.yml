@@ -1,4 +1,20 @@
 - commits:
+    - subject: wifi driver recompiled without wifi direct
+      hash: 93a4ba3e54981d52f9d7e8b95d06b592356bce0f
+      body: >
+        - NetworkManager was creating a device for each P2P available interface
+        and finally fuzzing the connection process to wifi hotspots.
+      footer:
+        Changelog-entry: wifi driver recompiled without wifi direct
+        changelog-entry: wifi driver recompiled without wifi direct
+        Signed-off-by: Alvaro Guzman <alvaro.guzman@owasys.com>
+        signed-off-by: Alvaro Guzman <alvaro.guzman@owasys.com>
+      author: Alvaro Guzman
+      nested: []
+  version: 7.4.1+rev1
+  title: ""
+  date: 2026-06-11T09:39:17.132Z
+- commits:
     - subject: Update layers/meta-balena to b34a017a1cccfccd19ae871a767f9f21a4eb7f94
       hash: 5d6e8d0eb3ed1d898ca1a94bf37b7ccd30ab7b36
       body: Update layers/meta-balena
