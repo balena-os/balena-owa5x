@@ -1,0 +1,27 @@
+From 30f29f2dda932a986772a599897228ee7fe8f21b Mon Sep 17 00:00:00 2001
+From: Alvaro Guzman <alvaro.guzman@owasys.com>
+Date: Thu, 11 Jun 2026 07:13:15 +0200
+Subject: [PATCH] <mwifiex> CONFIG_WIFI_DIRECT_SUPPORT disabled
+
+Changelog: Updated
+Signed-off-by: Alvaro Guzman <alvaro.guzman@owasys.com>
+---
+ drivers/net/wireless/nxp/mwifiex/Makefile | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/drivers/net/wireless/nxp/mwifiex/Makefile b/drivers/net/wireless/nxp/mwifiex/Makefile
+index 33b185d83fca..9a681e036c4b 100644
+--- a/drivers/net/wireless/nxp/mwifiex/Makefile
++++ b/drivers/net/wireless/nxp/mwifiex/Makefile
+@@ -73,7 +73,7 @@ CONFIG_STA_SUPPORT=y
+ CONFIG_UAP_SUPPORT=y
+ 
+ # Enable WIFIDIRECT support
+-CONFIG_WIFI_DIRECT_SUPPORT=y
++CONFIG_WIFI_DIRECT_SUPPORT=n
+ 
+ 
+ # Re-association in driver
+-- 
+2.43.0
+
