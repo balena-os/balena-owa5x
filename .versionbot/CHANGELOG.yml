@@ -1,4 +1,34 @@
 - commits:
+    - subject: Update layers/meta-balena to 41e0a2b58347b68c322346cbfe3513e7858dce6f
+      hash: 03b1e84564eb77a55e6ceb4e19e35ef65a7062fa
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to 41e0a2b58347b68c322346cbfe3513e7858dce6f
+        changelog-entry: Update layers/meta-balena to 41e0a2b58347b68c322346cbfe3513e7858dce6f
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: "conf/layer.conf: Specify Wrynose compatibility"
+              hash: b5779e477068e55f3110cf735db17fdb33eb522b
+              body: |
+                ... and populate UNPACKDIR for the dunfell, kirkstone
+                and scarthgap layers, to ensure backwards compatibility.
+              footer:
+                Change-type: minor
+                change-type: minor
+                Co-authored-by: Florin Sarbu <florin@balena.io>
+                co-authored-by: Florin Sarbu <florin@balena.io>
+                Signed-off-by: Alexandru Costache <alexandru@balena.io>
+                signed-off-by: Alexandru Costache <alexandru@balena.io>
+              author: Alexandru Costache
+              nested: []
+          version: meta-balena-7.5.0
+          title: ""
+          date: 2026-06-12T08:17:26.427Z
+  version: 7.5.0
+  title: ""
+  date: 2026-06-12T12:14:37.598Z
+- commits:
     - subject: wifi driver recompiled without wifi direct
       hash: 93a4ba3e54981d52f9d7e8b95d06b592356bce0f
       body: >
