@@ -1,4 +1,18 @@
 - commits:
+    - subject: Update layers/meta-freescale to b699d026506a6fc402e03afb432dcabd3d81c7ab
+      hash: 7149632fc7b65d92cb6f28a6245d7b73a6041ab6
+      body: Update layers/meta-freescale
+      footer:
+        Changelog-entry: Update layers/meta-freescale to
+          b699d026506a6fc402e03afb432dcabd3d81c7ab
+        changelog-entry: Update layers/meta-freescale to
+          b699d026506a6fc402e03afb432dcabd3d81c7ab
+      author: balena-renovate[bot]
+      nested: []
+  version: 7.5.0+rev3
+  title: ""
+  date: 2026-06-15T13:11:24.885Z
+- commits:
     - subject: APN injection vis systemd service
       hash: 309cf2eec717d0af2123c8f48f914cf8e5304a00
       body: >
