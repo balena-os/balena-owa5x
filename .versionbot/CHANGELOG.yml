@@ -1,4 +1,21 @@
 - commits:
+    - subject: APN injection vis systemd service
+      hash: 309cf2eec717d0af2123c8f48f914cf8e5304a00
+      body: >
+        We include a service triggered after the modem is set in ECM mode, which
+        parses the network profiles on /etc/NetworkManager/system-connection and
+        inject the APN into the modem using mmcli.
+      footer:
+        Changelog-entry: APN injection vis systemd service
+        changelog-entry: APN injection vis systemd service
+        Signed-off-by: Alvaro Guzman <alvaro.guzman@owasys.com>
+        signed-off-by: Alvaro Guzman <alvaro.guzman@owasys.com>
+      author: Alvaro Guzman
+      nested: []
+  version: 7.5.0+rev2
+  title: ""
+  date: 2026-06-15T10:41:27.661Z
+- commits:
     - subject: Update layers/poky to b56134ff90dec996e8aae45ed7e6ad6b1d5a84a0
       hash: 5a6eb52ec8b200b0816334adf5618d23e30bd8fe
       body: Update layers/poky

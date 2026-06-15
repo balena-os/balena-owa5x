@@ -1,6 +1,11 @@
 # v2.107.5
 ## (2023-01-09)
 
+# v7.5.0+rev2
+## (2026-06-15)
+
+* APN injection vis systemd service [Alvaro Guzman]
+
 # v7.5.0+rev1
 ## (2026-06-12)
 
