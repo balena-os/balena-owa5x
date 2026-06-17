@@ -1,6 +1,11 @@
 # v2.107.5
 ## (2023-01-09)
 
+# v7.5.1+rev2
+## (2026-06-17)
+
+* Make NetworkManager not manage uap interfaces [Florin Sarbu]
+
 # v7.5.1+rev1
 ## (2026-06-17)
 
