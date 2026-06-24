@@ -1,4 +1,48 @@
 - commits:
+    - subject: Update layers/meta-balena to 940bdd4cd47f199544a8980807320b2528fc1abe
+      hash: bce85fac6dd42cbd4140403bc9bc2d0520768ed1
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to 940bdd4cd47f199544a8980807320b2528fc1abe
+        changelog-entry: Update layers/meta-balena to 940bdd4cd47f199544a8980807320b2528fc1abe
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: "classes/image-balena: Cleanup issue file in Wrynose"
+              hash: f5591ed2b60d1bddd07152e1ac6ad5806d34566a
+              body: |
+                Commit https://git.openembedded.org/openembedded-core/commit/?id=b650bd2c94f9aefd4dec82b27285ed1d439778bc
+                introduces an empty root  password note in /etc/issue
+                at build time, if passwordless root login is enabled.
+
+                The Scarthgap bbclass does not include this note at all
+                and in Wrynose it breaks the /etc/issue file tests. It also
+                is only meaningful if developmentMode is set to 'true'.
+
+                We thus remove the note altogether to keep the /etc/issue file clean
+                and consistent across all versions.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alexandru Costache <alexandru@balena.io>
+                signed-off-by: Alexandru Costache <alexandru@balena.io>
+              author: Alexandru Costache
+              nested: []
+          version: meta-balena-7.5.7
+          title: ""
+          date: 2026-06-24T16:43:04.211Z
+    - subject: Update balena-yocto-scripts to 2302959db55d04e9112e75d04f10ec4b4e5268ed
+      hash: 7db8a6d931d6184cbddabe136e62d3896053c495
+      body: Update balena-yocto-scripts
+      footer:
+        Changelog-entry: Update balena-yocto-scripts to 2302959db55d04e9112e75d04f10ec4b4e5268ed
+        changelog-entry: Update balena-yocto-scripts to 2302959db55d04e9112e75d04f10ec4b4e5268ed
+      author: balena-renovate[bot]
+      nested: []
+  version: 7.5.7
+  title: ""
+  date: 2026-06-24T20:17:17.131Z
+- commits:
     - subject: Update layers/meta-balena to 41e6fc31b605eea5a1754290dac2b9b4a529c424
       hash: fe9f24bbf8e35cae799a783e065b3fb83b242e7d
       body: Update layers/meta-balena

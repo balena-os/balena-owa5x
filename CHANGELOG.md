@@ -1,6 +1,23 @@
 # v2.107.5
 ## (2023-01-09)
 
+# v7.5.7
+## (2026-06-24)
+
+
+<details>
+<summary> Update layers/meta-balena to 940bdd4cd47f199544a8980807320b2528fc1abe [balena-renovate[bot]] </summary>
+
+> ## meta-balena-7.5.7
+> ### (2026-06-24)
+> 
+> * classes/image-balena: Cleanup issue file in Wrynose [Alexandru Costache]
+> 
+
+</details>
+
+* Update balena-yocto-scripts to 2302959db55d04e9112e75d04f10ec4b4e5268ed [balena-renovate[bot]]
+
 # v7.5.6
 ## (2026-06-23)
 
