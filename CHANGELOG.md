@@ -1,6 +1,11 @@
 # v2.107.5
 ## (2023-01-09)
 
+# v7.5.7+rev3
+## (2026-06-29)
+
+* removed pmupdate.txt [Alvaro Guzman]
+
 # v7.5.7+rev2
 ## (2026-06-27)
 

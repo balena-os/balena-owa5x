@@ -1,4 +1,25 @@
 - commits:
+    - subject: removed pmupdate.txt
+      hash: dbff493c7d586f53d48370547a1ded7a4017814a
+      body: >
+        That file was previously added as a flag to reflash internal uC FW. Now,
+        that reflashing is automatically
+
+        handled by pmsrv, thus making uneeded the file. Futhermore, its presence
+        in a RO FS, was forcing a
+
+        reflashing of the uC on every power on.
+      footer:
+        Changelog-entry: removed pmupdate.txt
+        changelog-entry: removed pmupdate.txt
+        Signed-off-by: Alvaro Guzman <alvaro.guzman@owasys.com>
+        signed-off-by: Alvaro Guzman <alvaro.guzman@owasys.com>
+      author: Alvaro Guzman
+      nested: []
+  version: 7.5.7+rev3
+  title: ""
+  date: 2026-06-29T09:55:42.882Z
+- commits:
     - subject: Update layers/poky to 3482e7f32a46f6325a01201f52a4121816c6659d
       hash: 53a75e6453e407f68701a1c12fde6b0cdecf4b54
       body: Update layers/poky
