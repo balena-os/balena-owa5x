@@ -1,4 +1,37 @@
 - commits:
+    - subject: Update layers/meta-balena to 8f9636e6cb58d13738c7d36c7b99a15b80d40ada
+      hash: 3cc066021362cff1ecf885bd3f8f7fd6f9f05d36
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to 8f9636e6cb58d13738c7d36c7b99a15b80d40ada
+        changelog-entry: Update layers/meta-balena to 8f9636e6cb58d13738c7d36c7b99a15b80d40ada
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: "renovate: Append major/minor/patch updates with change-type footer"
+              hash: 04b5a9c25690ae21d6e8967619515589c265d377
+              body: >
+                The existing top-level property is being overridden by a
+                packageRule
+
+                in the balena-os/renovate-config shared settings, so we need a
+                local package
+
+                rule to take priority.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: meta-balena-7.5.9
+          title: ""
+          date: 2026-07-08T11:14:53.897Z
+  version: 7.5.9
+  title: ""
+  date: 2026-07-08T18:44:02.886Z
+- commits:
     - subject: Update layers/meta-balena to 66b06bc4fe892a7074b29860b8e717539cbf49b1
       hash: f495426e71943091e4cbba836f0f04c9b45b4250
       body: Update layers/meta-balena
