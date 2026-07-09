@@ -1,4 +1,18 @@
 - commits:
+    - subject: Update layers/meta-freescale to 4143744bc82508f00395a0ffe30e624b2341176a
+      hash: aaf794a9102cc918d39b413bf0cd79a54c818250
+      body: Update layers/meta-freescale
+      footer:
+        Changelog-entry: Update layers/meta-freescale to
+          4143744bc82508f00395a0ffe30e624b2341176a
+        changelog-entry: Update layers/meta-freescale to
+          4143744bc82508f00395a0ffe30e624b2341176a
+      author: balena-renovate[bot]
+      nested: []
+  version: 7.5.9+rev1
+  title: ""
+  date: 2026-07-09T17:10:05.220Z
+- commits:
     - subject: Update layers/meta-balena to 8f9636e6cb58d13738c7d36c7b99a15b80d40ada
       hash: 3cc066021362cff1ecf885bd3f8f7fd6f9f05d36
       body: Update layers/meta-balena
