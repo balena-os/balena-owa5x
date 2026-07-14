@@ -1,6 +1,11 @@
 # v2.107.5
 ## (2023-01-09)
 
+# v7.5.11+rev1
+## (2026-07-14)
+
+* Update machine maintainer list [Aitor Nieto owzang@porowzang]
+
 # v7.5.11
 ## (2026-07-12)
 

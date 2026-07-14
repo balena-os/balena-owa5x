@@ -1,4 +1,18 @@
 - commits:
+    - subject: Update machine maintainer list
+      hash: 17267bc8c465c832e1227060d179016da74612f2
+      body: ""
+      footer:
+        Changelog-entry: Update machine maintainer list
+        changelog-entry: Update machine maintainer list
+        Signed-off-by: Aitor Nieto <aitor.nieto@owasys.com>
+        signed-off-by: Aitor Nieto <aitor.nieto@owasys.com>
+      author: Aitor Nieto owzang@porowzang
+      nested: []
+  version: 7.5.11+rev1
+  title: ""
+  date: 2026-07-14T09:24:09.072Z
+- commits:
     - subject: Update layers/meta-balena to 5bf69c082904fa5f585b96325fb66ed72e401674
       hash: ee2906baa219d0e8ed84209dae32931d8199b725
       body: Update layers/meta-balena
