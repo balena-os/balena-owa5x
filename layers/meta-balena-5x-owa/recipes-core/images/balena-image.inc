@@ -63,3 +63,5 @@ IMAGE_INSTALL:append = " \
 "
 
 deltask do_packagedata
+
+BALENA_STATE_SIZE:owa5x = "20480"
