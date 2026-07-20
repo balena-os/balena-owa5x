@@ -1,0 +1,23 @@
+diff --git a/include/configs/imx8mp_owa5x.h b/include/configs/imx8mp_owa5x.h
+index 8c6c263f42..e429636862 100644
+--- a/include/configs/imx8mp_owa5x.h
++++ b/include/configs/imx8mp_owa5x.h
+@@ -213,7 +213,17 @@
+ 		"setenv mmcdev ${resin_dev_index};" \
+ 		"setenv mmcbootpart ${resin_root_part};\0" \
+ 	"balena_load_kernel=ext4load mmc ${mmcdev}:${resin_root_part} ${zip_addr} boot/${image}\0 " \
+-	"balena_load_fdt=fatload mmc ${mmcdev}:${resin_boot_part} ${fdt_addr} ${fdt_file}\0 " \
++    "balena_load_fdt=" \
++           "if ext4load mmc ${mmcdev}:${resin_root_part} ${fdt_addr} boot/${fdt_file}; then " \
++                   "echo Loaded ${fdt_file} from mmc ${mmcdev}:${resin_root_part}; " \
++           "else " \
++                   "echo Failed to load ${fdt_file} from mmc ${mmcdev}:${resin_root_part}; " \
++                   "if fatload mmc ${mmcdev}:${resin_boot_part} ${fdt_addr} ${fdt_file}; then " \
++                           "echo Loaded ${fdt_file} from mmc ${mmcdev}:${resin_boot_part}; " \
++                   "else " \
++                           "echo Failed to load ${fdt_file} from mmc ${mmcdev}:${resin_boot_part}; " \
++                   "fi;" \
++           "fi;\0" \
+ 	"BOOT_CMD_BALENA=run set_up_balena_env_vars; " \
+ 		"run mmcargs; " \ 
+ 		"run balena_load_kernel; " \

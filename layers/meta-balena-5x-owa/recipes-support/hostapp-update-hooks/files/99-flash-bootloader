@@ -37,5 +37,6 @@ for i in $update_files; do
                 dd if=/resin-boot/$current_update_file of=$device conv=fdatasync seek=$seek_blocks bs=$block_size
 		echo 1 > /sys/block/mmcblk2boot0/force_ro
         fi
+        kobs-ng init -v --chip_0_device_path=/dev/mtd0 /resin-boot/owa5x-flash.bin
 done
 
