@@ -10,6 +10,7 @@ SRC_URI:remove = " file://resin-specific-env-integration-kconfig.patch "
 
 SRC_URI:append:owa5x-nand = " \
                       file://0001-Balena-integration-u-boot-2.1.6.patch \
+                      file://0002-Balena-fdt-partition-migration.patch \
 "
 
 SRC_URI += "file://fw_env.config"

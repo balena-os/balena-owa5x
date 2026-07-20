@@ -4,7 +4,6 @@ DEVICE_TYPE = "owa5x"
 
 BALENA_BOOT_PARTITION_FILES:owa5x += " \
      ${MACHINE}-flash.bin:/${MACHINE}-flash.bin \
-     imx8mp-owa5x.dtb:/imx8mp-owa5x.dtb \
 "
 
 IMAGE_CMD:balenaos-img:append () {
@@ -60,6 +59,7 @@ IMAGE_INSTALL:append = " \
                         owasys-pollux-can \
                         owasys-quectel-apn-injection \
                         owasys-quectel-ecm-modem-setup \
+                        kernel-devicetree \
 "
 
 deltask do_packagedata
