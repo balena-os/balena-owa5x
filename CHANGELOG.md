@@ -1,6 +1,11 @@
 # v2.107.5
 ## (2023-01-09)
 
+# v7.7.0+rev6
+## (2026-07-21)
+
+* Load device tree from the root partition [Aitor Nieto owzang@porowzang]
+
 # v7.7.0+rev5
 ## (2026-07-20)
 

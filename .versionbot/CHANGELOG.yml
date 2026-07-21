@@ -1,4 +1,22 @@
 - commits:
+    - subject: Load device tree from the root partition
+      hash: dfaa577c94973413e6dd806458ddb2100538f194
+      body: |
+        Now the dtb is located at the rootfs partition, under the boot folder.
+        This enables dtb redundancy.
+        For backward compatibility purposes, if the u-boot is unable to load the
+        dtb from the rootfs partition it will also check the boot partition.
+      footer:
+        Changelog-entry: Load device tree from the root partition
+        changelog-entry: Load device tree from the root partition
+        Signed-off-by: Aitor Nieto <aitor.nieto@owasys.com>
+        signed-off-by: Aitor Nieto <aitor.nieto@owasys.com>
+      author: Aitor Nieto owzang@porowzang
+      nested: []
+  version: 7.7.0+rev6
+  title: ""
+  date: 2026-07-21T08:11:02.724Z
+- commits:
     - subject: Update layers/poky to 6ccffb86e86b4d41f61dc0c06c2b732c72676537
       hash: e4bdb78b2f1438045ca85575c1f572b58357a9db
       body: Update layers/poky
