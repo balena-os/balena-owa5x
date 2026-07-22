@@ -1,6 +1,11 @@
 # v2.107.5
 ## (2023-01-09)
 
+# v7.7.1+rev1
+## (2026-07-22)
+
+* Set explicit partition size overrides for each machine [guille-vega]
+
 # v7.7.1
 ## (2026-07-21)
 
