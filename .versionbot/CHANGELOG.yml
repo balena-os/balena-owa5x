@@ -1,4 +1,16 @@
 - commits:
+    - subject: Update layers/poky to 9916b7471edd0e9a95d94364398c241d1c3bac33
+      hash: fa2d886f156c89093da4c037ac6f3da7f5060be5
+      body: Update layers/poky
+      footer:
+        Changelog-entry: Update layers/poky to 9916b7471edd0e9a95d94364398c241d1c3bac33
+        changelog-entry: Update layers/poky to 9916b7471edd0e9a95d94364398c241d1c3bac33
+      author: balena-renovate[bot]
+      nested: []
+  version: 7.7.1+rev2
+  title: ""
+  date: 2026-07-23T10:59:00.701Z
+- commits:
     - subject: Set explicit partition size overrides for each machine
       hash: fe1ceda38fdda40a2c38ce7f09fc47f02a8ea36b
       body: |
