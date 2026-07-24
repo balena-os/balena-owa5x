@@ -5,5 +5,6 @@ SRC_URI:append = " \
 "
 
 do_install:append() {
-    install -m 0644 ${WORKDIR}/99-unmanaged-uap-devices.conf ${D}${sysconfdir}/NetworkManager/conf.d/
+    install -d ${D}${nonarch_base_libdir}/NetworkManager/conf.d/
+    install -m 0644 ${WORKDIR}/99-unmanaged-uap-devices.conf ${D}${nonarch_base_libdir}/NetworkManager/conf.d/
 }
