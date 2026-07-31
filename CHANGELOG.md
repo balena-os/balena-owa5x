@@ -1,6 +1,12 @@
 # v2.107.5
 ## (2023-01-09)
 
+# v7.8.0+rev1
+## (2026-07-31)
+
+* Update layers/poky to 5de2230907ac20b7af344c73db4c7d5bde372d1e [balena-renovate[bot]]
+* Fix route-metric for Quectel Modem [Aitor Nieto owzang@porowzang]
+
 # v7.8.0
 ## (2026-07-29)
 

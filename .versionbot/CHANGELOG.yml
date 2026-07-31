@@ -1,4 +1,34 @@
 - commits:
+    - subject: Update layers/poky to 5de2230907ac20b7af344c73db4c7d5bde372d1e
+      hash: 95469adfed800bd03de150012ed13715f46e6400
+      body: Update layers/poky
+      footer:
+        Changelog-entry: Update layers/poky to 5de2230907ac20b7af344c73db4c7d5bde372d1e
+        changelog-entry: Update layers/poky to 5de2230907ac20b7af344c73db4c7d5bde372d1e
+      author: balena-renovate[bot]
+      nested: []
+    - subject: Fix route-metric for Quectel Modem
+      hash: 890741cb66e90c0fa84b296b78c774d2f002b9b5
+      body: |
+        - Increase the route metric by 700 for the Quectel USB Ethernet
+        interface to prevent the OWA from getting stuck without internet
+        connectivity when NetworkManager incorrectly prefers the modem interface
+        if no SIM card is present or the modem has no internet access, despite
+        another interface providing a working internet connection.
+
+        - Move 99-unmanaged-uap-devices.conf to /lib, it was being overwritten
+        by the bind mount in /etc
+      footer:
+        Changelog-entry: Fix route-metric for Quectel Modem
+        changelog-entry: Fix route-metric for Quectel Modem
+        Signed-off-by: Aitor Nieto <aitor.nieto@owasys.com>
+        signed-off-by: Aitor Nieto <aitor.nieto@owasys.com>
+      author: Aitor Nieto owzang@porowzang
+      nested: []
+  version: 7.8.0+rev1
+  title: ""
+  date: 2026-07-31T11:10:51.866Z
+- commits:
     - subject: Update layers/meta-balena to 05f71c5607f293a7bc162db6570f40bd5522393f
       hash: 0a52e0b062429d9a7439803933aac3d9a09b300d
       body: Update layers/meta-balena
