@@ -1,6 +1,21 @@
 # v2.107.5
 ## (2023-01-09)
 
+# v7.8.1
+## (2026-08-01)
+
+
+<details>
+<summary> Update layers/meta-balena to e5daefeadc0626b726c822413c86ac0cb259ee91 [balena-renovate[bot]] </summary>
+
+> ## meta-balena-7.8.1
+> ### (2026-08-01)
+> 
+> * initrdscripts: check alignment of data partition in resindataexpander [Michal Toman]
+> 
+
+</details>
+
 # v7.8.0+rev2
 ## (2026-07-31)
 
