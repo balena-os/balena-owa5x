@@ -1,4 +1,60 @@
 - commits:
+    - subject: Update layers/meta-balena to 669cd979a6d181271989e268bdb334c600b16955
+      hash: 56d4d4497eadc3e4ef3f37f493fe561574a94e56
+      body: |
+        Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to 669cd979a6d181271989e268bdb334c600b16955
+        changelog-entry: Update layers/meta-balena to 669cd979a6d181271989e268bdb334c600b16955
+        Signed-off-by: Florin Sarbu <florin@balena.io>
+        signed-off-by: Florin Sarbu <florin@balena.io>
+      author: Florin Sarbu
+      nested:
+        - commits:
+            - subject: "extra-udev-rules: Disable power management on mlan* wireless network
+                interfaces"
+              hash: ad892c3e437a49a800d57e665f31a834c0dad0b8
+              body: >
+                The moal driver used in various hardware exposes the wireless
+                network interfaces as mlan*
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Florin Sarbu <florin@balena.io>
+                signed-off-by: Florin Sarbu <florin@balena.io>
+              author: Florin Sarbu
+              nested: []
+          version: meta-balena-7.9.2
+          title: ""
+          date: 2026-08-07T15:12:33.847Z
+        - commits:
+            - subject: "recipes-containers/balena-extension-runtime: Enable Wrynose builds"
+              hash: d38072b13557d64193319620b78fb4be55a19da2
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alexandru Costache <alexandru@balena.io>
+                signed-off-by: Alexandru Costache <alexandru@balena.io>
+              author: Alexandru Costache
+              nested: []
+          version: meta-balena-7.9.1
+          title: ""
+          date: 2026-08-07T06:18:34.160Z
+    - subject: Add autokit test requirement to the GHA workflow
+      hash: 2a44fe706fa93c28426fea67dc29a4a54d57e3f8
+      body: ""
+      footer:
+        Changelog-entry: Add autokit test requirement to the GHA workflow
+        changelog-entry: Add autokit test requirement to the GHA workflow
+        Signed-off-by: Florin Sarbu <florin@balena.io>
+        signed-off-by: Florin Sarbu <florin@balena.io>
+      author: Florin Sarbu
+      nested: []
+  version: 7.9.2
+  title: ""
+  date: 2026-08-08T19:29:01.176Z
+- commits:
     - subject: Update layers/meta-cyclonedx to 2ad28404e96f4f91e1493a7e10d2481294198b6d
       hash: ed208de00c7f438a0d1b5443b6032ea7342fa300
       body: Update layers/meta-cyclonedx
