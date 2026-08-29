@@ -1,6 +1,11 @@
 # v2.107.5
 ## (2023-01-09)
 
+# v7.9.2+rev6
+## (2026-08-29)
+
+* Update flowzonify to 0.4.2 [balena-renovate[bot]]
+
 # v7.9.2+rev5
 ## (2026-08-29)
 
