@@ -1,4 +1,29 @@
 - commits:
+    - subject: Update balena-yocto-scripts to 8010de2389711c1358480d87ca5b5540b6e60501
+      hash: a4f4eb21d0647935d973c1400ed2b8486186b1ca
+      body: Update balena-yocto-scripts
+      footer:
+        Changelog-entry: Update balena-yocto-scripts to 8010de2389711c1358480d87ca5b5540b6e60501
+        changelog-entry: Update balena-yocto-scripts to 8010de2389711c1358480d87ca5b5540b6e60501
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Update GitHub Actions
+              hash: c8b1539cc32bc97e88c6827d0f90d70965987fec
+              body: |
+                Update aws-actions/configure-aws-credentials from 6.2.2 to 6.2.3
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: balena-yocto-scripts-1.42.11
+          title: ""
+          date: 2026-08-30T15:29:48.255Z
+  version: 7.9.2+rev7
+  title: ""
+  date: 2026-08-30T19:19:07.018Z
+- commits:
     - subject: Update flowzonify to 0.4.2
       hash: e1deecf78bfe874efa492587d4eccb420677bcd8
       body: Update flowzonify
