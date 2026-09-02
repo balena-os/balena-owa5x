@@ -1,4 +1,29 @@
 - commits:
+    - subject: Update balena-yocto-scripts to 6a583881607c2cfef77e09274ae13eb59c52d257
+      hash: c4a4a3978ed7f7c8b8b06f8e4fb816308c5f4cfd
+      body: Update balena-yocto-scripts
+      footer:
+        Changelog-entry: Update balena-yocto-scripts to 6a583881607c2cfef77e09274ae13eb59c52d257
+        changelog-entry: Update balena-yocto-scripts to 6a583881607c2cfef77e09274ae13eb59c52d257
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Update actions/upload-artifact action to v7
+              hash: 9b783d47dc1b0409e2bed7c0b30d98f3306b68ed
+              body: |
+                Update actions/upload-artifact from 6.0.0 to 7.0.1
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: balena-yocto-scripts-1.42.12
+          title: ""
+          date: 2026-09-02T17:42:27.336Z
+  version: 7.9.2+rev9
+  title: ""
+  date: 2026-09-02T22:36:10.027Z
+- commits:
     - subject: Update balena-os/github-workflows to
         08a88ee3ca2a070d59140fa334be2784f17918e0
       hash: 2db7609fb5e3681f1ea48141e1af0c0d7411d4a5
