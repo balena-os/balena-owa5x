@@ -1,4 +1,21 @@
 - commits:
+    - subject: ".gitmodules: Declare a branch for every submodule"
+      hash: 499f009946c3808dcf4990dbd348826ddb66d768
+      body: |
+        check_gitmodules_branches fails while any submodule has no branch
+        declared. 1 submodule had none here. Every branch declared
+        contains the current pin, verified against the remote.
+      footer:
+        Changelog-entry: ".gitmodules: Declare a branch for every submodule"
+        changelog-entry: ".gitmodules: Declare a branch for every submodule"
+        Signed-off-by: Kyle Harding <kyle@balena.io>
+        signed-off-by: Kyle Harding <kyle@balena.io>
+      author: Kyle Harding
+      nested: []
+  version: 8.0.9+rev2
+  title: ""
+  date: 2026-09-11T09:48:29.009Z
+- commits:
     - subject: Update balena-yocto-scripts to e040066f030e2ba6577fe9bc481c22e614ec336a
       hash: 334fc20767547b207b9264964f02c9b54cdfd0ac
       body: Update balena-yocto-scripts

@@ -1,6 +1,11 @@
 # v2.107.5
 ## (2023-01-09)
 
+# v8.0.9+rev2
+## (2026-09-11)
+
+* .gitmodules: Declare a branch for every submodule [Kyle Harding]
+
 # v8.0.9+rev1
 ## (2026-09-10)
 
