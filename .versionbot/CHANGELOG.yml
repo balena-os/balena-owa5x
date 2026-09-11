@@ -1,4 +1,19 @@
 - commits:
+    - subject: Update layers/meta-openembedded to
+        b5874ea07d69919d9b40d59f2c2f0bbd24bc3259
+      hash: b68b366633c4fc45d91fb671c2afe85967b94bb7
+      body: Update layers/meta-openembedded
+      footer:
+        Changelog-entry: Update layers/meta-openembedded to
+          b5874ea07d69919d9b40d59f2c2f0bbd24bc3259
+        changelog-entry: Update layers/meta-openembedded to
+          b5874ea07d69919d9b40d59f2c2f0bbd24bc3259
+      author: balena-renovate[bot]
+      nested: []
+  version: 8.0.9+rev3
+  title: ""
+  date: 2026-09-11T15:52:13.253Z
+- commits:
     - subject: ".gitmodules: Declare a branch for every submodule"
       hash: 499f009946c3808dcf4990dbd348826ddb66d768
       body: |
