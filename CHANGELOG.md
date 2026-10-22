@@ -1,6 +1,21 @@
 # v2.107.5
 ## (2023-01-09)
 
+# v9.0.3
+## (2026-10-22)
+
+
+<details>
+<summary> Update layers/meta-balena to 7f1a0e5c983a45cea4a4aad23c56134e3a3cea2f [balena-renovate[bot]] </summary>
+
+> ## meta-balena-9.0.3
+> ### (2026-10-22)
+> 
+> * start-balena-supervisor: Trust the hostOS CA bundle [Shaun Mulligan]
+> 
+
+</details>
+
 # v9.0.2
 ## (2026-10-21)
 
