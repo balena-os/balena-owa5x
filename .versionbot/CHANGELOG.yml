@@ -1,4 +1,61 @@
 - commits:
+    - subject: Update layers/meta-balena to 48184b689a43b762c5eea6efbc16b018eed70839
+      hash: 4b60770668af69187e4bd549e5eff86c3664215f
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to 48184b689a43b762c5eea6efbc16b018eed70839
+        changelog-entry: Update layers/meta-balena to 48184b689a43b762c5eea6efbc16b018eed70839
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: "tests: os: config-json: use the shared journal helper"
+              hash: 1d5b4bc2985617007bb62d5179683467b85e290a
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+            - subject: "dnsmasq: move the settings to a conf.d drop-in"
+              hash: 37dde807ac5e7494c1b38a50acbb05f4b2df038b
+              body: >
+                The v2.92 update stopped installing file://dnsmasq.conf, which
+                carried
+
+                enable-dbus, domain-needed and bogus-priv.
+
+
+                enable-dbus lets any container with io.balena.features.dbus set
+                the
+
+                upstream servers. That is the documented contract of the label.
+
+
+                This commit moves  them into a balena-files directory so they
+                can not be missed
+
+                again.
+
+
+                Devices running without these options forwarded plain names and
+
+                private reverse lookups upstream.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+          version: meta-balena-9.0.6
+          title: ""
+          date: 2026-11-09T12:21:03.299Z
+  version: 9.0.6
+  title: ""
+  date: 2026-11-09T20:30:58.023Z
+- commits:
     - subject: Update layers/poky to 9517df0a9af21f1e0f9d6ba5a78c5ae1d7c83184
       hash: 660c1d8a1e81018339a3f9fd2d4e16f9a2f5bb96
       body: Update layers/poky
