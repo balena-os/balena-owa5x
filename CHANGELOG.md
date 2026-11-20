@@ -1,6 +1,27 @@
 # v2.107.5
 ## (2023-01-09)
 
+# v9.1.1+rev3
+## (2026-11-20)
+
+
+<details>
+<summary> Update balena-yocto-scripts to 01d33a1b393d053bda08c2319bd956b6e9bbc052 [balena-renovate[bot]] </summary>
+
+> ## balena-yocto-scripts-1.43.1
+> ### (2026-11-20)
+> 
+> * Update ubuntu:22.04 Docker digest to f64b2ff [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.43.0
+> ### (2026-11-19)
+> 
+> * yocto-build-deploy: Build hostapp and extensions in one bitbake invocation [Kyle Harding]
+> * yocto-build-deploy: Match built images to services by name [Kyle Harding]
+> 
+
+</details>
+
 # v9.1.1+rev2
 ## (2026-11-19)
 
