@@ -1,4 +1,19 @@
 - commits:
+    - subject: Update layers/meta-openembedded to
+        96c2c78e13ff1b954715ff3c6d26bddd50a02509
+      hash: ca17dd8cc8855c6c03e60865e3547e69a7eae993
+      body: Update layers/meta-openembedded
+      footer:
+        Changelog-entry: Update layers/meta-openembedded to
+          96c2c78e13ff1b954715ff3c6d26bddd50a02509
+        changelog-entry: Update layers/meta-openembedded to
+          96c2c78e13ff1b954715ff3c6d26bddd50a02509
+      author: balena-renovate[bot]
+      nested: []
+  version: 9.1.1+rev6
+  title: ""
+  date: 2026-11-23T21:17:07.837Z
+- commits:
     - subject: Update balena-os/github-workflows to
         ab3dfdb723d81d9f3c25b67fee68a74eeb9ac48b
       hash: 504fea7d39973a6b35d833d705df06f2cc2427fb
