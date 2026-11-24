@@ -6,6 +6,7 @@ FILESEXTRAPATHS:append := "${THISDIR}/files:"
 
 SRC_URI += " \
     file://0001-mwifiex-CONFIG_WIFI_DIRECT_SUPPORT-disabled.patch \
+    file://CVE-2026-98432.patch \
 "
 
 BALENA_CONFIGS:append = " nfsfs"
