@@ -1,6 +1,11 @@
 # v2.107.5
 ## (2023-01-09)
 
+# v9.1.1+rev9
+## (2026-11-25)
+
+* Backport fix for CVE-2026-98432 to linux-owasys-owa5x [Ryan Cooke]
+
 # v9.1.1+rev8
 ## (2026-11-24)
 

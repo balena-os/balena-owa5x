@@ -1,4 +1,35 @@
 - commits:
+    - subject: Backport fix for CVE-2026-98432 to linux-owasys-owa5x
+      hash: 951cd30fb1a9e930825f39fea02d4d70ec922d02
+      body: |
+        Add the 6.6 stable fix for CVE-2026-98432 (IPv4 TCP use-after-free of
+        inet_opt/ireq_opt, freed with kfree() while a SYNACK is still being
+        built) to the Owasys 6.6.23 kernel, which is NXP lf-6.6.y at b586a521
+        plus Owasys patches.
+
+        The patch is the 6.6.y backport of upstream e3f33b0a1d89 (6.6.159,
+        742f73df544e): kfree() becomes kfree_rcu() in inet_sock_destruct() and
+        tcp_v4_reqsk_destructor(). It applies cleanly to the pinned kernel with
+        an offset of 9 lines, and none of the Owasys patches touch the affected
+        files.
+
+        The kernel version string is unchanged, so version-based scanners will
+        still flag the kernel. The patch is tagged "CVE: CVE-2026-98432" so that
+        cve-check can recognise it as patched. This is a stopgap: the kernel CNA
+        does not support cherry-picking single commits, 6.6.23 is far behind the
+        6.6.159 fix, and the IPv6 reqsk-destructor variant (ipv6_opt, set only
+        by CALIPSO) is not fixed by this change.
+      footer:
+        Changelog-entry: Backport fix for CVE-2026-98432 to linux-owasys-owa5x
+        changelog-entry: Backport fix for CVE-2026-98432 to linux-owasys-owa5x
+        Signed-off-by: Ryan Cooke<ryan@balena.io>
+        signed-off-by: Ryan Cooke<ryan@balena.io>
+      author: Ryan Cooke
+      nested: []
+  version: 9.1.1+rev9
+  title: ""
+  date: 2026-11-25T10:58:16.386Z
+- commits:
     - subject: Update layers/meta-freescale to 945dcd1c0c8684e6482cbf44c6b52be3c1c9ef87
       hash: 3698b2566b570cae7d495c0b5f84d9976c0f8fa2
       body: Update layers/meta-freescale
