@@ -1,4 +1,16 @@
 - commits:
+    - subject: Update layers/poky to 1397cd85032d1582fa4f2512a3f378d71ca39291
+      hash: 58a3240cf3ee241666c9f6049effd4a9907b170c
+      body: Update layers/poky
+      footer:
+        Changelog-entry: Update layers/poky to 1397cd85032d1582fa4f2512a3f378d71ca39291
+        changelog-entry: Update layers/poky to 1397cd85032d1582fa4f2512a3f378d71ca39291
+      author: balena-renovate[bot]
+      nested: []
+  version: 9.1.1+rev10
+  title: ""
+  date: 2026-11-25T15:04:01.302Z
+- commits:
     - subject: Backport fix for CVE-2026-98432 to linux-owasys-owa5x
       hash: 951cd30fb1a9e930825f39fea02d4d70ec922d02
       body: |
